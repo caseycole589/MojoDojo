@@ -1,0 +1,40 @@
+[Wed Mar 11 19:01:53 2015] [debug] Your secret passphrase needs to be changed
+[Wed Mar 11 19:01:53 2015] [debug] GET "/"
+[Wed Mar 11 19:01:53 2015] [debug] Routing to controller "Moblo::Controller::Example" and action "welcome"
+[Wed Mar 11 19:01:53 2015] [debug] Rendering template "example/welcome.html.ep"
+[Wed Mar 11 19:01:53 2015] [debug] Rendering template "layouts/default.html.ep"
+[Wed Mar 11 19:01:53 2015] [debug] 200 OK (0.003788s, 263.992/s)
+[Wed Mar 11 19:02:37 2015] [debug] Your secret passphrase needs to be changed
+[Wed Mar 11 19:02:37 2015] [debug] GET "/"
+[Wed Mar 11 19:02:37 2015] [debug] Routing to controller "Moblo::Controller::Example" and action "welcome"
+[Wed Mar 11 19:02:37 2015] [debug] Rendering template "example/welcome.html.ep"
+[Wed Mar 11 19:02:37 2015] [debug] Rendering template "layouts/default.html.ep"
+[Wed Mar 11 19:02:37 2015] [debug] 200 OK (0.010678s, 93.650/s)
+[Wed Mar 11 19:02:55 2015] [debug] GET "/"
+[Wed Mar 11 19:02:55 2015] [debug] Routing to controller "Moblo::Controller::Example" and action "welcome"
+[Wed Mar 11 19:02:55 2015] [debug] Rendering cached template "example/welcome.html.ep"
+[Wed Mar 11 19:02:55 2015] [debug] Rendering cached template "layouts/default.html.ep"
+[Wed Mar 11 19:02:55 2015] [debug] 200 OK (0.002498s, 400.320/s)
+[Wed Mar 11 19:03:06 2015] [debug] GET "/"
+[Wed Mar 11 19:03:06 2015] [debug] Routing to controller "Moblo::Controller::Example" and action "welcome"
+[Wed Mar 11 19:03:06 2015] [debug] Rendering cached template "example/welcome.html.ep"
+[Wed Mar 11 19:03:06 2015] [debug] Rendering cached template "layouts/default.html.ep"
+[Wed Mar 11 19:03:06 2015] [debug] 200 OK (0.002851s, 350.754/s)
+[Wed Mar 11 19:03:07 2015] [debug] GET "/"
+[Wed Mar 11 19:03:07 2015] [debug] Routing to controller "Moblo::Controller::Example" and action "welcome"
+[Wed Mar 11 19:03:07 2015] [debug] Rendering cached template "example/welcome.html.ep"
+[Wed Mar 11 19:03:07 2015] [debug] Rendering cached template "layouts/default.html.ep"
+[Wed Mar 11 19:03:07 2015] [debug] 200 OK (0.001469s, 680.735/s)
+[Wed Mar 11 19:03:16 2015] [debug] Your secret passphrase needs to be changed
+[Wed Mar 11 19:03:16 2015] [debug] GET "/"
+[Wed Mar 11 19:03:16 2015] [debug] Template "not_found.development.html.ep" not found
+[Wed Mar 11 19:03:16 2015] [debug] Template "not_found.html.ep" not found
+[Wed Mar 11 19:03:16 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Wed Mar 11 19:03:16 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Wed Mar 11 19:03:16 2015] [debug] 404 Not Found (0.019498s, 51.287/s)
+[Wed Mar 11 19:03:23 2015] [debug] Your secret passphrase needs to be changed
+[Wed Mar 11 19:03:23 2015] [debug] GET "/"
+[Wed Mar 11 19:03:23 2015] [debug] Routing to controller "Moblo::Controller::Example" and action "welcome"
+[Wed Mar 11 19:03:23 2015] [debug] Rendering template "example/welcome.html.ep"
+[Wed Mar 11 19:03:23 2015] [debug] Rendering template "layouts/default.html.ep"
+[Wed Mar 11 19:03:23 2015] [debug] 200 OK (0.009055s, 110.436/s)
