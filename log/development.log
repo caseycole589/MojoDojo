@@ -38,3 +38,37 @@
 [Wed Mar 11 19:03:23 2015] [debug] Rendering template "example/welcome.html.ep"
 [Wed Mar 11 19:03:23 2015] [debug] Rendering template "layouts/default.html.ep"
 [Wed Mar 11 19:03:23 2015] [debug] 200 OK (0.009055s, 110.436/s)
+[Wed Mar 11 19:53:07 2015] [debug] Your secret passphrase needs to be changed
+[Wed Mar 11 19:53:07 2015] [debug] GET "/index"
+[Wed Mar 11 19:53:07 2015] [debug] Template "not_found.development.html.ep" not found
+[Wed Mar 11 19:53:07 2015] [debug] Template "not_found.html.ep" not found
+[Wed Mar 11 19:53:07 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Wed Mar 11 19:53:07 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Wed Mar 11 19:53:07 2015] [debug] 404 Not Found (0.037195s, 26.885/s)
+[Wed Mar 11 19:53:18 2015] [debug] GET "/"
+[Wed Mar 11 19:53:18 2015] [debug] Rendering template "main/index.html.ep"
+[Wed Mar 11 19:53:18 2015] [debug] 200 OK (0.005894s, 169.664/s)
+[Wed Mar 11 19:53:55 2015] [debug] Your secret passphrase needs to be changed
+[Wed Mar 11 19:53:55 2015] [debug] GET "/"
+[Wed Mar 11 19:53:55 2015] [debug] Rendering template "main/index.html.ep"
+[Wed Mar 11 19:53:55 2015] [debug] 200 OK (0.006162s, 162.285/s)
+[Wed Mar 11 19:54:10 2015] [debug] Your secret passphrase needs to be changed
+[Wed Mar 11 19:54:10 2015] [debug] GET "/"
+[Wed Mar 11 19:54:10 2015] [debug] Rendering template "main/index.html.ep"
+[Wed Mar 11 19:54:10 2015] [debug] 200 OK (0.005033s, 198.689/s)
+[Wed Mar 11 19:54:19 2015] [debug] GET "/login_form"
+[Wed Mar 11 19:54:19 2015] [debug] Template "not_found.development.html.ep" not found
+[Wed Mar 11 19:54:19 2015] [debug] Template "not_found.html.ep" not found
+[Wed Mar 11 19:54:19 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Wed Mar 11 19:54:19 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Wed Mar 11 19:54:19 2015] [debug] 404 Not Found (0.017058s, 58.624/s)
+[Wed Mar 11 19:56:15 2015] [debug] Your secret passphrase needs to be changed
+[Wed Mar 11 19:56:15 2015] [debug] GET "/"
+[Wed Mar 11 19:56:15 2015] [debug] Rendering template "main/index.html.ep"
+[Wed Mar 11 19:56:15 2015] [debug] Rendering template "layouts/base.html.ep"
+[Wed Mar 11 19:56:15 2015] [debug] 200 OK (0.009904s, 100.969/s)
+[Wed Mar 11 19:56:27 2015] [debug] Your secret passphrase needs to be changed
+[Wed Mar 11 19:56:27 2015] [debug] GET "/"
+[Wed Mar 11 19:56:27 2015] [debug] Rendering template "main/index.html.ep"
+[Wed Mar 11 19:56:27 2015] [debug] Rendering template "layouts/base.html.ep"
+[Wed Mar 11 19:56:27 2015] [debug] 200 OK (0.008320s, 120.192/s)

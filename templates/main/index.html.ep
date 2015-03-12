@@ -1,0 +1,8 @@
+<h2>This is(Blog) the &mdash;  Index</h2>
+<p>Welcom to Document Generator</p>
+<h3>Post Index</h3>
+<p>None! :/</p>
+<hr>
+<p>
+	%= link_to Login => 'login_form'
+</p>

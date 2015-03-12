@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+  <head><title><%= title %></title></head>
+  <body>
+  	<!-- this will be before the content in index.html.ep -->
+  	<%= content %>
+  	<!-- this will be after -->
+  </body>
+</html>
