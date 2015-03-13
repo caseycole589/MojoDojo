@@ -72,3 +72,577 @@
 [Wed Mar 11 19:56:27 2015] [debug] Rendering template "main/index.html.ep"
 [Wed Mar 11 19:56:27 2015] [debug] Rendering template "layouts/base.html.ep"
 [Wed Mar 11 19:56:27 2015] [debug] 200 OK (0.008320s, 120.192/s)
+[Thu Mar 12 19:24:39 2015] [debug] Your secret passphrase needs to be changed
+[Thu Mar 12 19:24:39 2015] [debug] GET "/"
+[Thu Mar 12 19:24:39 2015] [debug] Rendering template "main/index.html.ep"
+[Thu Mar 12 19:24:39 2015] [debug] Rendering template "layouts/base.html.ep"
+[Thu Mar 12 19:24:39 2015] [debug] 200 OK (0.004057s, 246.488/s)
+[Thu Mar 12 19:24:46 2015] [debug] GET "/login"
+[Thu Mar 12 19:24:46 2015] [debug] Template "not_found.development.html.ep" not found
+[Thu Mar 12 19:24:46 2015] [debug] Template "not_found.html.ep" not found
+[Thu Mar 12 19:24:46 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Thu Mar 12 19:24:46 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Thu Mar 12 19:24:46 2015] [debug] 404 Not Found (0.019553s, 51.143/s)
+[Thu Mar 12 19:25:28 2015] [debug] Your secret passphrase needs to be changed
+[Thu Mar 12 19:25:28 2015] [debug] GET "/login_form"
+[Thu Mar 12 19:25:28 2015] [debug] Template "not_found.development.html.ep" not found
+[Thu Mar 12 19:25:28 2015] [debug] Template "not_found.html.ep" not found
+[Thu Mar 12 19:25:28 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Thu Mar 12 19:25:28 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Thu Mar 12 19:25:28 2015] [debug] 404 Not Found (0.019831s, 50.426/s)
+[Thu Mar 12 19:26:05 2015] [debug] Your secret passphrase needs to be changed
+[Thu Mar 12 19:26:05 2015] [debug] GET "/login_form"
+[Thu Mar 12 19:26:05 2015] [debug] Template "not_found.development.html.ep" not found
+[Thu Mar 12 19:26:05 2015] [debug] Template "not_found.html.ep" not found
+[Thu Mar 12 19:26:05 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Thu Mar 12 19:26:05 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Thu Mar 12 19:26:05 2015] [debug] 404 Not Found (0.016815s, 59.471/s)
+[Thu Mar 12 19:27:37 2015] [debug] Your secret passphrase needs to be changed
+[Thu Mar 12 19:27:37 2015] [debug] GET "/login_form"
+[Thu Mar 12 19:27:37 2015] [debug] Template "not_found.development.html.ep" not found
+[Thu Mar 12 19:27:37 2015] [debug] Template "not_found.html.ep" not found
+[Thu Mar 12 19:27:37 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Thu Mar 12 19:27:37 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Thu Mar 12 19:27:37 2015] [debug] 404 Not Found (0.020973s, 47.680/s)
+[Thu Mar 12 19:27:38 2015] [debug] GET "/login_form"
+[Thu Mar 12 19:27:38 2015] [debug] Template "not_found.development.html.ep" not found
+[Thu Mar 12 19:27:38 2015] [debug] Template "not_found.html.ep" not found
+[Thu Mar 12 19:27:38 2015] [debug] Rendering cached inline template "fd403ab55a4c875e35b42428816134c7"
+[Thu Mar 12 19:27:38 2015] [debug] Rendering cached inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Thu Mar 12 19:27:38 2015] [debug] 404 Not Found (0.009388s, 106.519/s)
+[Thu Mar 12 19:27:39 2015] [debug] GET "/login_form"
+[Thu Mar 12 19:27:39 2015] [debug] Template "not_found.development.html.ep" not found
+[Thu Mar 12 19:27:39 2015] [debug] Template "not_found.html.ep" not found
+[Thu Mar 12 19:27:39 2015] [debug] Rendering cached inline template "fd403ab55a4c875e35b42428816134c7"
+[Thu Mar 12 19:27:39 2015] [debug] Rendering cached inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Thu Mar 12 19:27:39 2015] [debug] 404 Not Found (0.012235s, 81.733/s)
+[Thu Mar 12 19:28:08 2015] [debug] Your secret passphrase needs to be changed
+[Thu Mar 12 19:28:08 2015] [debug] GET "/login_form"
+[Thu Mar 12 19:28:08 2015] [debug] Template "not_found.development.html.ep" not found
+[Thu Mar 12 19:28:08 2015] [debug] Template "not_found.html.ep" not found
+[Thu Mar 12 19:28:08 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Thu Mar 12 19:28:08 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Thu Mar 12 19:28:08 2015] [debug] 404 Not Found (0.018235s, 54.840/s)
+[Thu Mar 12 19:28:10 2015] [debug] GET "/login_form"
+[Thu Mar 12 19:28:10 2015] [debug] Template "not_found.development.html.ep" not found
+[Thu Mar 12 19:28:10 2015] [debug] Template "not_found.html.ep" not found
+[Thu Mar 12 19:28:10 2015] [debug] Rendering cached inline template "fd403ab55a4c875e35b42428816134c7"
+[Thu Mar 12 19:28:10 2015] [debug] Rendering cached inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Thu Mar 12 19:28:10 2015] [debug] 404 Not Found (0.006784s, 147.406/s)
+[Thu Mar 12 19:38:08 2015] [debug] Your secret passphrase needs to be changed
+[Thu Mar 12 19:38:08 2015] [debug] GET "/login_form"
+[Thu Mar 12 19:38:08 2015] [debug] Template "not_found.development.html.ep" not found
+[Thu Mar 12 19:38:08 2015] [debug] Template "not_found.html.ep" not found
+[Thu Mar 12 19:38:08 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Thu Mar 12 19:38:08 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Thu Mar 12 19:38:08 2015] [debug] 404 Not Found (0.016972s, 58.921/s)
+[Thu Mar 12 19:38:50 2015] [debug] GET "/login"
+[Thu Mar 12 19:38:50 2015] [debug] Rendering template "login/login_form.html.ep"
+[Thu Mar 12 19:38:50 2015] [debug] Rendering template "layouts/base.html.ep"
+[Thu Mar 12 19:38:50 2015] [debug] 200 OK (0.009004s, 111.062/s)
+[Thu Mar 12 19:39:06 2015] [debug] GET "/"
+[Thu Mar 12 19:39:06 2015] [debug] Rendering template "main/index.html.ep"
+[Thu Mar 12 19:39:06 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Thu Mar 12 19:39:06 2015] [debug] 200 OK (0.001782s, 561.167/s)
+[Thu Mar 12 19:39:09 2015] [debug] GET "/login"
+[Thu Mar 12 19:39:09 2015] [debug] Rendering cached template "login/login_form.html.ep"
+[Thu Mar 12 19:39:09 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Thu Mar 12 19:39:09 2015] [debug] 200 OK (0.005214s, 191.791/s)
+[Thu Mar 12 19:39:39 2015] [debug] Your secret passphrase needs to be changed
+[Thu Mar 12 19:39:39 2015] [debug] GET "/login"
+[Thu Mar 12 19:39:39 2015] [debug] Rendering template "login/login_form.html.ep"
+[Thu Mar 12 19:39:39 2015] [debug] Rendering template "layouts/base.html.ep"
+[Thu Mar 12 19:39:39 2015] [debug] 200 OK (0.004326s, 231.160/s)
+[Thu Mar 12 19:39:39 2015] [debug] GET "/login"
+[Thu Mar 12 19:39:39 2015] [debug] Rendering cached template "login/login_form.html.ep"
+[Thu Mar 12 19:39:39 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Thu Mar 12 19:39:39 2015] [debug] 200 OK (0.004536s, 220.459/s)
+[Thu Mar 12 19:39:49 2015] [debug] GET "/"
+[Thu Mar 12 19:39:49 2015] [debug] Rendering template "main/index.html.ep"
+[Thu Mar 12 19:39:49 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Thu Mar 12 19:39:49 2015] [debug] 200 OK (0.001869s, 535.045/s)
+[Thu Mar 12 19:39:52 2015] [debug] GET "/login"
+[Thu Mar 12 19:39:52 2015] [debug] Rendering cached template "login/login_form.html.ep"
+[Thu Mar 12 19:39:52 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Thu Mar 12 19:39:52 2015] [debug] 200 OK (0.001189s, 841.043/s)
+[Thu Mar 12 19:42:41 2015] [debug] Your secret passphrase needs to be changed
+[Thu Mar 12 19:42:41 2015] [debug] GET "/login"
+[Thu Mar 12 19:42:41 2015] [debug] Rendering template "login/login_form.html.ep"
+[Thu Mar 12 19:42:41 2015] [debug] Rendering template "layouts/base.html.ep"
+[Thu Mar 12 19:42:41 2015] [debug] 200 OK (0.011837s, 84.481/s)
+[Thu Mar 12 19:43:46 2015] [debug] Your secret passphrase needs to be changed
+[Thu Mar 12 19:43:46 2015] [debug] GET "/login"
+[Thu Mar 12 19:43:46 2015] [debug] Rendering template "login/login_form.html.ep"
+[Thu Mar 12 19:43:46 2015] [debug] Rendering template "layouts/base.html.ep"
+[Thu Mar 12 19:43:46 2015] [debug] 200 OK (0.006364s, 157.134/s)
+[Thu Mar 12 19:44:07 2015] [debug] GET "/login"
+[Thu Mar 12 19:44:07 2015] [debug] Rendering cached template "login/login_form.html.ep"
+[Thu Mar 12 19:44:07 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Thu Mar 12 19:44:07 2015] [debug] 200 OK (0.004507s, 221.877/s)
+[Thu Mar 12 19:44:08 2015] [debug] Your secret passphrase needs to be changed
+[Thu Mar 12 19:44:08 2015] [debug] GET "/login"
+[Thu Mar 12 19:44:08 2015] [debug] Rendering template "login/login_form.html.ep"
+[Thu Mar 12 19:44:08 2015] [debug] Rendering template "layouts/base.html.ep"
+[Thu Mar 12 19:44:08 2015] [debug] 200 OK (0.007917s, 126.310/s)
+[Thu Mar 12 19:44:27 2015] [debug] Your secret passphrase needs to be changed
+[Thu Mar 12 19:44:27 2015] [debug] GET "/login"
+[Thu Mar 12 19:44:27 2015] [debug] Rendering template "login/login_form.html.ep"
+[Thu Mar 12 19:44:27 2015] [debug] Rendering template "layouts/base.html.ep"
+[Thu Mar 12 19:44:27 2015] [debug] 200 OK (0.008856s, 112.918/s)
+[Thu Mar 12 19:44:38 2015] [debug] Your secret passphrase needs to be changed
+[Thu Mar 12 19:44:38 2015] [debug] GET "/login"
+[Thu Mar 12 19:44:38 2015] [debug] Rendering template "login/login_form.html.ep"
+[Thu Mar 12 19:44:38 2015] [debug] Rendering template "layouts/base.html.ep"
+[Thu Mar 12 19:44:38 2015] [debug] 200 OK (0.005621s, 177.904/s)
+[Thu Mar 12 19:45:43 2015] [debug] Your secret passphrase needs to be changed
+[Thu Mar 12 19:45:43 2015] [debug] POST "/login"
+[Thu Mar 12 19:45:43 2015] [debug] Class "Moblo::Controller::Login" is not a controller
+[Thu Mar 12 19:45:43 2015] [debug] Template "login/on_user_login.html.ep" not found
+[Thu Mar 12 19:45:43 2015] [debug] Template "not_found.development.html.ep" not found
+[Thu Mar 12 19:45:43 2015] [debug] Template "not_found.html.ep" not found
+[Thu Mar 12 19:45:43 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Thu Mar 12 19:45:43 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Thu Mar 12 19:45:43 2015] [debug] 404 Not Found (0.022951s, 43.571/s)
+[Thu Mar 12 19:59:55 2015] [debug] POST "/login"
+[Thu Mar 12 19:59:55 2015] [debug] Class "Moblo::Controller::Login" is not a controller
+[Thu Mar 12 19:59:55 2015] [debug] Template "login/on_user_login.html.ep" not found
+[Thu Mar 12 19:59:55 2015] [debug] Template "not_found.development.html.ep" not found
+[Thu Mar 12 19:59:55 2015] [debug] Template "not_found.html.ep" not found
+[Thu Mar 12 19:59:55 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Thu Mar 12 19:59:55 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Thu Mar 12 19:59:55 2015] [debug] 404 Not Found (0.021115s, 47.360/s)
+[Thu Mar 12 19:59:55 2015] [debug] POST "/login"
+[Thu Mar 12 19:59:55 2015] [debug] Class "Moblo::Controller::Login" is not a controller
+[Thu Mar 12 19:59:55 2015] [debug] Template "login/on_user_login.html.ep" not found
+[Thu Mar 12 19:59:55 2015] [debug] Template "not_found.development.html.ep" not found
+[Thu Mar 12 19:59:55 2015] [debug] Template "not_found.html.ep" not found
+[Thu Mar 12 19:59:55 2015] [debug] Rendering cached inline template "fd403ab55a4c875e35b42428816134c7"
+[Thu Mar 12 19:59:55 2015] [debug] Rendering cached inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Thu Mar 12 19:59:55 2015] [debug] 404 Not Found (0.004924s, 203.087/s)
+[Thu Mar 12 19:59:55 2015] [debug] POST "/login"
+[Thu Mar 12 19:59:55 2015] [debug] Class "Moblo::Controller::Login" is not a controller
+[Thu Mar 12 19:59:55 2015] [debug] Template "login/on_user_login.html.ep" not found
+[Thu Mar 12 19:59:55 2015] [debug] Template "not_found.development.html.ep" not found
+[Thu Mar 12 19:59:55 2015] [debug] Template "not_found.html.ep" not found
+[Thu Mar 12 19:59:55 2015] [debug] Rendering cached inline template "fd403ab55a4c875e35b42428816134c7"
+[Thu Mar 12 19:59:55 2015] [debug] Rendering cached inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Thu Mar 12 19:59:55 2015] [debug] 404 Not Found (0.005067s, 197.355/s)
+[Thu Mar 12 19:59:57 2015] [debug] POST "/login"
+[Thu Mar 12 19:59:57 2015] [debug] Class "Moblo::Controller::Login" is not a controller
+[Thu Mar 12 19:59:57 2015] [debug] Template "login/on_user_login.html.ep" not found
+[Thu Mar 12 19:59:57 2015] [debug] Template "not_found.development.html.ep" not found
+[Thu Mar 12 19:59:57 2015] [debug] Template "not_found.html.ep" not found
+[Thu Mar 12 19:59:57 2015] [debug] Rendering cached inline template "fd403ab55a4c875e35b42428816134c7"
+[Thu Mar 12 19:59:57 2015] [debug] Rendering cached inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Thu Mar 12 19:59:57 2015] [debug] 404 Not Found (0.009573s, 104.460/s)
+[Thu Mar 12 20:02:20 2015] [debug] POST "/login"
+[Thu Mar 12 20:02:20 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Thu Mar 12 20:02:20 2015] [debug] Rendering template "layouts/base.html.ep"
+[Thu Mar 12 20:02:20 2015] [debug] 200 OK (0.007594s, 131.683/s)
+[Thu Mar 12 20:02:44 2015] [debug] GET "/"
+[Thu Mar 12 20:02:44 2015] [debug] Rendering template "main/index.html.ep"
+[Thu Mar 12 20:02:44 2015] [debug] Rendering template "layouts/base.html.ep"
+[Thu Mar 12 20:02:44 2015] [debug] 200 OK (0.004371s, 228.781/s)
+[Thu Mar 12 20:03:07 2015] [debug] GET "/login"
+[Thu Mar 12 20:03:07 2015] [debug] Rendering template "login/login_form.html.ep"
+[Thu Mar 12 20:03:07 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Thu Mar 12 20:03:07 2015] [debug] 200 OK (0.003575s, 279.720/s)
+[Thu Mar 12 20:03:12 2015] [debug] POST "/login"
+[Thu Mar 12 20:03:12 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Thu Mar 12 20:03:12 2015] [debug] Rendering template "layouts/base.html.ep"
+[Thu Mar 12 20:03:12 2015] [debug] 200 OK (0.005193s, 192.567/s)
+[Thu Mar 12 20:04:03 2015] [debug] GET "/"
+[Thu Mar 12 20:04:03 2015] [debug] Rendering template "main/index.html.ep"
+[Thu Mar 12 20:04:03 2015] [debug] Rendering template "layouts/base.html.ep"
+[Thu Mar 12 20:04:03 2015] [debug] 200 OK (0.011823s, 84.581/s)
+[Thu Mar 12 20:04:21 2015] [debug] GET "/login"
+[Thu Mar 12 20:04:21 2015] [debug] Template "login#login_form.html.ep" not found
+[Thu Mar 12 20:04:21 2015] [debug] Template "not_found.development.html.ep" not found
+[Thu Mar 12 20:04:21 2015] [debug] Template "not_found.html.ep" not found
+[Thu Mar 12 20:04:21 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Thu Mar 12 20:04:21 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Thu Mar 12 20:04:21 2015] [debug] 404 Not Found (0.020465s, 48.864/s)
+[Thu Mar 12 20:04:38 2015] [debug] GET "/login"
+[Thu Mar 12 20:04:38 2015] [debug] Rendering template "login/login_form.html.ep"
+[Thu Mar 12 20:04:38 2015] [debug] Rendering template "layouts/base.html.ep"
+[Thu Mar 12 20:04:38 2015] [debug] 200 OK (0.004859s, 205.804/s)
+[Thu Mar 12 20:05:24 2015] [debug] GET "/login"
+[Thu Mar 12 20:05:24 2015] [debug] Rendering template "login/login_form.html.ep"
+[Thu Mar 12 20:05:24 2015] [debug] Rendering template "layouts/base.html.ep"
+[Thu Mar 12 20:05:24 2015] [debug] 200 OK (0.005725s, 174.672/s)
+[Thu Mar 12 20:05:27 2015] [debug] POST "/do_logen"
+[Thu Mar 12 20:05:27 2015] [debug] Template "not_found.development.html.ep" not found
+[Thu Mar 12 20:05:27 2015] [debug] Template "not_found.html.ep" not found
+[Thu Mar 12 20:05:27 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Thu Mar 12 20:05:28 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Thu Mar 12 20:05:28 2015] [debug] 404 Not Found (0.032715s, 30.567/s)
+[Thu Mar 12 20:06:10 2015] [debug] GET "/"
+[Thu Mar 12 20:06:10 2015] [debug] Rendering template "main/index.html.ep"
+[Thu Mar 12 20:06:10 2015] [debug] Rendering template "layouts/base.html.ep"
+[Thu Mar 12 20:06:10 2015] [debug] 200 OK (0.007263s, 137.684/s)
+[Thu Mar 12 20:06:11 2015] [debug] GET "/login_form"
+[Thu Mar 12 20:06:11 2015] [debug] Template "not_found.development.html.ep" not found
+[Thu Mar 12 20:06:11 2015] [debug] Template "not_found.html.ep" not found
+[Thu Mar 12 20:06:11 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Thu Mar 12 20:06:11 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Thu Mar 12 20:06:11 2015] [debug] 404 Not Found (0.021848s, 45.771/s)
+[Thu Mar 12 20:06:30 2015] [debug] GET "/login_form"
+[Thu Mar 12 20:06:30 2015] [debug] Template "not_found.development.html.ep" not found
+[Thu Mar 12 20:06:30 2015] [debug] Template "not_found.html.ep" not found
+[Thu Mar 12 20:06:30 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Thu Mar 12 20:06:30 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Thu Mar 12 20:06:30 2015] [debug] 404 Not Found (0.018948s, 52.776/s)
+[Thu Mar 12 20:06:41 2015] [debug] GET "/"
+[Thu Mar 12 20:06:41 2015] [debug] Rendering template "main/index.html.ep"
+[Thu Mar 12 20:06:41 2015] [debug] Rendering template "layouts/base.html.ep"
+[Thu Mar 12 20:06:41 2015] [debug] 200 OK (0.004411s, 226.706/s)
+[Thu Mar 12 20:06:42 2015] [debug] GET "/login"
+[Thu Mar 12 20:06:42 2015] [debug] Rendering template "login/login_form.html.ep"
+[Thu Mar 12 20:06:42 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Thu Mar 12 20:06:42 2015] [debug] 200 OK (0.007984s, 125.251/s)
+[Thu Mar 12 20:06:49 2015] [debug] POST "/do_loegin"
+[Thu Mar 12 20:06:49 2015] [debug] Template "not_found.development.html.ep" not found
+[Thu Mar 12 20:06:49 2015] [debug] Template "not_found.html.ep" not found
+[Thu Mar 12 20:06:49 2015] [debug] Rendering cached inline template "fd403ab55a4c875e35b42428816134c7"
+[Thu Mar 12 20:06:49 2015] [debug] Rendering cached inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Thu Mar 12 20:06:49 2015] [debug] 404 Not Found (0.005425s, 184.332/s)
+[Thu Mar 12 20:07:14 2015] [debug] POST "/do_loegin"
+[Thu Mar 12 20:07:14 2015] [debug] Template "not_found.development.html.ep" not found
+[Thu Mar 12 20:07:14 2015] [debug] Template "not_found.html.ep" not found
+[Thu Mar 12 20:07:14 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Thu Mar 12 20:07:14 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Thu Mar 12 20:07:14 2015] [debug] 404 Not Found (0.032453s, 30.814/s)
+[Thu Mar 12 20:07:22 2015] [debug] GET "/"
+[Thu Mar 12 20:07:22 2015] [debug] Rendering template "main/index.html.ep"
+[Thu Mar 12 20:07:22 2015] [debug] Rendering template "layouts/base.html.ep"
+[Thu Mar 12 20:07:22 2015] [debug] 200 OK (0.008465s, 118.133/s)
+[Thu Mar 12 20:07:23 2015] [debug] GET "/login"
+[Thu Mar 12 20:07:23 2015] [debug] Rendering template "login/login_form.html.ep"
+[Thu Mar 12 20:07:23 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Thu Mar 12 20:07:23 2015] [debug] 200 OK (0.002995s, 333.890/s)
+[Thu Mar 12 20:08:45 2015] [debug] POST "/login"
+[Thu Mar 12 20:08:45 2015] [error] syntax error at lib/Moblo/Controller/Login.pm line 21, near ") {"
+Global symbol "$self" requires explicit package name at lib/Moblo/Controller/Login.pm line 27.
+syntax error at lib/Moblo/Controller/Login.pm line 28, near "}"
+Compilation failed in require at (eval 256) line 1.
+
+[Thu Mar 12 20:08:45 2015] [debug] Template "exception.development.html.ep" not found
+[Thu Mar 12 20:08:45 2015] [debug] Template "exception.html.ep" not found
+[Thu Mar 12 20:08:45 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Thu Mar 12 20:08:45 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Thu Mar 12 20:08:45 2015] [debug] 500 Internal Server Error (0.020194s, 49.520/s)
+[Thu Mar 12 20:11:18 2015] [debug] POST "/login"
+[Thu Mar 12 20:11:18 2015] [error] syntax error at lib/Moblo/Controller/Login.pm line 21, near ") {"
+syntax error at lib/Moblo/Controller/Login.pm line 29, near "else"
+Global symbol "$self" requires explicit package name at lib/Moblo/Controller/Login.pm line 30.
+Compilation failed in require at (eval 256) line 1.
+
+[Thu Mar 12 20:11:18 2015] [debug] Template "exception.development.html.ep" not found
+[Thu Mar 12 20:11:18 2015] [debug] Template "exception.html.ep" not found
+[Thu Mar 12 20:11:18 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Thu Mar 12 20:11:18 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Thu Mar 12 20:11:18 2015] [debug] 500 Internal Server Error (0.018649s, 53.622/s)
+[Thu Mar 12 20:13:40 2015] [debug] POST "/login"
+[Thu Mar 12 20:13:40 2015] [error] syntax error at lib/Moblo/Controller/Login.pm line 21, near ") {"
+syntax error at lib/Moblo/Controller/Login.pm line 29, near "else"
+Compilation failed in require at (eval 256) line 1.
+
+[Thu Mar 12 20:13:40 2015] [debug] Template "exception.development.html.ep" not found
+[Thu Mar 12 20:13:40 2015] [debug] Template "exception.html.ep" not found
+[Thu Mar 12 20:13:40 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Thu Mar 12 20:13:40 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Thu Mar 12 20:13:40 2015] [debug] 500 Internal Server Error (0.036037s, 27.749/s)
+[Thu Mar 12 20:13:53 2015] [debug] POST "/login"
+[Thu Mar 12 20:13:53 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Thu Mar 12 20:13:53 2015] [debug] Template "login/on_user_login.html.ep" not found
+[Thu Mar 12 20:13:53 2015] [debug] Nothing has been rendered, expecting delayed response
+[Thu Mar 12 20:13:54 2015] [debug] POST "/login"
+[Thu Mar 12 20:13:54 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Thu Mar 12 20:13:54 2015] [debug] Template "login/on_user_login.html.ep" not found
+[Thu Mar 12 20:13:54 2015] [debug] Nothing has been rendered, expecting delayed response
+[Thu Mar 12 20:14:01 2015] [debug] GET "/login"
+[Thu Mar 12 20:14:01 2015] [debug] Rendering template "login/login_form.html.ep"
+[Thu Mar 12 20:14:01 2015] [debug] Rendering template "layouts/base.html.ep"
+[Thu Mar 12 20:14:01 2015] [debug] 200 OK (0.008011s, 124.828/s)
+[Thu Mar 12 20:14:06 2015] [debug] POST "/login"
+[Thu Mar 12 20:14:06 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Thu Mar 12 20:14:06 2015] [debug] Template "login/on_user_login.html.ep" not found
+[Thu Mar 12 20:14:06 2015] [debug] Nothing has been rendered, expecting delayed response
+[Thu Mar 12 20:14:24 2015] [debug] POST "/login"
+[Thu Mar 12 20:14:24 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Thu Mar 12 20:14:24 2015] [debug] Rendering template "layouts/base.html.ep"
+[Thu Mar 12 20:14:24 2015] [debug] 403 Forbidden (0.008875s, 112.676/s)
+[Thu Mar 12 20:15:01 2015] [debug] POST "/login"
+[Thu Mar 12 20:15:01 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Thu Mar 12 20:15:01 2015] [debug] Rendering template "layouts/base.html.ep"
+[Thu Mar 12 20:15:01 2015] [debug] 403 Forbidden (0.009673s, 103.381/s)
+[Thu Mar 12 20:24:28 2015] [debug] GET "/"
+[Thu Mar 12 20:24:28 2015] [debug] Rendering template "main/index.html.ep"
+[Thu Mar 12 20:24:28 2015] [debug] Rendering template "layouts/base.html.ep"
+[Thu Mar 12 20:24:28 2015] [debug] 200 OK (0.003268s, 305.998/s)
+[Thu Mar 12 20:24:28 2015] [debug] GET "/"
+[Thu Mar 12 20:24:28 2015] [debug] Rendering cached template "main/index.html.ep"
+[Thu Mar 12 20:24:28 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Thu Mar 12 20:24:28 2015] [debug] 200 OK (0.000722s, 1385.042/s)
+[Thu Mar 12 20:24:28 2015] [debug] GET "/login"
+[Thu Mar 12 20:24:28 2015] [debug] Rendering template "login/login_form.html.ep"
+[Thu Mar 12 20:24:28 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Thu Mar 12 20:24:28 2015] [debug] 200 OK (0.002233s, 447.828/s)
+[Thu Mar 12 20:24:28 2015] [debug] GET "/login"
+[Thu Mar 12 20:24:28 2015] [debug] Rendering cached template "login/login_form.html.ep"
+[Thu Mar 12 20:24:28 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Thu Mar 12 20:24:28 2015] [debug] 200 OK (0.000920s, 1086.957/s)
+[Thu Mar 12 20:24:28 2015] [debug] GET "/login"
+[Thu Mar 12 20:24:28 2015] [debug] Rendering cached template "login/login_form.html.ep"
+[Thu Mar 12 20:24:28 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Thu Mar 12 20:24:28 2015] [debug] 200 OK (0.001599s, 625.391/s)
+[Thu Mar 12 20:25:59 2015] [debug] GET "/login"
+[Thu Mar 12 20:25:59 2015] [debug] Rendering template "login/login_form.html.ep"
+[Thu Mar 12 20:25:59 2015] [debug] Rendering template "layouts/base.html.ep"
+[Thu Mar 12 20:25:59 2015] [debug] 200 OK (0.005381s, 185.839/s)
+[Thu Mar 12 20:26:02 2015] [debug] GET "/"
+[Thu Mar 12 20:26:02 2015] [debug] Rendering template "main/index.html.ep"
+[Thu Mar 12 20:26:02 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Thu Mar 12 20:26:02 2015] [debug] 200 OK (0.002078s, 481.232/s)
+[Thu Mar 12 20:26:03 2015] [debug] GET "/login_form"
+[Thu Mar 12 20:26:03 2015] [debug] Template "not_found.development.html.ep" not found
+[Thu Mar 12 20:26:03 2015] [debug] Template "not_found.html.ep" not found
+[Thu Mar 12 20:26:03 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Thu Mar 12 20:26:03 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Thu Mar 12 20:26:03 2015] [debug] 404 Not Found (0.018920s, 52.854/s)
+[Thu Mar 12 20:26:39 2015] [debug] GET "/login_form"
+[Thu Mar 12 20:26:39 2015] [debug] Template "not_found.development.html.ep" not found
+[Thu Mar 12 20:26:39 2015] [debug] Template "not_found.html.ep" not found
+[Thu Mar 12 20:26:39 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Thu Mar 12 20:26:39 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Thu Mar 12 20:26:39 2015] [debug] 404 Not Found (0.018858s, 53.028/s)
+[Thu Mar 12 20:27:33 2015] [debug] GET "/"
+[Thu Mar 12 20:27:33 2015] [debug] Rendering template "main/index.html.ep"
+[Thu Mar 12 20:27:33 2015] [debug] Rendering template "layouts/base.html.ep"
+[Thu Mar 12 20:27:33 2015] [debug] 200 OK (0.006074s, 164.636/s)
+[Thu Mar 12 20:27:36 2015] [debug] GET "/login_form"
+[Thu Mar 12 20:27:36 2015] [debug] Template "not_found.development.html.ep" not found
+[Thu Mar 12 20:27:36 2015] [debug] Template "not_found.html.ep" not found
+[Thu Mar 12 20:27:36 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Thu Mar 12 20:27:36 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Thu Mar 12 20:27:36 2015] [debug] 404 Not Found (0.018645s, 53.634/s)
+[Thu Mar 12 20:27:49 2015] [debug] GET "/login_form"
+[Thu Mar 12 20:27:49 2015] [debug] Template "not_found.development.html.ep" not found
+[Thu Mar 12 20:27:49 2015] [debug] Template "not_found.html.ep" not found
+[Thu Mar 12 20:27:49 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Thu Mar 12 20:27:49 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Thu Mar 12 20:27:49 2015] [debug] 404 Not Found (0.018575s, 53.836/s)
+[Thu Mar 12 20:28:07 2015] [debug] GET "/login_form"
+[Thu Mar 12 20:28:07 2015] [debug] Template "not_found.development.html.ep" not found
+[Thu Mar 12 20:28:07 2015] [debug] Template "not_found.html.ep" not found
+[Thu Mar 12 20:28:07 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Thu Mar 12 20:28:07 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Thu Mar 12 20:28:07 2015] [debug] 404 Not Found (0.024229s, 41.273/s)
+[Thu Mar 12 20:28:12 2015] [debug] GET "/"
+[Thu Mar 12 20:28:12 2015] [debug] Rendering template "main/index.html.ep"
+[Thu Mar 12 20:28:12 2015] [debug] Rendering template "layouts/base.html.ep"
+[Thu Mar 12 20:28:12 2015] [debug] 200 OK (0.006495s, 153.965/s)
+[Thu Mar 12 20:28:13 2015] [debug] GET "/login"
+[Thu Mar 12 20:28:13 2015] [debug] Rendering template "login/login_form.html.ep"
+[Thu Mar 12 20:28:13 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Thu Mar 12 20:28:13 2015] [debug] 200 OK (0.009706s, 103.029/s)
+[Thu Mar 12 20:34:51 2015] [debug] GET "/"
+[Thu Mar 12 20:34:51 2015] [debug] Rendering template "main/index.html.ep"
+[Thu Mar 12 20:34:51 2015] [debug] Rendering template "layouts/base.html.ep"
+[Thu Mar 12 20:34:51 2015] [debug] 200 OK (0.004155s, 240.674/s)
+[Thu Mar 12 20:34:53 2015] [debug] GET "/login"
+[Thu Mar 12 20:34:53 2015] [debug] Rendering template "login/login_form.html.ep"
+[Thu Mar 12 20:34:53 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Thu Mar 12 20:34:53 2015] [debug] 200 OK (0.006401s, 156.226/s)
+[Thu Mar 12 20:34:57 2015] [debug] POST "/login"
+[Thu Mar 12 20:34:57 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Thu Mar 12 20:34:57 2015] [debug] Rendering template "layouts/base.html.ep"
+[Thu Mar 12 20:34:57 2015] [debug] 403 Forbidden (0.005389s, 185.563/s)
+[Thu Mar 12 20:58:53 2015] [debug] GET "/"
+[Thu Mar 12 20:58:53 2015] [debug] Rendering template "main/index.html.ep"
+[Thu Mar 12 20:58:53 2015] [debug] Rendering template "layouts/base.html.ep"
+[Thu Mar 12 20:58:53 2015] [debug] 200 OK (0.004253s, 235.128/s)
+[Thu Mar 12 20:58:53 2015] [debug] GET "/login"
+[Thu Mar 12 20:58:53 2015] [debug] Rendering template "login/login_form.html.ep"
+[Thu Mar 12 20:58:53 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Thu Mar 12 20:58:53 2015] [debug] 200 OK (0.003385s, 295.421/s)
+[Thu Mar 12 20:59:10 2015] [debug] GET "/login"
+[Thu Mar 12 20:59:10 2015] [debug] Rendering template "login/login_form.html.ep"
+[Thu Mar 12 20:59:10 2015] [debug] Rendering template "layouts/base.html.ep"
+[Thu Mar 12 20:59:10 2015] [debug] 200 OK (0.004879s, 204.960/s)
+[Thu Mar 12 20:59:14 2015] [debug] POST "/do_login"
+[Thu Mar 12 20:59:14 2015] [debug] Template "not_found.development.html.ep" not found
+[Thu Mar 12 20:59:14 2015] [debug] Template "not_found.html.ep" not found
+[Thu Mar 12 20:59:14 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Thu Mar 12 20:59:14 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Thu Mar 12 20:59:14 2015] [debug] 404 Not Found (0.039275s, 25.461/s)
+[Thu Mar 12 21:00:36 2015] [debug] POST "/do_login"
+[Thu Mar 12 21:00:36 2015] [debug] Template "not_found.development.html.ep" not found
+[Thu Mar 12 21:00:36 2015] [debug] Template "not_found.html.ep" not found
+[Thu Mar 12 21:00:36 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Thu Mar 12 21:00:36 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Thu Mar 12 21:00:36 2015] [debug] 404 Not Found (0.038889s, 25.714/s)
+[Thu Mar 12 21:00:50 2015] [debug] GET "/"
+[Thu Mar 12 21:00:50 2015] [debug] Rendering template "main/index.html.ep"
+[Thu Mar 12 21:00:50 2015] [debug] Rendering template "layouts/base.html.ep"
+[Thu Mar 12 21:00:50 2015] [debug] 200 OK (0.006738s, 148.412/s)
+[Thu Mar 12 21:00:51 2015] [debug] GET "/login"
+[Thu Mar 12 21:00:51 2015] [debug] Rendering template "login/login_form.html.ep"
+[Thu Mar 12 21:00:51 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Thu Mar 12 21:00:51 2015] [debug] 200 OK (0.003688s, 271.150/s)
+[Thu Mar 12 21:00:56 2015] [debug] POST "/on_user_login"
+[Thu Mar 12 21:00:56 2015] [debug] Template "not_found.development.html.ep" not found
+[Thu Mar 12 21:00:56 2015] [debug] Template "not_found.html.ep" not found
+[Thu Mar 12 21:00:56 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Thu Mar 12 21:00:56 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Thu Mar 12 21:00:56 2015] [debug] 404 Not Found (0.036047s, 27.742/s)
+[Thu Mar 12 21:01:51 2015] [debug] GET "/"
+[Thu Mar 12 21:01:51 2015] [debug] Rendering template "main/index.html.ep"
+[Thu Mar 12 21:01:51 2015] [debug] Rendering template "layouts/base.html.ep"
+[Thu Mar 12 21:01:51 2015] [debug] 200 OK (0.004624s, 216.263/s)
+[Thu Mar 12 21:01:53 2015] [debug] GET "/login"
+[Thu Mar 12 21:01:53 2015] [debug] Rendering template "login/login_form.html.ep"
+[Thu Mar 12 21:01:53 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Thu Mar 12 21:01:53 2015] [debug] 200 OK (0.010398s, 96.172/s)
+[Thu Mar 12 21:01:57 2015] [debug] POST "/login"
+[Thu Mar 12 21:01:57 2015] [error] syntax error at lib/Moblo/Controller/Login.pm line 42, near "<h2>Forbidden"
+Compilation failed in require at (eval 259) line 1.
+
+[Thu Mar 12 21:01:57 2015] [debug] Template "exception.development.html.ep" not found
+[Thu Mar 12 21:01:57 2015] [debug] Template "exception.html.ep" not found
+[Thu Mar 12 21:01:57 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Thu Mar 12 21:01:57 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Thu Mar 12 21:01:57 2015] [debug] 500 Internal Server Error (0.019481s, 51.332/s)
+[Thu Mar 12 21:02:50 2015] [debug] POST "/login"
+[Thu Mar 12 21:02:50 2015] [error] syntax error at lib/Moblo/Controller/Login.pm line 42, near "<h2>Forbidden"
+Compilation failed in require at (eval 256) line 1.
+
+[Thu Mar 12 21:02:50 2015] [debug] Template "exception.development.html.ep" not found
+[Thu Mar 12 21:02:50 2015] [debug] Template "exception.html.ep" not found
+[Thu Mar 12 21:02:50 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Thu Mar 12 21:02:50 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Thu Mar 12 21:02:50 2015] [debug] 500 Internal Server Error (0.021703s, 46.077/s)
+[Thu Mar 12 21:03:10 2015] [debug] POST "/login"
+[Thu Mar 12 21:03:10 2015] [error] syntax error at lib/Moblo/Controller/Login.pm line 41, near "<h2>Forbidden"
+Compilation failed in require at (eval 256) line 1.
+
+[Thu Mar 12 21:03:10 2015] [debug] Template "exception.development.html.ep" not found
+[Thu Mar 12 21:03:10 2015] [debug] Template "exception.html.ep" not found
+[Thu Mar 12 21:03:10 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Thu Mar 12 21:03:10 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Thu Mar 12 21:03:10 2015] [debug] 500 Internal Server Error (0.020924s, 47.792/s)
+[Thu Mar 12 21:03:41 2015] [debug] POST "/login"
+[Thu Mar 12 21:03:41 2015] [error] Bad name after login' at lib/Moblo/Controller/Login.pm line 41.
+Compilation failed in require at (eval 256) line 1.
+
+[Thu Mar 12 21:03:41 2015] [debug] Template "exception.development.html.ep" not found
+[Thu Mar 12 21:03:41 2015] [debug] Template "exception.html.ep" not found
+[Thu Mar 12 21:03:41 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Thu Mar 12 21:03:41 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Thu Mar 12 21:03:41 2015] [debug] 500 Internal Server Error (0.019445s, 51.427/s)
+[Thu Mar 12 21:06:45 2015] [debug] POST "/login"
+[Thu Mar 12 21:06:45 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Thu Mar 12 21:06:45 2015] [debug] Rendering template "layouts/base.html.ep"
+[Thu Mar 12 21:06:45 2015] [debug] 403 Forbidden (0.004262s, 234.632/s)
+[Thu Mar 12 21:07:20 2015] [debug] POST "/login"
+[Thu Mar 12 21:07:20 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Thu Mar 12 21:07:20 2015] [debug] Rendering template "layouts/base.html.ep"
+[Thu Mar 12 21:07:20 2015] [debug] 403 Forbidden (0.006537s, 152.975/s)
+[Thu Mar 12 21:08:28 2015] [debug] POST "/login"
+[Thu Mar 12 21:08:28 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Thu Mar 12 21:08:28 2015] [debug] Rendering template "layouts/base.html.ep"
+[Thu Mar 12 21:08:28 2015] [debug] 403 Forbidden (0.003436s, 291.036/s)
+[Thu Mar 12 21:08:34 2015] [debug] GET "/"
+[Thu Mar 12 21:08:34 2015] [debug] Rendering template "main/index.html.ep"
+[Thu Mar 12 21:08:34 2015] [debug] Rendering template "layouts/base.html.ep"
+[Thu Mar 12 21:08:34 2015] [debug] 200 OK (0.004695s, 212.993/s)
+[Thu Mar 12 21:08:35 2015] [debug] GET "/login"
+[Thu Mar 12 21:08:35 2015] [debug] Rendering template "login/login_form.html.ep"
+[Thu Mar 12 21:08:35 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Thu Mar 12 21:08:35 2015] [debug] 200 OK (0.009374s, 106.678/s)
+[Thu Mar 12 21:08:39 2015] [debug] POST "/login"
+[Thu Mar 12 21:08:39 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Thu Mar 12 21:08:39 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Thu Mar 12 21:08:39 2015] [debug] 403 Forbidden (0.001985s, 503.778/s)
+[Thu Mar 12 21:08:58 2015] [debug] POST "/login"
+[Thu Mar 12 21:08:58 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Thu Mar 12 21:08:58 2015] [debug] 302 Found (0.001050s, 952.381/s)
+[Thu Mar 12 21:08:58 2015] [debug] GET "/restriced_area"
+[Thu Mar 12 21:08:58 2015] [debug] Template "not_found.development.html.ep" not found
+[Thu Mar 12 21:08:58 2015] [debug] Template "not_found.html.ep" not found
+[Thu Mar 12 21:08:58 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Thu Mar 12 21:08:58 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Thu Mar 12 21:08:58 2015] [debug] 404 Not Found (0.015472s, 64.633/s)
+[Thu Mar 12 21:10:27 2015] [debug] GET "/restriced_area"
+[Thu Mar 12 21:10:27 2015] [debug] Template "not_found.development.html.ep" not found
+[Thu Mar 12 21:10:27 2015] [debug] Template "not_found.html.ep" not found
+[Thu Mar 12 21:10:27 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Thu Mar 12 21:10:27 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Thu Mar 12 21:10:27 2015] [debug] 404 Not Found (0.018388s, 54.383/s)
+[Thu Mar 12 21:10:34 2015] [debug] GET "/admin"
+[Thu Mar 12 21:10:34 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Thu Mar 12 21:10:34 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Thu Mar 12 21:10:34 2015] [debug] Rendering template "admin/overview.html.ep"
+[Thu Mar 12 21:10:34 2015] [debug] Rendering template "layouts/base.html.ep"
+[Thu Mar 12 21:10:34 2015] [debug] 200 OK (0.010074s, 99.265/s)
+[Thu Mar 12 21:14:56 2015] [debug] GET "/admin"
+[Thu Mar 12 21:14:56 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Thu Mar 12 21:14:56 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Thu Mar 12 21:14:56 2015] [debug] Rendering template "admin/overview.html.ep"
+[Thu Mar 12 21:14:56 2015] [debug] Rendering template "layouts/base.html.ep"
+[Thu Mar 12 21:14:56 2015] [debug] 200 OK (0.004909s, 203.707/s)
+[Thu Mar 12 21:14:59 2015] [debug] GET "/admin"
+[Thu Mar 12 21:14:59 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Thu Mar 12 21:14:59 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Thu Mar 12 21:14:59 2015] [debug] Rendering cached template "admin/overview.html.ep"
+[Thu Mar 12 21:14:59 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Thu Mar 12 21:14:59 2015] [debug] 200 OK (0.001412s, 708.215/s)
+[Thu Mar 12 21:15:18 2015] [debug] GET "/admin"
+[Thu Mar 12 21:15:18 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Thu Mar 12 21:15:18 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Thu Mar 12 21:15:18 2015] [debug] Rendering template "admin/overview.html.ep"
+[Thu Mar 12 21:15:18 2015] [debug] Rendering template "layouts/base.html.ep"
+[Thu Mar 12 21:15:18 2015] [debug] 200 OK (0.007390s, 135.318/s)
+[Thu Mar 12 21:15:21 2015] [debug] GET "/logout"
+[Thu Mar 12 21:15:21 2015] [debug] Routing to a callback
+[Thu Mar 12 21:15:21 2015] [debug] 302 Found (0.000619s, 1615.509/s)
+[Thu Mar 12 21:15:21 2015] [debug] GET "/"
+[Thu Mar 12 21:15:21 2015] [debug] Rendering template "main/index.html.ep"
+[Thu Mar 12 21:15:21 2015] [debug] Rendering template "layouts/base.html.ep"
+[Thu Mar 12 21:15:21 2015] [debug] 200 OK (0.002234s, 447.628/s)
+[Thu Mar 12 21:15:33 2015] [debug] GET "/login"
+[Thu Mar 12 21:15:33 2015] [debug] Rendering template "login/login_form.html.ep"
+[Thu Mar 12 21:15:33 2015] [debug] Rendering template "layouts/base.html.ep"
+[Thu Mar 12 21:15:33 2015] [debug] 200 OK (0.005243s, 190.730/s)
+[Thu Mar 12 21:15:38 2015] [debug] POST "/login"
+[Thu Mar 12 21:15:38 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Thu Mar 12 21:15:38 2015] [debug] Rendering template "layouts/base.html.ep"
+[Thu Mar 12 21:15:38 2015] [debug] 403 Forbidden (0.008801s, 113.623/s)
+[Thu Mar 12 21:15:43 2015] [debug] POST "/login"
+[Thu Mar 12 21:15:43 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Thu Mar 12 21:15:43 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Thu Mar 12 21:15:43 2015] [debug] 403 Forbidden (0.002011s, 497.265/s)
+[Thu Mar 12 21:15:52 2015] [debug] POST "/login"
+[Thu Mar 12 21:15:52 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Thu Mar 12 21:15:52 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Thu Mar 12 21:15:52 2015] [debug] 403 Forbidden (0.002144s, 466.418/s)
+[Thu Mar 12 21:15:59 2015] [debug] POST "/login"
+[Thu Mar 12 21:15:59 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Thu Mar 12 21:15:59 2015] [debug] 302 Found (0.001736s, 576.037/s)
+[Thu Mar 12 21:15:59 2015] [debug] GET "/admin"
+[Thu Mar 12 21:15:59 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Thu Mar 12 21:15:59 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Thu Mar 12 21:15:59 2015] [debug] Rendering template "admin/overview.html.ep"
+[Thu Mar 12 21:15:59 2015] [debug] Rendering template "layouts/base.html.ep"
+[Thu Mar 12 21:15:59 2015] [debug] 200 OK (0.007164s, 139.587/s)
+[Thu Mar 12 21:16:07 2015] [debug] GET "/logout"
+[Thu Mar 12 21:16:07 2015] [debug] Routing to a callback
+[Thu Mar 12 21:16:07 2015] [debug] 302 Found (0.002265s, 441.501/s)
+[Thu Mar 12 21:16:07 2015] [debug] GET "/"
+[Thu Mar 12 21:16:07 2015] [debug] Rendering template "main/index.html.ep"
+[Thu Mar 12 21:16:07 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Thu Mar 12 21:16:07 2015] [debug] 200 OK (0.004652s, 214.961/s)
+[Thu Mar 12 21:16:49 2015] [debug] GET "/"
+[Thu Mar 12 21:16:49 2015] [debug] Rendering template "main/index.html.ep"
+[Thu Mar 12 21:16:49 2015] [debug] Rendering template "layouts/base.html.ep"
+[Thu Mar 12 21:16:49 2015] [debug] 200 OK (0.010083s, 99.177/s)

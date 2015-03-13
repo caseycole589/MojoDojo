@@ -1,0 +1,2 @@
+<h2>restriced area</h2>
+%= link_to  Logout => '/logout'

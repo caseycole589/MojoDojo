@@ -1,4 +1,4 @@
-package Moblo::Main;
+package Moblo::Controller::Main;
 use Mojo::Base 'Mojolicious::Controller';
 
 	#actions go here
