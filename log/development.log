@@ -646,3 +646,113 @@ Compilation failed in require at (eval 256) line 1.
 [Thu Mar 12 21:16:49 2015] [debug] Rendering template "main/index.html.ep"
 [Thu Mar 12 21:16:49 2015] [debug] Rendering template "layouts/base.html.ep"
 [Thu Mar 12 21:16:49 2015] [debug] 200 OK (0.010083s, 99.177/s)
+[Mon Mar 16 18:32:35 2015] [debug] GET "/"
+[Mon Mar 16 18:32:35 2015] [debug] Rendering template "main/index.html.ep"
+[Mon Mar 16 18:32:35 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Mar 16 18:32:35 2015] [debug] 200 OK (0.025684s, 38.935/s)
+[Mon Mar 16 18:32:37 2015] [debug] GET "/login"
+[Mon Mar 16 18:32:37 2015] [debug] Rendering template "login/login_form.html.ep"
+[Mon Mar 16 18:32:37 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Mon Mar 16 18:32:37 2015] [debug] 200 OK (0.002654s, 376.790/s)
+[Mon Mar 16 18:34:04 2015] [debug] GET "/login"
+[Mon Mar 16 18:34:04 2015] [debug] Rendering template "login/login_form.html.ep"
+[Mon Mar 16 18:34:04 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Mar 16 18:34:04 2015] [debug] 200 OK (0.013037s, 76.705/s)
+[Mon Mar 16 18:34:05 2015] [debug] GET "/login"
+[Mon Mar 16 18:34:05 2015] [debug] Rendering cached template "login/login_form.html.ep"
+[Mon Mar 16 18:34:05 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Mon Mar 16 18:34:05 2015] [debug] 200 OK (0.001641s, 609.385/s)
+[Mon Mar 16 18:34:05 2015] [debug] GET "/login"
+[Mon Mar 16 18:34:05 2015] [debug] Rendering cached template "login/login_form.html.ep"
+[Mon Mar 16 18:34:05 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Mon Mar 16 18:34:05 2015] [debug] 200 OK (0.002969s, 336.814/s)
+[Mon Mar 16 18:34:06 2015] [debug] GET "/login"
+[Mon Mar 16 18:34:06 2015] [debug] Rendering cached template "login/login_form.html.ep"
+[Mon Mar 16 18:34:06 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Mon Mar 16 18:34:06 2015] [debug] 200 OK (0.001303s, 767.460/s)
+[Mon Mar 16 18:34:08 2015] [debug] GET "/"
+[Mon Mar 16 18:34:08 2015] [debug] Rendering template "main/index.html.ep"
+[Mon Mar 16 18:34:08 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Mon Mar 16 18:34:08 2015] [debug] 200 OK (0.005724s, 174.703/s)
+[Mon Mar 16 18:34:10 2015] [debug] GET "/login"
+[Mon Mar 16 18:34:10 2015] [debug] Rendering cached template "login/login_form.html.ep"
+[Mon Mar 16 18:34:10 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Mon Mar 16 18:34:10 2015] [debug] 200 OK (0.001802s, 554.939/s)
+[Mon Mar 16 18:35:05 2015] [debug] POST "/login"
+[Mon Mar 16 18:35:05 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Mon Mar 16 18:35:05 2015] [debug] 302 Found (0.001763s, 567.215/s)
+[Mon Mar 16 18:35:05 2015] [debug] GET "/admin"
+[Mon Mar 16 18:35:05 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Mon Mar 16 18:35:05 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Mon Mar 16 18:35:05 2015] [debug] Rendering template "admin/overview.html.ep"
+[Mon Mar 16 18:35:05 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Mar 16 18:35:05 2015] [debug] 200 OK (0.002516s, 397.456/s)
+[Mon Mar 16 18:35:11 2015] [debug] GET "/"
+[Mon Mar 16 18:35:11 2015] [debug] Rendering cached template "main/index.html.ep"
+[Mon Mar 16 18:35:11 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Mon Mar 16 18:35:11 2015] [debug] 200 OK (0.002003s, 499.251/s)
+[Mon Mar 16 18:35:14 2015] [debug] GET "/login"
+[Mon Mar 16 18:35:14 2015] [debug] Rendering cached template "login/login_form.html.ep"
+[Mon Mar 16 18:35:14 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Mon Mar 16 18:35:14 2015] [debug] 200 OK (0.003079s, 324.781/s)
+[Mon Mar 16 18:35:24 2015] [debug] GET "/admin"
+[Mon Mar 16 18:35:24 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Mon Mar 16 18:35:24 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Mon Mar 16 18:35:24 2015] [debug] Rendering cached template "admin/overview.html.ep"
+[Mon Mar 16 18:35:24 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Mon Mar 16 18:35:24 2015] [debug] 200 OK (0.004372s, 228.728/s)
+[Mon Mar 16 18:35:25 2015] [debug] GET "/logout"
+[Mon Mar 16 18:35:25 2015] [debug] Routing to a callback
+[Mon Mar 16 18:35:25 2015] [debug] 302 Found (0.000601s, 1663.894/s)
+[Mon Mar 16 18:35:25 2015] [debug] GET "/"
+[Mon Mar 16 18:35:25 2015] [debug] Rendering cached template "main/index.html.ep"
+[Mon Mar 16 18:35:25 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Mon Mar 16 18:35:25 2015] [debug] 200 OK (0.001216s, 822.368/s)
+[Mon Mar 16 18:35:29 2015] [debug] GET "/admin"
+[Mon Mar 16 18:35:29 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Mon Mar 16 18:35:29 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Mar 16 18:35:29 2015] [debug] 403 Forbidden (0.003387s, 295.247/s)
+[Mon Mar 16 18:35:29 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Mon Mar 16 18:35:29 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Mon Mar 16 20:23:59 2015] [debug] GET "/admin"
+[Mon Mar 16 20:23:59 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Mon Mar 16 20:23:59 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Mar 16 20:23:59 2015] [debug] 403 Forbidden (0.007504s, 133.262/s)
+[Mon Mar 16 20:23:59 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Mon Mar 16 20:23:59 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Mon Mar 16 20:24:03 2015] [debug] GET "/"
+[Mon Mar 16 20:24:03 2015] [debug] Rendering template "main/index.html.ep"
+[Mon Mar 16 20:24:03 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Mar 16 20:24:03 2015] [debug] 200 OK (0.002519s, 396.983/s)
+[Mon Mar 16 20:24:06 2015] [debug] GET "/login"
+[Mon Mar 16 20:24:06 2015] [debug] Rendering template "login/login_form.html.ep"
+[Mon Mar 16 20:24:06 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Mon Mar 16 20:24:06 2015] [debug] 200 OK (0.009705s, 103.040/s)
+[Mon Mar 16 20:24:11 2015] [debug] POST "/login"
+[Mon Mar 16 20:24:11 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Mon Mar 16 20:24:11 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Mon Mar 16 20:24:11 2015] [debug] 403 Forbidden (0.001870s, 534.759/s)
+[Mon Mar 16 22:07:36 2015] [debug] GET "/"
+[Mon Mar 16 22:07:36 2015] [debug] Rendering template "main/index.html.ep"
+[Mon Mar 16 22:07:36 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Mar 16 22:07:36 2015] [debug] 200 OK (0.004205s, 237.812/s)
+[Mon Mar 16 22:07:38 2015] [debug] GET "/login"
+[Mon Mar 16 22:07:38 2015] [debug] Rendering template "login/login_form.html.ep"
+[Mon Mar 16 22:07:38 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Mon Mar 16 22:07:38 2015] [debug] 200 OK (0.007565s, 132.188/s)
+[Mon Mar 16 22:07:41 2015] [debug] POST "/login"
+[Mon Mar 16 22:07:41 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Mon Mar 16 22:07:41 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Mar 16 22:07:41 2015] [debug] 403 Forbidden (0.006321s, 158.203/s)
+[Mon Mar 16 22:29:39 2015] [debug] GET "/"
+[Mon Mar 16 22:29:39 2015] [debug] Rendering template "main/index.html.ep"
+[Mon Mar 16 22:29:39 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Mar 16 22:29:39 2015] [debug] 200 OK (0.003925s, 254.777/s)
+[Mon Mar 16 22:29:41 2015] [debug] GET "/login"
+[Mon Mar 16 22:29:41 2015] [debug] Rendering template "login/login_form.html.ep"
+[Mon Mar 16 22:29:41 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Mon Mar 16 22:29:41 2015] [debug] 200 OK (0.004052s, 246.792/s)
+[Mon Mar 16 22:29:44 2015] [debug] POST "/login"
+[Mon Mar 16 22:29:44 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Mon Mar 16 22:29:44 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Mar 16 22:29:44 2015] [debug] 403 Forbidden (0.002329s, 429.369/s)

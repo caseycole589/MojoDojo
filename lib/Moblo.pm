@@ -5,7 +5,7 @@ use Mojo::Base 'Mojolicious';
 sub startup {
  
   my $self = shift;
-
+ 
   #Allows to set the signing key as an  array
   #where the first key will be used for all new sessions
   #and the other keys are still used for validation but not new sessins.
