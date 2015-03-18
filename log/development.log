@@ -756,3 +756,472 @@ Compilation failed in require at (eval 256) line 1.
 [Mon Mar 16 22:29:44 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
 [Mon Mar 16 22:29:44 2015] [debug] Rendering template "layouts/base.html.ep"
 [Mon Mar 16 22:29:44 2015] [debug] 403 Forbidden (0.002329s, 429.369/s)
+[Tue Mar 17 21:13:24 2015] [debug] GET "/"
+[Tue Mar 17 21:13:24 2015] [debug] Rendering template "main/index.html.ep"
+[Tue Mar 17 21:13:24 2015] [debug] Rendering template "layouts/base.html.ep"
+[Tue Mar 17 21:13:24 2015] [debug] 200 OK (0.024888s, 40.180/s)
+[Tue Mar 17 21:13:27 2015] [debug] GET "/login"
+[Tue Mar 17 21:13:27 2015] [debug] Rendering template "login/login_form.html.ep"
+[Tue Mar 17 21:13:27 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Tue Mar 17 21:13:27 2015] [debug] 200 OK (0.009432s, 106.022/s)
+[Tue Mar 17 21:13:56 2015] [debug] GET "/"
+[Tue Mar 17 21:13:56 2015] [debug] Rendering template "main/index.html.ep"
+[Tue Mar 17 21:13:56 2015] [debug] Rendering template "layouts/base.html.ep"
+[Tue Mar 17 21:13:56 2015] [debug] 200 OK (0.003323s, 300.933/s)
+[Tue Mar 17 21:14:00 2015] [debug] GET "/login"
+[Tue Mar 17 21:14:00 2015] [debug] Rendering template "login/login_form.html.ep"
+[Tue Mar 17 21:14:00 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Tue Mar 17 21:14:00 2015] [debug] 200 OK (0.003905s, 256.082/s)
+[Tue Mar 17 21:14:14 2015] [debug] POST "/login"
+[Tue Mar 17 21:14:14 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Tue Mar 17 21:14:14 2015] [debug] Rendering template "layouts/base.html.ep"
+[Tue Mar 17 21:14:14 2015] [debug] 403 Forbidden (0.009221s, 108.448/s)
+[Tue Mar 17 21:33:36 2015] [debug] GET "/login"
+[Tue Mar 17 21:33:36 2015] [debug] Rendering template "login/login_form.html.ep"
+[Tue Mar 17 21:33:36 2015] [debug] Rendering template "layouts/base.html.ep"
+[Tue Mar 17 21:33:36 2015] [debug] 200 OK (0.010436s, 95.822/s)
+[Tue Mar 17 21:33:39 2015] [debug] POST "/login"
+[Tue Mar 17 21:33:39 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Tue Mar 17 21:33:39 2015] [debug] 302 Found (0.002816s, 355.114/s)
+[Tue Mar 17 21:33:39 2015] [debug] GET "/admin"
+[Tue Mar 17 21:33:39 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 21:33:39 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 21:33:39 2015] [debug] Rendering template "admin/overview.html.ep"
+[Tue Mar 17 21:33:39 2015] [debug] Rendering template "layouts/base.html.ep"
+[Tue Mar 17 21:33:39 2015] [debug] 200 OK (0.002826s, 353.857/s)
+[Tue Mar 17 21:37:24 2015] [debug] GET "/admin"
+[Tue Mar 17 21:37:24 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 21:37:24 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 21:37:24 2015] [debug] Rendering template "admin/overview.html.ep"
+[Tue Mar 17 21:37:24 2015] [debug] Rendering template "layouts/base.html.ep"
+[Tue Mar 17 21:37:24 2015] [debug] 200 OK (0.010312s, 96.974/s)
+[Tue Mar 17 21:37:26 2015] [debug] GET "/create_post"
+[Tue Mar 17 21:37:26 2015] [debug] Template "not_found.development.html.ep" not found
+[Tue Mar 17 21:37:26 2015] [debug] Template "not_found.html.ep" not found
+[Tue Mar 17 21:37:26 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Mar 17 21:37:26 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Mar 17 21:37:26 2015] [debug] 404 Not Found (0.045913s, 21.780/s)
+[Tue Mar 17 21:38:30 2015] [debug] GET "/create_post"
+[Tue Mar 17 21:38:30 2015] [debug] Template "not_found.development.html.ep" not found
+[Tue Mar 17 21:38:30 2015] [debug] Template "not_found.html.ep" not found
+[Tue Mar 17 21:38:30 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Mar 17 21:38:30 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Mar 17 21:38:30 2015] [debug] 404 Not Found (0.030346s, 32.953/s)
+[Tue Mar 17 21:38:39 2015] [debug] GET "/create"
+[Tue Mar 17 21:38:39 2015] [debug] Template "not_found.development.html.ep" not found
+[Tue Mar 17 21:38:39 2015] [debug] Template "not_found.html.ep" not found
+[Tue Mar 17 21:38:39 2015] [debug] Rendering cached inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Mar 17 21:38:39 2015] [debug] Rendering cached inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Mar 17 21:38:39 2015] [debug] 404 Not Found (0.014971s, 66.796/s)
+[Tue Mar 17 21:41:50 2015] [debug] GET "/create"
+[Tue Mar 17 21:41:50 2015] [debug] Template "not_found.development.html.ep" not found
+[Tue Mar 17 21:41:50 2015] [debug] Template "not_found.html.ep" not found
+[Tue Mar 17 21:41:50 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Mar 17 21:41:50 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Mar 17 21:41:50 2015] [debug] 404 Not Found (0.017517s, 57.087/s)
+[Tue Mar 17 21:41:58 2015] [debug] GET "/create_post"
+[Tue Mar 17 21:41:58 2015] [debug] Template "not_found.development.html.ep" not found
+[Tue Mar 17 21:41:58 2015] [debug] Template "not_found.html.ep" not found
+[Tue Mar 17 21:41:58 2015] [debug] Rendering cached inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Mar 17 21:41:58 2015] [debug] Rendering cached inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Mar 17 21:41:58 2015] [debug] 404 Not Found (0.014468s, 69.118/s)
+[Tue Mar 17 21:42:08 2015] [debug] GET "/create_post"
+[Tue Mar 17 21:42:08 2015] [debug] Template "not_found.development.html.ep" not found
+[Tue Mar 17 21:42:08 2015] [debug] Template "not_found.html.ep" not found
+[Tue Mar 17 21:42:08 2015] [debug] Rendering cached inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Mar 17 21:42:08 2015] [debug] Rendering cached inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Mar 17 21:42:08 2015] [debug] 404 Not Found (0.005306s, 188.466/s)
+[Tue Mar 17 21:43:11 2015] [debug] GET "/create_post"
+[Tue Mar 17 21:43:11 2015] [debug] Template "not_found.development.html.ep" not found
+[Tue Mar 17 21:43:11 2015] [debug] Template "not_found.html.ep" not found
+[Tue Mar 17 21:43:11 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Mar 17 21:43:11 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Mar 17 21:43:11 2015] [debug] 404 Not Found (0.041171s, 24.289/s)
+[Tue Mar 17 21:43:14 2015] [debug] GET "/"
+[Tue Mar 17 21:43:14 2015] [debug] Rendering template "main/index.html.ep"
+[Tue Mar 17 21:43:14 2015] [debug] Rendering template "layouts/base.html.ep"
+[Tue Mar 17 21:43:14 2015] [debug] 200 OK (0.005671s, 176.336/s)
+[Tue Mar 17 21:43:20 2015] [debug] GET "/login"
+[Tue Mar 17 21:43:20 2015] [debug] Rendering template "login/login_form.html.ep"
+[Tue Mar 17 21:43:20 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Tue Mar 17 21:43:20 2015] [debug] 200 OK (0.009542s, 104.800/s)
+[Tue Mar 17 21:43:25 2015] [debug] POST "/login"
+[Tue Mar 17 21:43:25 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Tue Mar 17 21:43:25 2015] [debug] 302 Found (0.001445s, 692.042/s)
+[Tue Mar 17 21:43:25 2015] [debug] GET "/admin"
+[Tue Mar 17 21:43:25 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 21:43:25 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 21:43:25 2015] [debug] Rendering template "admin/overview.html.ep"
+[Tue Mar 17 21:43:25 2015] [debug] Rendering template "layouts/base.html.ep"
+[Tue Mar 17 21:43:25 2015] [debug] 200 OK (0.002719s, 367.782/s)
+[Tue Mar 17 21:43:29 2015] [debug] GET "/admin/create"
+[Tue Mar 17 21:43:29 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 21:43:29 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 21:43:29 2015] [debug] Rendering template "admin/create_post.html.ep"
+[Tue Mar 17 21:43:29 2015] [error] syntax error at template admin/create_post.html.ep line 17, near "'Publish' class"
+12: 	%= label_for content => 'Post Content'
+13: 	<br/>
+14: 	%=text_area content, cols => 40, rows => 20
+15: 	</div>
+16: 
+17: 	%= submit_button 'Publish' class => 'btn'
+18: %end
+
+[Tue Mar 17 21:43:29 2015] [debug] Template "exception.development.html.ep" not found
+[Tue Mar 17 21:43:29 2015] [debug] Template "exception.html.ep" not found
+[Tue Mar 17 21:43:29 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Mar 17 21:43:29 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Mar 17 21:43:29 2015] [debug] 500 Internal Server Error (0.023937s, 41.776/s)
+[Tue Mar 17 21:44:50 2015] [debug] GET "/admin"
+[Tue Mar 17 21:44:50 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 21:44:50 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 21:44:50 2015] [debug] Rendering template "admin/overview.html.ep"
+[Tue Mar 17 21:44:50 2015] [debug] Rendering template "layouts/base.html.ep"
+[Tue Mar 17 21:44:50 2015] [debug] 200 OK (0.007779s, 128.551/s)
+[Tue Mar 17 21:44:51 2015] [debug] GET "/create"
+[Tue Mar 17 21:44:51 2015] [debug] Template "not_found.development.html.ep" not found
+[Tue Mar 17 21:44:51 2015] [debug] Template "not_found.html.ep" not found
+[Tue Mar 17 21:44:51 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Mar 17 21:44:51 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Mar 17 21:44:51 2015] [debug] 404 Not Found (0.023164s, 43.170/s)
+[Tue Mar 17 21:45:51 2015] [debug] GET "/create"
+[Tue Mar 17 21:45:51 2015] [debug] Template "not_found.development.html.ep" not found
+[Tue Mar 17 21:45:51 2015] [debug] Template "not_found.html.ep" not found
+[Tue Mar 17 21:45:51 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Mar 17 21:45:51 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Mar 17 21:45:51 2015] [debug] 404 Not Found (0.017496s, 57.156/s)
+[Tue Mar 17 21:45:54 2015] [debug] GET "/create"
+[Tue Mar 17 21:45:54 2015] [debug] Template "not_found.development.html.ep" not found
+[Tue Mar 17 21:45:54 2015] [debug] Template "not_found.html.ep" not found
+[Tue Mar 17 21:45:54 2015] [debug] Rendering cached inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Mar 17 21:45:54 2015] [debug] Rendering cached inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Mar 17 21:45:54 2015] [debug] 404 Not Found (0.008750s, 114.286/s)
+[Tue Mar 17 21:46:08 2015] [debug] GET "/create"
+[Tue Mar 17 21:46:08 2015] [debug] Template "not_found.development.html.ep" not found
+[Tue Mar 17 21:46:08 2015] [debug] Template "not_found.html.ep" not found
+[Tue Mar 17 21:46:08 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Mar 17 21:46:08 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Mar 17 21:46:08 2015] [debug] 404 Not Found (0.017374s, 57.557/s)
+[Tue Mar 17 21:46:11 2015] [debug] GET "/create_post"
+[Tue Mar 17 21:46:11 2015] [debug] Template "not_found.development.html.ep" not found
+[Tue Mar 17 21:46:11 2015] [debug] Template "not_found.html.ep" not found
+[Tue Mar 17 21:46:11 2015] [debug] Rendering cached inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Mar 17 21:46:11 2015] [debug] Rendering cached inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Mar 17 21:46:11 2015] [debug] 404 Not Found (0.013346s, 74.929/s)
+[Tue Mar 17 21:46:19 2015] [debug] GET "/"
+[Tue Mar 17 21:46:19 2015] [debug] Rendering template "main/index.html.ep"
+[Tue Mar 17 21:46:19 2015] [debug] Rendering template "layouts/base.html.ep"
+[Tue Mar 17 21:46:19 2015] [debug] 200 OK (0.008603s, 116.239/s)
+[Tue Mar 17 21:46:21 2015] [debug] GET "/login"
+[Tue Mar 17 21:46:21 2015] [debug] Rendering template "login/login_form.html.ep"
+[Tue Mar 17 21:46:21 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Tue Mar 17 21:46:21 2015] [debug] 200 OK (0.005781s, 172.980/s)
+[Tue Mar 17 21:46:22 2015] [debug] POST "/login"
+[Tue Mar 17 21:46:22 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Tue Mar 17 21:46:22 2015] [debug] 302 Found (0.003262s, 306.560/s)
+[Tue Mar 17 21:46:22 2015] [debug] GET "/admin"
+[Tue Mar 17 21:46:22 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 21:46:22 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 21:46:22 2015] [debug] Rendering template "admin/overview.html.ep"
+[Tue Mar 17 21:46:22 2015] [debug] Rendering template "layouts/base.html.ep"
+[Tue Mar 17 21:46:22 2015] [debug] 200 OK (0.006386s, 156.593/s)
+[Tue Mar 17 21:46:23 2015] [debug] GET "/admin/create"
+[Tue Mar 17 21:46:23 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 21:46:23 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 21:46:23 2015] [debug] Rendering template "admin/create_post.html.ep"
+[Tue Mar 17 21:46:23 2015] [error] syntax error at template admin/create_post.html.ep line 17, near "'Publish' class"
+12: 	%= label_for content => 'Post Content'
+13: 	<br/>
+14: 	%=text_area content, cols => 40, rows => 20
+15: 	</div>
+16: 
+17: 	%= submit_button 'Publish' class => 'btn'
+18: %end
+
+[Tue Mar 17 21:46:23 2015] [debug] Template "exception.development.html.ep" not found
+[Tue Mar 17 21:46:23 2015] [debug] Template "exception.html.ep" not found
+[Tue Mar 17 21:46:23 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Mar 17 21:46:23 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Mar 17 21:46:23 2015] [debug] 500 Internal Server Error (0.044326s, 22.560/s)
+[Tue Mar 17 21:47:34 2015] [debug] GET "/admin/create"
+[Tue Mar 17 21:47:34 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 21:47:34 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 21:47:34 2015] [debug] Rendering template "admin/create_post.html.ep"
+[Tue Mar 17 21:47:34 2015] [error] syntax error at template admin/create_post.html.ep line 17, near "'Publish' class"
+12: 	%= label_for content => 'Post Content'
+13: 	<br/>
+14: 	%=text_area content, cols => 40, rows => 20
+15: 	</div>
+16: 
+17: 	%= submit_button 'Publish' class => 'btn'
+18: % end
+
+[Tue Mar 17 21:47:34 2015] [debug] Template "exception.development.html.ep" not found
+[Tue Mar 17 21:47:34 2015] [debug] Template "exception.html.ep" not found
+[Tue Mar 17 21:47:34 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Mar 17 21:47:34 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Mar 17 21:47:34 2015] [debug] 500 Internal Server Error (0.021765s, 45.945/s)
+[Tue Mar 17 21:48:25 2015] [debug] GET "/admin/create"
+[Tue Mar 17 21:48:25 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 21:48:25 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 21:48:25 2015] [debug] Rendering template "admin/create_post.html.ep"
+[Tue Mar 17 21:48:25 2015] [debug] Rendering template "layouts/base.html.ep"
+[Tue Mar 17 21:48:25 2015] [debug] 200 OK (0.011749s, 85.114/s)
+[Tue Mar 17 21:49:00 2015] [debug] GET "/admin/create"
+[Tue Mar 17 21:49:00 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 21:49:00 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 21:49:00 2015] [debug] Rendering template "admin/create_post.html.ep"
+[Tue Mar 17 21:49:00 2015] [debug] Rendering template "layouts/base.html.ep"
+[Tue Mar 17 21:49:00 2015] [debug] 200 OK (0.005896s, 169.607/s)
+[Tue Mar 17 21:49:19 2015] [debug] GET "/admin/create"
+[Tue Mar 17 21:49:19 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 21:49:19 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 21:49:19 2015] [debug] Rendering template "admin/create_post.html.ep"
+[Tue Mar 17 21:49:19 2015] [debug] Rendering template "layouts/base.html.ep"
+[Tue Mar 17 21:49:19 2015] [debug] 200 OK (0.005513s, 181.389/s)
+[Tue Mar 17 21:49:48 2015] [debug] POST "/admin/create"
+[Tue Mar 17 21:49:48 2015] [debug] Template "not_found.development.html.ep" not found
+[Tue Mar 17 21:49:48 2015] [debug] Template "not_found.html.ep" not found
+[Tue Mar 17 21:49:48 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Mar 17 21:49:48 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Mar 17 21:49:48 2015] [debug] 404 Not Found (0.016522s, 60.525/s)
+[Tue Mar 17 21:50:30 2015] [debug] POST "/admin/create"
+[Tue Mar 17 21:50:30 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 21:50:31 2015] [debug] Routing to controller "Moblo::Controller::Post" and action "create"
+[Tue Mar 17 21:50:31 2015] [error] DBIx::Class::Storage::DBI::catch {...} (): DBI Connection failed: Can't connect to data source 'SQLite::moblo.db' because I can't work out what driver to use (it doesn't seem to contain a 'dbi:driver:' prefix and the DBI_DRIVER env var is not set) at /usr/share/perl5/site_perl/DBIx/Class/Storage/DBI.pm line 1487. at lib/Moblo/Controller/Post.pm line 13
+
+[Tue Mar 17 21:50:31 2015] [debug] Template "exception.development.html.ep" not found
+[Tue Mar 17 21:50:31 2015] [debug] Template "exception.html.ep" not found
+[Tue Mar 17 21:50:31 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Mar 17 21:50:31 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Mar 17 21:50:31 2015] [debug] 500 Internal Server Error (0.485352s, 2.060/s)
+[Tue Mar 17 21:52:21 2015] [debug] GET "/"
+[Tue Mar 17 21:52:21 2015] [debug] Rendering template "main/index.html.ep"
+[Tue Mar 17 21:52:21 2015] [debug] Rendering template "layouts/base.html.ep"
+[Tue Mar 17 21:52:21 2015] [debug] 200 OK (0.004160s, 240.385/s)
+[Tue Mar 17 21:52:23 2015] [debug] GET "/login"
+[Tue Mar 17 21:52:23 2015] [debug] Rendering template "login/login_form.html.ep"
+[Tue Mar 17 21:52:23 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Tue Mar 17 21:52:23 2015] [debug] 200 OK (0.008561s, 116.809/s)
+[Tue Mar 17 21:52:24 2015] [debug] POST "/login"
+[Tue Mar 17 21:52:24 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Tue Mar 17 21:52:24 2015] [debug] 302 Found (0.005986s, 167.056/s)
+[Tue Mar 17 21:52:24 2015] [debug] GET "/admin"
+[Tue Mar 17 21:52:24 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 21:52:24 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 21:52:24 2015] [debug] Rendering template "admin/overview.html.ep"
+[Tue Mar 17 21:52:24 2015] [debug] Rendering template "layouts/base.html.ep"
+[Tue Mar 17 21:52:24 2015] [debug] 200 OK (0.007292s, 137.137/s)
+[Tue Mar 17 21:52:25 2015] [debug] GET "/admin/create"
+[Tue Mar 17 21:52:25 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 21:52:25 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 21:52:25 2015] [debug] Rendering template "admin/create_post.html.ep"
+[Tue Mar 17 21:52:25 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Tue Mar 17 21:52:25 2015] [debug] 200 OK (0.005584s, 179.083/s)
+[Tue Mar 17 21:52:33 2015] [debug] POST "/admin/create"
+[Tue Mar 17 21:52:33 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 21:52:33 2015] [debug] Routing to controller "Moblo::Controller::Post" and action "create"
+[Tue Mar 17 21:52:33 2015] [error] DBIx::Class::Storage::DBI::catch {...} (): DBI Connection failed: Can't connect to data source 'SQLite::moblo.db' because I can't work out what driver to use (it doesn't seem to contain a 'dbi:driver:' prefix and the DBI_DRIVER env var is not set) at /usr/share/perl5/site_perl/DBIx/Class/Storage/DBI.pm line 1487. at lib/Moblo/Controller/Post.pm line 13
+
+[Tue Mar 17 21:52:33 2015] [debug] Template "exception.development.html.ep" not found
+[Tue Mar 17 21:52:33 2015] [debug] Template "exception.html.ep" not found
+[Tue Mar 17 21:52:33 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Mar 17 21:52:33 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Mar 17 21:52:33 2015] [debug] 500 Internal Server Error (0.150547s, 6.642/s)
+[Tue Mar 17 21:54:10 2015] [debug] POST "/admin/create"
+[Tue Mar 17 21:54:10 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 21:54:11 2015] [debug] Routing to controller "Moblo::Controller::Post" and action "create"
+[Tue Mar 17 21:54:11 2015] [error] DBIx::Class::Storage::DBI::_prepare_sth(): DBI Exception: DBD::SQLite::db prepare_cached failed: no such table: posts [for Statement "INSERT INTO posts ( author, content, date_published, title) VALUES ( ?, ?, ?, ? )"] at lib/Moblo/Controller/Post.pm line 13
+
+[Tue Mar 17 21:54:11 2015] [debug] Template "exception.development.html.ep" not found
+[Tue Mar 17 21:54:11 2015] [debug] Template "exception.html.ep" not found
+[Tue Mar 17 21:54:11 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Mar 17 21:54:11 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Mar 17 21:54:11 2015] [debug] 500 Internal Server Error (0.168539s, 5.933/s)
+[Tue Mar 17 22:02:37 2015] [debug] GET "/"
+[Tue Mar 17 22:02:37 2015] [debug] Rendering template "main/index.html.ep"
+[Tue Mar 17 22:02:37 2015] [debug] Rendering template "layouts/base.html.ep"
+[Tue Mar 17 22:02:37 2015] [debug] 200 OK (0.013626s, 73.389/s)
+[Tue Mar 17 22:02:39 2015] [debug] GET "/login"
+[Tue Mar 17 22:02:39 2015] [debug] Rendering template "login/login_form.html.ep"
+[Tue Mar 17 22:02:39 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Tue Mar 17 22:02:39 2015] [debug] 200 OK (0.012288s, 81.380/s)
+[Tue Mar 17 22:02:41 2015] [debug] POST "/login"
+[Tue Mar 17 22:02:41 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Tue Mar 17 22:02:41 2015] [debug] 302 Found (0.003142s, 318.269/s)
+[Tue Mar 17 22:02:41 2015] [debug] GET "/admin"
+[Tue Mar 17 22:02:41 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 22:02:41 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 22:02:41 2015] [debug] Rendering template "admin/overview.html.ep"
+[Tue Mar 17 22:02:41 2015] [debug] Rendering template "layouts/base.html.ep"
+[Tue Mar 17 22:02:41 2015] [debug] 200 OK (0.003113s, 321.234/s)
+[Tue Mar 17 22:02:42 2015] [debug] GET "/admin/create"
+[Tue Mar 17 22:02:42 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 22:02:42 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 22:02:42 2015] [debug] Rendering template "admin/create_post.html.ep"
+[Tue Mar 17 22:02:42 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Tue Mar 17 22:02:42 2015] [debug] 200 OK (0.003849s, 259.808/s)
+[Tue Mar 17 22:03:03 2015] [debug] POST "/admin/create"
+[Tue Mar 17 22:03:03 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 22:03:03 2015] [debug] Routing to controller "Moblo::Controller::Post" and action "create"
+[Tue Mar 17 22:03:03 2015] [error] DBIx::Class::Storage::DBI::_prepare_sth(): DBI Exception: DBD::SQLite::db prepare_cached failed: no such table: posts [for Statement "INSERT INTO posts ( author, content, date_published, title) VALUES ( ?, ?, ?, ? )"] at lib/Moblo/Controller/Post.pm line 13
+
+[Tue Mar 17 22:03:03 2015] [debug] Template "exception.development.html.ep" not found
+[Tue Mar 17 22:03:03 2015] [debug] Template "exception.html.ep" not found
+[Tue Mar 17 22:03:03 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Mar 17 22:03:03 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Mar 17 22:03:03 2015] [debug] 500 Internal Server Error (0.098385s, 10.164/s)
+[Tue Mar 17 22:12:12 2015] [debug] GET "/"
+[Tue Mar 17 22:12:12 2015] [debug] Rendering template "main/index.html.ep"
+[Tue Mar 17 22:12:12 2015] [debug] Rendering template "layouts/base.html.ep"
+[Tue Mar 17 22:12:12 2015] [debug] 200 OK (0.010983s, 91.050/s)
+[Tue Mar 17 22:12:14 2015] [debug] GET "/login"
+[Tue Mar 17 22:12:14 2015] [debug] Rendering template "login/login_form.html.ep"
+[Tue Mar 17 22:12:14 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Tue Mar 17 22:12:14 2015] [debug] 200 OK (0.007935s, 126.024/s)
+[Tue Mar 17 22:12:15 2015] [debug] POST "/login"
+[Tue Mar 17 22:12:15 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Tue Mar 17 22:12:15 2015] [debug] 302 Found (0.001988s, 503.018/s)
+[Tue Mar 17 22:12:15 2015] [debug] GET "/admin"
+[Tue Mar 17 22:12:15 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 22:12:15 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 22:12:15 2015] [debug] Rendering template "admin/overview.html.ep"
+[Tue Mar 17 22:12:15 2015] [debug] Rendering template "layouts/base.html.ep"
+[Tue Mar 17 22:12:15 2015] [debug] 200 OK (0.002998s, 333.556/s)
+[Tue Mar 17 22:12:20 2015] [debug] GET "/admin/create"
+[Tue Mar 17 22:12:20 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 22:12:20 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 22:12:20 2015] [debug] Rendering template "admin/create_post.html.ep"
+[Tue Mar 17 22:12:20 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Tue Mar 17 22:12:20 2015] [debug] 200 OK (0.003009s, 332.336/s)
+[Tue Mar 17 22:12:29 2015] [debug] POST "/admin/create"
+[Tue Mar 17 22:12:29 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 22:12:29 2015] [debug] Routing to controller "Moblo::Controller::Post" and action "create"
+[Tue Mar 17 22:12:29 2015] [error] DBIx::Class::Storage::DBI::_prepare_sth(): DBI Exception: DBD::SQLite::db prepare_cached failed: no such table: posts [for Statement "INSERT INTO posts ( author, content, date_published, title) VALUES ( ?, ?, ?, ? )"] at lib/Moblo/Controller/Post.pm line 13
+
+[Tue Mar 17 22:12:29 2015] [debug] Template "exception.development.html.ep" not found
+[Tue Mar 17 22:12:29 2015] [debug] Template "exception.html.ep" not found
+[Tue Mar 17 22:12:29 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Mar 17 22:12:29 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Mar 17 22:12:29 2015] [debug] 500 Internal Server Error (0.096145s, 10.401/s)
+[Tue Mar 17 22:14:09 2015] [debug] POST "/admin/create"
+[Tue Mar 17 22:14:09 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 22:14:09 2015] [debug] Routing to controller "Moblo::Controller::Post" and action "create"
+[Tue Mar 17 22:14:09 2015] [error] DBIx::Class::Storage::DBI::_prepare_sth(): DBI Exception: DBD::SQLite::db prepare_cached failed: no such table: posts [for Statement "INSERT INTO posts ( author, content, date_published, title) VALUES ( ?, ?, ?, ? )"] at lib/Moblo/Controller/Post.pm line 13
+
+[Tue Mar 17 22:14:09 2015] [debug] Template "exception.development.html.ep" not found
+[Tue Mar 17 22:14:09 2015] [debug] Template "exception.html.ep" not found
+[Tue Mar 17 22:14:09 2015] [debug] Rendering cached inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Mar 17 22:14:09 2015] [debug] Rendering cached inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Mar 17 22:14:09 2015] [debug] 500 Internal Server Error (0.015726s, 63.589/s)
+[Tue Mar 17 22:16:56 2015] [debug] POST "/admin/create"
+[Tue Mar 17 22:16:56 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 22:16:56 2015] [debug] Class "Moblo::Controller::Post" is not a controller
+[Tue Mar 17 22:16:56 2015] [debug] Template "post/create.html.ep" not found
+[Tue Mar 17 22:16:56 2015] [debug] Template "not_found.development.html.ep" not found
+[Tue Mar 17 22:16:56 2015] [debug] Template "not_found.html.ep" not found
+[Tue Mar 17 22:16:56 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Mar 17 22:16:56 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Mar 17 22:16:56 2015] [debug] 404 Not Found (0.067069s, 14.910/s)
+[Tue Mar 17 22:18:05 2015] [debug] POST "/admin/create"
+[Tue Mar 17 22:18:05 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 22:18:05 2015] [debug] Routing to controller "Moblo::Controller::Post" and action "create"
+[Tue Mar 17 22:18:05 2015] [error] DBIx::Class::Storage::DBI::_dbh_execute(): DBI Exception: DBD::SQLite::st execute failed: NOT NULL constraint failed: posts.content [for Statement "INSERT INTO posts ( author, content, date_published, id, title) VALUES ( ?, ?, ?, ?, ? )"] at lib/Moblo/Controller/Post.pm line 13
+
+[Tue Mar 17 22:18:05 2015] [debug] Template "exception.development.html.ep" not found
+[Tue Mar 17 22:18:05 2015] [debug] Template "exception.html.ep" not found
+[Tue Mar 17 22:18:05 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Mar 17 22:18:05 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Mar 17 22:18:05 2015] [debug] 500 Internal Server Error (0.090133s, 11.095/s)
+[Tue Mar 17 22:19:20 2015] [debug] POST "/admin/create"
+[Tue Mar 17 22:19:20 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 22:19:20 2015] [debug] Routing to controller "Moblo::Controller::Post" and action "create"
+[Tue Mar 17 22:19:20 2015] [error] DBIx::Class::Storage::DBI::_dbh_execute(): DBI Exception: DBD::SQLite::st execute failed: NOT NULL constraint failed: posts.content [for Statement "INSERT INTO posts ( author, content, date_published, id, title) VALUES ( ?, ?, ?, ?, ? )"] at lib/Moblo/Controller/Post.pm line 13
+
+[Tue Mar 17 22:19:20 2015] [debug] Template "exception.development.html.ep" not found
+[Tue Mar 17 22:19:20 2015] [debug] Template "exception.html.ep" not found
+[Tue Mar 17 22:19:20 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Mar 17 22:19:20 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Mar 17 22:19:20 2015] [debug] 500 Internal Server Error (0.095613s, 10.459/s)
+[Tue Mar 17 22:21:12 2015] [debug] POST "/admin/create"
+[Tue Mar 17 22:21:12 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 22:21:12 2015] [debug] Routing to controller "Moblo::Controller::Post" and action "create"
+[Tue Mar 17 22:21:12 2015] [error] DBIx::Class::Storage::DBI::_dbh_execute(): DBI Exception: DBD::SQLite::st execute failed: NOT NULL constraint failed: posts.content [for Statement "INSERT INTO posts ( author, content, date_published, id, title) VALUES ( ?, ?, ?, ?, ? )"] at lib/Moblo/Controller/Post.pm line 13
+
+[Tue Mar 17 22:21:12 2015] [debug] Template "exception.development.html.ep" not found
+[Tue Mar 17 22:21:12 2015] [debug] Template "exception.html.ep" not found
+[Tue Mar 17 22:21:12 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Mar 17 22:21:12 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Mar 17 22:21:12 2015] [debug] 500 Internal Server Error (0.121156s, 8.254/s)
+[Tue Mar 17 22:22:51 2015] [debug] POST "/admin/create"
+[Tue Mar 17 22:22:51 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 22:22:51 2015] [debug] Routing to controller "Moblo::Controller::Post" and action "create"
+[Tue Mar 17 22:22:51 2015] [error] DBIx::Class::Storage::DBI::_dbh_execute(): DBI Exception: DBD::SQLite::st execute failed: NOT NULL constraint failed: posts.content [for Statement "INSERT INTO posts ( author, content, date_published, id, title) VALUES ( ?, ?, ?, ?, ? )"] at lib/Moblo/Controller/Post.pm line 15
+
+[Tue Mar 17 22:22:51 2015] [debug] Template "exception.development.html.ep" not found
+[Tue Mar 17 22:22:51 2015] [debug] Template "exception.html.ep" not found
+[Tue Mar 17 22:22:51 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Mar 17 22:22:51 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Mar 17 22:22:51 2015] [debug] 500 Internal Server Error (0.131546s, 7.602/s)
+[Tue Mar 17 22:24:44 2015] [debug] POST "/admin/create"
+[Tue Mar 17 22:24:44 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 22:24:44 2015] [debug] Routing to controller "Moblo::Controller::Post" and action "create"
+[Tue Mar 17 22:24:44 2015] [error] DBIx::Class::Storage::DBI::_dbh_execute(): DBI Exception: DBD::SQLite::st execute failed: NOT NULL constraint failed: posts.content [for Statement "INSERT INTO posts ( author, content, date_published, id, title) VALUES ( ?, ?, ?, ?, ? )"] at lib/Moblo/Controller/Post.pm line 15
+
+[Tue Mar 17 22:24:44 2015] [debug] Template "exception.development.html.ep" not found
+[Tue Mar 17 22:24:44 2015] [debug] Template "exception.html.ep" not found
+[Tue Mar 17 22:24:44 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Mar 17 22:24:44 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Mar 17 22:24:44 2015] [debug] 500 Internal Server Error (0.093604s, 10.683/s)
+[Tue Mar 17 22:26:40 2015] [debug] POST "/admin/create"
+[Tue Mar 17 22:26:40 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 22:26:40 2015] [debug] Routing to controller "Moblo::Controller::Post" and action "create"
+[Tue Mar 17 22:26:40 2015] [error] DBIx::Class::Storage::DBI::_dbh_execute(): DBI Exception: DBD::SQLite::st execute failed: NOT NULL constraint failed: posts.content [for Statement "INSERT INTO posts ( author, content, date_published, title) VALUES ( ?, ?, ?, ? )"] at lib/Moblo/Controller/Post.pm line 15
+
+[Tue Mar 17 22:26:40 2015] [debug] Template "exception.development.html.ep" not found
+[Tue Mar 17 22:26:40 2015] [debug] Template "exception.html.ep" not found
+[Tue Mar 17 22:26:40 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Mar 17 22:26:40 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Mar 17 22:26:40 2015] [debug] 500 Internal Server Error (0.092266s, 10.838/s)
+[Tue Mar 17 22:27:17 2015] [debug] POST "/admin/create"
+[Tue Mar 17 22:27:17 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 22:27:17 2015] [debug] Routing to controller "Moblo::Controller::Post" and action "create"
+[Tue Mar 17 22:27:17 2015] [error] DBIx::Class::Storage::DBI::_dbh_execute(): DBI Exception: DBD::SQLite::st execute failed: NOT NULL constraint failed: posts.content [for Statement "INSERT INTO posts ( author, content, date_published, title) VALUES ( ?, ?, ?, ? )"] at lib/Moblo/Controller/Post.pm line 15
+
+[Tue Mar 17 22:27:17 2015] [debug] Template "exception.development.html.ep" not found
+[Tue Mar 17 22:27:17 2015] [debug] Template "exception.html.ep" not found
+[Tue Mar 17 22:27:17 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Mar 17 22:27:17 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Mar 17 22:27:17 2015] [debug] 500 Internal Server Error (0.094184s, 10.618/s)
+[Tue Mar 17 22:27:43 2015] [debug] GET "/admin/create"
+[Tue Mar 17 22:27:43 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 22:27:43 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 22:27:43 2015] [debug] Rendering template "admin/create_post.html.ep"
+[Tue Mar 17 22:27:43 2015] [debug] Rendering template "layouts/base.html.ep"
+[Tue Mar 17 22:27:43 2015] [debug] 200 OK (0.006791s, 147.254/s)
+[Tue Mar 17 22:27:47 2015] [debug] POST "/admin/create"
+[Tue Mar 17 22:27:47 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 22:27:47 2015] [debug] Routing to controller "Moblo::Controller::Post" and action "create"
+[Tue Mar 17 22:27:48 2015] [debug] 302 Found (0.218333s, 4.580/s)
+[Tue Mar 17 22:27:48 2015] [debug] GET "/admin"
+[Tue Mar 17 22:27:48 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 22:27:48 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 22:27:48 2015] [debug] Rendering template "admin/overview.html.ep"
+[Tue Mar 17 22:27:48 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Tue Mar 17 22:27:48 2015] [debug] 200 OK (0.002528s, 395.570/s)
+[Tue Mar 17 22:27:57 2015] [debug] GET "/admin/create"
+[Tue Mar 17 22:27:57 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 22:27:57 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 22:27:57 2015] [debug] Rendering cached template "admin/create_post.html.ep"
+[Tue Mar 17 22:27:57 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Tue Mar 17 22:27:57 2015] [debug] 200 OK (0.003673s, 272.257/s)
+[Tue Mar 17 22:28:10 2015] [debug] POST "/admin/create"
+[Tue Mar 17 22:28:10 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 22:28:10 2015] [debug] Routing to controller "Moblo::Controller::Post" and action "create"
+[Tue Mar 17 22:28:10 2015] [debug] 302 Found (0.194488s, 5.142/s)
+[Tue Mar 17 22:28:10 2015] [debug] GET "/admin"
+[Tue Mar 17 22:28:10 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 22:28:10 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Tue Mar 17 22:28:10 2015] [debug] Rendering cached template "admin/overview.html.ep"
+[Tue Mar 17 22:28:10 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Tue Mar 17 22:28:10 2015] [debug] 200 OK (0.001641s, 609.385/s)

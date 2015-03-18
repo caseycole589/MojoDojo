@@ -1,5 +1,6 @@
 package Moblo;
 use Mojo::Base 'Mojolicious';
+use Moblo::Schema;
 
 # This method will run once at server start
 sub startup {
@@ -55,7 +56,12 @@ sub startup {
   #this behaves like router object we can use it to define restricted routes
   my $authorized = $r->under('/admin')->to('Login#is_logged_in');
   $authorized->get('/')->name('restricted_area')->to(template => 'admin/overview');
+ 
+  my $schema = Moblo::Schema->connect('dbi:SQLite:moblo.db','','',{sqlite_unicode => 1});
+  $self->helper(db => sub{return $schema;});
 
+  $authorized->get('/create')->name('create_post')->to(template => 'admin/create_post');
+  $authorized->post('/create')->name('publish_post')->to('Post#create');
 
 }
 

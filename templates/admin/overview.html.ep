@@ -1,2 +1,9 @@
 <h2>restriced area</h2>
+
+%if (flash->{post_saved}){
+	<p>Your post was !saved!</p>
+%}
+
+%= link_to "Create new post" => 'create_post'
+
 %= link_to  Logout => '/logout'
