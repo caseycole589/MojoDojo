@@ -9,6 +9,7 @@ use lib 'lib';
 # SQL::TRANSLATOR
 # DBIX::CORE
 # SQLITE3
+# DBIx::Class::Migration
 # Start command line interface for application
 require Mojolicious::Commands;
 Mojolicious::Commands->start_app('Moblo');
