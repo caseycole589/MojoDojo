@@ -29,4 +29,15 @@ sub create {
 
 }
 
+sub delete {
+    my $self = shift;
+
+    my $posts = $self->db->resultset('Post');
+    $self->app->log->info($self->stash('id'));
+    $posts->search({ id => $self->stash('id') })->delete;
+
+    $self->flash(post_deleted => '1');
+    $self->redirect_to('restricted_area');
+}
+
 1;

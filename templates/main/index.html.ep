@@ -1,7 +1,23 @@
 <h2>This is the &mdash;  Index / home screen</h2>
 <p>Welcome to Document Generator</p>
 <h3>Post Index</h3>
-<p>None! :/</p>
+
+% my $post = db->resultset('Post');
+% if ($post->count == 0){
+	<p>None :</p>
+%}
+
+% while (my $post = $post->next){
+	<div class="post">
+		<h4>
+			<%= $post->title %>
+			</br>
+			<small>(published: <%= $post->date_published %>)</small>
+		</h4> 
+		<p><%= $post->content %></p>
+	</div>
+%}
+
 <hr>
 <p>
 	%= link_to Login => 'login'

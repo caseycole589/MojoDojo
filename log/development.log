@@ -1225,3 +1225,114 @@ Compilation failed in require at (eval 256) line 1.
 [Tue Mar 17 22:28:10 2015] [debug] Rendering cached template "admin/overview.html.ep"
 [Tue Mar 17 22:28:10 2015] [debug] Rendering cached template "layouts/base.html.ep"
 [Tue Mar 17 22:28:10 2015] [debug] 200 OK (0.001641s, 609.385/s)
+[Sun Mar 29 00:08:22 2015] [debug] GET "/"
+[Sun Mar 29 00:08:22 2015] [debug] Rendering template "main/index.html.ep"
+[Sun Mar 29 00:08:22 2015] [error] Global symbol "$posts" requires explicit package name at template main/index.html.ep line 5.
+Global symbol "$posts" requires explicit package name at template main/index.html.ep line 9.
+1: <h2>This is the &mdash;  Index / home screen</h2>
+2: <p>Welcome to Document Generator</p>
+3: <h3>Post Index</h3>
+4: % my $post = db->resultset('Post');
+5: % if ($posts->count == 0){
+6: 	<p>None :</p>
+7: %}
+8: 
+9: % while (my $posts = $posts->next){
+10: 	<div class="post">
+
+[Sun Mar 29 00:08:22 2015] [debug] Template "exception.development.html.ep" not found
+[Sun Mar 29 00:08:22 2015] [debug] Template "exception.html.ep" not found
+[Sun Mar 29 00:08:22 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Sun Mar 29 00:08:22 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Sun Mar 29 00:08:22 2015] [debug] 500 Internal Server Error (0.020403s, 49.012/s)
+[Sun Mar 29 00:08:42 2015] [debug] GET "/"
+[Sun Mar 29 00:08:42 2015] [debug] Rendering template "main/index.html.ep"
+[Sun Mar 29 00:08:42 2015] [error] Global symbol "$posts" requires explicit package name at template main/index.html.ep line 9.
+4: % my $post = db->resultset('Post');
+5: % if ($post->count == 0){
+6: 	<p>None :</p>
+7: %}
+8: 
+9: % while (my $posts = $posts->next){
+10: 	<div class="post">
+11: 		<h4>
+12: 			<%= $post->title %>
+13: 			</br>
+14: 			<small>(published: <%= $post->date_published %>)</small>
+
+[Sun Mar 29 00:08:42 2015] [debug] Template "exception.development.html.ep" not found
+[Sun Mar 29 00:08:42 2015] [debug] Template "exception.html.ep" not found
+[Sun Mar 29 00:08:42 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Sun Mar 29 00:08:42 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Sun Mar 29 00:08:42 2015] [debug] 500 Internal Server Error (0.047839s, 20.903/s)
+[Sun Mar 29 00:08:43 2015] [debug] GET "/"
+[Sun Mar 29 00:08:43 2015] [debug] Rendering template "main/index.html.ep"
+[Sun Mar 29 00:08:43 2015] [error] Global symbol "$posts" requires explicit package name at template main/index.html.ep line 9.
+4: % my $post = db->resultset('Post');
+5: % if ($post->count == 0){
+6: 	<p>None :</p>
+7: %}
+8: 
+9: % while (my $posts = $posts->next){
+10: 	<div class="post">
+11: 		<h4>
+12: 			<%= $post->title %>
+13: 			</br>
+14: 			<small>(published: <%= $post->date_published %>)</small>
+
+[Sun Mar 29 00:08:43 2015] [debug] Template "exception.development.html.ep" not found
+[Sun Mar 29 00:08:43 2015] [debug] Template "exception.html.ep" not found
+[Sun Mar 29 00:08:43 2015] [debug] Rendering cached inline template "fd403ab55a4c875e35b42428816134c7"
+[Sun Mar 29 00:08:43 2015] [debug] Rendering cached inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Sun Mar 29 00:08:43 2015] [debug] 500 Internal Server Error (0.020499s, 48.783/s)
+[Sun Mar 29 00:09:15 2015] [debug] GET "/"
+[Sun Mar 29 00:09:15 2015] [debug] Rendering template "main/index.html.ep"
+[Sun Mar 29 00:09:15 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Mar 29 00:09:15 2015] [debug] 200 OK (0.106920s, 9.353/s)
+[Sun Mar 29 00:20:37 2015] [debug] GET "/login"
+[Sun Mar 29 00:20:37 2015] [debug] Rendering template "login/login_form.html.ep"
+[Sun Mar 29 00:20:38 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Mar 29 00:20:38 2015] [debug] 200 OK (0.034757s, 28.771/s)
+[Sun Mar 29 00:20:40 2015] [debug] POST "/login"
+[Sun Mar 29 00:20:40 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Sun Mar 29 00:20:40 2015] [debug] 302 Found (0.033080s, 30.230/s)
+[Sun Mar 29 00:20:40 2015] [debug] GET "/admin"
+[Sun Mar 29 00:20:40 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Sun Mar 29 00:20:40 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Sun Mar 29 00:20:40 2015] [debug] Rendering template "admin/overview.html.ep"
+[Sun Mar 29 00:20:40 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Mar 29 00:20:40 2015] [debug] 200 OK (0.003086s, 324.044/s)
+[Sun Mar 29 00:23:36 2015] [debug] GET "/admin"
+[Sun Mar 29 00:23:36 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Sun Mar 29 00:23:36 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Sun Mar 29 00:23:36 2015] [debug] Rendering template "admin/overview.html.ep"
+[Sun Mar 29 00:23:36 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Mar 29 00:23:36 2015] [debug] 200 OK (0.011005s, 90.868/s)
+[Sun Mar 29 00:24:31 2015] [debug] GET "/admin"
+[Sun Mar 29 00:24:31 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Sun Mar 29 00:24:31 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Sun Mar 29 00:24:31 2015] [debug] Rendering template "admin/overview.html.ep"
+[Sun Mar 29 00:24:31 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Mar 29 00:24:31 2015] [debug] 200 OK (0.004738s, 211.060/s)
+[Sun Mar 29 00:29:41 2015] [debug] GET "/admin"
+[Sun Mar 29 00:29:41 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Sun Mar 29 00:29:41 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Sun Mar 29 00:29:41 2015] [debug] Rendering template "admin/overview.html.ep"
+[Sun Mar 29 00:29:41 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Mar 29 00:29:41 2015] [debug] 200 OK (0.011773s, 84.940/s)
+[Sun Mar 29 00:29:53 2015] [debug] GET "/delete_post"
+[Sun Mar 29 00:29:53 2015] [debug] Template "not_found.development.html.ep" not found
+[Sun Mar 29 00:29:53 2015] [debug] Template "not_found.html.ep" not found
+[Sun Mar 29 00:29:53 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Sun Mar 29 00:29:53 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Sun Mar 29 00:29:53 2015] [debug] 404 Not Found (0.020958s, 47.714/s)
+[Sun Mar 29 00:30:04 2015] [debug] GET "/delete/"
+[Sun Mar 29 00:30:04 2015] [debug] Template "not_found.development.html.ep" not found
+[Sun Mar 29 00:30:04 2015] [debug] Template "not_found.html.ep" not found
+[Sun Mar 29 00:30:04 2015] [debug] Rendering cached inline template "fd403ab55a4c875e35b42428816134c7"
+[Sun Mar 29 00:30:04 2015] [debug] Rendering cached inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Sun Mar 29 00:30:04 2015] [debug] 404 Not Found (0.014100s, 70.922/s)
+[Sun Mar 29 00:30:20 2015] [debug] GET "/login"
+[Sun Mar 29 00:30:20 2015] [debug] Rendering template "login/login_form.html.ep"
+[Sun Mar 29 00:30:20 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Mar 29 00:30:20 2015] [debug] 200 OK (0.009710s, 102.987/s)

@@ -7,3 +7,5 @@
 %= link_to "Create new post" => 'create_post'
 
 %= link_to  Logout => '/logout'
+
+@@ add posts here later

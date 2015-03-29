@@ -62,7 +62,10 @@ sub startup {
 
   $authorized->get('/create')->name('create_post')->to(template => 'admin/create_post');
   $authorized->post('/create')->name('publish_post')->to('Post#create');
-
+  #on get display a template asking to confirm deletion.
+  $authorized->get('/delete/:id',[id=>qr/\d+/])->name('delete_post')->to(template => 'admin/delete_post_confirm');
+  #on POST, delete the post 
+  $authorized->post('/delete/:id',[id => qr/\d+/])->name('delete_post_confirmed')->to('Post#dlete'); 
 }
 
 1;

@@ -5,7 +5,10 @@ use warnings;
 
 use lib 'lib';
 
-
+# packages needed for this app
+# SQL::TRANSLATOR
+# DBIX::CORE
+# SQLITE3
 # Start command line interface for application
 require Mojolicious::Commands;
 Mojolicious::Commands->start_app('Moblo');
