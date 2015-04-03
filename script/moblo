@@ -11,5 +11,11 @@ use lib 'lib';
 # SQLITE3
 # DBIx::Class::Migration
 # Start command line interface for application
+#DBIx::Class::something 
+
+#has_many realationship (that is zero or more records in the foriegn tabel post)
+#has_one relationship Posts -> User(one autor per post)
+#belongs_to relationship Comments -> Posts Comments -> Users each comment has a foreign key to one user and post
+#relation ships are added for each table to the bottom of each associated result class
 require Mojolicious::Commands;
 Mojolicious::Commands->start_app('Moblo');

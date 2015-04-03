@@ -1400,3 +1400,72 @@ Global symbol "$posts" requires explicit package name at template main/index.htm
 [Sun Mar 29 01:01:32 2015] [debug] Rendering cached template "main/index.html.ep"
 [Sun Mar 29 01:01:32 2015] [debug] Rendering cached template "layouts/base.html.ep"
 [Sun Mar 29 01:01:32 2015] [debug] 200 OK (0.004082s, 244.978/s)
+[Thu Apr  2 17:45:31 2015] [debug] GET "/"
+[Thu Apr  2 17:45:31 2015] [debug] Rendering template "main/index.html.ep"
+[Thu Apr  2 17:45:31 2015] [debug] Rendering template "layouts/base.html.ep"
+[Thu Apr  2 17:45:31 2015] [debug] 200 OK (0.274145s, 3.648/s)
+[Thu Apr  2 17:45:34 2015] [debug] GET "/login"
+[Thu Apr  2 17:45:34 2015] [debug] Rendering template "login/login_form.html.ep"
+[Thu Apr  2 17:45:34 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Thu Apr  2 17:45:34 2015] [debug] 200 OK (0.026097s, 38.319/s)
+[Thu Apr  2 17:45:36 2015] [debug] POST "/login"
+[Thu Apr  2 17:45:36 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Thu Apr  2 17:45:36 2015] [debug] 302 Found (0.034167s, 29.268/s)
+[Thu Apr  2 17:45:36 2015] [debug] GET "/admin"
+[Thu Apr  2 17:45:36 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Thu Apr  2 17:45:36 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Thu Apr  2 17:45:36 2015] [debug] Rendering template "admin/overview.html.ep"
+[Thu Apr  2 17:45:36 2015] [debug] Rendering template "layouts/base.html.ep"
+[Thu Apr  2 17:45:36 2015] [debug] 200 OK (0.003791s, 263.783/s)
+[Thu Apr  2 17:45:38 2015] [debug] GET "/admin/create"
+[Thu Apr  2 17:45:38 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Thu Apr  2 17:45:38 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Thu Apr  2 17:45:38 2015] [debug] Rendering template "admin/create_post.html.ep"
+[Thu Apr  2 17:45:38 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Thu Apr  2 17:45:38 2015] [debug] 200 OK (0.026594s, 37.602/s)
+[Thu Apr  2 17:45:49 2015] [debug] POST "/admin/create"
+[Thu Apr  2 17:45:49 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Thu Apr  2 17:45:50 2015] [debug] Routing to controller "Moblo::Controller::Post" and action "create"
+[Thu Apr  2 17:45:50 2015] [debug] 302 Found (0.668688s, 1.495/s)
+[Thu Apr  2 17:45:50 2015] [debug] GET "/admin"
+[Thu Apr  2 17:45:50 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Thu Apr  2 17:45:50 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Thu Apr  2 17:45:50 2015] [debug] Rendering cached template "admin/overview.html.ep"
+[Thu Apr  2 17:45:50 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Thu Apr  2 17:45:50 2015] [debug] 200 OK (0.001737s, 575.705/s)
+[Thu Apr  2 17:46:00 2015] [debug] GET "/"
+[Thu Apr  2 17:46:00 2015] [debug] Rendering cached template "main/index.html.ep"
+[Thu Apr  2 17:46:00 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Thu Apr  2 17:46:00 2015] [debug] 200 OK (0.007274s, 137.476/s)
+[Thu Apr  2 17:46:16 2015] [debug] GET "/admin"
+[Thu Apr  2 17:46:16 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Thu Apr  2 17:46:16 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Thu Apr  2 17:46:16 2015] [debug] Rendering cached template "admin/overview.html.ep"
+[Thu Apr  2 17:46:16 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Thu Apr  2 17:46:16 2015] [debug] 200 OK (0.002814s, 355.366/s)
+[Thu Apr  2 18:10:12 2015] [debug] GET "/admin"
+[Thu Apr  2 18:10:12 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Thu Apr  2 18:10:12 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Thu Apr  2 18:10:12 2015] [debug] Rendering template "admin/overview.html.ep"
+[Thu Apr  2 18:10:12 2015] [debug] Rendering template "layouts/base.html.ep"
+[Thu Apr  2 18:10:12 2015] [debug] 200 OK (0.012115s, 82.542/s)
+[Thu Apr  2 18:10:15 2015] [debug] GET "/logout"
+[Thu Apr  2 18:10:15 2015] [debug] Routing to a callback
+[Thu Apr  2 18:10:15 2015] [debug] 302 Found (0.001080s, 925.926/s)
+[Thu Apr  2 18:10:15 2015] [debug] GET "/"
+[Thu Apr  2 18:10:15 2015] [debug] Rendering template "main/index.html.ep"
+[Thu Apr  2 18:10:15 2015] [debug] Rendering template "layouts/base.html.ep"
+[Thu Apr  2 18:10:15 2015] [debug] 200 OK (0.030947s, 32.313/s)
+[Thu Apr  2 18:10:22 2015] [debug] GET "/login"
+[Thu Apr  2 18:10:22 2015] [debug] Rendering template "login/login_form.html.ep"
+[Thu Apr  2 18:10:22 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Thu Apr  2 18:10:22 2015] [debug] 200 OK (0.008092s, 123.579/s)
+[Thu Apr  2 18:10:24 2015] [debug] POST "/login"
+[Thu Apr  2 18:10:24 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Thu Apr  2 18:10:24 2015] [debug] 302 Found (0.000862s, 1160.093/s)
+[Thu Apr  2 18:10:24 2015] [debug] GET "/admin"
+[Thu Apr  2 18:10:24 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Thu Apr  2 18:10:24 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Thu Apr  2 18:10:24 2015] [debug] Rendering cached template "admin/overview.html.ep"
+[Thu Apr  2 18:10:24 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Thu Apr  2 18:10:24 2015] [debug] 200 OK (0.001397s, 715.820/s)
