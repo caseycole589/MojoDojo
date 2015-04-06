@@ -6,7 +6,8 @@ use Moblo::Schema;
 sub startup {
  
   my $self = shift;
- 
+  
+  
   #Allows to set the signing key as an  array
   #where the first key will be used for all new sessions
   #and the other keys are still used for validation but not new sessins.
@@ -19,6 +20,10 @@ sub startup {
   #Expiration reduced to 10000 seconds
   $self->app->sessions->default_expiration('10000');
 
+  #Plugins
+
+  #Bcrypt with cost factor 8
+  $self->plugin('bcrypt',{cost => 8});
 
   $self->defaults(layout => 'base');
 
@@ -41,6 +46,9 @@ sub startup {
   # $r->post('/login')->to('Login#on_user_login');
   $r->post('/login')->to('Login#on_user_login');
 
+  #route to template for creating a new user
+  $r->get('/create_account')->to(template => 'login/create_form');
+  $r->post('/create_account')->name('create_account_form')->to('Login#create_new_account');
   $r->route('/logout')->to(cb => sub {
   	my $self = shift;
 
@@ -65,7 +73,7 @@ sub startup {
   #on get display a template asking to confirm deletion.
   $authorized->get('/delete/:id',[id=>qr/\d+/])->name('delete_post')->to(template => 'admin/delete_post_confirm');
   #on POST, delete the post 
-  $authorized->post('/delete/:id',[id => qr/\d+/])->name('delete_post_confirmed')->to('Post#dlete'); 
+  $authorized->post('/delete/:id',[id => qr/\d+/])->name('delete_post_confirmed')->to('Post#delete'); 
 }
 
 1;

@@ -1,3 +1,8 @@
+%if(flash('create_user_success') eq 'Success'){
+%my $success = flash('create_user_success');
+	<h3 style="color:green"><%= $success%></h3>
+%}
+
 %= form_for 'login' => (method => 'POST') => begin
 	%= label_for username => 'Username'
 	%= text_field 'username'

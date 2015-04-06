@@ -10,8 +10,15 @@ use lib 'lib';
 # DBIX::CORE
 # SQLITE3
 # DBIx::Class::Migration
+# Mojolicious::Plugin::Bcrypt
 # Start command line interface for application
 #DBIx::Class::something 
+
+#when database upgrade change our $version in /lib/moblo/Schema.pm
+#dbic-migration -S 'Moblo::Schema' -Ilib --database SQLite prepare
+#dbic-migration -S 'Moblo::Schema' -Ilib --database SQLite install
+#or
+#dbic-migration -S 'Moblo::Schema' -Ilib --database SQLite upgrade
 
 #has_many realationship (that is zero or more records in the foriegn tabel post)
 #has_one relationship Posts -> User(one autor per post)

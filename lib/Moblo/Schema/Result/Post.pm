@@ -48,6 +48,8 @@ __PACKAGE__->belongs_to(
 );
 
 __PACKAGE__->has_many(
+  #comments is the accesssor in this relation
+  #ex. comments has a forieng key of post id
   comments =>
   'Moblo::Schema::Result::Comment',
   'post_id'
