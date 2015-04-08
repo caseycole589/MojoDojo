@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
-  <head><title><%= title %></title></head>
+  <head><title><%= title %></title>
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+  </head>
   <body>
+
   	<!-- this will be before the content in index.html.ep -->
   	<%= content %>
   	<!-- this will be after -->

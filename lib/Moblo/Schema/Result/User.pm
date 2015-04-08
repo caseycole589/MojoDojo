@@ -34,6 +34,26 @@ __PACKAGE__->add_columns(
 	lastname => {
 		data_type => 'text',
 	},
+
+	city => {
+		data_type => 'text',
+	},
+
+	zipcode => {
+		data_type => 'integer',
+	},
+
+	email => {
+		data_type => 'text',
+	},
+
+	company => {
+		data_type => 'text',
+	},
+
+	user_level => {
+		data_type => 'text',
+	},
 );
 
 
@@ -62,7 +82,10 @@ __PACKAGE__->has_many(
 	'user_id'
 );
 
-
-
+__PACKAGE__->belongs_to(
+	'name',
+	"Moblo::Schema::Result::Company",
+	{name => 'company'}
+);
 
 1;

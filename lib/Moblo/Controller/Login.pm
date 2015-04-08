@@ -64,7 +64,16 @@ sub create_new_account{
 	my $password = $self->param('password');
 	my $firstname = $self->param('firstname');
 	my $lastname = $self->param('lastname');
+	my $zipcode = $self->param('zipcode');
+	my $city = $self->param('city');
+	my $email = $self->param('email');
+	my $company = $self->param('company');
+	my $user_level = 'customer';
 
+
+
+	#these will become redundant will check in javascript and 
+	#pass using ajax
 	if ($username eq ""){
 		$self->flash(error => "Username");
 		$self->redirect_to('/create_account');
@@ -98,6 +107,11 @@ sub create_new_account{
 				pw_hash => $self->bcrypt($password),
 				firstname => $firstname,
 				lastname => $lastname,
+				email => $email,
+				zipcode => $zipcode,
+				city => $city,
+				user_level => $user_level,
+				company => $company
 			});
 			$self->flash(create_user_success => "Success");
 			$self->redirect_to('/login');

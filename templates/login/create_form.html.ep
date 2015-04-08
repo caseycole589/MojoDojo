@@ -1,6 +1,53 @@
 
+%= javascript begin
+	$(document).ready(function(){
+		$("#submit_button").click(function(){
+			var should_alert = false;
+			if($("#username_field").val() === "") {
+				should_alert = true
+				$("#username_field").css("background-color","red");
+			};
+			if($("#password_field").val() === "") {
+				should_alert = true;
+				$("#password_field").css('background-color','red');
+			}
+			if($("#firstname_field").val() === "") {
+				should_alert = true;
+				$("#firstname_field").css('background-color','red');
+			}	
+			if($("#lastname_field").val() === ""){
+				should_alert = true;
+				$("#lastname_field").css('background-color','red');
+			}
+			if($("#company_field").val() === ""){
+				should_alert = true;
+				$("#company_field").css('background-color','red');
+			}
+			if($("#city_field").val() === ""){
+				should_alert = true;
+				$("#city_field").css('background-color','red');
+			}
+			if($("#email_field").val() === ""){
+				should_alert = true;
+				$("#email_field").css('background-color','red');
+			}
+			if($("#company_field").val() === ""){
+				should_alert = true;
+				$("#zipcode_field").css('background-color','red');
+			}
+			if(should_alert === true){
+				should_alert = true;
+				alert("Please fill in all required fields");
+				return false;
+			}
+		});
+	});
+%end 
+
 <h1> Create a new account</h1>
 <%# if there is something in hash missing field %>
+
+
 %if(flash('error')){
 %my $var = flash('error');
 	<br/>
@@ -9,25 +56,50 @@
 %}
 %= form_for 'create_account_form' => (method => 'POST') => begin
 	%= label_for username => 'Username'
-	%= text_field 'username'
+	%= text_field 'username', id => 'username_field'
 
 	%=tag 'br' 
 	%=tag 'br'
 
 	%= label_for password => 'Password'
-	%= password_field 'password'
+	%= password_field 'password', id => 'password_field'
 
 	%=tag 'br'
 	%=tag 'br'
 
 	%= label_for firstname => 'First Name'
-	%= text_field 'firstname'
+	%= text_field 'firstname', id => 'firstname_field'
 
 	%=tag 'br'
 	%=tag 'br'
 
 	%= label_for lastname => 'Last Name'
-	%= text_field 'lastname'
+	%= text_field 'lastname', id => 'lastname_field'
 
-	%= submit_button 'Log me in', class => 'btn button-primary'
+	%=tag 'br'
+	%=tag 'br'
+
+	%= label_for company => 'Company'
+	%= text_field 'company', id => 'company_field'
+
+	%=tag 'br'
+	%=tag 'br'
+
+	%= label_for email => 'email'
+	%= text_field 'email', id => 'email_field'
+
+	%=tag 'br'
+	%=tag 'br'
+
+	%= label_for city => 'city'
+	%= text_field 'city', id => 'city_field'
+
+	%=tag 'br'
+	%=tag 'br'
+
+	%= label_for zipcode => 'zip code'
+	%= text_field 'zipcode', id => 'zipcode_field'
+
+
+	%= submit_button 'Log me in', class => 'btn button-primary', id => 'submit_button'
 % end

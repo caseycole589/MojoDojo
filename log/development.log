@@ -2540,3 +2540,450 @@ Compilation failed in require at (eval 316) line 1.
 [Sun Apr  5 23:30:55 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
 [Sun Apr  5 23:30:55 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
 [Sun Apr  5 23:30:55 2015] [debug] 500 Internal Server Error (0.020862s, 47.934/s)
+[Tue Apr  7 19:41:45 2015] [debug] GET "/"
+[Tue Apr  7 19:41:45 2015] [debug] Rendering template "main/index.html.ep"
+[Tue Apr  7 19:41:45 2015] [debug] Rendering template "layouts/base.html.ep"
+[Tue Apr  7 19:41:45 2015] [debug] 200 OK (0.027923s, 35.813/s)
+[Tue Apr  7 19:41:45 2015] [debug] GET "/js/jquery.min.js"
+[Tue Apr  7 19:41:45 2015] [debug] Template "not_found.development.html.ep" not found
+[Tue Apr  7 19:41:45 2015] [debug] Template "not_found.html.ep" not found
+[Tue Apr  7 19:41:45 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Apr  7 19:41:45 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Apr  7 19:41:45 2015] [debug] 404 Not Found (0.015393s, 64.965/s)
+[Tue Apr  7 19:41:48 2015] [debug] GET "/login"
+[Tue Apr  7 19:41:48 2015] [debug] Rendering template "login/login_form.html.ep"
+[Tue Apr  7 19:41:48 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Tue Apr  7 19:41:48 2015] [debug] 200 OK (0.008031s, 124.517/s)
+[Tue Apr  7 19:41:48 2015] [debug] GET "/js/jquery.min.js"
+[Tue Apr  7 19:41:48 2015] [debug] Template "not_found.development.html.ep" not found
+[Tue Apr  7 19:41:48 2015] [debug] Template "not_found.html.ep" not found
+[Tue Apr  7 19:41:48 2015] [debug] Rendering cached inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Apr  7 19:41:48 2015] [debug] Rendering cached inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Apr  7 19:41:48 2015] [debug] 404 Not Found (0.007524s, 132.908/s)
+[Tue Apr  7 19:41:53 2015] [debug] POST "/login"
+[Tue Apr  7 19:41:53 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Tue Apr  7 19:41:53 2015] [debug] Rendering template "layouts/base.html.ep"
+[Tue Apr  7 19:41:53 2015] [debug] 403 Forbidden (0.009878s, 101.235/s)
+[Tue Apr  7 19:41:53 2015] [debug] GET "/js/jquery.min.js"
+[Tue Apr  7 19:41:53 2015] [debug] Template "not_found.development.html.ep" not found
+[Tue Apr  7 19:41:53 2015] [debug] Template "not_found.html.ep" not found
+[Tue Apr  7 19:41:53 2015] [debug] Rendering cached inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Apr  7 19:41:53 2015] [debug] Rendering cached inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Apr  7 19:41:53 2015] [debug] 404 Not Found (0.013505s, 74.047/s)
+[Tue Apr  7 19:41:56 2015] [debug] GET "/create_account"
+[Tue Apr  7 19:41:56 2015] [debug] Rendering template "login/create_form.html.ep"
+[Tue Apr  7 19:41:56 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Tue Apr  7 19:41:56 2015] [debug] 200 OK (0.007883s, 126.855/s)
+[Tue Apr  7 19:41:56 2015] [debug] GET "/js/jquery.min.js"
+[Tue Apr  7 19:41:56 2015] [debug] Template "not_found.development.html.ep" not found
+[Tue Apr  7 19:41:56 2015] [debug] Template "not_found.html.ep" not found
+[Tue Apr  7 19:41:56 2015] [debug] Rendering cached inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Apr  7 19:41:56 2015] [debug] Rendering cached inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Apr  7 19:41:56 2015] [debug] 404 Not Found (0.007982s, 125.282/s)
+[Tue Apr  7 19:42:52 2015] [debug] GET "/create_account"
+[Tue Apr  7 19:42:52 2015] [debug] Rendering template "login/create_form.html.ep"
+[Tue Apr  7 19:42:52 2015] [debug] Rendering template "layouts/base.html.ep"
+[Tue Apr  7 19:42:52 2015] [debug] 200 OK (0.007505s, 133.245/s)
+[Tue Apr  7 19:42:52 2015] [debug] GET "/js/jquery.min.js"
+[Tue Apr  7 19:42:52 2015] [debug] Template "not_found.development.html.ep" not found
+[Tue Apr  7 19:42:52 2015] [debug] Template "not_found.html.ep" not found
+[Tue Apr  7 19:42:52 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Apr  7 19:42:52 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Apr  7 19:42:52 2015] [debug] 404 Not Found (0.025475s, 39.254/s)
+[Tue Apr  7 19:43:23 2015] [debug] GET "/create_account"
+[Tue Apr  7 19:43:23 2015] [debug] Rendering template "login/create_form.html.ep"
+[Tue Apr  7 19:43:23 2015] [debug] Rendering template "layouts/base.html.ep"
+[Tue Apr  7 19:43:23 2015] [debug] 200 OK (0.005509s, 181.521/s)
+[Tue Apr  7 19:43:23 2015] [debug] GET "/js/jquery.min.js"
+[Tue Apr  7 19:43:23 2015] [debug] Template "not_found.development.html.ep" not found
+[Tue Apr  7 19:43:23 2015] [debug] Template "not_found.html.ep" not found
+[Tue Apr  7 19:43:23 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Apr  7 19:43:23 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Apr  7 19:43:23 2015] [debug] 404 Not Found (0.024133s, 41.437/s)
+[Tue Apr  7 19:43:42 2015] [debug] GET "/create_account"
+[Tue Apr  7 19:43:42 2015] [debug] Rendering template "login/create_form.html.ep"
+[Tue Apr  7 19:43:42 2015] [debug] Rendering template "layouts/base.html.ep"
+[Tue Apr  7 19:43:42 2015] [debug] 200 OK (0.008683s, 115.168/s)
+[Tue Apr  7 19:43:42 2015] [debug] GET "/js/jquery.min.js"
+[Tue Apr  7 19:43:42 2015] [debug] Template "not_found.development.html.ep" not found
+[Tue Apr  7 19:43:42 2015] [debug] Template "not_found.html.ep" not found
+[Tue Apr  7 19:43:42 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Apr  7 19:43:42 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Apr  7 19:43:42 2015] [debug] 404 Not Found (0.030632s, 32.646/s)
+[Tue Apr  7 19:45:44 2015] [debug] GET "/create_account"
+[Tue Apr  7 19:45:44 2015] [debug] Rendering template "login/create_form.html.ep"
+[Tue Apr  7 19:45:44 2015] [debug] Rendering template "layouts/base.html.ep"
+[Tue Apr  7 19:45:44 2015] [debug] 200 OK (0.014326s, 69.803/s)
+[Tue Apr  7 19:45:44 2015] [debug] GET "/js/jquery.min.js"
+[Tue Apr  7 19:45:44 2015] [debug] Template "not_found.development.html.ep" not found
+[Tue Apr  7 19:45:44 2015] [debug] Template "not_found.html.ep" not found
+[Tue Apr  7 19:45:44 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Apr  7 19:45:44 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Apr  7 19:45:44 2015] [debug] 404 Not Found (0.026495s, 37.743/s)
+[Tue Apr  7 19:45:55 2015] [debug] GET "/"
+[Tue Apr  7 19:45:55 2015] [debug] Rendering template "main/index.html.ep"
+[Tue Apr  7 19:45:55 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Tue Apr  7 19:45:55 2015] [debug] 200 OK (0.030603s, 32.677/s)
+[Tue Apr  7 19:45:55 2015] [debug] GET "/js/jquery.min.js"
+[Tue Apr  7 19:45:55 2015] [debug] Template "not_found.development.html.ep" not found
+[Tue Apr  7 19:45:55 2015] [debug] Template "not_found.html.ep" not found
+[Tue Apr  7 19:45:55 2015] [debug] Rendering cached inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Apr  7 19:45:55 2015] [debug] Rendering cached inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Apr  7 19:45:55 2015] [debug] 404 Not Found (0.006730s, 148.588/s)
+[Tue Apr  7 19:46:07 2015] [debug] GET "/"
+[Tue Apr  7 19:46:07 2015] [debug] Rendering cached template "main/index.html.ep"
+[Tue Apr  7 19:46:07 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Tue Apr  7 19:46:07 2015] [debug] 200 OK (0.003595s, 278.164/s)
+[Tue Apr  7 19:46:07 2015] [debug] GET "/js/jquery.min.js"
+[Tue Apr  7 19:46:07 2015] [debug] Template "not_found.development.html.ep" not found
+[Tue Apr  7 19:46:07 2015] [debug] Template "not_found.html.ep" not found
+[Tue Apr  7 19:46:07 2015] [debug] Rendering cached inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Apr  7 19:46:07 2015] [debug] Rendering cached inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Apr  7 19:46:07 2015] [debug] 404 Not Found (0.009073s, 110.217/s)
+[Tue Apr  7 19:46:13 2015] [debug] GET "/login"
+[Tue Apr  7 19:46:13 2015] [debug] Rendering template "login/login_form.html.ep"
+[Tue Apr  7 19:46:13 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Tue Apr  7 19:46:13 2015] [debug] 200 OK (0.003882s, 257.599/s)
+[Tue Apr  7 19:46:13 2015] [debug] GET "/js/jquery.min.js"
+[Tue Apr  7 19:46:13 2015] [debug] Template "not_found.development.html.ep" not found
+[Tue Apr  7 19:46:13 2015] [debug] Template "not_found.html.ep" not found
+[Tue Apr  7 19:46:13 2015] [debug] Rendering cached inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Apr  7 19:46:13 2015] [debug] Rendering cached inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Apr  7 19:46:13 2015] [debug] 404 Not Found (0.007649s, 130.736/s)
+[Tue Apr  7 19:46:16 2015] [debug] POST "/login"
+[Tue Apr  7 19:46:16 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Tue Apr  7 19:46:16 2015] [debug] Rendering template "layouts/base.html.ep"
+[Tue Apr  7 19:46:16 2015] [debug] 403 Forbidden (0.013657s, 73.223/s)
+[Tue Apr  7 19:46:16 2015] [debug] GET "/js/jquery.min.js"
+[Tue Apr  7 19:46:16 2015] [debug] Template "not_found.development.html.ep" not found
+[Tue Apr  7 19:46:16 2015] [debug] Template "not_found.html.ep" not found
+[Tue Apr  7 19:46:16 2015] [debug] Rendering cached inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Apr  7 19:46:16 2015] [debug] Rendering cached inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Apr  7 19:46:16 2015] [debug] 404 Not Found (0.012598s, 79.378/s)
+[Tue Apr  7 19:46:18 2015] [debug] GET "/create_account"
+[Tue Apr  7 19:46:18 2015] [debug] Rendering cached template "login/create_form.html.ep"
+[Tue Apr  7 19:46:18 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Tue Apr  7 19:46:18 2015] [debug] 200 OK (0.005960s, 167.785/s)
+[Tue Apr  7 19:46:18 2015] [debug] GET "/js/jquery.min.js"
+[Tue Apr  7 19:46:18 2015] [debug] Template "not_found.development.html.ep" not found
+[Tue Apr  7 19:46:18 2015] [debug] Template "not_found.html.ep" not found
+[Tue Apr  7 19:46:18 2015] [debug] Rendering cached inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Apr  7 19:46:18 2015] [debug] Rendering cached inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Apr  7 19:46:18 2015] [debug] 404 Not Found (0.012149s, 82.311/s)
+[Tue Apr  7 19:49:03 2015] [debug] GET "/create_account"
+[Tue Apr  7 19:49:03 2015] [debug] Rendering template "login/create_form.html.ep"
+[Tue Apr  7 19:49:03 2015] [debug] Rendering template "layouts/base.html.ep"
+[Tue Apr  7 19:49:03 2015] [debug] 200 OK (0.012794s, 78.162/s)
+[Tue Apr  7 19:49:03 2015] [debug] GET "/js/jquery.min.js"
+[Tue Apr  7 19:49:03 2015] [debug] Template "not_found.development.html.ep" not found
+[Tue Apr  7 19:49:03 2015] [debug] Template "not_found.html.ep" not found
+[Tue Apr  7 19:49:03 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Apr  7 19:49:03 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Apr  7 19:49:03 2015] [debug] 404 Not Found (0.029688s, 33.684/s)
+[Tue Apr  7 19:49:04 2015] [debug] GET "/create_account"
+[Tue Apr  7 19:49:04 2015] [debug] Rendering cached template "login/create_form.html.ep"
+[Tue Apr  7 19:49:04 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Tue Apr  7 19:49:04 2015] [debug] 200 OK (0.002993s, 334.113/s)
+[Tue Apr  7 19:49:04 2015] [debug] GET "/js/jquery.min.js"
+[Tue Apr  7 19:49:04 2015] [debug] Template "not_found.development.html.ep" not found
+[Tue Apr  7 19:49:04 2015] [debug] Template "not_found.html.ep" not found
+[Tue Apr  7 19:49:04 2015] [debug] Rendering cached inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Apr  7 19:49:04 2015] [debug] Rendering cached inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Apr  7 19:49:04 2015] [debug] 404 Not Found (0.009377s, 106.644/s)
+[Tue Apr  7 19:49:04 2015] [debug] GET "/create_account"
+[Tue Apr  7 19:49:04 2015] [debug] Rendering cached template "login/create_form.html.ep"
+[Tue Apr  7 19:49:04 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Tue Apr  7 19:49:04 2015] [debug] 200 OK (0.002217s, 451.060/s)
+[Tue Apr  7 19:49:04 2015] [debug] GET "/js/jquery.min.js"
+[Tue Apr  7 19:49:04 2015] [debug] Template "not_found.development.html.ep" not found
+[Tue Apr  7 19:49:04 2015] [debug] Template "not_found.html.ep" not found
+[Tue Apr  7 19:49:04 2015] [debug] Rendering cached inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Apr  7 19:49:04 2015] [debug] Rendering cached inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Apr  7 19:49:04 2015] [debug] 404 Not Found (0.005990s, 166.945/s)
+[Tue Apr  7 19:49:04 2015] [debug] GET "/create_account"
+[Tue Apr  7 19:49:04 2015] [debug] Rendering cached template "login/create_form.html.ep"
+[Tue Apr  7 19:49:04 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Tue Apr  7 19:49:04 2015] [debug] 200 OK (0.001996s, 501.002/s)
+[Tue Apr  7 19:49:04 2015] [debug] GET "/js/jquery.min.js"
+[Tue Apr  7 19:49:04 2015] [debug] Template "not_found.development.html.ep" not found
+[Tue Apr  7 19:49:04 2015] [debug] Template "not_found.html.ep" not found
+[Tue Apr  7 19:49:04 2015] [debug] Rendering cached inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Apr  7 19:49:04 2015] [debug] Rendering cached inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Apr  7 19:49:04 2015] [debug] 404 Not Found (0.005621s, 177.904/s)
+[Tue Apr  7 19:49:18 2015] [debug] GET "/create_account"
+[Tue Apr  7 19:49:18 2015] [debug] Rendering template "login/create_form.html.ep"
+[Tue Apr  7 19:49:18 2015] [debug] Rendering template "layouts/base.html.ep"
+[Tue Apr  7 19:49:18 2015] [debug] 200 OK (0.005740s, 174.216/s)
+[Tue Apr  7 19:49:18 2015] [debug] GET "/js/jquery.min.js"
+[Tue Apr  7 19:49:18 2015] [debug] Template "not_found.development.html.ep" not found
+[Tue Apr  7 19:49:18 2015] [debug] Template "not_found.html.ep" not found
+[Tue Apr  7 19:49:18 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Apr  7 19:49:18 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Apr  7 19:49:18 2015] [debug] 404 Not Found (0.025891s, 38.623/s)
+[Tue Apr  7 19:54:45 2015] [debug] GET "/create_account"
+[Tue Apr  7 19:54:45 2015] [debug] Rendering cached template "login/create_form.html.ep"
+[Tue Apr  7 19:54:45 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Tue Apr  7 19:54:45 2015] [debug] 200 OK (0.003035s, 329.489/s)
+[Tue Apr  7 19:54:45 2015] [debug] GET "/js/jquery.min.js"
+[Tue Apr  7 19:54:45 2015] [debug] Template "not_found.development.html.ep" not found
+[Tue Apr  7 19:54:45 2015] [debug] Template "not_found.html.ep" not found
+[Tue Apr  7 19:54:45 2015] [debug] Rendering cached inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Apr  7 19:54:45 2015] [debug] Rendering cached inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Apr  7 19:54:45 2015] [debug] 404 Not Found (0.005441s, 183.790/s)
+[Tue Apr  7 19:55:24 2015] [debug] GET "/create_account"
+[Tue Apr  7 19:55:24 2015] [debug] Rendering template "login/create_form.html.ep"
+[Tue Apr  7 19:55:24 2015] [debug] Rendering template "layouts/base.html.ep"
+[Tue Apr  7 19:55:24 2015] [debug] 200 OK (0.008892s, 112.461/s)
+[Tue Apr  7 19:55:24 2015] [debug] GET "/js/jquery.min.js"
+[Tue Apr  7 19:55:24 2015] [debug] Template "not_found.development.html.ep" not found
+[Tue Apr  7 19:55:24 2015] [debug] Template "not_found.html.ep" not found
+[Tue Apr  7 19:55:24 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Apr  7 19:55:24 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Apr  7 19:55:24 2015] [debug] 404 Not Found (0.031369s, 31.879/s)
+[Tue Apr  7 19:55:25 2015] [debug] GET "/create_account"
+[Tue Apr  7 19:55:25 2015] [debug] Rendering cached template "login/create_form.html.ep"
+[Tue Apr  7 19:55:25 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Tue Apr  7 19:55:25 2015] [debug] 200 OK (0.003852s, 259.605/s)
+[Tue Apr  7 19:55:25 2015] [debug] GET "/js/jquery.min.js"
+[Tue Apr  7 19:55:25 2015] [debug] Template "not_found.development.html.ep" not found
+[Tue Apr  7 19:55:25 2015] [debug] Template "not_found.html.ep" not found
+[Tue Apr  7 19:55:25 2015] [debug] Rendering cached inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Apr  7 19:55:25 2015] [debug] Rendering cached inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Apr  7 19:55:25 2015] [debug] 404 Not Found (0.006098s, 163.988/s)
+[Tue Apr  7 19:55:52 2015] [debug] GET "/"
+[Tue Apr  7 19:55:52 2015] [debug] Rendering template "main/index.html.ep"
+[Tue Apr  7 19:55:52 2015] [debug] Rendering template "layouts/base.html.ep"
+[Tue Apr  7 19:55:52 2015] [debug] 200 OK (0.032015s, 31.235/s)
+[Tue Apr  7 19:55:52 2015] [debug] GET "/js/jquery.min.js"
+[Tue Apr  7 19:55:52 2015] [debug] Template "not_found.development.html.ep" not found
+[Tue Apr  7 19:55:52 2015] [debug] Template "not_found.html.ep" not found
+[Tue Apr  7 19:55:52 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Apr  7 19:55:52 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Apr  7 19:55:52 2015] [debug] 404 Not Found (0.019143s, 52.238/s)
+[Tue Apr  7 19:55:53 2015] [debug] GET "/"
+[Tue Apr  7 19:55:53 2015] [debug] Rendering cached template "main/index.html.ep"
+[Tue Apr  7 19:55:53 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Tue Apr  7 19:55:53 2015] [debug] 200 OK (0.004133s, 241.955/s)
+[Tue Apr  7 19:55:53 2015] [debug] GET "/js/jquery.min.js"
+[Tue Apr  7 19:55:53 2015] [debug] Template "not_found.development.html.ep" not found
+[Tue Apr  7 19:55:53 2015] [debug] Template "not_found.html.ep" not found
+[Tue Apr  7 19:55:53 2015] [debug] Rendering cached inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Apr  7 19:55:53 2015] [debug] Rendering cached inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Apr  7 19:55:53 2015] [debug] 404 Not Found (0.010618s, 94.180/s)
+[Tue Apr  7 19:55:53 2015] [debug] GET "/"
+[Tue Apr  7 19:55:53 2015] [debug] Rendering cached template "main/index.html.ep"
+[Tue Apr  7 19:55:53 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Tue Apr  7 19:55:53 2015] [debug] 200 OK (0.007726s, 129.433/s)
+[Tue Apr  7 19:55:53 2015] [debug] GET "/js/jquery.min.js"
+[Tue Apr  7 19:55:53 2015] [debug] Template "not_found.development.html.ep" not found
+[Tue Apr  7 19:55:53 2015] [debug] Template "not_found.html.ep" not found
+[Tue Apr  7 19:55:53 2015] [debug] Rendering cached inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Apr  7 19:55:53 2015] [debug] Rendering cached inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Apr  7 19:55:53 2015] [debug] 404 Not Found (0.008393s, 119.147/s)
+[Tue Apr  7 19:55:53 2015] [debug] GET "/"
+[Tue Apr  7 19:55:53 2015] [debug] Rendering cached template "main/index.html.ep"
+[Tue Apr  7 19:55:53 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Tue Apr  7 19:55:53 2015] [debug] 200 OK (0.002962s, 337.610/s)
+[Tue Apr  7 19:55:54 2015] [debug] GET "/js/jquery.min.js"
+[Tue Apr  7 19:55:54 2015] [debug] Template "not_found.development.html.ep" not found
+[Tue Apr  7 19:55:54 2015] [debug] Template "not_found.html.ep" not found
+[Tue Apr  7 19:55:54 2015] [debug] Rendering cached inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Apr  7 19:55:54 2015] [debug] Rendering cached inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Apr  7 19:55:54 2015] [debug] 404 Not Found (0.005824s, 171.703/s)
+[Tue Apr  7 19:55:54 2015] [debug] GET "/"
+[Tue Apr  7 19:55:54 2015] [debug] Rendering cached template "main/index.html.ep"
+[Tue Apr  7 19:55:54 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Tue Apr  7 19:55:54 2015] [debug] 200 OK (0.003729s, 268.168/s)
+[Tue Apr  7 19:55:54 2015] [debug] GET "/js/jquery.min.js"
+[Tue Apr  7 19:55:54 2015] [debug] Template "not_found.development.html.ep" not found
+[Tue Apr  7 19:55:54 2015] [debug] Template "not_found.html.ep" not found
+[Tue Apr  7 19:55:54 2015] [debug] Rendering cached inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Apr  7 19:55:54 2015] [debug] Rendering cached inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Apr  7 19:55:54 2015] [debug] 404 Not Found (0.005089s, 196.502/s)
+[Tue Apr  7 19:57:44 2015] [debug] GET "/"
+[Tue Apr  7 19:57:44 2015] [debug] Rendering template "main/index.html.ep"
+[Tue Apr  7 19:57:44 2015] [debug] Rendering template "layouts/base.html.ep"
+[Tue Apr  7 19:57:44 2015] [debug] 200 OK (0.030293s, 33.011/s)
+[Tue Apr  7 19:58:27 2015] [debug] GET "/"
+[Tue Apr  7 19:58:27 2015] [debug] Rendering cached template "main/index.html.ep"
+[Tue Apr  7 19:58:27 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Tue Apr  7 19:58:27 2015] [debug] 200 OK (0.007509s, 133.174/s)
+[Tue Apr  7 19:58:29 2015] [debug] GET "/login"
+[Tue Apr  7 19:58:29 2015] [debug] Rendering template "login/login_form.html.ep"
+[Tue Apr  7 19:58:29 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Tue Apr  7 19:58:29 2015] [debug] 200 OK (0.005228s, 191.278/s)
+[Tue Apr  7 19:58:31 2015] [debug] POST "/login"
+[Tue Apr  7 19:58:31 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Tue Apr  7 19:58:31 2015] [debug] Rendering template "layouts/base.html.ep"
+[Tue Apr  7 19:58:31 2015] [debug] 403 Forbidden (0.009522s, 105.020/s)
+[Tue Apr  7 19:58:32 2015] [debug] GET "/create_account"
+[Tue Apr  7 19:58:32 2015] [debug] Rendering template "login/create_form.html.ep"
+[Tue Apr  7 19:58:32 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Tue Apr  7 19:58:32 2015] [debug] 200 OK (0.012065s, 82.884/s)
+[Tue Apr  7 20:00:07 2015] [debug] GET "/create_account"
+[Tue Apr  7 20:00:07 2015] [debug] Rendering template "login/create_form.html.ep"
+[Tue Apr  7 20:00:07 2015] [error] syntax error at template login/create_form.html.ep line 43, near "'btn button-primary' id"
+38: 	%=tag 'br'
+39: 
+40: 	%= label_for lastname => 'Last Name'
+41: 	%= text_field 'lastname'
+42: 
+43: 	%= submit_button 'Log me in', class => 'btn button-primary' id => 'submit_button'
+44: % end
+
+[Tue Apr  7 20:00:07 2015] [debug] Template "exception.development.html.ep" not found
+[Tue Apr  7 20:00:07 2015] [debug] Template "exception.html.ep" not found
+[Tue Apr  7 20:00:07 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Apr  7 20:00:07 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Apr  7 20:00:07 2015] [debug] 500 Internal Server Error (0.036485s, 27.409/s)
+[Tue Apr  7 20:00:26 2015] [debug] GET "/create_account"
+[Tue Apr  7 20:00:26 2015] [debug] Rendering template "login/create_form.html.ep"
+[Tue Apr  7 20:00:26 2015] [debug] Rendering template "layouts/base.html.ep"
+[Tue Apr  7 20:00:26 2015] [debug] 200 OK (0.009456s, 105.753/s)
+[Tue Apr  7 20:12:01 2015] [debug] GET "/create_account"
+[Tue Apr  7 20:12:01 2015] [debug] Rendering template "login/create_form.html.ep"
+[Tue Apr  7 20:12:01 2015] [debug] Rendering template "layouts/base.html.ep"
+[Tue Apr  7 20:12:01 2015] [debug] 200 OK (0.010044s, 99.562/s)
+[Tue Apr  7 20:12:26 2015] [debug] GET "/create_account"
+[Tue Apr  7 20:12:26 2015] [debug] Rendering template "login/create_form.html.ep"
+[Tue Apr  7 20:12:26 2015] [debug] Rendering template "layouts/base.html.ep"
+[Tue Apr  7 20:12:26 2015] [debug] 200 OK (0.015679s, 63.780/s)
+[Tue Apr  7 20:17:36 2015] [debug] GET "/create_account"
+[Tue Apr  7 20:17:36 2015] [debug] Rendering template "login/create_form.html.ep"
+[Tue Apr  7 20:17:36 2015] [debug] Rendering template "layouts/base.html.ep"
+[Tue Apr  7 20:17:36 2015] [debug] 200 OK (0.016530s, 60.496/s)
+[Tue Apr  7 20:22:37 2015] [debug] GET "/create_account"
+[Tue Apr  7 20:22:37 2015] [debug] Rendering template "login/create_form.html.ep"
+[Tue Apr  7 20:22:37 2015] [debug] Rendering template "layouts/base.html.ep"
+[Tue Apr  7 20:22:37 2015] [debug] 200 OK (0.017909s, 55.838/s)
+[Tue Apr  7 20:23:24 2015] [debug] GET "/create_account"
+[Tue Apr  7 20:23:24 2015] [debug] Rendering template "login/create_form.html.ep"
+[Tue Apr  7 20:23:24 2015] [debug] Rendering template "layouts/base.html.ep"
+[Tue Apr  7 20:23:24 2015] [debug] 200 OK (0.007761s, 128.849/s)
+[Tue Apr  7 20:32:09 2015] [debug] POST "/create_account"
+[Tue Apr  7 20:32:09 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_account"
+[Tue Apr  7 20:32:09 2015] [debug] 302 Found (0.268733s, 3.721/s)
+[Tue Apr  7 20:32:09 2015] [debug] GET "/login"
+[Tue Apr  7 20:32:09 2015] [debug] Rendering template "login/login_form.html.ep"
+[Tue Apr  7 20:32:09 2015] [debug] Rendering template "layouts/base.html.ep"
+[Tue Apr  7 20:32:09 2015] [debug] 200 OK (0.004129s, 242.189/s)
+[Tue Apr  7 20:32:23 2015] [debug] POST "/login"
+[Tue Apr  7 20:32:23 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Tue Apr  7 20:32:23 2015] [debug] Rendering template "layouts/base.html.ep"
+[Tue Apr  7 20:32:23 2015] [debug] 403 Forbidden (0.009562s, 104.581/s)
+[Tue Apr  7 20:59:53 2015] [debug] GET "/create_account"
+[Tue Apr  7 20:59:53 2015] [debug] Rendering template "login/create_form.html.ep"
+[Tue Apr  7 20:59:53 2015] [debug] Rendering template "layouts/base.html.ep"
+[Tue Apr  7 20:59:53 2015] [debug] 200 OK (0.009327s, 107.216/s)
+[Tue Apr  7 21:00:03 2015] [debug] POST "/create_account"
+[Tue Apr  7 21:00:03 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_account"
+[Tue Apr  7 21:00:03 2015] [debug] 302 Found (0.281929s, 3.547/s)
+[Tue Apr  7 21:00:03 2015] [debug] GET "/login"
+[Tue Apr  7 21:00:03 2015] [debug] Rendering template "login/login_form.html.ep"
+[Tue Apr  7 21:00:03 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Tue Apr  7 21:00:03 2015] [debug] 200 OK (0.002640s, 378.788/s)
+[Tue Apr  7 21:00:18 2015] [debug] GET "/create_account"
+[Tue Apr  7 21:00:18 2015] [debug] Rendering cached template "login/create_form.html.ep"
+[Tue Apr  7 21:00:18 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Tue Apr  7 21:00:18 2015] [debug] 200 OK (0.002217s, 451.060/s)
+[Tue Apr  7 21:12:07 2015] [debug] GET "/create_account"
+[Tue Apr  7 21:12:07 2015] [debug] Rendering template "login/create_form.html.ep"
+[Tue Apr  7 21:12:07 2015] [debug] Rendering template "layouts/base.html.ep"
+[Tue Apr  7 21:12:07 2015] [debug] 200 OK (0.007850s, 127.389/s)
+[Tue Apr  7 21:12:18 2015] [debug] POST "/create_account"
+[Tue Apr  7 21:12:18 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_account"
+[Tue Apr  7 21:12:18 2015] [debug] 302 Found (0.063995s, 15.626/s)
+[Tue Apr  7 21:12:18 2015] [debug] GET "/create_account"
+[Tue Apr  7 21:12:18 2015] [debug] Rendering cached template "login/create_form.html.ep"
+[Tue Apr  7 21:12:18 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Tue Apr  7 21:12:18 2015] [debug] 200 OK (0.002687s, 372.162/s)
+[Tue Apr  7 21:12:29 2015] [debug] POST "/create_account"
+[Tue Apr  7 21:12:29 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_account"
+[Tue Apr  7 21:12:30 2015] [debug] 302 Found (0.177292s, 5.640/s)
+[Tue Apr  7 21:12:30 2015] [debug] GET "/login"
+[Tue Apr  7 21:12:30 2015] [debug] Rendering template "login/login_form.html.ep"
+[Tue Apr  7 21:12:30 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Tue Apr  7 21:12:30 2015] [debug] 200 OK (0.004162s, 240.269/s)
+[Tue Apr  7 21:18:51 2015] [debug] GET "/login"
+[Tue Apr  7 21:18:51 2015] [debug] Rendering template "login/login_form.html.ep"
+[Tue Apr  7 21:18:51 2015] [debug] Rendering template "layouts/base.html.ep"
+[Tue Apr  7 21:18:51 2015] [debug] 200 OK (0.007088s, 141.084/s)
+[Tue Apr  7 21:18:54 2015] [debug] POST "/login"
+[Tue Apr  7 21:18:54 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Tue Apr  7 21:18:55 2015] [debug] Rendering template "layouts/base.html.ep"
+[Tue Apr  7 21:18:55 2015] [debug] 403 Forbidden (0.060593s, 16.504/s)
+[Tue Apr  7 21:18:55 2015] [debug] GET "/create_account"
+[Tue Apr  7 21:18:55 2015] [debug] Rendering template "login/create_form.html.ep"
+[Tue Apr  7 21:18:55 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Tue Apr  7 21:18:55 2015] [debug] 200 OK (0.006760s, 147.929/s)
+[Tue Apr  7 21:19:11 2015] [debug] POST "/create_account"
+[Tue Apr  7 21:19:11 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_account"
+[Tue Apr  7 21:19:11 2015] [error] DBIx::Class::Storage::DBI::_dbh_execute(): DBI Exception: DBD::SQLite::st execute failed: FOREIGN KEY constraint failed [for Statement "INSERT INTO users ( city, company, email, firstname, lastname, pw_hash, user_level, username, zipcode) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )"] at lib/Moblo/Controller/Login.pm line 105
+
+[Tue Apr  7 21:19:11 2015] [debug] Template "exception.development.html.ep" not found
+[Tue Apr  7 21:19:11 2015] [debug] Template "exception.html.ep" not found
+[Tue Apr  7 21:19:11 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Apr  7 21:19:11 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Apr  7 21:19:11 2015] [debug] 500 Internal Server Error (0.044041s, 22.706/s)
+[Tue Apr  7 21:28:00 2015] [debug] GET "/create_company_form"
+[Tue Apr  7 21:28:00 2015] [debug] Rendering template "login/create_company_form.html.ep"
+[Tue Apr  7 21:28:00 2015] [error] syntax error at template login/create_company_form.html.ep line 104, near "} $_O "
+Global symbol "$_O" requires explicit package name at template login/create_company_form.html.ep line 104.
+Unmatched right curly bracket at template login/create_company_form.html.ep line 104, at end of line
+99: 	%= label_for zipcode => 'zip code'
+100: 	%= text_field 'zipcode', id => 'zipcode_field'
+101: 
+102: 
+103: 	%= submit_button 'Log me in', class => 'btn button-primary', id => 'submit_button'
+104: % end
+
+[Tue Apr  7 21:28:00 2015] [debug] Template "exception.development.html.ep" not found
+[Tue Apr  7 21:28:00 2015] [debug] Template "exception.html.ep" not found
+[Tue Apr  7 21:28:00 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Apr  7 21:28:00 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Apr  7 21:28:00 2015] [debug] 500 Internal Server Error (0.022483s, 44.478/s)
+[Tue Apr  7 21:29:14 2015] [debug] GET "/create_company_form"
+[Tue Apr  7 21:29:14 2015] [debug] Rendering template "login/create_company_form.html.ep"
+[Tue Apr  7 21:29:14 2015] [error] syntax error at template login/create_company_form.html.ep line 104, near "} $_O "
+Global symbol "$_O" requires explicit package name at template login/create_company_form.html.ep line 104.
+Unmatched right curly bracket at template login/create_company_form.html.ep line 104, at end of line
+99: 	%= label_for zipcode => 'zip code'
+100: 	%= text_field 'zipcode', id => 'zipcode_field'
+101: 
+102: 
+103: 	%= submit_button 'Log me in', class => 'btn button-primary', id => 'submit_button'
+104: % end
+
+[Tue Apr  7 21:29:14 2015] [debug] Template "exception.development.html.ep" not found
+[Tue Apr  7 21:29:14 2015] [debug] Template "exception.html.ep" not found
+[Tue Apr  7 21:29:14 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Apr  7 21:29:14 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Apr  7 21:29:14 2015] [debug] 500 Internal Server Error (0.038853s, 25.738/s)
+[Tue Apr  7 21:30:09 2015] [debug] GET "/create_company_form"
+[Tue Apr  7 21:30:09 2015] [debug] Rendering template "login/create_company_form.html.ep"
+[Tue Apr  7 21:30:09 2015] [error] Missing right curly or square bracket at template login/create_company_form.html.ep line 104, at end of line
+syntax error at template login/create_company_form.html.ep line 104, at EOF
+99: 	%= label_for zipcode => 'zip code'
+100: 	%= text_field 'zipcode', id => 'zipcode_field'
+101: 
+102: 
+103: 	%= submit_button 'Log me in', class => 'btn button-primary', id => 'submit_button'
+104: % end
+
+[Tue Apr  7 21:30:09 2015] [debug] Template "exception.development.html.ep" not found
+[Tue Apr  7 21:30:09 2015] [debug] Template "exception.html.ep" not found
+[Tue Apr  7 21:30:09 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Tue Apr  7 21:30:09 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Tue Apr  7 21:30:09 2015] [debug] 500 Internal Server Error (0.026165s, 38.219/s)
+[Tue Apr  7 21:30:22 2015] [debug] GET "/create_company_form"
+[Tue Apr  7 21:30:22 2015] [debug] Rendering template "login/create_company_form.html.ep"
+[Tue Apr  7 21:30:22 2015] [debug] Rendering template "layouts/base.html.ep"
+[Tue Apr  7 21:30:22 2015] [debug] 200 OK (0.016635s, 60.114/s)
+[Tue Apr  7 21:37:39 2015] [debug] GET "/create_company_form"
+[Tue Apr  7 21:37:39 2015] [debug] Rendering template "login/create_company_form.html.ep"
+[Tue Apr  7 21:37:39 2015] [debug] Rendering template "layouts/base.html.ep"
+[Tue Apr  7 21:37:39 2015] [debug] 200 OK (0.008255s, 121.139/s)
+[Tue Apr  7 21:39:45 2015] [debug] GET "/create_company_form"
+[Tue Apr  7 21:39:45 2015] [debug] Rendering cached template "login/create_company_form.html.ep"
+[Tue Apr  7 21:39:45 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Tue Apr  7 21:39:45 2015] [debug] 200 OK (0.001741s, 574.383/s)
