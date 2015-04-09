@@ -1,5 +1,6 @@
 package Moblo::Controller::Login;
 use Mojo::Base 'Mojolicious::Controller';
+use Mojo::JSON qw/encode_json decode_json/;
 
 sub user_exists {
 	#username and password equals parameters passed
@@ -60,6 +61,7 @@ sub is_logged_in {
 sub create_new_account{
 	my $self = shift;
 
+
 	my $username = $self->param('username');
 	my $password = $self->param('password');
 	my $firstname = $self->param('firstname');
@@ -108,7 +110,7 @@ sub create_new_account{
 				firstname => $firstname,
 				lastname => $lastname,
 				email => $email,
-				zipcode => $zipcode,
+				zipcode => scalar $zipcode,
 				city => $city,
 				user_level => $user_level,
 				company => $company
@@ -117,6 +119,37 @@ sub create_new_account{
 			$self->redirect_to('/login');
 		}
 	}
+}
+#creates a new company
+sub create_new_company {
+	
+	my $self = shift;
+
+	my $json = $self->req->json;
+	#if in array acces like this
+	# print $json->[0]->{company};
+	#use like this if {"key:value"}
+	#if($json->{company} eq 'what'){
+	#	$self->render(json => {tool => "one"});
+	#}
+	#else{
+	#		$self->render(json => {tool => "two"});
+	#}
+	my $users_company = $json->{company};
+	my $companys = $self->db->resultset('Company');
+	my $counts = $companys->search({name => $users_company});
+	my $total = $companys->count;
+	if($counts == 0){
+		$companys->create({
+			id => $total + 1,
+			name => "$users_company"
+		});
+		$self->render(json => {name => $users_company});
+	}
+	else{
+		$self->render(json => {name => "invalid",count => $total});
+	}
+	
 }
 
 1;

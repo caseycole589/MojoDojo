@@ -1,63 +1,122 @@
 
 %= javascript begin
 	$(document).ready(function(){
-		$("#submit_button").click(function(){
-			var should_alert = false;
-			if($("#username_field").val() === "") {
-				should_alert = true
-				$("#username_field").css("background-color","red");
-			};
-			if($("#password_field").val() === "") {
-				should_alert = true;
-				$("#password_field").css('background-color','red');
-			}
-			if($("#firstname_field").val() === "") {
-				should_alert = true;
-				$("#firstname_field").css('background-color','red');
-			}	
-			if($("#lastname_field").val() === ""){
-				should_alert = true;
-				$("#lastname_field").css('background-color','red');
-			}
-			if($("#company_field").val() === ""){
-				should_alert = true;
-				$("#company_field").css('background-color','red');
-			}
-			if($("#city_field").val() === ""){
-				should_alert = true;
-				$("#city_field").css('background-color','red');
-			}
-			if($("#email_field").val() === ""){
-				should_alert = true;
-				$("#email_field").css('background-color','red');
-			}
-			if($("#company_field").val() === ""){
-				should_alert = true;
-				$("#zipcode_field").css('background-color','red');
-			}
-			if(should_alert === true){
-				should_alert = true;
-				alert("Please fill in all required fields");
-				return false;
-			}
-		});
+
+		document.getElementById('admin_div').style.display = 'none';	
+	});
+
+	$("#submit_button").click(function(e){
+		e.preventd
+		var should_alert = false;
+		if($("#username_field").val() === "") {
+			should_alert = true
+			$("#username_field").css("background-color","red");
+		};
+		if($("#password_field").val() === "") {
+			should_alert = true;
+			$("#password_field").css('background-color','red');
+		}
+		if($("#firstname_field").val() === "") {
+			should_alert = true;
+			$("#firstname_field").css('background-color','red');
+		}	
+		if($("#lastname_field").val() === ""){
+			should_alert = true;
+			$("#lastname_field").css('background-color','red');
+		}
+		if($("#company_field").val() === ""){
+			should_alert = true;
+			$("#company_field").css('background-color','red');
+		}
+		if($("#city_field").val() === ""){
+			should_alert = true;
+			$("#city_field").css('background-color','red');
+		}
+		if($("#email_field").val() === ""){
+			should_alert = true;
+			$("#email_field").css('background-color','red');
+		}
+		if($("#company_field").val() === ""){
+			should_alert = true;
+			$("#zipcode_field").css('background-color','red');
+		}
+		if(should_alert === true){
+			should_alert = true;
+			alert("Please fill in all required fields");
+			return false;
+		}
+		else{
+			addCompany();
+		}
 	});
 
 	function addCompany(){
-		$.ajax({
-			
-		});
+
+		var dataPara = {
+			"company":document.getElementById('company_field').value
+		};
+
+	  	$.ajax({
+            type: "POST",
+            url: "/create_company_form/create_company",
+            data: JSON.stringify(dataPara),
+            dataType: "json",
+            success: function (msg, status)
+            {
+            	var company_object = msg;
+            	alert(JSON.stringify(company_object));
+            	if(company_object.name == 'invalid'){
+            		company_creation_failure(company_object);
+            	}
+            	else{
+            		company_creation_successful(company_object);
+            	}
+            }
+        });
 	}
+
+	function addAdmin(){
+		var datapara = {
+			"Username":$("#username_field").val(),
+			"Password":$("#password_field").val(),
+			"Firstname":$("#firstname_field").val(),
+			"Lastname":$("#lastname_field").val(),
+			"Company":$("#company_field").val(),
+			"email":$("#email_field").val(),
+			"city":$("#city_field").val(),
+			"zipcode":$("#zipcode_field").val()
+		};
+		//put ajax here
+	}
+
+	function company_creation_successful(company_object){
+		alert("company successfully created!");
+		$("#company_div").css('display','none');
+		$("#admin_div").css('display','inline');
+		document.getElementById('header_div').innerHTML = "Only a little bit left! ...";
+	}
+
+	function company_creation_failure(company_object){
+		alert("It appears your company name was already taken\n Please try again");
+		return false;
+	}
+
 %end
-<h1> Create a new company</h1>
+
+<h1 id="header_div"> Create a new company</h1>
+
 <div id="company_div">
-<h2>Company</h2>
-%= label_for company => 'Company'
-%= text_field 'company', id => 'company_field'
-%= tag 'button' , id => "submit_company", onclick => "add_company"
+	
+	%= label_for company => 'Company'
+	%= text_field 'company', id => 'company_field'
+	<br/>
+	<button type="button" onclick="addCompany();return false;">Confirm Name</button>
+
 </div>
+
+
 <div id="admin_div">
-		
+	<h2>Please Continue filling out the form</h3>
 	<h3>Admin User</h3>
 	%= form_for 'create_company' => (method => 'POST') => begin
 		%= label_for username => 'Username'
@@ -90,7 +149,7 @@
 		%=tag 'br'
 		%=tag 'br'
 
-		%= label_for email => 'email'
+		%= label_for email => 'Email'
 		%= text_field 'email', id => 'email_field'
 
 		%=tag 'br'

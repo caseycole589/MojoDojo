@@ -54,5 +54,4 @@ __PACKAGE__->has_many(
   'Moblo::Schema::Result::Comment',
   'post_id'
 );
-
 1;
