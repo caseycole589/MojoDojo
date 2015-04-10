@@ -41,7 +41,8 @@ sub on_user_login {
 	else{
 		#if something was wrong tell the user
 		$self->render(text => '<b>Wrong username/password</b>
-			<br/><a href="create_account">Create new account</a>',status =>403);
+			<br/><a href="create_account">Create new account</a> or
+			 <br/><a href="create_company_form"> Create a Company</a>',status =>403);
 	}
 
 }
@@ -112,7 +113,7 @@ sub create_new_account{
 				email => $email,
 				zipcode => scalar $zipcode,
 				city => $city,
-				user_level => $user_level,
+				user_level => 'customer',
 				company => $company
 			});
 			$self->flash(create_user_success => "Success");
@@ -150,6 +151,35 @@ sub create_new_company {
 		$self->render(json => {name => "invalid",count => $total});
 	}
 	
+}
+
+sub create_admin {
+	my $self = shift;
+	my $json = $self->req->json;
+	my $users = $self->db->resultset('User');
+	
+	my $users_company = $json->{Company};
+	my $users_username = $json->{Username};
+	my $users_password = $json->{Password};
+	my $users_firstname = $json->{Firstname};
+	my $users_lastname = $json->{Lastname};
+	my $users_email = $json->{email};
+	my $users_city = $json->{city};
+	my $users_zipcode = $json->{zipcode};
+
+	$users->create({
+		company => $users_company,
+		username => $users_username,
+		pw_hash => $self->bcrypt($users_password),
+		firstname => $users_firstname,
+		lastname => $users_lastname,
+		email => $users_email,
+		city => $users_city,
+		zipcode => scalar $users_zipcode,
+		user_level => 'admin',
+	});
+
+	$self->redirect_to('/login');
 }
 
 1;

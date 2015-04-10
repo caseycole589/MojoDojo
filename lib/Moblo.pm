@@ -52,6 +52,8 @@ sub startup {
 
   $r->get('/create_company_form')->to(template => 'login/create_company_form');
   $r->post('/create_company_form/create_company')->to('Login#create_new_company');
+  $r->post('/create_company_form/create_admin')->to('Login#create_admin');
+ 
 
   $r->route('/logout')->to(cb => sub {
   	my $self = shift;

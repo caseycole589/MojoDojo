@@ -5,8 +5,8 @@
 		document.getElementById('admin_div').style.display = 'none';	
 	});
 
-	$("#submit_button").click(function(e){
-		e.preventd
+	function check_valid(){
+		alert("finally")
 		var should_alert = false;
 		if($("#username_field").val() === "") {
 			should_alert = true
@@ -46,9 +46,9 @@
 			return false;
 		}
 		else{
-			addCompany();
+			addAdmin();
 		}
-	});
+	}
 
 	function addCompany(){
 
@@ -76,7 +76,8 @@
 	}
 
 	function addAdmin(){
-		var datapara = {
+	
+		var dataPara = {
 			"Username":$("#username_field").val(),
 			"Password":$("#password_field").val(),
 			"Firstname":$("#firstname_field").val(),
@@ -86,13 +87,31 @@
 			"city":$("#city_field").val(),
 			"zipcode":$("#zipcode_field").val()
 		};
-		//put ajax here
+		
+	  	$.ajax({
+            type: "POST",
+            url: "/create_company_form/create_admin",
+            data: JSON.stringify(dataPara),
+            dataType: "json",
+            success: function (msg, status)
+            {
+            	var company_object = msg;
+            	if(company_object.name == 'invalid'){
+            		company_creation_failure(company_object);
+            	}
+            	else{
+            		company_creation_successful(company_object);
+            	}
+            }
+        });
 	}
 
 	function company_creation_successful(company_object){
 		alert("company successfully created!");
 		$("#company_div").css('display','none');
 		$("#admin_div").css('display','inline');
+		$("#company_static").val(company_object.name);
+		$("#company_object").prop('disabled'.true);
 		document.getElementById('header_div').innerHTML = "Only a little bit left! ...";
 	}
 
@@ -143,12 +162,6 @@
 		%=tag 'br'
 		%=tag 'br'
 
-		%= label_for company => 'Company'
-		%= text_field 'company', id => 'company_field'
-
-		%=tag 'br'
-		%=tag 'br'
-
 		%= label_for email => 'Email'
 		%= text_field 'email', id => 'email_field'
 
@@ -165,7 +178,7 @@
 		%= text_field 'zipcode', id => 'zipcode_field'
 
 
-		%= submit_button 'Log me in', class => 'btn button-primary', id => 'submit_button'
+		<button type="button" id="submit_button" onclick="check_valid();return false;">Log me in </button>
 	% end
 </div>
 
