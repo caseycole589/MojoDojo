@@ -171,3 +171,752 @@ Compilation failed in require at (eval 156) line 1.
 [Sun Apr 12 19:37:32 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
 [Sun Apr 12 19:37:32 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
 [Sun Apr 12 19:37:32 2015] [debug] 500 Internal Server Error (0.021377s, 46.779/s)
+[Sun Apr 12 20:22:05 2015] [debug] GET "/"
+[Sun Apr 12 20:22:05 2015] [debug] Rendering template "main/index.html.ep"
+[Sun Apr 12 20:22:05 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 20:22:05 2015] [debug] 200 OK (0.034853s, 28.692/s)
+[Sun Apr 12 20:22:09 2015] [debug] GET "/"
+[Sun Apr 12 20:22:09 2015] [debug] Rendering cached template "main/index.html.ep"
+[Sun Apr 12 20:22:09 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Sun Apr 12 20:22:09 2015] [debug] 200 OK (0.006059s, 165.044/s)
+[Sun Apr 12 20:23:33 2015] [debug] GET "/"
+[Sun Apr 12 20:23:33 2015] [debug] Rendering template "main/index.html.ep"
+[Sun Apr 12 20:23:33 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 20:23:33 2015] [debug] 200 OK (0.036503s, 27.395/s)
+[Sun Apr 12 20:23:48 2015] [debug] GET "/"
+[Sun Apr 12 20:23:48 2015] [debug] Rendering template "main/index.html.ep"
+[Sun Apr 12 20:23:48 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 20:23:48 2015] [debug] 200 OK (0.040049s, 24.969/s)
+[Sun Apr 12 20:24:37 2015] [debug] GET "/"
+[Sun Apr 12 20:24:37 2015] [debug] Rendering template "main/index.html.ep"
+[Sun Apr 12 20:24:37 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 20:24:37 2015] [debug] 200 OK (0.038410s, 26.035/s)
+[Sun Apr 12 20:24:37 2015] [debug] GET "/"
+[Sun Apr 12 20:24:37 2015] [debug] Rendering cached template "main/index.html.ep"
+[Sun Apr 12 20:24:37 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Sun Apr 12 20:24:37 2015] [debug] 200 OK (0.005261s, 190.078/s)
+[Sun Apr 12 20:24:38 2015] [debug] GET "/"
+[Sun Apr 12 20:24:38 2015] [debug] Rendering cached template "main/index.html.ep"
+[Sun Apr 12 20:24:38 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Sun Apr 12 20:24:38 2015] [debug] 200 OK (0.008153s, 122.654/s)
+[Sun Apr 12 20:24:38 2015] [debug] GET "/"
+[Sun Apr 12 20:24:38 2015] [debug] Rendering cached template "main/index.html.ep"
+[Sun Apr 12 20:24:38 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Sun Apr 12 20:24:38 2015] [debug] 200 OK (0.003953s, 252.972/s)
+[Sun Apr 12 20:24:38 2015] [debug] GET "/"
+[Sun Apr 12 20:24:38 2015] [debug] Rendering cached template "main/index.html.ep"
+[Sun Apr 12 20:24:38 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Sun Apr 12 20:24:38 2015] [debug] 200 OK (0.007612s, 131.372/s)
+[Sun Apr 12 20:25:58 2015] [debug] GET "/"
+[Sun Apr 12 20:25:58 2015] [debug] Rendering template "main/index.html.ep"
+[Sun Apr 12 20:25:58 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 20:25:58 2015] [debug] 200 OK (0.050420s, 19.833/s)
+[Sun Apr 12 20:28:05 2015] [debug] GET "/"
+[Sun Apr 12 20:28:05 2015] [debug] Rendering template "main/index.html.ep"
+[Sun Apr 12 20:28:05 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 20:28:05 2015] [debug] 200 OK (0.044886s, 22.279/s)
+[Sun Apr 12 20:29:37 2015] [debug] GET "/"
+[Sun Apr 12 20:29:37 2015] [debug] Rendering template "main/index.html.ep"
+[Sun Apr 12 20:29:37 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 20:29:37 2015] [debug] 200 OK (0.028456s, 35.142/s)
+[Sun Apr 12 20:29:40 2015] [debug] GET "/login"
+[Sun Apr 12 20:29:40 2015] [debug] Rendering template "login/login_form.html.ep"
+[Sun Apr 12 20:29:40 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Sun Apr 12 20:29:40 2015] [debug] 200 OK (0.003375s, 296.296/s)
+[Sun Apr 12 20:29:44 2015] [debug] POST "/login"
+[Sun Apr 12 20:29:44 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Sun Apr 12 20:29:44 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 20:29:44 2015] [debug] 403 Forbidden (0.004167s, 239.981/s)
+[Sun Apr 12 20:29:49 2015] [debug] GET "/create_account"
+[Sun Apr 12 20:29:49 2015] [debug] Rendering template "login/create_form.html.ep"
+[Sun Apr 12 20:29:49 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Sun Apr 12 20:29:49 2015] [debug] 200 OK (0.005039s, 198.452/s)
+[Sun Apr 12 20:37:47 2015] [debug] GET "/create_account"
+[Sun Apr 12 20:37:47 2015] [debug] Rendering template "login/create_form.html.ep"
+[Sun Apr 12 20:37:47 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 20:37:47 2015] [debug] 200 OK (0.007330s, 136.426/s)
+[Sun Apr 12 20:38:35 2015] [debug] GET "/create_account"
+[Sun Apr 12 20:38:35 2015] [debug] Rendering template "login/create_form.html.ep"
+[Sun Apr 12 20:38:35 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 20:38:35 2015] [debug] 200 OK (0.013546s, 73.823/s)
+[Sun Apr 12 20:48:18 2015] [debug] GET "/create_account"
+[Sun Apr 12 20:48:18 2015] [debug] Rendering template "login/create_form.html.ep"
+[Sun Apr 12 20:48:18 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 20:48:18 2015] [debug] 200 OK (0.010423s, 95.942/s)
+[Sun Apr 12 20:50:48 2015] [debug] GET "/"
+[Sun Apr 12 20:50:48 2015] [debug] Rendering template "main/index.html.ep"
+[Sun Apr 12 20:50:48 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 20:50:48 2015] [debug] 200 OK (0.037517s, 26.655/s)
+[Sun Apr 12 20:50:52 2015] [debug] GET "/login"
+[Sun Apr 12 20:50:52 2015] [debug] Rendering template "login/login_form.html.ep"
+[Sun Apr 12 20:50:52 2015] [error] Bareword "form" not allowed while "strict subs" in use at template login/login_form.html.ep line 12.
+Bareword "control" not allowed while "strict subs" in use at template login/login_form.html.ep line 12.
+7: 	%= label_for username => 'Username'
+8: 	%= text_field 'username'
+9: 
+10: 	%=tag 'br' 
+11: 	%=tag 'br'
+12: 	%= label_for password => 'Password', class =>form-control
+13: 	%= password_field 'password'
+14: 
+15: 	%=tag 'br'
+16: 	%=tag 'br'
+17: 	%= submit_button 'Log me in', class => 'btn btn-lg btn-block btn-primary'
+
+[Sun Apr 12 20:50:52 2015] [debug] Template "exception.development.html.ep" not found
+[Sun Apr 12 20:50:52 2015] [debug] Template "exception.html.ep" not found
+[Sun Apr 12 20:50:52 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Sun Apr 12 20:50:52 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Sun Apr 12 20:50:52 2015] [debug] 500 Internal Server Error (0.019997s, 50.008/s)
+[Sun Apr 12 20:51:10 2015] [debug] GET "/login"
+[Sun Apr 12 20:51:10 2015] [debug] Rendering template "login/login_form.html.ep"
+[Sun Apr 12 20:51:10 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 20:51:10 2015] [debug] 200 OK (0.004771s, 209.600/s)
+[Sun Apr 12 20:51:36 2015] [debug] GET "/login"
+[Sun Apr 12 20:51:36 2015] [debug] Rendering template "login/login_form.html.ep"
+[Sun Apr 12 20:51:36 2015] [error] Bad name after br' at template login/login_form.html.ep line 15.
+
+[Sun Apr 12 20:51:36 2015] [debug] Template "exception.development.html.ep" not found
+[Sun Apr 12 20:51:36 2015] [debug] Template "exception.html.ep" not found
+[Sun Apr 12 20:51:36 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Sun Apr 12 20:51:36 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Sun Apr 12 20:51:36 2015] [debug] 500 Internal Server Error (0.036459s, 27.428/s)
+[Sun Apr 12 20:51:51 2015] [debug] GET "/login"
+[Sun Apr 12 20:51:51 2015] [debug] Rendering template "login/login_form.html.ep"
+[Sun Apr 12 20:51:51 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 20:51:51 2015] [debug] 200 OK (0.003970s, 251.889/s)
+[Sun Apr 12 20:52:52 2015] [debug] GET "/login"
+[Sun Apr 12 20:52:52 2015] [debug] Rendering template "login/login_form.html.ep"
+[Sun Apr 12 20:52:52 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 20:52:52 2015] [debug] 200 OK (0.010503s, 95.211/s)
+[Sun Apr 12 20:53:43 2015] [debug] GET "/login"
+[Sun Apr 12 20:53:43 2015] [debug] Rendering template "login/login_form.html.ep"
+[Sun Apr 12 20:53:43 2015] [error] Can't modify constant item in scalar assignment at template login/login_form.html.ep line 7, at EOF
+2: %my $success = flash('create_user_success');
+3: 	<h3 style="color:green"><%= $success%></h3>
+4: %}
+5: 
+6: %= form_for 'login' => (method => 'POST') => begin
+7: 	%= label_for username => 'Username', class="sr-only"
+8: 	%= text_field 'username', class => "form-control"
+9: 
+10: 	%=tag 'br' 
+11: 	%=tag 'br'
+12: 	%= label_for password => 'Password' 
+
+[Sun Apr 12 20:53:43 2015] [debug] Template "exception.development.html.ep" not found
+[Sun Apr 12 20:53:43 2015] [debug] Template "exception.html.ep" not found
+[Sun Apr 12 20:53:43 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Sun Apr 12 20:53:43 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Sun Apr 12 20:53:43 2015] [debug] 500 Internal Server Error (0.021260s, 47.037/s)
+[Sun Apr 12 20:54:06 2015] [debug] GET "/login"
+[Sun Apr 12 20:54:06 2015] [debug] Rendering template "login/login_form.html.ep"
+[Sun Apr 12 20:54:06 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 20:54:06 2015] [debug] 200 OK (0.004780s, 209.205/s)
+[Sun Apr 12 20:54:15 2015] [debug] GET "/login"
+[Sun Apr 12 20:54:15 2015] [debug] Rendering cached template "login/login_form.html.ep"
+[Sun Apr 12 20:54:15 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Sun Apr 12 20:54:15 2015] [debug] 200 OK (0.002976s, 336.022/s)
+[Sun Apr 12 20:55:37 2015] [debug] GET "/login"
+[Sun Apr 12 20:55:37 2015] [debug] Rendering template "login/login_form.html.ep"
+[Sun Apr 12 20:55:37 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 20:55:37 2015] [debug] 200 OK (0.008518s, 117.398/s)
+[Sun Apr 12 20:55:39 2015] [debug] GET "/login"
+[Sun Apr 12 20:55:39 2015] [debug] Rendering cached template "login/login_form.html.ep"
+[Sun Apr 12 20:55:39 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Sun Apr 12 20:55:39 2015] [debug] 200 OK (0.002586s, 386.698/s)
+[Sun Apr 12 20:55:45 2015] [debug] GET "/login"
+[Sun Apr 12 20:55:45 2015] [debug] Rendering cached template "login/login_form.html.ep"
+[Sun Apr 12 20:55:45 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Sun Apr 12 20:55:45 2015] [debug] 200 OK (0.001161s, 861.326/s)
+[Sun Apr 12 20:57:03 2015] [debug] GET "/login"
+[Sun Apr 12 20:57:03 2015] [debug] Rendering template "login/login_form.html.ep"
+[Sun Apr 12 20:57:03 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 20:57:03 2015] [debug] 200 OK (0.007492s, 133.476/s)
+[Sun Apr 12 20:58:36 2015] [debug] GET "/login"
+[Sun Apr 12 20:58:36 2015] [debug] Rendering template "login/login_form.html.ep"
+[Sun Apr 12 20:58:36 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 20:58:36 2015] [debug] 200 OK (0.012149s, 82.311/s)
+[Sun Apr 12 20:59:51 2015] [debug] GET "/login"
+[Sun Apr 12 20:59:51 2015] [debug] Rendering template "login/login_form.html.ep"
+[Sun Apr 12 20:59:51 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 20:59:51 2015] [debug] 200 OK (0.006274s, 159.388/s)
+[Sun Apr 12 21:01:55 2015] [debug] GET "/login"
+[Sun Apr 12 21:01:55 2015] [debug] Rendering template "login/login_form.html.ep"
+[Sun Apr 12 21:01:55 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 21:01:55 2015] [debug] 200 OK (0.003956s, 252.781/s)
+[Sun Apr 12 21:02:41 2015] [debug] GET "/login"
+[Sun Apr 12 21:02:41 2015] [debug] Rendering template "login/login_form.html.ep"
+[Sun Apr 12 21:02:41 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 21:02:41 2015] [debug] 200 OK (0.010980s, 91.075/s)
+[Sun Apr 12 21:03:22 2015] [debug] GET "/login"
+[Sun Apr 12 21:03:22 2015] [debug] Rendering template "login/login_form.html.ep"
+[Sun Apr 12 21:03:22 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 21:03:22 2015] [debug] 200 OK (0.003946s, 253.421/s)
+[Sun Apr 12 21:04:24 2015] [debug] GET "/login"
+[Sun Apr 12 21:04:24 2015] [debug] Rendering template "login/login_form.html.ep"
+[Sun Apr 12 21:04:24 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 21:04:24 2015] [debug] 200 OK (0.006907s, 144.781/s)
+[Sun Apr 12 21:05:33 2015] [debug] POST "/login"
+[Sun Apr 12 21:05:33 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Sun Apr 12 21:05:33 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 21:05:33 2015] [debug] 403 Forbidden (0.039981s, 25.012/s)
+[Sun Apr 12 21:12:16 2015] [debug] POST "/login"
+[Sun Apr 12 21:12:16 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Sun Apr 12 21:12:16 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 21:12:16 2015] [debug] 403 Forbidden (0.035206s, 28.404/s)
+[Sun Apr 12 21:12:21 2015] [debug] GET "/create_account"
+[Sun Apr 12 21:12:21 2015] [debug] Rendering template "login/create_form.html.ep"
+[Sun Apr 12 21:12:21 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 21:12:21 2015] [debug] 200 OK (0.007355s, 135.962/s)
+[Sun Apr 12 21:12:59 2015] [debug] GET "/create_account"
+[Sun Apr 12 21:12:59 2015] [debug] Rendering template "login/create_form.html.ep"
+[Sun Apr 12 21:12:59 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 21:12:59 2015] [debug] 200 OK (0.005784s, 172.891/s)
+[Sun Apr 12 21:13:00 2015] [debug] GET "/create_account"
+[Sun Apr 12 21:13:00 2015] [debug] Rendering cached template "login/create_form.html.ep"
+[Sun Apr 12 21:13:00 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Sun Apr 12 21:13:00 2015] [debug] 200 OK (0.001718s, 582.072/s)
+[Sun Apr 12 21:13:59 2015] [debug] GET "/create_account"
+[Sun Apr 12 21:13:59 2015] [debug] Rendering template "login/create_form.html.ep"
+[Sun Apr 12 21:13:59 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 21:13:59 2015] [debug] 200 OK (0.005815s, 171.969/s)
+[Sun Apr 12 21:14:20 2015] [debug] GET "/create_account"
+[Sun Apr 12 21:14:20 2015] [debug] Rendering template "login/create_form.html.ep"
+[Sun Apr 12 21:14:20 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 21:14:20 2015] [debug] 200 OK (0.006184s, 161.708/s)
+[Sun Apr 12 21:14:34 2015] [debug] GET "/create_account"
+[Sun Apr 12 21:14:34 2015] [debug] Rendering template "login/create_form.html.ep"
+[Sun Apr 12 21:14:34 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 21:14:34 2015] [debug] 200 OK (0.005780s, 173.010/s)
+[Sun Apr 12 21:14:57 2015] [debug] GET "/create_account"
+[Sun Apr 12 21:14:57 2015] [debug] Rendering template "login/create_form.html.ep"
+[Sun Apr 12 21:14:57 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 21:14:57 2015] [debug] 200 OK (0.005737s, 174.307/s)
+[Sun Apr 12 21:18:38 2015] [debug] GET "/create_account"
+[Sun Apr 12 21:18:38 2015] [debug] Rendering template "login/create_form.html.ep"
+[Sun Apr 12 21:18:38 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 21:18:38 2015] [debug] 200 OK (0.005732s, 174.459/s)
+[Sun Apr 12 21:21:25 2015] [debug] GET "/create_account"
+[Sun Apr 12 21:21:25 2015] [debug] Rendering template "login/create_form.html.ep"
+[Sun Apr 12 21:21:25 2015] [error] Bareword "form" not allowed while "strict subs" in use at template login/create_form.html.ep line 105.
+100: 	%= label_for zipcode => 'zip code'
+101: 	%= text_field 'zipcode', id => 'zipcode_field'
+102: 
+103: 
+104: 	%= submit_button 'Log me in', class => 'btn btn-lg btn-block btn-primary', id => 'submit_button'
+105: % end
+106: </div>
+
+[Sun Apr 12 21:21:25 2015] [debug] Template "exception.development.html.ep" not found
+[Sun Apr 12 21:21:25 2015] [debug] Template "exception.html.ep" not found
+[Sun Apr 12 21:21:25 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Sun Apr 12 21:21:25 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Sun Apr 12 21:21:25 2015] [debug] 500 Internal Server Error (0.042869s, 23.327/s)
+[Sun Apr 12 21:22:13 2015] [debug] GET "/create_account"
+[Sun Apr 12 21:22:13 2015] [debug] Rendering template "login/create_form.html.ep"
+[Sun Apr 12 21:22:13 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 21:22:13 2015] [debug] 200 OK (0.006682s, 149.656/s)
+[Sun Apr 12 21:24:01 2015] [debug] GET "/create_account"
+[Sun Apr 12 21:24:01 2015] [debug] Rendering template "login/create_form.html.ep"
+[Sun Apr 12 21:24:01 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 21:24:01 2015] [debug] 200 OK (0.005768s, 173.370/s)
+[Sun Apr 12 21:24:53 2015] [debug] GET "/create_account"
+[Sun Apr 12 21:24:53 2015] [debug] Rendering template "login/create_form.html.ep"
+[Sun Apr 12 21:24:53 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 21:24:53 2015] [debug] 200 OK (0.018368s, 54.443/s)
+[Sun Apr 12 21:24:54 2015] [debug] GET "/create_account"
+[Sun Apr 12 21:24:54 2015] [debug] Rendering cached template "login/create_form.html.ep"
+[Sun Apr 12 21:24:54 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Sun Apr 12 21:24:54 2015] [debug] 200 OK (0.003713s, 269.324/s)
+[Sun Apr 12 21:25:33 2015] [debug] GET "/create_account"
+[Sun Apr 12 21:25:33 2015] [debug] Rendering template "login/create_form.html.ep"
+[Sun Apr 12 21:25:33 2015] [error] syntax error at template login/create_form.html.ep line 59, near "'Username' class"
+54: 	<h3 style="color:red">Error <%= $var %><h3>
+55: %}
+56: 
+57: %= form_for 'create_account_form' => (method => 'POST'),class => "form-horizontal" => begin
+58:     <div class="form-group">
+59:         %= label_for username => 'Username' class => "control-label col-xs-small"
+60: 
+61:         <input id='username' class="form-control" required>
+62:     </div>
+63: 	%=tag 'br' 
+64: 	%=tag 'br'
+
+[Sun Apr 12 21:25:33 2015] [debug] Template "exception.development.html.ep" not found
+[Sun Apr 12 21:25:33 2015] [debug] Template "exception.html.ep" not found
+[Sun Apr 12 21:25:33 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Sun Apr 12 21:25:33 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Sun Apr 12 21:25:33 2015] [debug] 500 Internal Server Error (0.019771s, 50.579/s)
+[Sun Apr 12 21:25:48 2015] [debug] GET "/create_account"
+[Sun Apr 12 21:25:48 2015] [debug] Rendering template "login/create_form.html.ep"
+[Sun Apr 12 21:25:48 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 21:25:48 2015] [debug] 200 OK (0.017822s, 56.110/s)
+[Sun Apr 12 21:27:39 2015] [debug] GET "/create_account"
+[Sun Apr 12 21:27:39 2015] [debug] Rendering template "login/create_form.html.ep"
+[Sun Apr 12 21:27:39 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 21:27:39 2015] [debug] 200 OK (0.015999s, 62.504/s)
+[Sun Apr 12 21:27:40 2015] [debug] GET "/create_account"
+[Sun Apr 12 21:27:40 2015] [debug] Rendering cached template "login/create_form.html.ep"
+[Sun Apr 12 21:27:40 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Sun Apr 12 21:27:40 2015] [debug] 200 OK (0.002073s, 482.393/s)
+[Sun Apr 12 21:27:40 2015] [debug] GET "/create_account"
+[Sun Apr 12 21:27:40 2015] [debug] Rendering cached template "login/create_form.html.ep"
+[Sun Apr 12 21:27:40 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Sun Apr 12 21:27:40 2015] [debug] 200 OK (0.001488s, 672.043/s)
+[Sun Apr 12 21:27:41 2015] [debug] GET "/create_account"
+[Sun Apr 12 21:27:41 2015] [debug] Rendering cached template "login/create_form.html.ep"
+[Sun Apr 12 21:27:41 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Sun Apr 12 21:27:41 2015] [debug] 200 OK (0.002356s, 424.448/s)
+[Sun Apr 12 21:30:48 2015] [debug] GET "/create_account"
+[Sun Apr 12 21:30:48 2015] [debug] Rendering template "login/create_form.html.ep"
+[Sun Apr 12 21:30:48 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 21:30:48 2015] [debug] 200 OK (0.011835s, 84.495/s)
+[Sun Apr 12 21:31:54 2015] [debug] GET "/create_account"
+[Sun Apr 12 21:31:54 2015] [debug] Rendering template "login/create_form.html.ep"
+[Sun Apr 12 21:31:54 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 21:31:54 2015] [debug] 200 OK (0.007662s, 130.514/s)
+[Sun Apr 12 21:32:13 2015] [debug] GET "/create_account"
+[Sun Apr 12 21:32:13 2015] [debug] Rendering template "login/create_form.html.ep"
+[Sun Apr 12 21:32:13 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 21:32:13 2015] [debug] 200 OK (0.005738s, 174.277/s)
+[Sun Apr 12 21:32:31 2015] [debug] GET "/create_account"
+[Sun Apr 12 21:32:31 2015] [debug] Rendering template "login/create_form.html.ep"
+[Sun Apr 12 21:32:31 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 21:32:31 2015] [debug] 200 OK (0.005743s, 174.125/s)
+[Sun Apr 12 21:32:32 2015] [debug] GET "/create_account"
+[Sun Apr 12 21:32:32 2015] [debug] Rendering cached template "login/create_form.html.ep"
+[Sun Apr 12 21:32:32 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Sun Apr 12 21:32:32 2015] [debug] 200 OK (0.006246s, 160.102/s)
+[Sun Apr 12 21:32:33 2015] [debug] GET "/create_account"
+[Sun Apr 12 21:32:33 2015] [debug] Rendering cached template "login/create_form.html.ep"
+[Sun Apr 12 21:32:33 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Sun Apr 12 21:32:33 2015] [debug] 200 OK (0.001446s, 691.563/s)
+[Sun Apr 12 21:32:33 2015] [debug] GET "/create_account"
+[Sun Apr 12 21:32:33 2015] [debug] Rendering cached template "login/create_form.html.ep"
+[Sun Apr 12 21:32:33 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Sun Apr 12 21:32:33 2015] [debug] 200 OK (0.003070s, 325.733/s)
+[Sun Apr 12 21:32:33 2015] [debug] GET "/create_account"
+[Sun Apr 12 21:32:33 2015] [debug] Rendering cached template "login/create_form.html.ep"
+[Sun Apr 12 21:32:33 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Sun Apr 12 21:32:33 2015] [debug] 200 OK (0.001515s, 660.066/s)
+[Sun Apr 12 21:34:27 2015] [debug] GET "/create_account"
+[Sun Apr 12 21:34:27 2015] [debug] Rendering template "login/create_form.html.ep"
+[Sun Apr 12 21:34:27 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 21:34:27 2015] [debug] 200 OK (0.016789s, 59.563/s)
+[Sun Apr 12 21:35:14 2015] [debug] GET "/create_account"
+[Sun Apr 12 21:35:14 2015] [debug] Rendering template "login/create_form.html.ep"
+[Sun Apr 12 21:35:14 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 21:35:14 2015] [debug] 200 OK (0.005769s, 173.340/s)
+[Sun Apr 12 21:35:14 2015] [debug] GET "/create_account"
+[Sun Apr 12 21:35:14 2015] [debug] Rendering cached template "login/create_form.html.ep"
+[Sun Apr 12 21:35:14 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Sun Apr 12 21:35:14 2015] [debug] 200 OK (0.002801s, 357.015/s)
+[Sun Apr 12 21:35:15 2015] [debug] GET "/create_account"
+[Sun Apr 12 21:35:15 2015] [debug] Rendering cached template "login/create_form.html.ep"
+[Sun Apr 12 21:35:15 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Sun Apr 12 21:35:15 2015] [debug] 200 OK (0.004740s, 210.970/s)
+[Sun Apr 12 21:35:40 2015] [debug] GET "/create_account"
+[Sun Apr 12 21:35:40 2015] [debug] Rendering template "login/create_form.html.ep"
+[Sun Apr 12 21:35:40 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 21:35:40 2015] [debug] 200 OK (0.005941s, 168.322/s)
+[Sun Apr 12 21:35:52 2015] [debug] GET "/create_account"
+[Sun Apr 12 21:35:52 2015] [debug] Rendering template "login/create_form.html.ep"
+[Sun Apr 12 21:35:52 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 21:35:52 2015] [debug] 200 OK (0.006481s, 154.297/s)
+[Sun Apr 12 21:55:40 2015] [debug] GET "/create_account"
+[Sun Apr 12 21:55:40 2015] [debug] Rendering template "login/create_form.html.ep"
+[Sun Apr 12 21:55:40 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 21:55:40 2015] [debug] 200 OK (0.014569s, 68.639/s)
+[Sun Apr 12 21:58:21 2015] [debug] GET "/create_account"
+[Sun Apr 12 21:58:21 2015] [debug] Rendering template "login/create_form.html.ep"
+[Sun Apr 12 21:58:21 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 21:58:21 2015] [debug] 200 OK (0.005923s, 168.833/s)
+[Sun Apr 12 21:58:32 2015] [debug] GET "/create_account"
+[Sun Apr 12 21:58:32 2015] [debug] Rendering template "login/create_form.html.ep"
+[Sun Apr 12 21:58:32 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 21:58:32 2015] [debug] 200 OK (0.016322s, 61.267/s)
+[Sun Apr 12 21:59:04 2015] [debug] GET "/create_account"
+[Sun Apr 12 21:59:04 2015] [debug] Rendering template "login/create_form.html.ep"
+[Sun Apr 12 21:59:04 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 21:59:04 2015] [debug] 200 OK (0.010798s, 92.610/s)
+[Sun Apr 12 21:59:28 2015] [debug] GET "/create_account"
+[Sun Apr 12 21:59:28 2015] [debug] Rendering template "login/create_form.html.ep"
+[Sun Apr 12 21:59:28 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 21:59:28 2015] [debug] 200 OK (0.005960s, 167.785/s)
+[Sun Apr 12 22:00:29 2015] [debug] GET "/create_account"
+[Sun Apr 12 22:00:29 2015] [debug] Rendering template "login/create_form.html.ep"
+[Sun Apr 12 22:00:29 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 22:00:29 2015] [debug] 200 OK (0.006716s, 148.898/s)
+[Sun Apr 12 22:02:06 2015] [debug] GET "/create_account"
+[Sun Apr 12 22:02:06 2015] [debug] Rendering template "login/create_form.html.ep"
+[Sun Apr 12 22:02:06 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 22:02:06 2015] [debug] 200 OK (0.006870s, 145.560/s)
+[Sun Apr 12 22:02:15 2015] [debug] GET "/create_account"
+[Sun Apr 12 22:02:15 2015] [debug] Rendering template "login/create_form.html.ep"
+[Sun Apr 12 22:02:15 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 22:02:15 2015] [debug] 200 OK (0.005958s, 167.842/s)
+[Sun Apr 12 22:04:03 2015] [debug] GET "/create_account"
+[Sun Apr 12 22:04:03 2015] [debug] Rendering template "login/create_form.html.ep"
+[Sun Apr 12 22:04:03 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 22:04:03 2015] [debug] 200 OK (0.011059s, 90.424/s)
+[Sun Apr 12 22:04:26 2015] [debug] GET "/create_account"
+[Sun Apr 12 22:04:26 2015] [debug] Rendering template "login/create_form.html.ep"
+[Sun Apr 12 22:04:26 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 22:04:26 2015] [debug] 200 OK (0.006475s, 154.440/s)
+[Sun Apr 12 22:04:54 2015] [debug] GET "/create_account"
+[Sun Apr 12 22:04:54 2015] [debug] Rendering template "login/create_form.html.ep"
+[Sun Apr 12 22:04:54 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 22:04:54 2015] [debug] 200 OK (0.005923s, 168.833/s)
+[Sun Apr 12 22:05:36 2015] [debug] GET "/create_account"
+[Sun Apr 12 22:05:36 2015] [debug] Rendering template "login/create_form.html.ep"
+[Sun Apr 12 22:05:36 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 22:05:36 2015] [debug] 200 OK (0.007133s, 140.193/s)
+[Sun Apr 12 22:06:30 2015] [debug] GET "/create_account"
+[Sun Apr 12 22:06:30 2015] [debug] Rendering template "login/create_form.html.ep"
+[Sun Apr 12 22:06:30 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 22:06:30 2015] [debug] 200 OK (0.006580s, 151.976/s)
+[Sun Apr 12 22:09:17 2015] [debug] GET "/create_account"
+[Sun Apr 12 22:09:17 2015] [debug] Rendering template "login/create_form.html.ep"
+[Sun Apr 12 22:09:17 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 22:09:17 2015] [debug] 200 OK (0.006102s, 163.881/s)
+[Sun Apr 12 22:09:19 2015] [debug] GET "/create_account"
+[Sun Apr 12 22:09:19 2015] [debug] Rendering cached template "login/create_form.html.ep"
+[Sun Apr 12 22:09:19 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Sun Apr 12 22:09:19 2015] [debug] 200 OK (0.003344s, 299.043/s)
+[Sun Apr 12 22:09:25 2015] [debug] GET "/create_account"
+[Sun Apr 12 22:09:25 2015] [debug] Rendering cached template "login/create_form.html.ep"
+[Sun Apr 12 22:09:25 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Sun Apr 12 22:09:25 2015] [debug] 200 OK (0.001470s, 680.272/s)
+[Sun Apr 12 22:09:43 2015] [debug] POST "/create_account"
+[Sun Apr 12 22:09:43 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_company_account"
+[Sun Apr 12 22:09:43 2015] [debug] Action not found in controller
+[Sun Apr 12 22:09:43 2015] [debug] Template "login/create_company_account.html.ep" not found
+[Sun Apr 12 22:09:43 2015] [debug] Template "not_found.development.html.ep" not found
+[Sun Apr 12 22:09:43 2015] [debug] Template "not_found.html.ep" not found
+[Sun Apr 12 22:09:43 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Sun Apr 12 22:09:43 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Sun Apr 12 22:09:43 2015] [debug] 404 Not Found (0.022808s, 43.844/s)
+[Sun Apr 12 22:11:18 2015] [debug] GET "/create_account"
+[Sun Apr 12 22:11:18 2015] [debug] Rendering template "login/create_form.html.ep"
+[Sun Apr 12 22:11:18 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 22:11:18 2015] [debug] 200 OK (0.009657s, 103.552/s)
+[Sun Apr 12 22:11:34 2015] [debug] GET "/create_account"
+[Sun Apr 12 22:11:34 2015] [debug] Rendering template "login/create_form.html.ep"
+[Sun Apr 12 22:11:34 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 22:11:34 2015] [debug] 200 OK (0.006253s, 159.923/s)
+[Sun Apr 12 22:12:03 2015] [debug] GET "/create_account"
+[Sun Apr 12 22:12:03 2015] [debug] Rendering template "login/create_form.html.ep"
+[Sun Apr 12 22:12:03 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 22:12:03 2015] [debug] 200 OK (0.013225s, 75.614/s)
+[Sun Apr 12 22:12:05 2015] [debug] GET "/create_account"
+[Sun Apr 12 22:12:05 2015] [debug] Rendering cached template "login/create_form.html.ep"
+[Sun Apr 12 22:12:05 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Sun Apr 12 22:12:05 2015] [debug] 200 OK (0.003818s, 261.917/s)
+[Sun Apr 12 22:12:06 2015] [debug] GET "/create_account"
+[Sun Apr 12 22:12:06 2015] [debug] Rendering cached template "login/create_form.html.ep"
+[Sun Apr 12 22:12:06 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Sun Apr 12 22:12:06 2015] [debug] 200 OK (0.003769s, 265.322/s)
+[Sun Apr 12 22:12:06 2015] [debug] GET "/create_account"
+[Sun Apr 12 22:12:06 2015] [debug] Rendering cached template "login/create_form.html.ep"
+[Sun Apr 12 22:12:06 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Sun Apr 12 22:12:06 2015] [debug] 200 OK (0.001736s, 576.037/s)
+[Sun Apr 12 22:12:08 2015] [debug] GET "/create_account"
+[Sun Apr 12 22:12:08 2015] [debug] Rendering cached template "login/create_form.html.ep"
+[Sun Apr 12 22:12:08 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Sun Apr 12 22:12:08 2015] [debug] 200 OK (0.001501s, 666.223/s)
+[Sun Apr 12 22:12:45 2015] [debug] GET "/create_account"
+[Sun Apr 12 22:12:45 2015] [debug] Rendering template "login/create_form.html.ep"
+[Sun Apr 12 22:12:45 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 22:12:45 2015] [debug] 200 OK (0.007899s, 126.598/s)
+[Sun Apr 12 22:12:48 2015] [debug] GET "/create_account"
+[Sun Apr 12 22:12:48 2015] [debug] Rendering cached template "login/create_form.html.ep"
+[Sun Apr 12 22:12:48 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Sun Apr 12 22:12:48 2015] [debug] 200 OK (0.002126s, 470.367/s)
+[Sun Apr 12 22:12:50 2015] [debug] GET "/create_account"
+[Sun Apr 12 22:12:50 2015] [debug] Rendering cached template "login/create_form.html.ep"
+[Sun Apr 12 22:12:50 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Sun Apr 12 22:12:50 2015] [debug] 200 OK (0.002912s, 343.407/s)
+[Sun Apr 12 22:14:04 2015] [debug] GET "/create_account"
+[Sun Apr 12 22:14:04 2015] [debug] Rendering template "login/create_form.html.ep"
+[Sun Apr 12 22:14:04 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 22:14:04 2015] [debug] 200 OK (0.008307s, 120.380/s)
+[Sun Apr 12 22:14:40 2015] [debug] GET "/create_account"
+[Sun Apr 12 22:14:40 2015] [debug] Rendering template "login/create_form.html.ep"
+[Sun Apr 12 22:14:40 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 22:14:40 2015] [debug] 200 OK (0.006913s, 144.655/s)
+[Sun Apr 12 22:15:33 2015] [debug] GET "/create_company_form"
+[Sun Apr 12 22:15:33 2015] [debug] Rendering template "login/create_company_form.html.ep"
+[Sun Apr 12 22:15:33 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Sun Apr 12 22:15:33 2015] [debug] 200 OK (0.005225s, 191.388/s)
+[Sun Apr 12 22:16:15 2015] [debug] GET "/create_company_form"
+[Sun Apr 12 22:16:15 2015] [debug] Rendering template "login/create_company_form.html.ep"
+[Sun Apr 12 22:16:15 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 22:16:15 2015] [debug] 200 OK (0.006652s, 150.331/s)
+[Sun Apr 12 22:16:36 2015] [debug] GET "/create_company_form"
+[Sun Apr 12 22:16:36 2015] [debug] Rendering template "login/create_company_form.html.ep"
+[Sun Apr 12 22:16:36 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 22:16:36 2015] [debug] 200 OK (0.020178s, 49.559/s)
+[Sun Apr 12 22:17:07 2015] [debug] GET "/create_company_form"
+[Sun Apr 12 22:17:07 2015] [debug] Rendering template "login/create_company_form.html.ep"
+[Sun Apr 12 22:17:07 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 22:17:07 2015] [debug] 200 OK (0.012112s, 82.563/s)
+[Sun Apr 12 22:17:07 2015] [debug] GET "/create_company_form"
+[Sun Apr 12 22:17:07 2015] [debug] Rendering cached template "login/create_company_form.html.ep"
+[Sun Apr 12 22:17:07 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Sun Apr 12 22:17:07 2015] [debug] 200 OK (0.004005s, 249.688/s)
+[Sun Apr 12 22:17:08 2015] [debug] GET "/create_company_form"
+[Sun Apr 12 22:17:08 2015] [debug] Rendering cached template "login/create_company_form.html.ep"
+[Sun Apr 12 22:17:08 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Sun Apr 12 22:17:08 2015] [debug] 200 OK (0.003683s, 271.518/s)
+[Sun Apr 12 22:17:08 2015] [debug] GET "/create_company_form"
+[Sun Apr 12 22:17:08 2015] [debug] Rendering cached template "login/create_company_form.html.ep"
+[Sun Apr 12 22:17:08 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Sun Apr 12 22:17:08 2015] [debug] 200 OK (0.004258s, 234.852/s)
+[Sun Apr 12 22:17:46 2015] [debug] GET "/create_company_form"
+[Sun Apr 12 22:17:46 2015] [debug] Rendering template "login/create_company_form.html.ep"
+[Sun Apr 12 22:17:46 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 22:17:46 2015] [debug] 200 OK (0.006603s, 151.446/s)
+[Sun Apr 12 22:18:09 2015] [debug] GET "/create_company_form"
+[Sun Apr 12 22:18:09 2015] [debug] Rendering template "login/create_company_form.html.ep"
+[Sun Apr 12 22:18:09 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 22:18:09 2015] [debug] 200 OK (0.007729s, 129.383/s)
+[Sun Apr 12 22:18:09 2015] [debug] GET "/create_company_form"
+[Sun Apr 12 22:18:09 2015] [debug] Rendering cached template "login/create_company_form.html.ep"
+[Sun Apr 12 22:18:09 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Sun Apr 12 22:18:09 2015] [debug] 200 OK (0.001356s, 737.463/s)
+[Sun Apr 12 22:18:24 2015] [debug] GET "/create_company_form"
+[Sun Apr 12 22:18:24 2015] [debug] Rendering template "login/create_company_form.html.ep"
+[Sun Apr 12 22:18:24 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 22:18:24 2015] [debug] 200 OK (0.006902s, 144.886/s)
+[Sun Apr 12 22:18:32 2015] [debug] GET "/create_company_form"
+[Sun Apr 12 22:18:32 2015] [debug] Rendering template "login/create_company_form.html.ep"
+[Sun Apr 12 22:18:32 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 22:18:32 2015] [debug] 200 OK (0.006692s, 149.432/s)
+[Sun Apr 12 22:19:34 2015] [debug] GET "/create_company_form"
+[Sun Apr 12 22:19:34 2015] [debug] Rendering template "login/create_company_form.html.ep"
+[Sun Apr 12 22:19:34 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 22:19:34 2015] [debug] 200 OK (0.016368s, 61.095/s)
+[Sun Apr 12 22:19:36 2015] [debug] GET "/create_company_form"
+[Sun Apr 12 22:19:36 2015] [debug] Rendering cached template "login/create_company_form.html.ep"
+[Sun Apr 12 22:19:36 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Sun Apr 12 22:19:36 2015] [debug] 200 OK (0.004509s, 221.779/s)
+[Sun Apr 12 22:19:37 2015] [debug] GET "/create_company_form"
+[Sun Apr 12 22:19:37 2015] [debug] Rendering cached template "login/create_company_form.html.ep"
+[Sun Apr 12 22:19:37 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Sun Apr 12 22:19:37 2015] [debug] 200 OK (0.001586s, 630.517/s)
+[Sun Apr 12 22:19:37 2015] [debug] GET "/create_company_form"
+[Sun Apr 12 22:19:37 2015] [debug] Rendering cached template "login/create_company_form.html.ep"
+[Sun Apr 12 22:19:37 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Sun Apr 12 22:19:37 2015] [debug] 200 OK (0.001578s, 633.714/s)
+[Sun Apr 12 22:19:41 2015] [debug] GET "/create_company_form"
+[Sun Apr 12 22:19:41 2015] [debug] Rendering cached template "login/create_company_form.html.ep"
+[Sun Apr 12 22:19:41 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Sun Apr 12 22:19:41 2015] [debug] 200 OK (0.002494s, 400.962/s)
+[Sun Apr 12 22:19:46 2015] [debug] GET "/create_company_form"
+[Sun Apr 12 22:19:46 2015] [debug] Rendering template "login/create_company_form.html.ep"
+[Sun Apr 12 22:19:46 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 22:19:46 2015] [debug] 200 OK (0.007298s, 137.024/s)
+[Sun Apr 12 22:19:46 2015] [debug] GET "/create_company_form"
+[Sun Apr 12 22:19:46 2015] [debug] Rendering cached template "login/create_company_form.html.ep"
+[Sun Apr 12 22:19:46 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Sun Apr 12 22:19:46 2015] [debug] 200 OK (0.001516s, 659.631/s)
+[Sun Apr 12 22:20:04 2015] [debug] GET "/create_company_form"
+[Sun Apr 12 22:20:04 2015] [debug] Rendering template "login/create_company_form.html.ep"
+[Sun Apr 12 22:20:04 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 22:20:04 2015] [debug] 200 OK (0.017730s, 56.402/s)
+[Sun Apr 12 22:20:30 2015] [debug] GET "/create_account"
+[Sun Apr 12 22:20:30 2015] [debug] Rendering template "login/create_form.html.ep"
+[Sun Apr 12 22:20:30 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Sun Apr 12 22:20:30 2015] [debug] 200 OK (0.006656s, 150.240/s)
+[Sun Apr 12 22:20:44 2015] [debug] GET "/create_account"
+[Sun Apr 12 22:20:44 2015] [debug] Rendering template "login/create_form.html.ep"
+[Sun Apr 12 22:20:44 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 22:20:44 2015] [debug] 200 OK (0.006230s, 160.514/s)
+[Sun Apr 12 22:20:54 2015] [debug] GET "/create_account"
+[Sun Apr 12 22:20:54 2015] [debug] Rendering template "login/create_form.html.ep"
+[Sun Apr 12 22:20:54 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 22:20:54 2015] [debug] 200 OK (0.006270s, 159.490/s)
+[Sun Apr 12 22:21:00 2015] [debug] GET "/create_account"
+[Sun Apr 12 22:21:00 2015] [debug] Rendering template "login/create_form.html.ep"
+[Sun Apr 12 22:21:00 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 22:21:00 2015] [debug] 200 OK (0.006469s, 154.583/s)
+[Sun Apr 12 22:21:15 2015] [debug] GET "/create_account"
+[Sun Apr 12 22:21:15 2015] [debug] Rendering template "login/create_form.html.ep"
+[Sun Apr 12 22:21:15 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 22:21:15 2015] [debug] 200 OK (0.005821s, 171.792/s)
+[Sun Apr 12 22:21:55 2015] [debug] GET "/login"
+[Sun Apr 12 22:21:55 2015] [debug] Rendering template "login/login_form.html.ep"
+[Sun Apr 12 22:21:55 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Sun Apr 12 22:21:55 2015] [debug] 200 OK (0.002707s, 369.413/s)
+[Sun Apr 12 22:29:46 2015] [debug] GET "/login"
+[Sun Apr 12 22:29:46 2015] [debug] Rendering template "login/login_form.html.ep"
+[Sun Apr 12 22:29:46 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 22:29:46 2015] [debug] 200 OK (0.010309s, 97.003/s)
+[Sun Apr 12 22:29:49 2015] [debug] POST "/login"
+[Sun Apr 12 22:29:49 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Sun Apr 12 22:29:49 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 22:29:49 2015] [debug] 403 Forbidden (0.042113s, 23.746/s)
+[Sun Apr 12 22:29:55 2015] [debug] GET "/create_company_form"
+[Sun Apr 12 22:29:55 2015] [debug] Rendering template "login/create_company_form.html.ep"
+[Sun Apr 12 22:29:55 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Sun Apr 12 22:29:55 2015] [debug] 200 OK (0.005038s, 198.491/s)
+[Sun Apr 12 22:29:59 2015] [debug] POST "/create_company_form/create_company"
+[Sun Apr 12 22:29:59 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
+[Sun Apr 12 22:29:59 2015] [debug] 200 OK (0.150863s, 6.629/s)
+[Sun Apr 12 22:30:57 2015] [debug] GET "/create_company_form"
+[Sun Apr 12 22:30:57 2015] [debug] Rendering template "login/create_company_form.html.ep"
+[Sun Apr 12 22:30:57 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 22:30:57 2015] [debug] 200 OK (0.006707s, 149.098/s)
+[Sun Apr 12 22:31:00 2015] [debug] POST "/create_company_form/create_company"
+[Sun Apr 12 22:31:00 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
+[Sun Apr 12 22:31:00 2015] [debug] 200 OK (0.178501s, 5.602/s)
+[Sun Apr 12 22:32:23 2015] [debug] GET "/create_company_form"
+[Sun Apr 12 22:32:23 2015] [debug] Rendering template "login/create_company_form.html.ep"
+[Sun Apr 12 22:32:23 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 22:32:23 2015] [debug] 200 OK (0.006546s, 152.765/s)
+[Sun Apr 12 22:34:46 2015] [debug] GET "/create_company_form"
+[Sun Apr 12 22:34:46 2015] [debug] Rendering template "login/create_company_form.html.ep"
+[Sun Apr 12 22:34:46 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 22:34:46 2015] [debug] 200 OK (0.009757s, 102.491/s)
+[Sun Apr 12 22:35:37 2015] [debug] GET "/create_company_form"
+[Sun Apr 12 22:35:37 2015] [debug] Rendering template "login/create_company_form.html.ep"
+[Sun Apr 12 22:35:37 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 22:35:37 2015] [debug] 200 OK (0.008318s, 120.221/s)
+[Sun Apr 12 22:35:38 2015] [debug] POST "/create_company_form/create_company"
+[Sun Apr 12 22:35:38 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
+[Sun Apr 12 22:35:38 2015] [debug] 200 OK (0.186941s, 5.349/s)
+[Sun Apr 12 22:38:07 2015] [debug] GET "/create_company_form"
+[Sun Apr 12 22:38:07 2015] [debug] Rendering template "login/create_company_form.html.ep"
+[Sun Apr 12 22:38:07 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 22:38:07 2015] [debug] 200 OK (0.007249s, 137.950/s)
+[Sun Apr 12 22:38:10 2015] [debug] POST "/create_company_form/create_company"
+[Sun Apr 12 22:38:10 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
+[Sun Apr 12 22:38:10 2015] [debug] 200 OK (0.194049s, 5.153/s)
+[Sun Apr 12 22:42:41 2015] [debug] GET "/create_company_form"
+[Sun Apr 12 22:42:41 2015] [debug] Rendering template "login/create_company_form.html.ep"
+[Sun Apr 12 22:42:41 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 22:42:41 2015] [debug] 200 OK (0.009214s, 108.530/s)
+[Sun Apr 12 22:42:44 2015] [debug] POST "/create_company_form/create_company"
+[Sun Apr 12 22:42:44 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
+[Sun Apr 12 22:42:44 2015] [debug] 200 OK (0.176700s, 5.659/s)
+[Sun Apr 12 22:44:36 2015] [debug] GET "/create_company_form"
+[Sun Apr 12 22:44:36 2015] [debug] Rendering template "login/create_company_form.html.ep"
+[Sun Apr 12 22:44:36 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 22:44:36 2015] [debug] 200 OK (0.007750s, 129.032/s)
+[Sun Apr 12 22:44:44 2015] [debug] POST "/create_company_form/create_company"
+[Sun Apr 12 22:44:44 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
+[Sun Apr 12 22:44:44 2015] [debug] 200 OK (0.177524s, 5.633/s)
+[Sun Apr 12 22:45:06 2015] [debug] GET "/create_company_form"
+[Sun Apr 12 22:45:06 2015] [debug] Rendering template "login/create_company_form.html.ep"
+[Sun Apr 12 22:45:06 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 22:45:06 2015] [debug] 200 OK (0.011224s, 89.095/s)
+[Sun Apr 12 22:45:10 2015] [debug] POST "/create_company_form/create_company"
+[Sun Apr 12 22:45:10 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
+[Sun Apr 12 22:45:10 2015] [debug] 200 OK (0.265995s, 3.759/s)
+[Sun Apr 12 22:45:39 2015] [debug] GET "/create_company_form"
+[Sun Apr 12 22:45:39 2015] [debug] Rendering template "login/create_company_form.html.ep"
+[Sun Apr 12 22:45:39 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 22:45:39 2015] [debug] 200 OK (0.007368s, 135.722/s)
+[Sun Apr 12 22:45:55 2015] [debug] POST "/create_company_form/create_company"
+[Sun Apr 12 22:45:55 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
+[Sun Apr 12 22:45:55 2015] [debug] 200 OK (0.185224s, 5.399/s)
+[Sun Apr 12 22:46:32 2015] [debug] GET "/create_company_form"
+[Sun Apr 12 22:46:32 2015] [debug] Rendering template "login/create_company_form.html.ep"
+[Sun Apr 12 22:46:32 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 22:46:32 2015] [debug] 200 OK (0.007432s, 134.553/s)
+[Sun Apr 12 22:46:35 2015] [debug] POST "/create_company_form/create_company"
+[Sun Apr 12 22:46:35 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
+[Sun Apr 12 22:46:36 2015] [debug] 200 OK (0.190762s, 5.242/s)
+[Sun Apr 12 22:46:54 2015] [debug] GET "/create_company_form"
+[Sun Apr 12 22:46:54 2015] [debug] Rendering template "login/create_company_form.html.ep"
+[Sun Apr 12 22:46:54 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 22:46:54 2015] [debug] 200 OK (0.008110s, 123.305/s)
+[Sun Apr 12 22:47:03 2015] [debug] POST "/create_company_form/create_company"
+[Sun Apr 12 22:47:03 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
+[Sun Apr 12 22:47:03 2015] [debug] 200 OK (0.165655s, 6.037/s)
+[Sun Apr 12 22:48:14 2015] [debug] GET "/create_company_form"
+[Sun Apr 12 22:48:14 2015] [debug] Rendering template "login/create_company_form.html.ep"
+[Sun Apr 12 22:48:14 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 22:48:14 2015] [debug] 200 OK (0.007338s, 136.277/s)
+[Sun Apr 12 22:48:16 2015] [debug] POST "/create_company_form/create_company"
+[Sun Apr 12 22:48:16 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
+[Sun Apr 12 22:48:16 2015] [debug] 200 OK (0.153497s, 6.515/s)
+[Sun Apr 12 22:48:39 2015] [debug] GET "/create_company_form"
+[Sun Apr 12 22:48:39 2015] [debug] Rendering template "login/create_company_form.html.ep"
+[Sun Apr 12 22:48:39 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 22:48:39 2015] [debug] 200 OK (0.007279s, 137.382/s)
+[Sun Apr 12 22:48:41 2015] [debug] POST "/create_company_form/create_company"
+[Sun Apr 12 22:48:41 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
+[Sun Apr 12 22:48:41 2015] [debug] 200 OK (0.188822s, 5.296/s)
+[Sun Apr 12 22:49:41 2015] [debug] GET "/create_company_form"
+[Sun Apr 12 22:49:41 2015] [debug] Rendering template "login/create_company_form.html.ep"
+[Sun Apr 12 22:49:41 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 22:49:41 2015] [debug] 200 OK (0.007392s, 135.281/s)
+[Sun Apr 12 22:49:43 2015] [debug] POST "/create_company_form/create_company"
+[Sun Apr 12 22:49:43 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
+[Sun Apr 12 22:49:43 2015] [debug] 200 OK (0.175560s, 5.696/s)
+[Sun Apr 12 22:51:56 2015] [debug] GET "/create_company_form"
+[Sun Apr 12 22:51:56 2015] [debug] Rendering template "login/create_company_form.html.ep"
+[Sun Apr 12 22:51:56 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 22:51:56 2015] [debug] 200 OK (0.007546s, 132.521/s)
+[Sun Apr 12 22:51:58 2015] [debug] POST "/create_company_form/create_company"
+[Sun Apr 12 22:51:58 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
+[Sun Apr 12 22:51:58 2015] [debug] 200 OK (0.166603s, 6.002/s)
+[Sun Apr 12 22:53:00 2015] [debug] GET "/create_company_form"
+[Sun Apr 12 22:53:00 2015] [debug] Rendering template "login/create_company_form.html.ep"
+[Sun Apr 12 22:53:00 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 22:53:00 2015] [debug] 200 OK (0.007712s, 129.668/s)
+[Sun Apr 12 22:53:03 2015] [debug] POST "/create_company_form/create_company"
+[Sun Apr 12 22:53:03 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
+[Sun Apr 12 22:53:03 2015] [debug] 200 OK (0.172620s, 5.793/s)
+[Sun Apr 12 22:54:11 2015] [debug] GET "/create_company_form"
+[Sun Apr 12 22:54:11 2015] [debug] Rendering template "login/create_company_form.html.ep"
+[Sun Apr 12 22:54:11 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 22:54:11 2015] [debug] 200 OK (0.011699s, 85.477/s)
+[Sun Apr 12 22:54:13 2015] [debug] POST "/create_company_form/create_company"
+[Sun Apr 12 22:54:13 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
+[Sun Apr 12 22:54:14 2015] [debug] 200 OK (0.178530s, 5.601/s)
+[Sun Apr 12 22:55:36 2015] [debug] GET "/create_company_form"
+[Sun Apr 12 22:55:36 2015] [debug] Rendering template "login/create_company_form.html.ep"
+[Sun Apr 12 22:55:36 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 22:55:36 2015] [debug] 200 OK (0.007873s, 127.016/s)
+[Sun Apr 12 22:55:38 2015] [debug] POST "/create_company_form/create_company"
+[Sun Apr 12 22:55:38 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
+[Sun Apr 12 22:55:38 2015] [debug] 200 OK (0.182469s, 5.480/s)
+[Sun Apr 12 22:55:58 2015] [debug] GET "/create_company_form"
+[Sun Apr 12 22:55:58 2015] [debug] Rendering template "login/create_company_form.html.ep"
+[Sun Apr 12 22:55:58 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 22:55:58 2015] [debug] 200 OK (0.008595s, 116.347/s)
+[Sun Apr 12 22:56:01 2015] [debug] POST "/create_company_form/create_company"
+[Sun Apr 12 22:56:01 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
+[Sun Apr 12 22:56:01 2015] [debug] 200 OK (0.181249s, 5.517/s)
+[Sun Apr 12 22:57:37 2015] [debug] GET "/create_company_form"
+[Sun Apr 12 22:57:37 2015] [debug] Rendering template "login/create_company_form.html.ep"
+[Sun Apr 12 22:57:37 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 22:57:37 2015] [debug] 200 OK (0.007446s, 134.300/s)
+[Sun Apr 12 22:57:39 2015] [debug] POST "/create_company_form/create_company"
+[Sun Apr 12 22:57:39 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
+[Sun Apr 12 22:57:39 2015] [debug] 200 OK (0.189190s, 5.286/s)
+[Sun Apr 12 22:57:56 2015] [debug] GET "/create_company_form"
+[Sun Apr 12 22:57:56 2015] [debug] Rendering template "login/create_company_form.html.ep"
+[Sun Apr 12 22:57:56 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 22:57:56 2015] [debug] 200 OK (0.007797s, 128.254/s)
+[Sun Apr 12 22:57:58 2015] [debug] POST "/create_company_form/create_company"
+[Sun Apr 12 22:57:58 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
+[Sun Apr 12 22:57:59 2015] [debug] 200 OK (0.193800s, 5.160/s)
+[Sun Apr 12 22:59:42 2015] [debug] GET "/create_company_form"
+[Sun Apr 12 22:59:42 2015] [debug] Rendering template "login/create_company_form.html.ep"
+[Sun Apr 12 22:59:42 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 22:59:42 2015] [debug] 200 OK (0.013789s, 72.522/s)
+[Sun Apr 12 22:59:48 2015] [debug] POST "/create_company_form/create_company"
+[Sun Apr 12 22:59:48 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
+[Sun Apr 12 22:59:48 2015] [debug] 200 OK (0.180428s, 5.542/s)
+[Sun Apr 12 23:01:17 2015] [debug] GET "/create_company_form"
+[Sun Apr 12 23:01:17 2015] [debug] Rendering template "login/create_company_form.html.ep"
+[Sun Apr 12 23:01:17 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 23:01:17 2015] [debug] 200 OK (0.007052s, 141.804/s)
+[Sun Apr 12 23:01:20 2015] [debug] POST "/create_company_form/create_company"
+[Sun Apr 12 23:01:20 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
+[Sun Apr 12 23:01:20 2015] [debug] 200 OK (0.188072s, 5.317/s)

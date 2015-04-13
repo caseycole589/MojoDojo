@@ -167,7 +167,6 @@ sub create_admin {
 	my $users_city = $json->{city};
 	my $users_zipcode = $json->{zipcode};
    	my $count = $users->search({ username => $users_username })->count;
-    say $count;	
 	#if usern"ame is not unique
 	if($count >= 1){
 		 $self->render(json => {success => "false"});

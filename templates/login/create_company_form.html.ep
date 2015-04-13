@@ -5,7 +5,7 @@
 	});
 
 	function check_valid(){
-		alert("finally")
+
 		var should_alert = false;
 		if($("#username_field").val() === "") {
 			should_alert = true
@@ -63,7 +63,7 @@
             success: function (msg, status)
             {
             	var company_object = msg;
-            	alert(JSON.stringify(company_object));
+       
             	if(company_object.name == 'invalid'){
             		company_creation_failure(company_object);
             	}
@@ -110,8 +110,8 @@
 		$("#company_div").css('display','none');
 		$("#admin_div").css('display','inline');
 		$("#company_static").val(company_object.name);
-		$("#company_object").prop('disabled'.true);
-		document.getElementById('header_div').innerHTML = "Only a little bit left! ...";
+
+		// document.getElementById('header_div').innerHTML = "Only a little bit left! ...";
 	}
 
 	function company_creation_failure(company_object){
@@ -120,63 +120,83 @@
 	}
 </script>
 
-<h1 id="header_div"> Create a new company</h1>
+<div id="forms_diver">
+	<div id="company_div" >
+		<h1 id="header_div"> Create a new company</h1>
 
-<div id="company_div">
-	
-	%= label_for company => 'Company'
-	%= text_field 'company', id => 'company_field'
-	<br/>
-	<button type="button" onclick="addCompany();return false;">Confirm Name</button>
+		
+		%= label_for company => 'Company' , class => "control-label col-xs-2"
+		<div class="col-xs-10">
+			<input type="text" placeholder="Company" required autocomplete autofocus class="form-control" id='company_field'>
+			<br/>
+		</div>
+		<button type="button" class='btn btn-lg btn-primary' onclick="addCompany();return false;">Confirm Name</button>
+	</div>
 
-</div>
+
+	<div id="admin_div" style="margin-left:'30px">
+		<h2>Please Continue filling out the form</h2>
+		<h3>Admin User</h3>
+	%= form_for 'create_company' => (method => 'POST') ,class => "form-horizontal" => begin
 
 
-<div id="admin_div">
-	<h2>Please Continue filling out the form</h3>
-	<h3>Admin User</h3>
-	%= form_for 'create_company' => (method => 'POST') => begin
-		%= label_for username => 'Username'
-		%= text_field 'username', id => 'username_field'
-
+		%= label_for username => 'Username', class => "control-label col-xs-2"
+		<div class="col-xs-10">
+			<input type="text" placeholder="Username" required autocomplete  class="form-control"  id='username_field'>
+		</div>
 		%=tag 'br' 
 		%=tag 'br'
 
-		%= label_for password => 'Password'
-		%= password_field 'password', id => 'password_field'
-
+		%= label_for password => 'Password' ,class => "control-label col-xs-2"
+		<div class="col-xs-10">
+		<input type="password" placeholder="Password" required autocomplete  class="form-control" id='password_field'>
+		</div>
 		%=tag 'br'
 		%=tag 'br'
 
-		%= label_for firstname => 'First Name'
-		%= text_field 'firstname', id => 'firstname_field'
-
+		%= label_for firstname => 'First Name', class => "control-label col-xs-2"
+		<div class="col-xs-10">
+		<input type="text" placeholder="First Name" required autocomplete  class="form-control" id='firstname_field'>
+		</div>
 		%=tag 'br'
 		%=tag 'br'
 
-		%= label_for lastname => 'Last Name'
-		%= text_field 'lastname', id => 'lastname_field'
-
+		%= label_for lastname => 'Last Name', class => "control-label col-xs-2"
+		<div class="col-xs-10">
+		<input type="text" placeholder="Last Name" required autocomplete  class="form-control"  id='lastname_field'>
+		</div>
 		%=tag 'br'
 		%=tag 'br'
 
-		%= label_for email => 'Email'
-		%= text_field 'email', id => 'email_field'
-
+		%= label_for email => 'Email', class => "control-label col-xs-2"
+		<div class="col-xs-10">
+			<input type="email" placeholder="Email" required autocomplete  class="form-control" id='email_field'>
+		</div>
+		
+		%=tag 'br'
+		%=tag 'br'
+		
+		%= label_for company_static => 'Company', class => "control-label col-xs-2"
+		<div class="col-xs-10">
+			<input type="text" placeholder="Company" disabled required autocomplete  class="form-control" id='company_static'>
+		</div>
+		<br/><br/>
+		%= label_for city => 'City', class => "control-label col-xs-2"
+		<div class="col-xs-10">
+			<input type="text" placeholder="City" required autocomplete  class="form-control" id='city_field'>
+		</div>
+		
 		%=tag 'br'
 		%=tag 'br'
 
-		%= label_for city => 'city'
-		%= text_field 'city', id => 'city_field'
-
-		%=tag 'br'
-		%=tag 'br'
-
-		%= label_for zipcode => 'zip code'
-		%= text_field 'zipcode', id => 'zipcode_field'
-
-
-		<button type="button" id="submit_button" onclick="check_valid();return false;">Log me in </button>
+		%= label_for zipcode => 'Zip Code', class => "control-label col-xs-2"
+		<div class="col-xs-10">
+			<input type="text" placeholder="Zip Code" required autocomplete  	class="form-control" id='zipcode_field'>
+		</div>
+		<br/><br/>
+		
+		<button type="button" id="submit_button" class="btn btn-lg  btn-primary" onclick="check_valid();return false;">Log me in </button>
 	% end
+	</div>
 </div>
 
