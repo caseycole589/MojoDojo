@@ -166,20 +166,30 @@ sub create_admin {
 	my $users_email = $json->{email};
 	my $users_city = $json->{city};
 	my $users_zipcode = $json->{zipcode};
+   	my $count = $users->search({ username => $users_username })->count;
+    say $count;	
+	#if usern"ame is not unique
+	if($count >= 1){
+		 $self->render(json => {success => "false"});
+    }
+    else{
+	    $users->create({
+		    company => $users_company,
+		    username => $users_username,
+		    pw_hash => $self->bcrypt($users_password),
+		    firstname => $users_firstname,
+		    lastname => $users_lastname,
+		    email => $users_email,
+		    city => $users_city,
+		    zipcode => scalar $users_zipcode,
+		    user_level => 'admin',
+	    });
+	
+        $self->render(json => {success => "true"});
+        
+    }
 
-	$users->create({
-		company => $users_company,
-		username => $users_username,
-		pw_hash => $self->bcrypt($users_password),
-		firstname => $users_firstname,
-		lastname => $users_lastname,
-		email => $users_email,
-		city => $users_city,
-		zipcode => scalar $users_zipcode,
-		user_level => 'admin',
-	});
-
-	$self->redirect_to('/login');
+    
 }
 
 1;

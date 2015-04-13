@@ -1,5 +1,4 @@
-
-%= javascript begin
+<script type="text/javascript">
 	$(document).ready(function(){
 
 		document.getElementById('admin_div').style.display = 'none';	
@@ -95,14 +94,14 @@
             dataType: "json",
             success: function (msg, status)
             {
-            	var company_object = msg;
-            	if(company_object.name == 'invalid'){
-            		company_creation_failure(company_object);
-            	}
-            	else{
-            		company_creation_successful(company_object);
-            	}
-            }
+                if(msg.success === 'false'){
+                    alert("username is already taken try again");
+                }
+                if(msg.success === 'true'){
+                    alert("success");
+                    window.location.href = "login.html";
+                }
+            }            
         });
 	}
 
@@ -119,8 +118,7 @@
 		alert("It appears your company name was already taken\n Please try again");
 		return false;
 	}
-
-%end
+</script>
 
 <h1 id="header_div"> Create a new company</h1>
 

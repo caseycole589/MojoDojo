@@ -1,196 +1,173 @@
-[Thu Apr  9 18:55:58 2015] [debug] GET "/"
-[Thu Apr  9 18:55:58 2015] [debug] Rendering template "main/index.html.ep"
-[Thu Apr  9 18:55:58 2015] [debug] Rendering template "layouts/base.html.ep"
-[Thu Apr  9 18:55:58 2015] [debug] 200 OK (0.047422s, 21.087/s)
-[Thu Apr  9 18:55:59 2015] [debug] GET "/login"
-[Thu Apr  9 18:55:59 2015] [debug] Rendering template "login/login_form.html.ep"
-[Thu Apr  9 18:55:59 2015] [debug] Rendering cached template "layouts/base.html.ep"
-[Thu Apr  9 18:55:59 2015] [debug] 200 OK (0.003617s, 276.472/s)
-[Thu Apr  9 18:56:04 2015] [debug] POST "/login"
-[Thu Apr  9 18:56:04 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
-[Thu Apr  9 18:56:04 2015] [debug] Rendering template "layouts/base.html.ep"
-[Thu Apr  9 18:56:04 2015] [debug] 403 Forbidden (0.012275s, 81.466/s)
-[Thu Apr  9 18:56:07 2015] [debug] GET "/create_account"
-[Thu Apr  9 18:56:07 2015] [debug] Rendering template "login/create_form.html.ep"
-[Thu Apr  9 18:56:07 2015] [debug] Rendering cached template "layouts/base.html.ep"
-[Thu Apr  9 18:56:07 2015] [debug] 200 OK (0.010265s, 97.418/s)
-[Thu Apr  9 18:56:25 2015] [debug] POST "/create_account"
-[Thu Apr  9 18:56:25 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_company_account"
-[Thu Apr  9 18:56:25 2015] [debug] Action not found in controller
-[Thu Apr  9 18:56:25 2015] [debug] Template "login/create_company_account.html.ep" not found
-[Thu Apr  9 18:56:25 2015] [debug] Template "not_found.development.html.ep" not found
-[Thu Apr  9 18:56:25 2015] [debug] Template "not_found.html.ep" not found
-[Thu Apr  9 18:56:25 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
-[Thu Apr  9 18:56:25 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
-[Thu Apr  9 18:56:25 2015] [debug] 404 Not Found (0.042097s, 23.755/s)
-[Thu Apr  9 18:56:58 2015] [debug] GET "/create_company_form"
-[Thu Apr  9 18:56:58 2015] [debug] Rendering template "login/create_company_form.html.ep"
-[Thu Apr  9 18:56:58 2015] [debug] Rendering cached template "layouts/base.html.ep"
-[Thu Apr  9 18:56:58 2015] [debug] 200 OK (0.007194s, 139.005/s)
-[Thu Apr  9 18:57:05 2015] [debug] POST "/create_company_form/create_company"
-[Thu Apr  9 18:57:05 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
-[Thu Apr  9 18:57:05 2015] [debug] 200 OK (0.142916s, 6.997/s)
-[Thu Apr  9 18:57:22 2015] [debug] POST "/create_company"
-[Thu Apr  9 18:57:22 2015] [debug] Template "not_found.development.html.ep" not found
-[Thu Apr  9 18:57:22 2015] [debug] Template "not_found.html.ep" not found
-[Thu Apr  9 18:57:22 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
-[Thu Apr  9 18:57:22 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
-[Thu Apr  9 18:57:22 2015] [debug] 404 Not Found (0.043998s, 22.728/s)
-[Thu Apr  9 19:01:32 2015] [debug] GET "/create_company"
-[Thu Apr  9 19:01:32 2015] [debug] Template "not_found.development.html.ep" not found
-[Thu Apr  9 19:01:32 2015] [debug] Template "not_found.html.ep" not found
-[Thu Apr  9 19:01:32 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
-[Thu Apr  9 19:01:32 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
-[Thu Apr  9 19:01:32 2015] [debug] 404 Not Found (0.020391s, 49.041/s)
-[Thu Apr  9 19:01:36 2015] [debug] GET "/create_company_form"
-[Thu Apr  9 19:01:36 2015] [debug] Rendering template "login/create_company_form.html.ep"
-[Thu Apr  9 19:01:36 2015] [debug] Rendering template "layouts/base.html.ep"
-[Thu Apr  9 19:01:36 2015] [debug] 200 OK (0.025087s, 39.861/s)
-[Thu Apr  9 19:01:39 2015] [debug] POST "/create_company_form/create_company"
-[Thu Apr  9 19:01:39 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
-[Thu Apr  9 19:01:39 2015] [debug] 200 OK (0.174949s, 5.716/s)
-[Thu Apr  9 19:01:51 2015] [debug] POST "/create_company"
-[Thu Apr  9 19:01:51 2015] [debug] Template "not_found.development.html.ep" not found
-[Thu Apr  9 19:01:51 2015] [debug] Template "not_found.html.ep" not found
-[Thu Apr  9 19:01:51 2015] [debug] Rendering cached inline template "fd403ab55a4c875e35b42428816134c7"
-[Thu Apr  9 19:01:51 2015] [debug] Rendering cached inline template "dd85456cf9f44e1e43bebae130a7f9df"
-[Thu Apr  9 19:01:51 2015] [debug] 404 Not Found (0.011046s, 90.531/s)
-[Thu Apr  9 19:04:03 2015] [debug] GET "/create_company"
-[Thu Apr  9 19:04:03 2015] [debug] Template "not_found.development.html.ep" not found
-[Thu Apr  9 19:04:03 2015] [debug] Template "not_found.html.ep" not found
-[Thu Apr  9 19:04:03 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
-[Thu Apr  9 19:04:03 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
-[Thu Apr  9 19:04:03 2015] [debug] 404 Not Found (0.044222s, 22.613/s)
-[Thu Apr  9 19:04:08 2015] [debug] GET "/"
-[Thu Apr  9 19:04:08 2015] [debug] Rendering template "main/index.html.ep"
-[Thu Apr  9 19:04:08 2015] [debug] Rendering template "layouts/base.html.ep"
-[Thu Apr  9 19:04:08 2015] [debug] 200 OK (0.031161s, 32.091/s)
-[Thu Apr  9 19:04:10 2015] [debug] GET "/login"
-[Thu Apr  9 19:04:10 2015] [debug] Rendering template "login/login_form.html.ep"
-[Thu Apr  9 19:04:10 2015] [debug] Rendering cached template "layouts/base.html.ep"
-[Thu Apr  9 19:04:10 2015] [debug] 200 OK (0.009722s, 102.859/s)
-[Thu Apr  9 19:04:13 2015] [debug] POST "/login"
-[Thu Apr  9 19:04:13 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
-[Thu Apr  9 19:04:13 2015] [debug] Rendering template "layouts/base.html.ep"
-[Thu Apr  9 19:04:13 2015] [debug] 403 Forbidden (0.008816s, 113.430/s)
-[Thu Apr  9 19:04:15 2015] [debug] GET "/create_company_form"
-[Thu Apr  9 19:04:15 2015] [debug] Rendering template "login/create_company_form.html.ep"
-[Thu Apr  9 19:04:15 2015] [debug] Rendering cached template "layouts/base.html.ep"
-[Thu Apr  9 19:04:15 2015] [debug] 200 OK (0.010516s, 95.093/s)
-[Thu Apr  9 19:04:20 2015] [debug] POST "/create_company_form/create_company"
-[Thu Apr  9 19:04:20 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
-[Thu Apr  9 19:04:20 2015] [debug] 200 OK (0.128436s, 7.786/s)
-[Thu Apr  9 19:04:42 2015] [debug] POST "/create_company"
-[Thu Apr  9 19:04:42 2015] [debug] Template "not_found.development.html.ep" not found
-[Thu Apr  9 19:04:42 2015] [debug] Template "not_found.html.ep" not found
-[Thu Apr  9 19:04:42 2015] [debug] Rendering cached inline template "fd403ab55a4c875e35b42428816134c7"
-[Thu Apr  9 19:04:42 2015] [debug] Rendering cached inline template "dd85456cf9f44e1e43bebae130a7f9df"
-[Thu Apr  9 19:04:42 2015] [debug] 404 Not Found (0.005943s, 168.265/s)
-[Thu Apr  9 19:05:25 2015] [debug] POST "/create_company_form/create_company"
-[Thu Apr  9 19:05:25 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
-[Thu Apr  9 19:05:25 2015] [debug] 200 OK (0.061503s, 16.259/s)
-[Thu Apr  9 19:05:32 2015] [debug] POST "/create_company_form/create_company"
-[Thu Apr  9 19:05:32 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
-[Thu Apr  9 19:05:32 2015] [debug] 200 OK (0.145962s, 6.851/s)
-[Thu Apr  9 19:05:39 2015] [debug] POST "/create_company"
-[Thu Apr  9 19:05:39 2015] [debug] Template "not_found.development.html.ep" not found
-[Thu Apr  9 19:05:39 2015] [debug] Template "not_found.html.ep" not found
-[Thu Apr  9 19:05:39 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
-[Thu Apr  9 19:05:39 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
-[Thu Apr  9 19:05:39 2015] [debug] 404 Not Found (0.031987s, 31.263/s)
-[Thu Apr  9 19:06:18 2015] [debug] POST "/create_company_form/create_company"
-[Thu Apr  9 19:06:18 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
-[Thu Apr  9 19:06:18 2015] [debug] 200 OK (0.064170s, 15.584/s)
-[Thu Apr  9 19:06:25 2015] [debug] POST "/create_company_form/create_company"
-[Thu Apr  9 19:06:25 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
-[Thu Apr  9 19:06:25 2015] [debug] 200 OK (0.132027s, 7.574/s)
-[Thu Apr  9 19:06:29 2015] [debug] POST "/create_company"
-[Thu Apr  9 19:06:29 2015] [debug] Template "not_found.development.html.ep" not found
-[Thu Apr  9 19:06:29 2015] [debug] Template "not_found.html.ep" not found
-[Thu Apr  9 19:06:29 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
-[Thu Apr  9 19:06:29 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
-[Thu Apr  9 19:06:29 2015] [debug] 404 Not Found (0.018625s, 53.691/s)
-[Thu Apr  9 19:07:11 2015] [debug] GET "/create_company_form"
-[Thu Apr  9 19:07:11 2015] [debug] Rendering template "login/create_company_form.html.ep"
-[Thu Apr  9 19:07:11 2015] [error] syntax error at template login/create_company_form.html.ep line 188, near "button 'Log me in'"
-183: 
-184: 		%= label_for zipcode => 'zip code'
-185: 		%= text_field 'zipcode', id => 'zipcode_field'
-186: 
-187: 
-188: 		%= button 'Log me in', class => 'btn button-primary', id => 'submit_button'
-189: 	% end
-190: </div>
+Global symbol "$total" requires explicit package name at lib/Moblo/Controller/Login.pm line 187.
+Compilation failed in require at (eval 156) line 1.
 
-[Thu Apr  9 19:07:11 2015] [debug] Template "exception.development.html.ep" not found
-[Thu Apr  9 19:07:11 2015] [debug] Template "exception.html.ep" not found
-[Thu Apr  9 19:07:11 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
-[Thu Apr  9 19:07:11 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
-[Thu Apr  9 19:07:11 2015] [debug] 500 Internal Server Error (0.051725s, 19.333/s)
-[Thu Apr  9 19:08:40 2015] [debug] GET "/create_company_form"
-[Thu Apr  9 19:08:40 2015] [debug] Rendering template "login/create_company_form.html.ep"
-[Thu Apr  9 19:08:40 2015] [debug] Rendering template "layouts/base.html.ep"
-[Thu Apr  9 19:08:40 2015] [debug] 200 OK (0.020011s, 49.973/s)
-[Thu Apr  9 19:08:45 2015] [debug] POST "/create_company_form/create_company"
-[Thu Apr  9 19:08:45 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
-[Thu Apr  9 19:08:45 2015] [debug] 200 OK (0.171243s, 5.840/s)
-[Thu Apr  9 19:10:18 2015] [debug] GET "/create_company_form"
-[Thu Apr  9 19:10:18 2015] [debug] Rendering template "login/create_company_form.html.ep"
-[Thu Apr  9 19:10:18 2015] [debug] Rendering template "layouts/base.html.ep"
-[Thu Apr  9 19:10:18 2015] [debug] 200 OK (0.024473s, 40.861/s)
-[Thu Apr  9 19:10:22 2015] [debug] POST "/create_company_form/create_company"
-[Thu Apr  9 19:10:22 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
-[Thu Apr  9 19:10:22 2015] [debug] 200 OK (0.169895s, 5.886/s)
-[Thu Apr  9 19:11:31 2015] [debug] GET "/create_company_form"
-[Thu Apr  9 19:11:31 2015] [debug] Rendering template "login/create_company_form.html.ep"
-[Thu Apr  9 19:11:31 2015] [debug] Rendering template "layouts/base.html.ep"
-[Thu Apr  9 19:11:31 2015] [debug] 200 OK (0.009143s, 109.373/s)
-[Thu Apr  9 19:11:37 2015] [debug] POST "/create_company_form/create_company"
-[Thu Apr  9 19:11:37 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
-[Thu Apr  9 19:11:37 2015] [debug] 200 OK (0.175056s, 5.712/s)
-[Thu Apr  9 19:12:07 2015] [debug] GET "/create_company_form"
-[Thu Apr  9 19:12:07 2015] [debug] Rendering template "login/create_company_form.html.ep"
-[Thu Apr  9 19:12:07 2015] [debug] Rendering template "layouts/base.html.ep"
-[Thu Apr  9 19:12:07 2015] [debug] 200 OK (0.015412s, 64.885/s)
-[Thu Apr  9 19:12:19 2015] [debug] POST "/create_company_form/create_company"
-[Thu Apr  9 19:12:19 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
-[Thu Apr  9 19:12:20 2015] [debug] 200 OK (0.189807s, 5.269/s)
-[Thu Apr  9 19:13:04 2015] [debug] GET "/create_company_form"
-[Thu Apr  9 19:13:04 2015] [debug] Rendering template "login/create_company_form.html.ep"
-[Thu Apr  9 19:13:04 2015] [debug] Rendering template "layouts/base.html.ep"
-[Thu Apr  9 19:13:04 2015] [debug] 200 OK (0.008670s, 115.340/s)
-[Thu Apr  9 19:13:09 2015] [debug] POST "/create_company_form/create_company"
-[Thu Apr  9 19:13:09 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
-[Thu Apr  9 19:13:10 2015] [debug] 200 OK (0.184666s, 5.415/s)
-[Thu Apr  9 19:14:32 2015] [debug] GET "/create_company_form"
-[Thu Apr  9 19:14:32 2015] [debug] Rendering template "login/create_company_form.html.ep"
-[Thu Apr  9 19:14:32 2015] [debug] Rendering template "layouts/base.html.ep"
-[Thu Apr  9 19:14:32 2015] [debug] 200 OK (0.018670s, 53.562/s)
-[Thu Apr  9 19:14:39 2015] [debug] POST "/create_company_form/create_company"
-[Thu Apr  9 19:14:39 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
-[Thu Apr  9 19:14:39 2015] [debug] 200 OK (0.176252s, 5.674/s)
-[Thu Apr  9 19:16:02 2015] [debug] GET "/create_company_form"
-[Thu Apr  9 19:16:02 2015] [debug] Rendering template "login/create_company_form.html.ep"
-[Thu Apr  9 19:16:02 2015] [debug] Rendering template "layouts/base.html.ep"
-[Thu Apr  9 19:16:02 2015] [debug] 200 OK (0.021846s, 45.775/s)
-[Thu Apr  9 19:16:08 2015] [debug] POST "/create_company_form/create_company"
-[Thu Apr  9 19:16:08 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
-[Thu Apr  9 19:16:08 2015] [debug] 200 OK (0.165534s, 6.041/s)
-[Thu Apr  9 19:16:19 2015] [debug] POST "/create_company_form/create_admin"
-[Thu Apr  9 19:16:19 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_admin"
-[Thu Apr  9 19:16:19 2015] [error] Undefined subroutine &Moblo::Controller::Login::bcrypt called at /usr/share/perl5/site_perl/Mojolicious.pm line 120.
+[Sun Apr 12 19:11:11 2015] [debug] Template "exception.development.html.ep" not found
+[Sun Apr 12 19:11:11 2015] [debug] Template "exception.html.ep" not found
+[Sun Apr 12 19:11:11 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Sun Apr 12 19:11:11 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Sun Apr 12 19:11:11 2015] [debug] 500 Internal Server Error (0.018369s, 54.440/s)
+[Sun Apr 12 19:14:30 2015] [debug] GET "/create_company_form"
+[Sun Apr 12 19:14:30 2015] [debug] Rendering template "login/create_company_form.html.ep"
+[Sun Apr 12 19:14:30 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 19:14:30 2015] [debug] 200 OK (0.010777s, 92.790/s)
+[Sun Apr 12 19:14:33 2015] [debug] POST "/create_company_form/create_company"
+[Sun Apr 12 19:14:33 2015] [error] Global symbol "$username" requires explicit package name at lib/Moblo/Controller/Login.pm line 169.
+Global symbol "$total" requires explicit package name at lib/Moblo/Controller/Login.pm line 188.
+Compilation failed in require at (eval 156) line 1.
 
-[Thu Apr  9 19:16:19 2015] [debug] Template "exception.development.html.ep" not found
-[Thu Apr  9 19:16:19 2015] [debug] Template "exception.html.ep" not found
-[Thu Apr  9 19:16:19 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
-[Thu Apr  9 19:16:19 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
-[Thu Apr  9 19:16:19 2015] [debug] 500 Internal Server Error (0.027725s, 36.069/s)
-[Thu Apr  9 19:19:11 2015] [debug] POST "/create_company_form/create_admin"
-[Thu Apr  9 19:19:11 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_admin"
-[Thu Apr  9 19:19:11 2015] [error] DBIx::Class::Row::store_column(): No such column 'password' on Moblo::Schema::Result::User at lib/Moblo/Controller/Login.pm line 170
+[Sun Apr 12 19:14:33 2015] [debug] Template "exception.development.html.ep" not found
+[Sun Apr 12 19:14:33 2015] [debug] Template "exception.html.ep" not found
+[Sun Apr 12 19:14:33 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Sun Apr 12 19:14:33 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Sun Apr 12 19:14:33 2015] [debug] 500 Internal Server Error (0.017927s, 55.782/s)
+[Sun Apr 12 19:17:54 2015] [debug] GET "/create_company_form"
+[Sun Apr 12 19:17:54 2015] [debug] Rendering template "login/create_company_form.html.ep"
+[Sun Apr 12 19:17:54 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 19:17:54 2015] [debug] 200 OK (0.006514s, 153.516/s)
+[Sun Apr 12 19:17:56 2015] [debug] POST "/create_company_form/create_company"
+[Sun Apr 12 19:17:56 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
+[Sun Apr 12 19:17:57 2015] [debug] 200 OK (0.158702s, 6.301/s)
+[Sun Apr 12 19:18:04 2015] [debug] POST "/create_company_form/create_admin"
+[Sun Apr 12 19:18:04 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_admin"
+[Sun Apr 12 19:18:05 2015] [debug] 200 OK (0.168839s, 5.923/s)
+[Sun Apr 12 19:19:28 2015] [debug] POST "/create_company_form/create_admin"
+[Sun Apr 12 19:19:28 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_admin"
+[Sun Apr 12 19:19:28 2015] [debug] 200 OK (0.002062s, 484.966/s)
+[Sun Apr 12 19:19:28 2015] [error] DBIx::Class::Storage::DBI::_dbh_execute(): DBI Exception: DBD::SQLite::st execute failed: UNIQUE constraint failed: users.username [for Statement "INSERT INTO users ( city, company, email, firstname, lastname, pw_hash, user_level, username, zipcode) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )"] at lib/Moblo/Controller/Login.pm line 177
 
-[Thu Apr  9 19:19:11 2015] [debug] Template "exception.development.html.ep" not found
-[Thu Apr  9 19:19:11 2015] [debug] Template "exception.html.ep" not found
-[Thu Apr  9 19:19:11 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
-[Thu Apr  9 19:19:11 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
-[Thu Apr  9 19:19:11 2015] [debug] 500 Internal Server Error (0.095010s, 10.525/s)
+[Sun Apr 12 19:19:28 2015] [debug] Template "exception.development.html.ep" not found
+[Sun Apr 12 19:19:28 2015] [debug] Template "exception.html.ep" not found
+[Sun Apr 12 19:19:28 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Sun Apr 12 19:19:28 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Sun Apr 12 19:19:31 2015] [debug] POST "/create_company_form/create_admin"
+[Sun Apr 12 19:19:31 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_admin"
+[Sun Apr 12 19:19:31 2015] [debug] 200 OK (0.002885s, 346.620/s)
+[Sun Apr 12 19:19:31 2015] [error] DBIx::Class::Storage::DBI::_dbh_execute(): DBI Exception: DBD::SQLite::st execute failed: UNIQUE constraint failed: users.username [for Statement "INSERT INTO users ( city, company, email, firstname, lastname, pw_hash, user_level, username, zipcode) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )"] at lib/Moblo/Controller/Login.pm line 177
+
+[Sun Apr 12 19:19:31 2015] [debug] Template "exception.development.html.ep" not found
+[Sun Apr 12 19:19:31 2015] [debug] Template "exception.html.ep" not found
+[Sun Apr 12 19:19:31 2015] [debug] Rendering cached inline template "fd403ab55a4c875e35b42428816134c7"
+[Sun Apr 12 19:19:31 2015] [debug] Rendering cached inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Sun Apr 12 19:20:36 2015] [debug] GET "/create_company_form"
+[Sun Apr 12 19:20:36 2015] [debug] Rendering template "login/create_company_form.html.ep"
+[Sun Apr 12 19:20:36 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 19:20:36 2015] [debug] 200 OK (0.007174s, 139.392/s)
+[Sun Apr 12 19:20:39 2015] [debug] POST "/create_company_form/create_company"
+[Sun Apr 12 19:20:39 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
+[Sun Apr 12 19:20:39 2015] [debug] 200 OK (0.176478s, 5.666/s)
+[Sun Apr 12 19:20:45 2015] [debug] POST "/create_company_form/create_admin"
+[Sun Apr 12 19:20:45 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_admin"
+[Sun Apr 12 19:20:45 2015] [debug] 200 OK (0.003606s, 277.316/s)
+[Sun Apr 12 19:20:45 2015] [error] DBIx::Class::Storage::DBI::_dbh_execute(): DBI Exception: DBD::SQLite::st execute failed: UNIQUE constraint failed: users.username [for Statement "INSERT INTO users ( city, company, email, firstname, lastname, pw_hash, user_level, username, zipcode) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )"] at lib/Moblo/Controller/Login.pm line 177
+
+[Sun Apr 12 19:20:45 2015] [debug] Template "exception.development.html.ep" not found
+[Sun Apr 12 19:20:45 2015] [debug] Template "exception.html.ep" not found
+[Sun Apr 12 19:20:45 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Sun Apr 12 19:20:45 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Sun Apr 12 19:22:01 2015] [debug] POST "/create_company_form/create_admin"
+[Sun Apr 12 19:22:01 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_admin"
+[Sun Apr 12 19:22:01 2015] [debug] 200 OK (0.033484s, 29.865/s)
+[Sun Apr 12 19:27:19 2015] [debug] POST "/create_company_form/create_admin"
+[Sun Apr 12 19:27:19 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_admin"
+[Sun Apr 12 19:27:19 2015] [debug] 200 OK (0.028782s, 34.744/s)
+[Sun Apr 12 19:27:24 2015] [debug] POST "/create_company_form/create_admin"
+[Sun Apr 12 19:27:24 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_admin"
+[Sun Apr 12 19:27:24 2015] [debug] 200 OK (0.171841s, 5.819/s)
+[Sun Apr 12 19:27:24 2015] [debug] Rendering template "login/login_form.html.ep"
+[Sun Apr 12 19:27:24 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 19:27:55 2015] [debug] GET "/create_company_form"
+[Sun Apr 12 19:27:55 2015] [debug] Rendering template "login/create_company_form.html.ep"
+[Sun Apr 12 19:27:55 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 19:27:55 2015] [debug] 200 OK (0.005623s, 177.841/s)
+[Sun Apr 12 19:29:47 2015] [debug] GET "/login.html"
+[Sun Apr 12 19:29:47 2015] [debug] Rendering template "login/login_form.html.ep"
+[Sun Apr 12 19:29:47 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 19:29:47 2015] [debug] 200 OK (0.004861s, 205.719/s)
+[Sun Apr 12 19:30:43 2015] [debug] POST "/login"
+[Sun Apr 12 19:30:43 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Sun Apr 12 19:30:43 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 19:30:43 2015] [debug] 403 Forbidden (0.027269s, 36.672/s)
+[Sun Apr 12 19:30:45 2015] [debug] GET "/create_company_form"
+[Sun Apr 12 19:30:45 2015] [debug] Rendering template "login/create_company_form.html.ep"
+[Sun Apr 12 19:30:45 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 19:30:45 2015] [debug] 200 OK (0.017265s, 57.921/s)
+[Sun Apr 12 19:30:48 2015] [debug] POST "/create_company_form/create_company"
+[Sun Apr 12 19:30:48 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
+[Sun Apr 12 19:30:48 2015] [debug] 200 OK (0.009125s, 109.589/s)
+[Sun Apr 12 19:30:52 2015] [debug] POST "/create_company_form/create_company"
+[Sun Apr 12 19:30:52 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
+[Sun Apr 12 19:30:52 2015] [debug] 200 OK (0.141129s, 7.086/s)
+[Sun Apr 12 19:31:08 2015] [debug] POST "/create_company_form/create_admin"
+[Sun Apr 12 19:31:08 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_admin"
+[Sun Apr 12 19:31:08 2015] [debug] 200 OK (0.167036s, 5.987/s)
+[Sun Apr 12 19:34:17 2015] [debug] GET "/login.html"
+[Sun Apr 12 19:34:17 2015] [debug] Rendering template "login/login_form.html.ep"
+[Sun Apr 12 19:34:17 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 19:34:17 2015] [debug] 200 OK (0.005429s, 184.196/s)
+[Sun Apr 12 19:35:15 2015] [debug] POST "/login"
+[Sun Apr 12 19:35:15 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Sun Apr 12 19:35:15 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 19:35:15 2015] [debug] 403 Forbidden (0.029830s, 33.523/s)
+[Sun Apr 12 19:35:16 2015] [debug] GET "/create_company_form"
+[Sun Apr 12 19:35:16 2015] [debug] Rendering template "login/create_company_form.html.ep"
+[Sun Apr 12 19:35:16 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 19:35:16 2015] [debug] 200 OK (0.006137s, 162.946/s)
+[Sun Apr 12 19:35:20 2015] [debug] POST "/create_company_form/create_company"
+[Sun Apr 12 19:35:20 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
+[Sun Apr 12 19:35:20 2015] [debug] 200 OK (0.128280s, 7.795/s)
+[Sun Apr 12 19:35:40 2015] [debug] POST "/create_company_form/create_admin"
+[Sun Apr 12 19:35:40 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_admin"
+[Sun Apr 12 19:35:40 2015] [debug] 200 OK (0.167416s, 5.973/s)
+[Sun Apr 12 19:35:41 2015] [debug] GET "/login.html"
+[Sun Apr 12 19:35:41 2015] [debug] Rendering template "login/login_form.html.ep"
+[Sun Apr 12 19:35:41 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 19:35:41 2015] [debug] 200 OK (0.004991s, 200.361/s)
+[Sun Apr 12 19:36:32 2015] [debug] POST "/login"
+[Sun Apr 12 19:36:32 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Sun Apr 12 19:36:32 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 19:36:32 2015] [debug] 403 Forbidden (0.030003s, 33.330/s)
+[Sun Apr 12 19:36:33 2015] [debug] GET "/create_company_form"
+[Sun Apr 12 19:36:33 2015] [debug] Rendering template "login/create_company_form.html.ep"
+[Sun Apr 12 19:36:33 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 19:36:33 2015] [debug] 200 OK (0.011118s, 89.944/s)
+[Sun Apr 12 19:36:39 2015] [debug] POST "/create_company_form/create_company"
+[Sun Apr 12 19:36:39 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
+[Sun Apr 12 19:36:39 2015] [debug] 200 OK (0.163518s, 6.116/s)
+[Sun Apr 12 19:37:04 2015] [debug] POST "/create_company_form/create_admin"
+[Sun Apr 12 19:37:04 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_admin"
+[Sun Apr 12 19:37:04 2015] [debug] 200 OK (0.151610s, 6.596/s)
+[Sun Apr 12 19:37:05 2015] [debug] GET "/login.html"
+[Sun Apr 12 19:37:05 2015] [debug] Rendering template "login/login_form.html.ep"
+[Sun Apr 12 19:37:05 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 19:37:05 2015] [debug] 200 OK (0.008864s, 112.816/s)
+[Sun Apr 12 19:37:18 2015] [debug] POST "/login"
+[Sun Apr 12 19:37:18 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Sun Apr 12 19:37:18 2015] [debug] 302 Found (0.023442s, 42.658/s)
+[Sun Apr 12 19:37:18 2015] [debug] GET "/admin"
+[Sun Apr 12 19:37:18 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Sun Apr 12 19:37:18 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Sun Apr 12 19:37:18 2015] [debug] Rendering template "admin/overview.html.ep"
+[Sun Apr 12 19:37:18 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sun Apr 12 19:37:18 2015] [debug] 200 OK (0.005295s, 188.857/s)
+[Sun Apr 12 19:37:22 2015] [debug] GET "/admin/create"
+[Sun Apr 12 19:37:22 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Sun Apr 12 19:37:22 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Sun Apr 12 19:37:22 2015] [debug] Rendering template "admin/create_post.html.ep"
+[Sun Apr 12 19:37:22 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Sun Apr 12 19:37:22 2015] [debug] 200 OK (0.006416s, 155.860/s)
+[Sun Apr 12 19:37:22 2015] [debug] GET "/admin/js/jquery.min.js"
+[Sun Apr 12 19:37:22 2015] [debug] Template "not_found.development.html.ep" not found
+[Sun Apr 12 19:37:22 2015] [debug] Template "not_found.html.ep" not found
+[Sun Apr 12 19:37:22 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Sun Apr 12 19:37:22 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Sun Apr 12 19:37:22 2015] [debug] 404 Not Found (0.017106s, 58.459/s)
+[Sun Apr 12 19:37:32 2015] [debug] POST "/admin/create"
+[Sun Apr 12 19:37:32 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Sun Apr 12 19:37:32 2015] [debug] Routing to controller "Moblo::Controller::Post" and action "create"
+[Sun Apr 12 19:37:32 2015] [error] DBIx::Class::Row::store_column(): No such column 'author' on Moblo::Schema::Result::Post at lib/Moblo/Controller/Post.pm line 15
+
+[Sun Apr 12 19:37:32 2015] [debug] Template "exception.development.html.ep" not found
+[Sun Apr 12 19:37:32 2015] [debug] Template "exception.html.ep" not found
+[Sun Apr 12 19:37:32 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Sun Apr 12 19:37:32 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Sun Apr 12 19:37:32 2015] [debug] 500 Internal Server Error (0.021377s, 46.779/s)
