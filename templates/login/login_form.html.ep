@@ -4,14 +4,19 @@
 %}
 <div class="container"> 
 %= form_for 'login' => (method => 'POST'),class =>"form-signin" => begin
-    <h2 class="form-signin-heading">Please sign in</h2>
-	%= label_for username => 'Username', class=>"sr-only"
-	<input type="email" id='username' class="form-control" placeholder="Email address" required autofocus> 
+
+
+	%= label_for username => 'Username'
+	%= text_field 'username', class => 'form-control', placeholder => 'Username'
 
 	%=tag 'br' 
 	%=tag 'br'
-	%= label_for password => 'Password', class => "sr-only" 
-	<input type="password" id="password" placeholder="Password" class="form-control" required>
+	%= label_for password => 'Password'
+	%= password_field 'password', class => 'form-control', placeholder => "Password"
+
+
+	<!-- %= label_for password => 'Password', class => "sr-only" 
+	<input type="password" id="password" placeholder="Password" class="form-control" required> -->
 
 	%=tag 'br'
 	%=tag 'br'

@@ -1,922 +1,312 @@
-Global symbol "$total" requires explicit package name at lib/Moblo/Controller/Login.pm line 187.
-Compilation failed in require at (eval 156) line 1.
-
-[Sun Apr 12 19:11:11 2015] [debug] Template "exception.development.html.ep" not found
-[Sun Apr 12 19:11:11 2015] [debug] Template "exception.html.ep" not found
-[Sun Apr 12 19:11:11 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
-[Sun Apr 12 19:11:11 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
-[Sun Apr 12 19:11:11 2015] [debug] 500 Internal Server Error (0.018369s, 54.440/s)
-[Sun Apr 12 19:14:30 2015] [debug] GET "/create_company_form"
-[Sun Apr 12 19:14:30 2015] [debug] Rendering template "login/create_company_form.html.ep"
-[Sun Apr 12 19:14:30 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 19:14:30 2015] [debug] 200 OK (0.010777s, 92.790/s)
-[Sun Apr 12 19:14:33 2015] [debug] POST "/create_company_form/create_company"
-[Sun Apr 12 19:14:33 2015] [error] Global symbol "$username" requires explicit package name at lib/Moblo/Controller/Login.pm line 169.
-Global symbol "$total" requires explicit package name at lib/Moblo/Controller/Login.pm line 188.
-Compilation failed in require at (eval 156) line 1.
-
-[Sun Apr 12 19:14:33 2015] [debug] Template "exception.development.html.ep" not found
-[Sun Apr 12 19:14:33 2015] [debug] Template "exception.html.ep" not found
-[Sun Apr 12 19:14:33 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
-[Sun Apr 12 19:14:33 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
-[Sun Apr 12 19:14:33 2015] [debug] 500 Internal Server Error (0.017927s, 55.782/s)
-[Sun Apr 12 19:17:54 2015] [debug] GET "/create_company_form"
-[Sun Apr 12 19:17:54 2015] [debug] Rendering template "login/create_company_form.html.ep"
-[Sun Apr 12 19:17:54 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 19:17:54 2015] [debug] 200 OK (0.006514s, 153.516/s)
-[Sun Apr 12 19:17:56 2015] [debug] POST "/create_company_form/create_company"
-[Sun Apr 12 19:17:56 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
-[Sun Apr 12 19:17:57 2015] [debug] 200 OK (0.158702s, 6.301/s)
-[Sun Apr 12 19:18:04 2015] [debug] POST "/create_company_form/create_admin"
-[Sun Apr 12 19:18:04 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_admin"
-[Sun Apr 12 19:18:05 2015] [debug] 200 OK (0.168839s, 5.923/s)
-[Sun Apr 12 19:19:28 2015] [debug] POST "/create_company_form/create_admin"
-[Sun Apr 12 19:19:28 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_admin"
-[Sun Apr 12 19:19:28 2015] [debug] 200 OK (0.002062s, 484.966/s)
-[Sun Apr 12 19:19:28 2015] [error] DBIx::Class::Storage::DBI::_dbh_execute(): DBI Exception: DBD::SQLite::st execute failed: UNIQUE constraint failed: users.username [for Statement "INSERT INTO users ( city, company, email, firstname, lastname, pw_hash, user_level, username, zipcode) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )"] at lib/Moblo/Controller/Login.pm line 177
-
-[Sun Apr 12 19:19:28 2015] [debug] Template "exception.development.html.ep" not found
-[Sun Apr 12 19:19:28 2015] [debug] Template "exception.html.ep" not found
-[Sun Apr 12 19:19:28 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
-[Sun Apr 12 19:19:28 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
-[Sun Apr 12 19:19:31 2015] [debug] POST "/create_company_form/create_admin"
-[Sun Apr 12 19:19:31 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_admin"
-[Sun Apr 12 19:19:31 2015] [debug] 200 OK (0.002885s, 346.620/s)
-[Sun Apr 12 19:19:31 2015] [error] DBIx::Class::Storage::DBI::_dbh_execute(): DBI Exception: DBD::SQLite::st execute failed: UNIQUE constraint failed: users.username [for Statement "INSERT INTO users ( city, company, email, firstname, lastname, pw_hash, user_level, username, zipcode) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )"] at lib/Moblo/Controller/Login.pm line 177
-
-[Sun Apr 12 19:19:31 2015] [debug] Template "exception.development.html.ep" not found
-[Sun Apr 12 19:19:31 2015] [debug] Template "exception.html.ep" not found
-[Sun Apr 12 19:19:31 2015] [debug] Rendering cached inline template "fd403ab55a4c875e35b42428816134c7"
-[Sun Apr 12 19:19:31 2015] [debug] Rendering cached inline template "dd85456cf9f44e1e43bebae130a7f9df"
-[Sun Apr 12 19:20:36 2015] [debug] GET "/create_company_form"
-[Sun Apr 12 19:20:36 2015] [debug] Rendering template "login/create_company_form.html.ep"
-[Sun Apr 12 19:20:36 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 19:20:36 2015] [debug] 200 OK (0.007174s, 139.392/s)
-[Sun Apr 12 19:20:39 2015] [debug] POST "/create_company_form/create_company"
-[Sun Apr 12 19:20:39 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
-[Sun Apr 12 19:20:39 2015] [debug] 200 OK (0.176478s, 5.666/s)
-[Sun Apr 12 19:20:45 2015] [debug] POST "/create_company_form/create_admin"
-[Sun Apr 12 19:20:45 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_admin"
-[Sun Apr 12 19:20:45 2015] [debug] 200 OK (0.003606s, 277.316/s)
-[Sun Apr 12 19:20:45 2015] [error] DBIx::Class::Storage::DBI::_dbh_execute(): DBI Exception: DBD::SQLite::st execute failed: UNIQUE constraint failed: users.username [for Statement "INSERT INTO users ( city, company, email, firstname, lastname, pw_hash, user_level, username, zipcode) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )"] at lib/Moblo/Controller/Login.pm line 177
-
-[Sun Apr 12 19:20:45 2015] [debug] Template "exception.development.html.ep" not found
-[Sun Apr 12 19:20:45 2015] [debug] Template "exception.html.ep" not found
-[Sun Apr 12 19:20:45 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
-[Sun Apr 12 19:20:45 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
-[Sun Apr 12 19:22:01 2015] [debug] POST "/create_company_form/create_admin"
-[Sun Apr 12 19:22:01 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_admin"
-[Sun Apr 12 19:22:01 2015] [debug] 200 OK (0.033484s, 29.865/s)
-[Sun Apr 12 19:27:19 2015] [debug] POST "/create_company_form/create_admin"
-[Sun Apr 12 19:27:19 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_admin"
-[Sun Apr 12 19:27:19 2015] [debug] 200 OK (0.028782s, 34.744/s)
-[Sun Apr 12 19:27:24 2015] [debug] POST "/create_company_form/create_admin"
-[Sun Apr 12 19:27:24 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_admin"
-[Sun Apr 12 19:27:24 2015] [debug] 200 OK (0.171841s, 5.819/s)
-[Sun Apr 12 19:27:24 2015] [debug] Rendering template "login/login_form.html.ep"
-[Sun Apr 12 19:27:24 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 19:27:55 2015] [debug] GET "/create_company_form"
-[Sun Apr 12 19:27:55 2015] [debug] Rendering template "login/create_company_form.html.ep"
-[Sun Apr 12 19:27:55 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 19:27:55 2015] [debug] 200 OK (0.005623s, 177.841/s)
-[Sun Apr 12 19:29:47 2015] [debug] GET "/login.html"
-[Sun Apr 12 19:29:47 2015] [debug] Rendering template "login/login_form.html.ep"
-[Sun Apr 12 19:29:47 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 19:29:47 2015] [debug] 200 OK (0.004861s, 205.719/s)
-[Sun Apr 12 19:30:43 2015] [debug] POST "/login"
-[Sun Apr 12 19:30:43 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
-[Sun Apr 12 19:30:43 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 19:30:43 2015] [debug] 403 Forbidden (0.027269s, 36.672/s)
-[Sun Apr 12 19:30:45 2015] [debug] GET "/create_company_form"
-[Sun Apr 12 19:30:45 2015] [debug] Rendering template "login/create_company_form.html.ep"
-[Sun Apr 12 19:30:45 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 19:30:45 2015] [debug] 200 OK (0.017265s, 57.921/s)
-[Sun Apr 12 19:30:48 2015] [debug] POST "/create_company_form/create_company"
-[Sun Apr 12 19:30:48 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
-[Sun Apr 12 19:30:48 2015] [debug] 200 OK (0.009125s, 109.589/s)
-[Sun Apr 12 19:30:52 2015] [debug] POST "/create_company_form/create_company"
-[Sun Apr 12 19:30:52 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
-[Sun Apr 12 19:30:52 2015] [debug] 200 OK (0.141129s, 7.086/s)
-[Sun Apr 12 19:31:08 2015] [debug] POST "/create_company_form/create_admin"
-[Sun Apr 12 19:31:08 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_admin"
-[Sun Apr 12 19:31:08 2015] [debug] 200 OK (0.167036s, 5.987/s)
-[Sun Apr 12 19:34:17 2015] [debug] GET "/login.html"
-[Sun Apr 12 19:34:17 2015] [debug] Rendering template "login/login_form.html.ep"
-[Sun Apr 12 19:34:17 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 19:34:17 2015] [debug] 200 OK (0.005429s, 184.196/s)
-[Sun Apr 12 19:35:15 2015] [debug] POST "/login"
-[Sun Apr 12 19:35:15 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
-[Sun Apr 12 19:35:15 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 19:35:15 2015] [debug] 403 Forbidden (0.029830s, 33.523/s)
-[Sun Apr 12 19:35:16 2015] [debug] GET "/create_company_form"
-[Sun Apr 12 19:35:16 2015] [debug] Rendering template "login/create_company_form.html.ep"
-[Sun Apr 12 19:35:16 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 19:35:16 2015] [debug] 200 OK (0.006137s, 162.946/s)
-[Sun Apr 12 19:35:20 2015] [debug] POST "/create_company_form/create_company"
-[Sun Apr 12 19:35:20 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
-[Sun Apr 12 19:35:20 2015] [debug] 200 OK (0.128280s, 7.795/s)
-[Sun Apr 12 19:35:40 2015] [debug] POST "/create_company_form/create_admin"
-[Sun Apr 12 19:35:40 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_admin"
-[Sun Apr 12 19:35:40 2015] [debug] 200 OK (0.167416s, 5.973/s)
-[Sun Apr 12 19:35:41 2015] [debug] GET "/login.html"
-[Sun Apr 12 19:35:41 2015] [debug] Rendering template "login/login_form.html.ep"
-[Sun Apr 12 19:35:41 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 19:35:41 2015] [debug] 200 OK (0.004991s, 200.361/s)
-[Sun Apr 12 19:36:32 2015] [debug] POST "/login"
-[Sun Apr 12 19:36:32 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
-[Sun Apr 12 19:36:32 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 19:36:32 2015] [debug] 403 Forbidden (0.030003s, 33.330/s)
-[Sun Apr 12 19:36:33 2015] [debug] GET "/create_company_form"
-[Sun Apr 12 19:36:33 2015] [debug] Rendering template "login/create_company_form.html.ep"
-[Sun Apr 12 19:36:33 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 19:36:33 2015] [debug] 200 OK (0.011118s, 89.944/s)
-[Sun Apr 12 19:36:39 2015] [debug] POST "/create_company_form/create_company"
-[Sun Apr 12 19:36:39 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
-[Sun Apr 12 19:36:39 2015] [debug] 200 OK (0.163518s, 6.116/s)
-[Sun Apr 12 19:37:04 2015] [debug] POST "/create_company_form/create_admin"
-[Sun Apr 12 19:37:04 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_admin"
-[Sun Apr 12 19:37:04 2015] [debug] 200 OK (0.151610s, 6.596/s)
-[Sun Apr 12 19:37:05 2015] [debug] GET "/login.html"
-[Sun Apr 12 19:37:05 2015] [debug] Rendering template "login/login_form.html.ep"
-[Sun Apr 12 19:37:05 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 19:37:05 2015] [debug] 200 OK (0.008864s, 112.816/s)
-[Sun Apr 12 19:37:18 2015] [debug] POST "/login"
-[Sun Apr 12 19:37:18 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
-[Sun Apr 12 19:37:18 2015] [debug] 302 Found (0.023442s, 42.658/s)
-[Sun Apr 12 19:37:18 2015] [debug] GET "/admin"
-[Sun Apr 12 19:37:18 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
-[Sun Apr 12 19:37:18 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
-[Sun Apr 12 19:37:18 2015] [debug] Rendering template "admin/overview.html.ep"
-[Sun Apr 12 19:37:18 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 19:37:18 2015] [debug] 200 OK (0.005295s, 188.857/s)
-[Sun Apr 12 19:37:22 2015] [debug] GET "/admin/create"
-[Sun Apr 12 19:37:22 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
-[Sun Apr 12 19:37:22 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
-[Sun Apr 12 19:37:22 2015] [debug] Rendering template "admin/create_post.html.ep"
-[Sun Apr 12 19:37:22 2015] [debug] Rendering cached template "layouts/base.html.ep"
-[Sun Apr 12 19:37:22 2015] [debug] 200 OK (0.006416s, 155.860/s)
-[Sun Apr 12 19:37:22 2015] [debug] GET "/admin/js/jquery.min.js"
-[Sun Apr 12 19:37:22 2015] [debug] Template "not_found.development.html.ep" not found
-[Sun Apr 12 19:37:22 2015] [debug] Template "not_found.html.ep" not found
-[Sun Apr 12 19:37:22 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
-[Sun Apr 12 19:37:22 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
-[Sun Apr 12 19:37:22 2015] [debug] 404 Not Found (0.017106s, 58.459/s)
-[Sun Apr 12 19:37:32 2015] [debug] POST "/admin/create"
-[Sun Apr 12 19:37:32 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
-[Sun Apr 12 19:37:32 2015] [debug] Routing to controller "Moblo::Controller::Post" and action "create"
-[Sun Apr 12 19:37:32 2015] [error] DBIx::Class::Row::store_column(): No such column 'author' on Moblo::Schema::Result::Post at lib/Moblo/Controller/Post.pm line 15
-
-[Sun Apr 12 19:37:32 2015] [debug] Template "exception.development.html.ep" not found
-[Sun Apr 12 19:37:32 2015] [debug] Template "exception.html.ep" not found
-[Sun Apr 12 19:37:32 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
-[Sun Apr 12 19:37:32 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
-[Sun Apr 12 19:37:32 2015] [debug] 500 Internal Server Error (0.021377s, 46.779/s)
-[Sun Apr 12 20:22:05 2015] [debug] GET "/"
-[Sun Apr 12 20:22:05 2015] [debug] Rendering template "main/index.html.ep"
-[Sun Apr 12 20:22:05 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 20:22:05 2015] [debug] 200 OK (0.034853s, 28.692/s)
-[Sun Apr 12 20:22:09 2015] [debug] GET "/"
-[Sun Apr 12 20:22:09 2015] [debug] Rendering cached template "main/index.html.ep"
-[Sun Apr 12 20:22:09 2015] [debug] Rendering cached template "layouts/base.html.ep"
-[Sun Apr 12 20:22:09 2015] [debug] 200 OK (0.006059s, 165.044/s)
-[Sun Apr 12 20:23:33 2015] [debug] GET "/"
-[Sun Apr 12 20:23:33 2015] [debug] Rendering template "main/index.html.ep"
-[Sun Apr 12 20:23:33 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 20:23:33 2015] [debug] 200 OK (0.036503s, 27.395/s)
-[Sun Apr 12 20:23:48 2015] [debug] GET "/"
-[Sun Apr 12 20:23:48 2015] [debug] Rendering template "main/index.html.ep"
-[Sun Apr 12 20:23:48 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 20:23:48 2015] [debug] 200 OK (0.040049s, 24.969/s)
-[Sun Apr 12 20:24:37 2015] [debug] GET "/"
-[Sun Apr 12 20:24:37 2015] [debug] Rendering template "main/index.html.ep"
-[Sun Apr 12 20:24:37 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 20:24:37 2015] [debug] 200 OK (0.038410s, 26.035/s)
-[Sun Apr 12 20:24:37 2015] [debug] GET "/"
-[Sun Apr 12 20:24:37 2015] [debug] Rendering cached template "main/index.html.ep"
-[Sun Apr 12 20:24:37 2015] [debug] Rendering cached template "layouts/base.html.ep"
-[Sun Apr 12 20:24:37 2015] [debug] 200 OK (0.005261s, 190.078/s)
-[Sun Apr 12 20:24:38 2015] [debug] GET "/"
-[Sun Apr 12 20:24:38 2015] [debug] Rendering cached template "main/index.html.ep"
-[Sun Apr 12 20:24:38 2015] [debug] Rendering cached template "layouts/base.html.ep"
-[Sun Apr 12 20:24:38 2015] [debug] 200 OK (0.008153s, 122.654/s)
-[Sun Apr 12 20:24:38 2015] [debug] GET "/"
-[Sun Apr 12 20:24:38 2015] [debug] Rendering cached template "main/index.html.ep"
-[Sun Apr 12 20:24:38 2015] [debug] Rendering cached template "layouts/base.html.ep"
-[Sun Apr 12 20:24:38 2015] [debug] 200 OK (0.003953s, 252.972/s)
-[Sun Apr 12 20:24:38 2015] [debug] GET "/"
-[Sun Apr 12 20:24:38 2015] [debug] Rendering cached template "main/index.html.ep"
-[Sun Apr 12 20:24:38 2015] [debug] Rendering cached template "layouts/base.html.ep"
-[Sun Apr 12 20:24:38 2015] [debug] 200 OK (0.007612s, 131.372/s)
-[Sun Apr 12 20:25:58 2015] [debug] GET "/"
-[Sun Apr 12 20:25:58 2015] [debug] Rendering template "main/index.html.ep"
-[Sun Apr 12 20:25:58 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 20:25:58 2015] [debug] 200 OK (0.050420s, 19.833/s)
-[Sun Apr 12 20:28:05 2015] [debug] GET "/"
-[Sun Apr 12 20:28:05 2015] [debug] Rendering template "main/index.html.ep"
-[Sun Apr 12 20:28:05 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 20:28:05 2015] [debug] 200 OK (0.044886s, 22.279/s)
-[Sun Apr 12 20:29:37 2015] [debug] GET "/"
-[Sun Apr 12 20:29:37 2015] [debug] Rendering template "main/index.html.ep"
-[Sun Apr 12 20:29:37 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 20:29:37 2015] [debug] 200 OK (0.028456s, 35.142/s)
-[Sun Apr 12 20:29:40 2015] [debug] GET "/login"
-[Sun Apr 12 20:29:40 2015] [debug] Rendering template "login/login_form.html.ep"
-[Sun Apr 12 20:29:40 2015] [debug] Rendering cached template "layouts/base.html.ep"
-[Sun Apr 12 20:29:40 2015] [debug] 200 OK (0.003375s, 296.296/s)
-[Sun Apr 12 20:29:44 2015] [debug] POST "/login"
-[Sun Apr 12 20:29:44 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
-[Sun Apr 12 20:29:44 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 20:29:44 2015] [debug] 403 Forbidden (0.004167s, 239.981/s)
-[Sun Apr 12 20:29:49 2015] [debug] GET "/create_account"
-[Sun Apr 12 20:29:49 2015] [debug] Rendering template "login/create_form.html.ep"
-[Sun Apr 12 20:29:49 2015] [debug] Rendering cached template "layouts/base.html.ep"
-[Sun Apr 12 20:29:49 2015] [debug] 200 OK (0.005039s, 198.452/s)
-[Sun Apr 12 20:37:47 2015] [debug] GET "/create_account"
-[Sun Apr 12 20:37:47 2015] [debug] Rendering template "login/create_form.html.ep"
-[Sun Apr 12 20:37:47 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 20:37:47 2015] [debug] 200 OK (0.007330s, 136.426/s)
-[Sun Apr 12 20:38:35 2015] [debug] GET "/create_account"
-[Sun Apr 12 20:38:35 2015] [debug] Rendering template "login/create_form.html.ep"
-[Sun Apr 12 20:38:35 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 20:38:35 2015] [debug] 200 OK (0.013546s, 73.823/s)
-[Sun Apr 12 20:48:18 2015] [debug] GET "/create_account"
-[Sun Apr 12 20:48:18 2015] [debug] Rendering template "login/create_form.html.ep"
-[Sun Apr 12 20:48:18 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 20:48:18 2015] [debug] 200 OK (0.010423s, 95.942/s)
-[Sun Apr 12 20:50:48 2015] [debug] GET "/"
-[Sun Apr 12 20:50:48 2015] [debug] Rendering template "main/index.html.ep"
-[Sun Apr 12 20:50:48 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 20:50:48 2015] [debug] 200 OK (0.037517s, 26.655/s)
-[Sun Apr 12 20:50:52 2015] [debug] GET "/login"
-[Sun Apr 12 20:50:52 2015] [debug] Rendering template "login/login_form.html.ep"
-[Sun Apr 12 20:50:52 2015] [error] Bareword "form" not allowed while "strict subs" in use at template login/login_form.html.ep line 12.
-Bareword "control" not allowed while "strict subs" in use at template login/login_form.html.ep line 12.
-7: 	%= label_for username => 'Username'
-8: 	%= text_field 'username'
-9: 
-10: 	%=tag 'br' 
-11: 	%=tag 'br'
-12: 	%= label_for password => 'Password', class =>form-control
-13: 	%= password_field 'password'
-14: 
-15: 	%=tag 'br'
-16: 	%=tag 'br'
-17: 	%= submit_button 'Log me in', class => 'btn btn-lg btn-block btn-primary'
-
-[Sun Apr 12 20:50:52 2015] [debug] Template "exception.development.html.ep" not found
-[Sun Apr 12 20:50:52 2015] [debug] Template "exception.html.ep" not found
-[Sun Apr 12 20:50:52 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
-[Sun Apr 12 20:50:52 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
-[Sun Apr 12 20:50:52 2015] [debug] 500 Internal Server Error (0.019997s, 50.008/s)
-[Sun Apr 12 20:51:10 2015] [debug] GET "/login"
-[Sun Apr 12 20:51:10 2015] [debug] Rendering template "login/login_form.html.ep"
-[Sun Apr 12 20:51:10 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 20:51:10 2015] [debug] 200 OK (0.004771s, 209.600/s)
-[Sun Apr 12 20:51:36 2015] [debug] GET "/login"
-[Sun Apr 12 20:51:36 2015] [debug] Rendering template "login/login_form.html.ep"
-[Sun Apr 12 20:51:36 2015] [error] Bad name after br' at template login/login_form.html.ep line 15.
-
-[Sun Apr 12 20:51:36 2015] [debug] Template "exception.development.html.ep" not found
-[Sun Apr 12 20:51:36 2015] [debug] Template "exception.html.ep" not found
-[Sun Apr 12 20:51:36 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
-[Sun Apr 12 20:51:36 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
-[Sun Apr 12 20:51:36 2015] [debug] 500 Internal Server Error (0.036459s, 27.428/s)
-[Sun Apr 12 20:51:51 2015] [debug] GET "/login"
-[Sun Apr 12 20:51:51 2015] [debug] Rendering template "login/login_form.html.ep"
-[Sun Apr 12 20:51:51 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 20:51:51 2015] [debug] 200 OK (0.003970s, 251.889/s)
-[Sun Apr 12 20:52:52 2015] [debug] GET "/login"
-[Sun Apr 12 20:52:52 2015] [debug] Rendering template "login/login_form.html.ep"
-[Sun Apr 12 20:52:52 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 20:52:52 2015] [debug] 200 OK (0.010503s, 95.211/s)
-[Sun Apr 12 20:53:43 2015] [debug] GET "/login"
-[Sun Apr 12 20:53:43 2015] [debug] Rendering template "login/login_form.html.ep"
-[Sun Apr 12 20:53:43 2015] [error] Can't modify constant item in scalar assignment at template login/login_form.html.ep line 7, at EOF
-2: %my $success = flash('create_user_success');
-3: 	<h3 style="color:green"><%= $success%></h3>
-4: %}
-5: 
-6: %= form_for 'login' => (method => 'POST') => begin
-7: 	%= label_for username => 'Username', class="sr-only"
-8: 	%= text_field 'username', class => "form-control"
-9: 
-10: 	%=tag 'br' 
-11: 	%=tag 'br'
-12: 	%= label_for password => 'Password' 
-
-[Sun Apr 12 20:53:43 2015] [debug] Template "exception.development.html.ep" not found
-[Sun Apr 12 20:53:43 2015] [debug] Template "exception.html.ep" not found
-[Sun Apr 12 20:53:43 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
-[Sun Apr 12 20:53:43 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
-[Sun Apr 12 20:53:43 2015] [debug] 500 Internal Server Error (0.021260s, 47.037/s)
-[Sun Apr 12 20:54:06 2015] [debug] GET "/login"
-[Sun Apr 12 20:54:06 2015] [debug] Rendering template "login/login_form.html.ep"
-[Sun Apr 12 20:54:06 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 20:54:06 2015] [debug] 200 OK (0.004780s, 209.205/s)
-[Sun Apr 12 20:54:15 2015] [debug] GET "/login"
-[Sun Apr 12 20:54:15 2015] [debug] Rendering cached template "login/login_form.html.ep"
-[Sun Apr 12 20:54:15 2015] [debug] Rendering cached template "layouts/base.html.ep"
-[Sun Apr 12 20:54:15 2015] [debug] 200 OK (0.002976s, 336.022/s)
-[Sun Apr 12 20:55:37 2015] [debug] GET "/login"
-[Sun Apr 12 20:55:37 2015] [debug] Rendering template "login/login_form.html.ep"
-[Sun Apr 12 20:55:37 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 20:55:37 2015] [debug] 200 OK (0.008518s, 117.398/s)
-[Sun Apr 12 20:55:39 2015] [debug] GET "/login"
-[Sun Apr 12 20:55:39 2015] [debug] Rendering cached template "login/login_form.html.ep"
-[Sun Apr 12 20:55:39 2015] [debug] Rendering cached template "layouts/base.html.ep"
-[Sun Apr 12 20:55:39 2015] [debug] 200 OK (0.002586s, 386.698/s)
-[Sun Apr 12 20:55:45 2015] [debug] GET "/login"
-[Sun Apr 12 20:55:45 2015] [debug] Rendering cached template "login/login_form.html.ep"
-[Sun Apr 12 20:55:45 2015] [debug] Rendering cached template "layouts/base.html.ep"
-[Sun Apr 12 20:55:45 2015] [debug] 200 OK (0.001161s, 861.326/s)
-[Sun Apr 12 20:57:03 2015] [debug] GET "/login"
-[Sun Apr 12 20:57:03 2015] [debug] Rendering template "login/login_form.html.ep"
-[Sun Apr 12 20:57:03 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 20:57:03 2015] [debug] 200 OK (0.007492s, 133.476/s)
-[Sun Apr 12 20:58:36 2015] [debug] GET "/login"
-[Sun Apr 12 20:58:36 2015] [debug] Rendering template "login/login_form.html.ep"
-[Sun Apr 12 20:58:36 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 20:58:36 2015] [debug] 200 OK (0.012149s, 82.311/s)
-[Sun Apr 12 20:59:51 2015] [debug] GET "/login"
-[Sun Apr 12 20:59:51 2015] [debug] Rendering template "login/login_form.html.ep"
-[Sun Apr 12 20:59:51 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 20:59:51 2015] [debug] 200 OK (0.006274s, 159.388/s)
-[Sun Apr 12 21:01:55 2015] [debug] GET "/login"
-[Sun Apr 12 21:01:55 2015] [debug] Rendering template "login/login_form.html.ep"
-[Sun Apr 12 21:01:55 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 21:01:55 2015] [debug] 200 OK (0.003956s, 252.781/s)
-[Sun Apr 12 21:02:41 2015] [debug] GET "/login"
-[Sun Apr 12 21:02:41 2015] [debug] Rendering template "login/login_form.html.ep"
-[Sun Apr 12 21:02:41 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 21:02:41 2015] [debug] 200 OK (0.010980s, 91.075/s)
-[Sun Apr 12 21:03:22 2015] [debug] GET "/login"
-[Sun Apr 12 21:03:22 2015] [debug] Rendering template "login/login_form.html.ep"
-[Sun Apr 12 21:03:22 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 21:03:22 2015] [debug] 200 OK (0.003946s, 253.421/s)
-[Sun Apr 12 21:04:24 2015] [debug] GET "/login"
-[Sun Apr 12 21:04:24 2015] [debug] Rendering template "login/login_form.html.ep"
-[Sun Apr 12 21:04:24 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 21:04:24 2015] [debug] 200 OK (0.006907s, 144.781/s)
-[Sun Apr 12 21:05:33 2015] [debug] POST "/login"
-[Sun Apr 12 21:05:33 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
-[Sun Apr 12 21:05:33 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 21:05:33 2015] [debug] 403 Forbidden (0.039981s, 25.012/s)
-[Sun Apr 12 21:12:16 2015] [debug] POST "/login"
-[Sun Apr 12 21:12:16 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
-[Sun Apr 12 21:12:16 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 21:12:16 2015] [debug] 403 Forbidden (0.035206s, 28.404/s)
-[Sun Apr 12 21:12:21 2015] [debug] GET "/create_account"
-[Sun Apr 12 21:12:21 2015] [debug] Rendering template "login/create_form.html.ep"
-[Sun Apr 12 21:12:21 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 21:12:21 2015] [debug] 200 OK (0.007355s, 135.962/s)
-[Sun Apr 12 21:12:59 2015] [debug] GET "/create_account"
-[Sun Apr 12 21:12:59 2015] [debug] Rendering template "login/create_form.html.ep"
-[Sun Apr 12 21:12:59 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 21:12:59 2015] [debug] 200 OK (0.005784s, 172.891/s)
-[Sun Apr 12 21:13:00 2015] [debug] GET "/create_account"
-[Sun Apr 12 21:13:00 2015] [debug] Rendering cached template "login/create_form.html.ep"
-[Sun Apr 12 21:13:00 2015] [debug] Rendering cached template "layouts/base.html.ep"
-[Sun Apr 12 21:13:00 2015] [debug] 200 OK (0.001718s, 582.072/s)
-[Sun Apr 12 21:13:59 2015] [debug] GET "/create_account"
-[Sun Apr 12 21:13:59 2015] [debug] Rendering template "login/create_form.html.ep"
-[Sun Apr 12 21:13:59 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 21:13:59 2015] [debug] 200 OK (0.005815s, 171.969/s)
-[Sun Apr 12 21:14:20 2015] [debug] GET "/create_account"
-[Sun Apr 12 21:14:20 2015] [debug] Rendering template "login/create_form.html.ep"
-[Sun Apr 12 21:14:20 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 21:14:20 2015] [debug] 200 OK (0.006184s, 161.708/s)
-[Sun Apr 12 21:14:34 2015] [debug] GET "/create_account"
-[Sun Apr 12 21:14:34 2015] [debug] Rendering template "login/create_form.html.ep"
-[Sun Apr 12 21:14:34 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 21:14:34 2015] [debug] 200 OK (0.005780s, 173.010/s)
-[Sun Apr 12 21:14:57 2015] [debug] GET "/create_account"
-[Sun Apr 12 21:14:57 2015] [debug] Rendering template "login/create_form.html.ep"
-[Sun Apr 12 21:14:57 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 21:14:57 2015] [debug] 200 OK (0.005737s, 174.307/s)
-[Sun Apr 12 21:18:38 2015] [debug] GET "/create_account"
-[Sun Apr 12 21:18:38 2015] [debug] Rendering template "login/create_form.html.ep"
-[Sun Apr 12 21:18:38 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 21:18:38 2015] [debug] 200 OK (0.005732s, 174.459/s)
-[Sun Apr 12 21:21:25 2015] [debug] GET "/create_account"
-[Sun Apr 12 21:21:25 2015] [debug] Rendering template "login/create_form.html.ep"
-[Sun Apr 12 21:21:25 2015] [error] Bareword "form" not allowed while "strict subs" in use at template login/create_form.html.ep line 105.
-100: 	%= label_for zipcode => 'zip code'
-101: 	%= text_field 'zipcode', id => 'zipcode_field'
-102: 
-103: 
-104: 	%= submit_button 'Log me in', class => 'btn btn-lg btn-block btn-primary', id => 'submit_button'
-105: % end
-106: </div>
-
-[Sun Apr 12 21:21:25 2015] [debug] Template "exception.development.html.ep" not found
-[Sun Apr 12 21:21:25 2015] [debug] Template "exception.html.ep" not found
-[Sun Apr 12 21:21:25 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
-[Sun Apr 12 21:21:25 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
-[Sun Apr 12 21:21:25 2015] [debug] 500 Internal Server Error (0.042869s, 23.327/s)
-[Sun Apr 12 21:22:13 2015] [debug] GET "/create_account"
-[Sun Apr 12 21:22:13 2015] [debug] Rendering template "login/create_form.html.ep"
-[Sun Apr 12 21:22:13 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 21:22:13 2015] [debug] 200 OK (0.006682s, 149.656/s)
-[Sun Apr 12 21:24:01 2015] [debug] GET "/create_account"
-[Sun Apr 12 21:24:01 2015] [debug] Rendering template "login/create_form.html.ep"
-[Sun Apr 12 21:24:01 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 21:24:01 2015] [debug] 200 OK (0.005768s, 173.370/s)
-[Sun Apr 12 21:24:53 2015] [debug] GET "/create_account"
-[Sun Apr 12 21:24:53 2015] [debug] Rendering template "login/create_form.html.ep"
-[Sun Apr 12 21:24:53 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 21:24:53 2015] [debug] 200 OK (0.018368s, 54.443/s)
-[Sun Apr 12 21:24:54 2015] [debug] GET "/create_account"
-[Sun Apr 12 21:24:54 2015] [debug] Rendering cached template "login/create_form.html.ep"
-[Sun Apr 12 21:24:54 2015] [debug] Rendering cached template "layouts/base.html.ep"
-[Sun Apr 12 21:24:54 2015] [debug] 200 OK (0.003713s, 269.324/s)
-[Sun Apr 12 21:25:33 2015] [debug] GET "/create_account"
-[Sun Apr 12 21:25:33 2015] [debug] Rendering template "login/create_form.html.ep"
-[Sun Apr 12 21:25:33 2015] [error] syntax error at template login/create_form.html.ep line 59, near "'Username' class"
-54: 	<h3 style="color:red">Error <%= $var %><h3>
-55: %}
-56: 
-57: %= form_for 'create_account_form' => (method => 'POST'),class => "form-horizontal" => begin
-58:     <div class="form-group">
-59:         %= label_for username => 'Username' class => "control-label col-xs-small"
-60: 
-61:         <input id='username' class="form-control" required>
-62:     </div>
-63: 	%=tag 'br' 
-64: 	%=tag 'br'
-
-[Sun Apr 12 21:25:33 2015] [debug] Template "exception.development.html.ep" not found
-[Sun Apr 12 21:25:33 2015] [debug] Template "exception.html.ep" not found
-[Sun Apr 12 21:25:33 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
-[Sun Apr 12 21:25:33 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
-[Sun Apr 12 21:25:33 2015] [debug] 500 Internal Server Error (0.019771s, 50.579/s)
-[Sun Apr 12 21:25:48 2015] [debug] GET "/create_account"
-[Sun Apr 12 21:25:48 2015] [debug] Rendering template "login/create_form.html.ep"
-[Sun Apr 12 21:25:48 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 21:25:48 2015] [debug] 200 OK (0.017822s, 56.110/s)
-[Sun Apr 12 21:27:39 2015] [debug] GET "/create_account"
-[Sun Apr 12 21:27:39 2015] [debug] Rendering template "login/create_form.html.ep"
-[Sun Apr 12 21:27:39 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 21:27:39 2015] [debug] 200 OK (0.015999s, 62.504/s)
-[Sun Apr 12 21:27:40 2015] [debug] GET "/create_account"
-[Sun Apr 12 21:27:40 2015] [debug] Rendering cached template "login/create_form.html.ep"
-[Sun Apr 12 21:27:40 2015] [debug] Rendering cached template "layouts/base.html.ep"
-[Sun Apr 12 21:27:40 2015] [debug] 200 OK (0.002073s, 482.393/s)
-[Sun Apr 12 21:27:40 2015] [debug] GET "/create_account"
-[Sun Apr 12 21:27:40 2015] [debug] Rendering cached template "login/create_form.html.ep"
-[Sun Apr 12 21:27:40 2015] [debug] Rendering cached template "layouts/base.html.ep"
-[Sun Apr 12 21:27:40 2015] [debug] 200 OK (0.001488s, 672.043/s)
-[Sun Apr 12 21:27:41 2015] [debug] GET "/create_account"
-[Sun Apr 12 21:27:41 2015] [debug] Rendering cached template "login/create_form.html.ep"
-[Sun Apr 12 21:27:41 2015] [debug] Rendering cached template "layouts/base.html.ep"
-[Sun Apr 12 21:27:41 2015] [debug] 200 OK (0.002356s, 424.448/s)
-[Sun Apr 12 21:30:48 2015] [debug] GET "/create_account"
-[Sun Apr 12 21:30:48 2015] [debug] Rendering template "login/create_form.html.ep"
-[Sun Apr 12 21:30:48 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 21:30:48 2015] [debug] 200 OK (0.011835s, 84.495/s)
-[Sun Apr 12 21:31:54 2015] [debug] GET "/create_account"
-[Sun Apr 12 21:31:54 2015] [debug] Rendering template "login/create_form.html.ep"
-[Sun Apr 12 21:31:54 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 21:31:54 2015] [debug] 200 OK (0.007662s, 130.514/s)
-[Sun Apr 12 21:32:13 2015] [debug] GET "/create_account"
-[Sun Apr 12 21:32:13 2015] [debug] Rendering template "login/create_form.html.ep"
-[Sun Apr 12 21:32:13 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 21:32:13 2015] [debug] 200 OK (0.005738s, 174.277/s)
-[Sun Apr 12 21:32:31 2015] [debug] GET "/create_account"
-[Sun Apr 12 21:32:31 2015] [debug] Rendering template "login/create_form.html.ep"
-[Sun Apr 12 21:32:31 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 21:32:31 2015] [debug] 200 OK (0.005743s, 174.125/s)
-[Sun Apr 12 21:32:32 2015] [debug] GET "/create_account"
-[Sun Apr 12 21:32:32 2015] [debug] Rendering cached template "login/create_form.html.ep"
-[Sun Apr 12 21:32:32 2015] [debug] Rendering cached template "layouts/base.html.ep"
-[Sun Apr 12 21:32:32 2015] [debug] 200 OK (0.006246s, 160.102/s)
-[Sun Apr 12 21:32:33 2015] [debug] GET "/create_account"
-[Sun Apr 12 21:32:33 2015] [debug] Rendering cached template "login/create_form.html.ep"
-[Sun Apr 12 21:32:33 2015] [debug] Rendering cached template "layouts/base.html.ep"
-[Sun Apr 12 21:32:33 2015] [debug] 200 OK (0.001446s, 691.563/s)
-[Sun Apr 12 21:32:33 2015] [debug] GET "/create_account"
-[Sun Apr 12 21:32:33 2015] [debug] Rendering cached template "login/create_form.html.ep"
-[Sun Apr 12 21:32:33 2015] [debug] Rendering cached template "layouts/base.html.ep"
-[Sun Apr 12 21:32:33 2015] [debug] 200 OK (0.003070s, 325.733/s)
-[Sun Apr 12 21:32:33 2015] [debug] GET "/create_account"
-[Sun Apr 12 21:32:33 2015] [debug] Rendering cached template "login/create_form.html.ep"
-[Sun Apr 12 21:32:33 2015] [debug] Rendering cached template "layouts/base.html.ep"
-[Sun Apr 12 21:32:33 2015] [debug] 200 OK (0.001515s, 660.066/s)
-[Sun Apr 12 21:34:27 2015] [debug] GET "/create_account"
-[Sun Apr 12 21:34:27 2015] [debug] Rendering template "login/create_form.html.ep"
-[Sun Apr 12 21:34:27 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 21:34:27 2015] [debug] 200 OK (0.016789s, 59.563/s)
-[Sun Apr 12 21:35:14 2015] [debug] GET "/create_account"
-[Sun Apr 12 21:35:14 2015] [debug] Rendering template "login/create_form.html.ep"
-[Sun Apr 12 21:35:14 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 21:35:14 2015] [debug] 200 OK (0.005769s, 173.340/s)
-[Sun Apr 12 21:35:14 2015] [debug] GET "/create_account"
-[Sun Apr 12 21:35:14 2015] [debug] Rendering cached template "login/create_form.html.ep"
-[Sun Apr 12 21:35:14 2015] [debug] Rendering cached template "layouts/base.html.ep"
-[Sun Apr 12 21:35:14 2015] [debug] 200 OK (0.002801s, 357.015/s)
-[Sun Apr 12 21:35:15 2015] [debug] GET "/create_account"
-[Sun Apr 12 21:35:15 2015] [debug] Rendering cached template "login/create_form.html.ep"
-[Sun Apr 12 21:35:15 2015] [debug] Rendering cached template "layouts/base.html.ep"
-[Sun Apr 12 21:35:15 2015] [debug] 200 OK (0.004740s, 210.970/s)
-[Sun Apr 12 21:35:40 2015] [debug] GET "/create_account"
-[Sun Apr 12 21:35:40 2015] [debug] Rendering template "login/create_form.html.ep"
-[Sun Apr 12 21:35:40 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 21:35:40 2015] [debug] 200 OK (0.005941s, 168.322/s)
-[Sun Apr 12 21:35:52 2015] [debug] GET "/create_account"
-[Sun Apr 12 21:35:52 2015] [debug] Rendering template "login/create_form.html.ep"
-[Sun Apr 12 21:35:52 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 21:35:52 2015] [debug] 200 OK (0.006481s, 154.297/s)
-[Sun Apr 12 21:55:40 2015] [debug] GET "/create_account"
-[Sun Apr 12 21:55:40 2015] [debug] Rendering template "login/create_form.html.ep"
-[Sun Apr 12 21:55:40 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 21:55:40 2015] [debug] 200 OK (0.014569s, 68.639/s)
-[Sun Apr 12 21:58:21 2015] [debug] GET "/create_account"
-[Sun Apr 12 21:58:21 2015] [debug] Rendering template "login/create_form.html.ep"
-[Sun Apr 12 21:58:21 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 21:58:21 2015] [debug] 200 OK (0.005923s, 168.833/s)
-[Sun Apr 12 21:58:32 2015] [debug] GET "/create_account"
-[Sun Apr 12 21:58:32 2015] [debug] Rendering template "login/create_form.html.ep"
-[Sun Apr 12 21:58:32 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 21:58:32 2015] [debug] 200 OK (0.016322s, 61.267/s)
-[Sun Apr 12 21:59:04 2015] [debug] GET "/create_account"
-[Sun Apr 12 21:59:04 2015] [debug] Rendering template "login/create_form.html.ep"
-[Sun Apr 12 21:59:04 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 21:59:04 2015] [debug] 200 OK (0.010798s, 92.610/s)
-[Sun Apr 12 21:59:28 2015] [debug] GET "/create_account"
-[Sun Apr 12 21:59:28 2015] [debug] Rendering template "login/create_form.html.ep"
-[Sun Apr 12 21:59:28 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 21:59:28 2015] [debug] 200 OK (0.005960s, 167.785/s)
-[Sun Apr 12 22:00:29 2015] [debug] GET "/create_account"
-[Sun Apr 12 22:00:29 2015] [debug] Rendering template "login/create_form.html.ep"
-[Sun Apr 12 22:00:29 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 22:00:29 2015] [debug] 200 OK (0.006716s, 148.898/s)
-[Sun Apr 12 22:02:06 2015] [debug] GET "/create_account"
-[Sun Apr 12 22:02:06 2015] [debug] Rendering template "login/create_form.html.ep"
-[Sun Apr 12 22:02:06 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 22:02:06 2015] [debug] 200 OK (0.006870s, 145.560/s)
-[Sun Apr 12 22:02:15 2015] [debug] GET "/create_account"
-[Sun Apr 12 22:02:15 2015] [debug] Rendering template "login/create_form.html.ep"
-[Sun Apr 12 22:02:15 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 22:02:15 2015] [debug] 200 OK (0.005958s, 167.842/s)
-[Sun Apr 12 22:04:03 2015] [debug] GET "/create_account"
-[Sun Apr 12 22:04:03 2015] [debug] Rendering template "login/create_form.html.ep"
-[Sun Apr 12 22:04:03 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 22:04:03 2015] [debug] 200 OK (0.011059s, 90.424/s)
-[Sun Apr 12 22:04:26 2015] [debug] GET "/create_account"
-[Sun Apr 12 22:04:26 2015] [debug] Rendering template "login/create_form.html.ep"
-[Sun Apr 12 22:04:26 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 22:04:26 2015] [debug] 200 OK (0.006475s, 154.440/s)
-[Sun Apr 12 22:04:54 2015] [debug] GET "/create_account"
-[Sun Apr 12 22:04:54 2015] [debug] Rendering template "login/create_form.html.ep"
-[Sun Apr 12 22:04:54 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 22:04:54 2015] [debug] 200 OK (0.005923s, 168.833/s)
-[Sun Apr 12 22:05:36 2015] [debug] GET "/create_account"
-[Sun Apr 12 22:05:36 2015] [debug] Rendering template "login/create_form.html.ep"
-[Sun Apr 12 22:05:36 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 22:05:36 2015] [debug] 200 OK (0.007133s, 140.193/s)
-[Sun Apr 12 22:06:30 2015] [debug] GET "/create_account"
-[Sun Apr 12 22:06:30 2015] [debug] Rendering template "login/create_form.html.ep"
-[Sun Apr 12 22:06:30 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 22:06:30 2015] [debug] 200 OK (0.006580s, 151.976/s)
-[Sun Apr 12 22:09:17 2015] [debug] GET "/create_account"
-[Sun Apr 12 22:09:17 2015] [debug] Rendering template "login/create_form.html.ep"
-[Sun Apr 12 22:09:17 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 22:09:17 2015] [debug] 200 OK (0.006102s, 163.881/s)
-[Sun Apr 12 22:09:19 2015] [debug] GET "/create_account"
-[Sun Apr 12 22:09:19 2015] [debug] Rendering cached template "login/create_form.html.ep"
-[Sun Apr 12 22:09:19 2015] [debug] Rendering cached template "layouts/base.html.ep"
-[Sun Apr 12 22:09:19 2015] [debug] 200 OK (0.003344s, 299.043/s)
-[Sun Apr 12 22:09:25 2015] [debug] GET "/create_account"
-[Sun Apr 12 22:09:25 2015] [debug] Rendering cached template "login/create_form.html.ep"
-[Sun Apr 12 22:09:25 2015] [debug] Rendering cached template "layouts/base.html.ep"
-[Sun Apr 12 22:09:25 2015] [debug] 200 OK (0.001470s, 680.272/s)
-[Sun Apr 12 22:09:43 2015] [debug] POST "/create_account"
-[Sun Apr 12 22:09:43 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_company_account"
-[Sun Apr 12 22:09:43 2015] [debug] Action not found in controller
-[Sun Apr 12 22:09:43 2015] [debug] Template "login/create_company_account.html.ep" not found
-[Sun Apr 12 22:09:43 2015] [debug] Template "not_found.development.html.ep" not found
-[Sun Apr 12 22:09:43 2015] [debug] Template "not_found.html.ep" not found
-[Sun Apr 12 22:09:43 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
-[Sun Apr 12 22:09:43 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
-[Sun Apr 12 22:09:43 2015] [debug] 404 Not Found (0.022808s, 43.844/s)
-[Sun Apr 12 22:11:18 2015] [debug] GET "/create_account"
-[Sun Apr 12 22:11:18 2015] [debug] Rendering template "login/create_form.html.ep"
-[Sun Apr 12 22:11:18 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 22:11:18 2015] [debug] 200 OK (0.009657s, 103.552/s)
-[Sun Apr 12 22:11:34 2015] [debug] GET "/create_account"
-[Sun Apr 12 22:11:34 2015] [debug] Rendering template "login/create_form.html.ep"
-[Sun Apr 12 22:11:34 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 22:11:34 2015] [debug] 200 OK (0.006253s, 159.923/s)
-[Sun Apr 12 22:12:03 2015] [debug] GET "/create_account"
-[Sun Apr 12 22:12:03 2015] [debug] Rendering template "login/create_form.html.ep"
-[Sun Apr 12 22:12:03 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 22:12:03 2015] [debug] 200 OK (0.013225s, 75.614/s)
-[Sun Apr 12 22:12:05 2015] [debug] GET "/create_account"
-[Sun Apr 12 22:12:05 2015] [debug] Rendering cached template "login/create_form.html.ep"
-[Sun Apr 12 22:12:05 2015] [debug] Rendering cached template "layouts/base.html.ep"
-[Sun Apr 12 22:12:05 2015] [debug] 200 OK (0.003818s, 261.917/s)
-[Sun Apr 12 22:12:06 2015] [debug] GET "/create_account"
-[Sun Apr 12 22:12:06 2015] [debug] Rendering cached template "login/create_form.html.ep"
-[Sun Apr 12 22:12:06 2015] [debug] Rendering cached template "layouts/base.html.ep"
-[Sun Apr 12 22:12:06 2015] [debug] 200 OK (0.003769s, 265.322/s)
-[Sun Apr 12 22:12:06 2015] [debug] GET "/create_account"
-[Sun Apr 12 22:12:06 2015] [debug] Rendering cached template "login/create_form.html.ep"
-[Sun Apr 12 22:12:06 2015] [debug] Rendering cached template "layouts/base.html.ep"
-[Sun Apr 12 22:12:06 2015] [debug] 200 OK (0.001736s, 576.037/s)
-[Sun Apr 12 22:12:08 2015] [debug] GET "/create_account"
-[Sun Apr 12 22:12:08 2015] [debug] Rendering cached template "login/create_form.html.ep"
-[Sun Apr 12 22:12:08 2015] [debug] Rendering cached template "layouts/base.html.ep"
-[Sun Apr 12 22:12:08 2015] [debug] 200 OK (0.001501s, 666.223/s)
-[Sun Apr 12 22:12:45 2015] [debug] GET "/create_account"
-[Sun Apr 12 22:12:45 2015] [debug] Rendering template "login/create_form.html.ep"
-[Sun Apr 12 22:12:45 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 22:12:45 2015] [debug] 200 OK (0.007899s, 126.598/s)
-[Sun Apr 12 22:12:48 2015] [debug] GET "/create_account"
-[Sun Apr 12 22:12:48 2015] [debug] Rendering cached template "login/create_form.html.ep"
-[Sun Apr 12 22:12:48 2015] [debug] Rendering cached template "layouts/base.html.ep"
-[Sun Apr 12 22:12:48 2015] [debug] 200 OK (0.002126s, 470.367/s)
-[Sun Apr 12 22:12:50 2015] [debug] GET "/create_account"
-[Sun Apr 12 22:12:50 2015] [debug] Rendering cached template "login/create_form.html.ep"
-[Sun Apr 12 22:12:50 2015] [debug] Rendering cached template "layouts/base.html.ep"
-[Sun Apr 12 22:12:50 2015] [debug] 200 OK (0.002912s, 343.407/s)
-[Sun Apr 12 22:14:04 2015] [debug] GET "/create_account"
-[Sun Apr 12 22:14:04 2015] [debug] Rendering template "login/create_form.html.ep"
-[Sun Apr 12 22:14:04 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 22:14:04 2015] [debug] 200 OK (0.008307s, 120.380/s)
-[Sun Apr 12 22:14:40 2015] [debug] GET "/create_account"
-[Sun Apr 12 22:14:40 2015] [debug] Rendering template "login/create_form.html.ep"
-[Sun Apr 12 22:14:40 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 22:14:40 2015] [debug] 200 OK (0.006913s, 144.655/s)
-[Sun Apr 12 22:15:33 2015] [debug] GET "/create_company_form"
-[Sun Apr 12 22:15:33 2015] [debug] Rendering template "login/create_company_form.html.ep"
-[Sun Apr 12 22:15:33 2015] [debug] Rendering cached template "layouts/base.html.ep"
-[Sun Apr 12 22:15:33 2015] [debug] 200 OK (0.005225s, 191.388/s)
-[Sun Apr 12 22:16:15 2015] [debug] GET "/create_company_form"
-[Sun Apr 12 22:16:15 2015] [debug] Rendering template "login/create_company_form.html.ep"
-[Sun Apr 12 22:16:15 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 22:16:15 2015] [debug] 200 OK (0.006652s, 150.331/s)
-[Sun Apr 12 22:16:36 2015] [debug] GET "/create_company_form"
-[Sun Apr 12 22:16:36 2015] [debug] Rendering template "login/create_company_form.html.ep"
-[Sun Apr 12 22:16:36 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 22:16:36 2015] [debug] 200 OK (0.020178s, 49.559/s)
-[Sun Apr 12 22:17:07 2015] [debug] GET "/create_company_form"
-[Sun Apr 12 22:17:07 2015] [debug] Rendering template "login/create_company_form.html.ep"
-[Sun Apr 12 22:17:07 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 22:17:07 2015] [debug] 200 OK (0.012112s, 82.563/s)
-[Sun Apr 12 22:17:07 2015] [debug] GET "/create_company_form"
-[Sun Apr 12 22:17:07 2015] [debug] Rendering cached template "login/create_company_form.html.ep"
-[Sun Apr 12 22:17:07 2015] [debug] Rendering cached template "layouts/base.html.ep"
-[Sun Apr 12 22:17:07 2015] [debug] 200 OK (0.004005s, 249.688/s)
-[Sun Apr 12 22:17:08 2015] [debug] GET "/create_company_form"
-[Sun Apr 12 22:17:08 2015] [debug] Rendering cached template "login/create_company_form.html.ep"
-[Sun Apr 12 22:17:08 2015] [debug] Rendering cached template "layouts/base.html.ep"
-[Sun Apr 12 22:17:08 2015] [debug] 200 OK (0.003683s, 271.518/s)
-[Sun Apr 12 22:17:08 2015] [debug] GET "/create_company_form"
-[Sun Apr 12 22:17:08 2015] [debug] Rendering cached template "login/create_company_form.html.ep"
-[Sun Apr 12 22:17:08 2015] [debug] Rendering cached template "layouts/base.html.ep"
-[Sun Apr 12 22:17:08 2015] [debug] 200 OK (0.004258s, 234.852/s)
-[Sun Apr 12 22:17:46 2015] [debug] GET "/create_company_form"
-[Sun Apr 12 22:17:46 2015] [debug] Rendering template "login/create_company_form.html.ep"
-[Sun Apr 12 22:17:46 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 22:17:46 2015] [debug] 200 OK (0.006603s, 151.446/s)
-[Sun Apr 12 22:18:09 2015] [debug] GET "/create_company_form"
-[Sun Apr 12 22:18:09 2015] [debug] Rendering template "login/create_company_form.html.ep"
-[Sun Apr 12 22:18:09 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 22:18:09 2015] [debug] 200 OK (0.007729s, 129.383/s)
-[Sun Apr 12 22:18:09 2015] [debug] GET "/create_company_form"
-[Sun Apr 12 22:18:09 2015] [debug] Rendering cached template "login/create_company_form.html.ep"
-[Sun Apr 12 22:18:09 2015] [debug] Rendering cached template "layouts/base.html.ep"
-[Sun Apr 12 22:18:09 2015] [debug] 200 OK (0.001356s, 737.463/s)
-[Sun Apr 12 22:18:24 2015] [debug] GET "/create_company_form"
-[Sun Apr 12 22:18:24 2015] [debug] Rendering template "login/create_company_form.html.ep"
-[Sun Apr 12 22:18:24 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 22:18:24 2015] [debug] 200 OK (0.006902s, 144.886/s)
-[Sun Apr 12 22:18:32 2015] [debug] GET "/create_company_form"
-[Sun Apr 12 22:18:32 2015] [debug] Rendering template "login/create_company_form.html.ep"
-[Sun Apr 12 22:18:32 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 22:18:32 2015] [debug] 200 OK (0.006692s, 149.432/s)
-[Sun Apr 12 22:19:34 2015] [debug] GET "/create_company_form"
-[Sun Apr 12 22:19:34 2015] [debug] Rendering template "login/create_company_form.html.ep"
-[Sun Apr 12 22:19:34 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 22:19:34 2015] [debug] 200 OK (0.016368s, 61.095/s)
-[Sun Apr 12 22:19:36 2015] [debug] GET "/create_company_form"
-[Sun Apr 12 22:19:36 2015] [debug] Rendering cached template "login/create_company_form.html.ep"
-[Sun Apr 12 22:19:36 2015] [debug] Rendering cached template "layouts/base.html.ep"
-[Sun Apr 12 22:19:36 2015] [debug] 200 OK (0.004509s, 221.779/s)
-[Sun Apr 12 22:19:37 2015] [debug] GET "/create_company_form"
-[Sun Apr 12 22:19:37 2015] [debug] Rendering cached template "login/create_company_form.html.ep"
-[Sun Apr 12 22:19:37 2015] [debug] Rendering cached template "layouts/base.html.ep"
-[Sun Apr 12 22:19:37 2015] [debug] 200 OK (0.001586s, 630.517/s)
-[Sun Apr 12 22:19:37 2015] [debug] GET "/create_company_form"
-[Sun Apr 12 22:19:37 2015] [debug] Rendering cached template "login/create_company_form.html.ep"
-[Sun Apr 12 22:19:37 2015] [debug] Rendering cached template "layouts/base.html.ep"
-[Sun Apr 12 22:19:37 2015] [debug] 200 OK (0.001578s, 633.714/s)
-[Sun Apr 12 22:19:41 2015] [debug] GET "/create_company_form"
-[Sun Apr 12 22:19:41 2015] [debug] Rendering cached template "login/create_company_form.html.ep"
-[Sun Apr 12 22:19:41 2015] [debug] Rendering cached template "layouts/base.html.ep"
-[Sun Apr 12 22:19:41 2015] [debug] 200 OK (0.002494s, 400.962/s)
-[Sun Apr 12 22:19:46 2015] [debug] GET "/create_company_form"
-[Sun Apr 12 22:19:46 2015] [debug] Rendering template "login/create_company_form.html.ep"
-[Sun Apr 12 22:19:46 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 22:19:46 2015] [debug] 200 OK (0.007298s, 137.024/s)
-[Sun Apr 12 22:19:46 2015] [debug] GET "/create_company_form"
-[Sun Apr 12 22:19:46 2015] [debug] Rendering cached template "login/create_company_form.html.ep"
-[Sun Apr 12 22:19:46 2015] [debug] Rendering cached template "layouts/base.html.ep"
-[Sun Apr 12 22:19:46 2015] [debug] 200 OK (0.001516s, 659.631/s)
-[Sun Apr 12 22:20:04 2015] [debug] GET "/create_company_form"
-[Sun Apr 12 22:20:04 2015] [debug] Rendering template "login/create_company_form.html.ep"
-[Sun Apr 12 22:20:04 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 22:20:04 2015] [debug] 200 OK (0.017730s, 56.402/s)
-[Sun Apr 12 22:20:30 2015] [debug] GET "/create_account"
-[Sun Apr 12 22:20:30 2015] [debug] Rendering template "login/create_form.html.ep"
-[Sun Apr 12 22:20:30 2015] [debug] Rendering cached template "layouts/base.html.ep"
-[Sun Apr 12 22:20:30 2015] [debug] 200 OK (0.006656s, 150.240/s)
-[Sun Apr 12 22:20:44 2015] [debug] GET "/create_account"
-[Sun Apr 12 22:20:44 2015] [debug] Rendering template "login/create_form.html.ep"
-[Sun Apr 12 22:20:44 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 22:20:44 2015] [debug] 200 OK (0.006230s, 160.514/s)
-[Sun Apr 12 22:20:54 2015] [debug] GET "/create_account"
-[Sun Apr 12 22:20:54 2015] [debug] Rendering template "login/create_form.html.ep"
-[Sun Apr 12 22:20:54 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 22:20:54 2015] [debug] 200 OK (0.006270s, 159.490/s)
-[Sun Apr 12 22:21:00 2015] [debug] GET "/create_account"
-[Sun Apr 12 22:21:00 2015] [debug] Rendering template "login/create_form.html.ep"
-[Sun Apr 12 22:21:00 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 22:21:00 2015] [debug] 200 OK (0.006469s, 154.583/s)
-[Sun Apr 12 22:21:15 2015] [debug] GET "/create_account"
-[Sun Apr 12 22:21:15 2015] [debug] Rendering template "login/create_form.html.ep"
-[Sun Apr 12 22:21:15 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 22:21:15 2015] [debug] 200 OK (0.005821s, 171.792/s)
-[Sun Apr 12 22:21:55 2015] [debug] GET "/login"
-[Sun Apr 12 22:21:55 2015] [debug] Rendering template "login/login_form.html.ep"
-[Sun Apr 12 22:21:55 2015] [debug] Rendering cached template "layouts/base.html.ep"
-[Sun Apr 12 22:21:55 2015] [debug] 200 OK (0.002707s, 369.413/s)
-[Sun Apr 12 22:29:46 2015] [debug] GET "/login"
-[Sun Apr 12 22:29:46 2015] [debug] Rendering template "login/login_form.html.ep"
-[Sun Apr 12 22:29:46 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 22:29:46 2015] [debug] 200 OK (0.010309s, 97.003/s)
-[Sun Apr 12 22:29:49 2015] [debug] POST "/login"
-[Sun Apr 12 22:29:49 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
-[Sun Apr 12 22:29:49 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 22:29:49 2015] [debug] 403 Forbidden (0.042113s, 23.746/s)
-[Sun Apr 12 22:29:55 2015] [debug] GET "/create_company_form"
-[Sun Apr 12 22:29:55 2015] [debug] Rendering template "login/create_company_form.html.ep"
-[Sun Apr 12 22:29:55 2015] [debug] Rendering cached template "layouts/base.html.ep"
-[Sun Apr 12 22:29:55 2015] [debug] 200 OK (0.005038s, 198.491/s)
-[Sun Apr 12 22:29:59 2015] [debug] POST "/create_company_form/create_company"
-[Sun Apr 12 22:29:59 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
-[Sun Apr 12 22:29:59 2015] [debug] 200 OK (0.150863s, 6.629/s)
-[Sun Apr 12 22:30:57 2015] [debug] GET "/create_company_form"
-[Sun Apr 12 22:30:57 2015] [debug] Rendering template "login/create_company_form.html.ep"
-[Sun Apr 12 22:30:57 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 22:30:57 2015] [debug] 200 OK (0.006707s, 149.098/s)
-[Sun Apr 12 22:31:00 2015] [debug] POST "/create_company_form/create_company"
-[Sun Apr 12 22:31:00 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
-[Sun Apr 12 22:31:00 2015] [debug] 200 OK (0.178501s, 5.602/s)
-[Sun Apr 12 22:32:23 2015] [debug] GET "/create_company_form"
-[Sun Apr 12 22:32:23 2015] [debug] Rendering template "login/create_company_form.html.ep"
-[Sun Apr 12 22:32:23 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 22:32:23 2015] [debug] 200 OK (0.006546s, 152.765/s)
-[Sun Apr 12 22:34:46 2015] [debug] GET "/create_company_form"
-[Sun Apr 12 22:34:46 2015] [debug] Rendering template "login/create_company_form.html.ep"
-[Sun Apr 12 22:34:46 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 22:34:46 2015] [debug] 200 OK (0.009757s, 102.491/s)
-[Sun Apr 12 22:35:37 2015] [debug] GET "/create_company_form"
-[Sun Apr 12 22:35:37 2015] [debug] Rendering template "login/create_company_form.html.ep"
-[Sun Apr 12 22:35:37 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 22:35:37 2015] [debug] 200 OK (0.008318s, 120.221/s)
-[Sun Apr 12 22:35:38 2015] [debug] POST "/create_company_form/create_company"
-[Sun Apr 12 22:35:38 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
-[Sun Apr 12 22:35:38 2015] [debug] 200 OK (0.186941s, 5.349/s)
-[Sun Apr 12 22:38:07 2015] [debug] GET "/create_company_form"
-[Sun Apr 12 22:38:07 2015] [debug] Rendering template "login/create_company_form.html.ep"
-[Sun Apr 12 22:38:07 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 22:38:07 2015] [debug] 200 OK (0.007249s, 137.950/s)
-[Sun Apr 12 22:38:10 2015] [debug] POST "/create_company_form/create_company"
-[Sun Apr 12 22:38:10 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
-[Sun Apr 12 22:38:10 2015] [debug] 200 OK (0.194049s, 5.153/s)
-[Sun Apr 12 22:42:41 2015] [debug] GET "/create_company_form"
-[Sun Apr 12 22:42:41 2015] [debug] Rendering template "login/create_company_form.html.ep"
-[Sun Apr 12 22:42:41 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 22:42:41 2015] [debug] 200 OK (0.009214s, 108.530/s)
-[Sun Apr 12 22:42:44 2015] [debug] POST "/create_company_form/create_company"
-[Sun Apr 12 22:42:44 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
-[Sun Apr 12 22:42:44 2015] [debug] 200 OK (0.176700s, 5.659/s)
-[Sun Apr 12 22:44:36 2015] [debug] GET "/create_company_form"
-[Sun Apr 12 22:44:36 2015] [debug] Rendering template "login/create_company_form.html.ep"
-[Sun Apr 12 22:44:36 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 22:44:36 2015] [debug] 200 OK (0.007750s, 129.032/s)
-[Sun Apr 12 22:44:44 2015] [debug] POST "/create_company_form/create_company"
-[Sun Apr 12 22:44:44 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
-[Sun Apr 12 22:44:44 2015] [debug] 200 OK (0.177524s, 5.633/s)
-[Sun Apr 12 22:45:06 2015] [debug] GET "/create_company_form"
-[Sun Apr 12 22:45:06 2015] [debug] Rendering template "login/create_company_form.html.ep"
-[Sun Apr 12 22:45:06 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 22:45:06 2015] [debug] 200 OK (0.011224s, 89.095/s)
-[Sun Apr 12 22:45:10 2015] [debug] POST "/create_company_form/create_company"
-[Sun Apr 12 22:45:10 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
-[Sun Apr 12 22:45:10 2015] [debug] 200 OK (0.265995s, 3.759/s)
-[Sun Apr 12 22:45:39 2015] [debug] GET "/create_company_form"
-[Sun Apr 12 22:45:39 2015] [debug] Rendering template "login/create_company_form.html.ep"
-[Sun Apr 12 22:45:39 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 22:45:39 2015] [debug] 200 OK (0.007368s, 135.722/s)
-[Sun Apr 12 22:45:55 2015] [debug] POST "/create_company_form/create_company"
-[Sun Apr 12 22:45:55 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
-[Sun Apr 12 22:45:55 2015] [debug] 200 OK (0.185224s, 5.399/s)
-[Sun Apr 12 22:46:32 2015] [debug] GET "/create_company_form"
-[Sun Apr 12 22:46:32 2015] [debug] Rendering template "login/create_company_form.html.ep"
-[Sun Apr 12 22:46:32 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 22:46:32 2015] [debug] 200 OK (0.007432s, 134.553/s)
-[Sun Apr 12 22:46:35 2015] [debug] POST "/create_company_form/create_company"
-[Sun Apr 12 22:46:35 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
-[Sun Apr 12 22:46:36 2015] [debug] 200 OK (0.190762s, 5.242/s)
-[Sun Apr 12 22:46:54 2015] [debug] GET "/create_company_form"
-[Sun Apr 12 22:46:54 2015] [debug] Rendering template "login/create_company_form.html.ep"
-[Sun Apr 12 22:46:54 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 22:46:54 2015] [debug] 200 OK (0.008110s, 123.305/s)
-[Sun Apr 12 22:47:03 2015] [debug] POST "/create_company_form/create_company"
-[Sun Apr 12 22:47:03 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
-[Sun Apr 12 22:47:03 2015] [debug] 200 OK (0.165655s, 6.037/s)
-[Sun Apr 12 22:48:14 2015] [debug] GET "/create_company_form"
-[Sun Apr 12 22:48:14 2015] [debug] Rendering template "login/create_company_form.html.ep"
-[Sun Apr 12 22:48:14 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 22:48:14 2015] [debug] 200 OK (0.007338s, 136.277/s)
-[Sun Apr 12 22:48:16 2015] [debug] POST "/create_company_form/create_company"
-[Sun Apr 12 22:48:16 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
-[Sun Apr 12 22:48:16 2015] [debug] 200 OK (0.153497s, 6.515/s)
-[Sun Apr 12 22:48:39 2015] [debug] GET "/create_company_form"
-[Sun Apr 12 22:48:39 2015] [debug] Rendering template "login/create_company_form.html.ep"
-[Sun Apr 12 22:48:39 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 22:48:39 2015] [debug] 200 OK (0.007279s, 137.382/s)
-[Sun Apr 12 22:48:41 2015] [debug] POST "/create_company_form/create_company"
-[Sun Apr 12 22:48:41 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
-[Sun Apr 12 22:48:41 2015] [debug] 200 OK (0.188822s, 5.296/s)
-[Sun Apr 12 22:49:41 2015] [debug] GET "/create_company_form"
-[Sun Apr 12 22:49:41 2015] [debug] Rendering template "login/create_company_form.html.ep"
-[Sun Apr 12 22:49:41 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 22:49:41 2015] [debug] 200 OK (0.007392s, 135.281/s)
-[Sun Apr 12 22:49:43 2015] [debug] POST "/create_company_form/create_company"
-[Sun Apr 12 22:49:43 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
-[Sun Apr 12 22:49:43 2015] [debug] 200 OK (0.175560s, 5.696/s)
-[Sun Apr 12 22:51:56 2015] [debug] GET "/create_company_form"
-[Sun Apr 12 22:51:56 2015] [debug] Rendering template "login/create_company_form.html.ep"
-[Sun Apr 12 22:51:56 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 22:51:56 2015] [debug] 200 OK (0.007546s, 132.521/s)
-[Sun Apr 12 22:51:58 2015] [debug] POST "/create_company_form/create_company"
-[Sun Apr 12 22:51:58 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
-[Sun Apr 12 22:51:58 2015] [debug] 200 OK (0.166603s, 6.002/s)
-[Sun Apr 12 22:53:00 2015] [debug] GET "/create_company_form"
-[Sun Apr 12 22:53:00 2015] [debug] Rendering template "login/create_company_form.html.ep"
-[Sun Apr 12 22:53:00 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 22:53:00 2015] [debug] 200 OK (0.007712s, 129.668/s)
-[Sun Apr 12 22:53:03 2015] [debug] POST "/create_company_form/create_company"
-[Sun Apr 12 22:53:03 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
-[Sun Apr 12 22:53:03 2015] [debug] 200 OK (0.172620s, 5.793/s)
-[Sun Apr 12 22:54:11 2015] [debug] GET "/create_company_form"
-[Sun Apr 12 22:54:11 2015] [debug] Rendering template "login/create_company_form.html.ep"
-[Sun Apr 12 22:54:11 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 22:54:11 2015] [debug] 200 OK (0.011699s, 85.477/s)
-[Sun Apr 12 22:54:13 2015] [debug] POST "/create_company_form/create_company"
-[Sun Apr 12 22:54:13 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
-[Sun Apr 12 22:54:14 2015] [debug] 200 OK (0.178530s, 5.601/s)
-[Sun Apr 12 22:55:36 2015] [debug] GET "/create_company_form"
-[Sun Apr 12 22:55:36 2015] [debug] Rendering template "login/create_company_form.html.ep"
-[Sun Apr 12 22:55:36 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 22:55:36 2015] [debug] 200 OK (0.007873s, 127.016/s)
-[Sun Apr 12 22:55:38 2015] [debug] POST "/create_company_form/create_company"
-[Sun Apr 12 22:55:38 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
-[Sun Apr 12 22:55:38 2015] [debug] 200 OK (0.182469s, 5.480/s)
-[Sun Apr 12 22:55:58 2015] [debug] GET "/create_company_form"
-[Sun Apr 12 22:55:58 2015] [debug] Rendering template "login/create_company_form.html.ep"
-[Sun Apr 12 22:55:58 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 22:55:58 2015] [debug] 200 OK (0.008595s, 116.347/s)
-[Sun Apr 12 22:56:01 2015] [debug] POST "/create_company_form/create_company"
-[Sun Apr 12 22:56:01 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
-[Sun Apr 12 22:56:01 2015] [debug] 200 OK (0.181249s, 5.517/s)
-[Sun Apr 12 22:57:37 2015] [debug] GET "/create_company_form"
-[Sun Apr 12 22:57:37 2015] [debug] Rendering template "login/create_company_form.html.ep"
-[Sun Apr 12 22:57:37 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 22:57:37 2015] [debug] 200 OK (0.007446s, 134.300/s)
-[Sun Apr 12 22:57:39 2015] [debug] POST "/create_company_form/create_company"
-[Sun Apr 12 22:57:39 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
-[Sun Apr 12 22:57:39 2015] [debug] 200 OK (0.189190s, 5.286/s)
-[Sun Apr 12 22:57:56 2015] [debug] GET "/create_company_form"
-[Sun Apr 12 22:57:56 2015] [debug] Rendering template "login/create_company_form.html.ep"
-[Sun Apr 12 22:57:56 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 22:57:56 2015] [debug] 200 OK (0.007797s, 128.254/s)
-[Sun Apr 12 22:57:58 2015] [debug] POST "/create_company_form/create_company"
-[Sun Apr 12 22:57:58 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
-[Sun Apr 12 22:57:59 2015] [debug] 200 OK (0.193800s, 5.160/s)
-[Sun Apr 12 22:59:42 2015] [debug] GET "/create_company_form"
-[Sun Apr 12 22:59:42 2015] [debug] Rendering template "login/create_company_form.html.ep"
-[Sun Apr 12 22:59:42 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 22:59:42 2015] [debug] 200 OK (0.013789s, 72.522/s)
-[Sun Apr 12 22:59:48 2015] [debug] POST "/create_company_form/create_company"
-[Sun Apr 12 22:59:48 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
-[Sun Apr 12 22:59:48 2015] [debug] 200 OK (0.180428s, 5.542/s)
-[Sun Apr 12 23:01:17 2015] [debug] GET "/create_company_form"
-[Sun Apr 12 23:01:17 2015] [debug] Rendering template "login/create_company_form.html.ep"
-[Sun Apr 12 23:01:17 2015] [debug] Rendering template "layouts/base.html.ep"
-[Sun Apr 12 23:01:17 2015] [debug] 200 OK (0.007052s, 141.804/s)
-[Sun Apr 12 23:01:20 2015] [debug] POST "/create_company_form/create_company"
-[Sun Apr 12 23:01:20 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
-[Sun Apr 12 23:01:20 2015] [debug] 200 OK (0.188072s, 5.317/s)
+[Sat Apr 18 18:35:43 2015] [debug] GET "/customer"
+[Sat Apr 18 18:35:43 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 18:35:43 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 18:35:43 2015] [debug] Rendering template "customer/customer_overview.html.ep"
+[Sat Apr 18 18:35:43 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sat Apr 18 18:35:43 2015] [debug] 200 OK (0.006803s, 146.994/s)
+[Sat Apr 18 18:35:45 2015] [debug] POST "/customer/profile"
+[Sat Apr 18 18:35:45 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 18:35:45 2015] [debug] Routing to controller "Moblo::Controller::Customer" and action "render_profile"
+[Sat Apr 18 18:35:45 2015] [debug] Rendering template "customer/profile.html.ep"
+[Sat Apr 18 18:35:45 2015] [debug] Rendering template "layouts/default.html.ep"
+[Sat Apr 18 18:35:45 2015] [debug] 200 OK (0.005037s, 198.531/s)
+[Sat Apr 18 18:35:57 2015] [debug] POST "/customer/profile"
+[Sat Apr 18 18:35:57 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 18:35:57 2015] [debug] Routing to controller "Moblo::Controller::Customer" and action "render_profile"
+[Sat Apr 18 18:35:57 2015] [debug] Rendering cached template "customer/profile.html.ep"
+[Sat Apr 18 18:35:57 2015] [debug] Rendering cached template "layouts/default.html.ep"
+[Sat Apr 18 18:35:57 2015] [debug] 200 OK (0.002162s, 462.535/s)
+[Sat Apr 18 18:46:38 2015] [debug] GET "/customer"
+[Sat Apr 18 18:46:38 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 18:46:38 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 18:46:38 2015] [debug] Rendering template "customer/customer_overview.html.ep"
+[Sat Apr 18 18:46:38 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sat Apr 18 18:46:38 2015] [debug] 200 OK (0.007742s, 129.166/s)
+[Sat Apr 18 18:46:40 2015] [debug] POST "/customer/profile"
+[Sat Apr 18 18:46:40 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 18:46:40 2015] [debug] Routing to controller "Moblo::Controller::Customer" and action "render_profile"
+[Sat Apr 18 18:46:40 2015] [debug] Rendering template "customer/profile.html.ep"
+[Sat Apr 18 18:46:40 2015] [debug] Rendering template "layouts/default.html.ep"
+[Sat Apr 18 18:46:40 2015] [debug] 200 OK (0.004839s, 206.654/s)
+[Sat Apr 18 18:47:37 2015] [debug] GET "/customer"
+[Sat Apr 18 18:47:37 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 18:47:37 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 18:47:37 2015] [debug] Rendering template "customer/customer_overview.html.ep"
+[Sat Apr 18 18:47:37 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sat Apr 18 18:47:37 2015] [debug] 200 OK (0.008896s, 112.410/s)
+[Sat Apr 18 18:47:41 2015] [debug] POST "/customer/profile"
+[Sat Apr 18 18:47:41 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 18:47:41 2015] [debug] Routing to controller "Moblo::Controller::Customer" and action "render_profile"
+[Sat Apr 18 18:47:41 2015] [debug] Rendering template "customer/profile.html.ep"
+[Sat Apr 18 18:47:41 2015] [debug] Rendering template "layouts/default.html.ep"
+[Sat Apr 18 18:47:41 2015] [debug] 200 OK (0.005016s, 199.362/s)
+[Sat Apr 18 18:47:54 2015] [debug] GET "/customer"
+[Sat Apr 18 18:47:54 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 18:47:54 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 18:47:54 2015] [debug] Rendering cached template "customer/customer_overview.html.ep"
+[Sat Apr 18 18:47:54 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Sat Apr 18 18:47:54 2015] [debug] 200 OK (0.001512s, 661.376/s)
+[Sat Apr 18 18:48:32 2015] [debug] GET "/customer"
+[Sat Apr 18 18:48:32 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 18:48:32 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 18:48:32 2015] [debug] Rendering template "customer/customer_overview.html.ep"
+[Sat Apr 18 18:48:32 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sat Apr 18 18:48:32 2015] [debug] 200 OK (0.008494s, 117.730/s)
+[Sat Apr 18 18:48:46 2015] [debug] GET "/customer"
+[Sat Apr 18 18:48:46 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 18:48:46 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 18:48:46 2015] [debug] Rendering cached template "customer/customer_overview.html.ep"
+[Sat Apr 18 18:48:46 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Sat Apr 18 18:48:46 2015] [debug] 200 OK (0.001618s, 618.047/s)
+[Sat Apr 18 18:51:06 2015] [debug] GET "/customer"
+[Sat Apr 18 18:51:06 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 18:51:06 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 18:51:06 2015] [debug] Rendering template "customer/customer_overview.html.ep"
+[Sat Apr 18 18:51:06 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sat Apr 18 18:51:06 2015] [debug] 200 OK (0.012056s, 82.946/s)
+[Sat Apr 18 18:51:09 2015] [debug] POST "/customer/profile"
+[Sat Apr 18 18:51:09 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 18:51:09 2015] [debug] Routing to controller "Moblo::Controller::Customer" and action "render_profile"
+[Sat Apr 18 18:51:09 2015] [debug] Rendering template "customer/profile.html.ep"
+[Sat Apr 18 18:51:09 2015] [debug] Rendering template "layouts/default.html.ep"
+[Sat Apr 18 18:51:09 2015] [debug] 200 OK (0.004858s, 205.846/s)
+[Sat Apr 18 18:51:53 2015] [debug] GET "/customer"
+[Sat Apr 18 18:51:53 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 18:51:53 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 18:51:53 2015] [debug] Rendering template "customer/customer_overview.html.ep"
+[Sat Apr 18 18:51:53 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sat Apr 18 18:51:53 2015] [debug] 200 OK (0.014935s, 66.957/s)
+[Sat Apr 18 18:51:55 2015] [debug] POST "/customer/profile"
+[Sat Apr 18 18:51:55 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 18:51:55 2015] [debug] Routing to controller "Moblo::Controller::Customer" and action "render_profile"
+[Sat Apr 18 18:51:55 2015] [debug] Rendering template "customer/profile.html.ep"
+[Sat Apr 18 18:51:55 2015] [debug] Rendering template "layouts/default.html.ep"
+[Sat Apr 18 18:51:55 2015] [debug] 200 OK (0.007403s, 135.080/s)
+[Sat Apr 18 18:51:59 2015] [debug] GET "/customer"
+[Sat Apr 18 18:51:59 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 18:51:59 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 18:51:59 2015] [debug] Rendering cached template "customer/customer_overview.html.ep"
+[Sat Apr 18 18:51:59 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Sat Apr 18 18:51:59 2015] [debug] 200 OK (0.001522s, 657.030/s)
+[Sat Apr 18 18:52:01 2015] [debug] POST "/customer/profile"
+[Sat Apr 18 18:52:01 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 18:52:01 2015] [debug] Routing to controller "Moblo::Controller::Customer" and action "render_profile"
+[Sat Apr 18 18:52:01 2015] [debug] Rendering cached template "customer/profile.html.ep"
+[Sat Apr 18 18:52:01 2015] [debug] Rendering cached template "layouts/default.html.ep"
+[Sat Apr 18 18:52:01 2015] [debug] 200 OK (0.001330s, 751.880/s)
+[Sat Apr 18 18:52:53 2015] [debug] GET "/customer"
+[Sat Apr 18 18:52:53 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 18:52:53 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 18:52:53 2015] [debug] Rendering template "customer/customer_overview.html.ep"
+[Sat Apr 18 18:52:53 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sat Apr 18 18:52:53 2015] [debug] 200 OK (0.014283s, 70.013/s)
+[Sat Apr 18 18:52:56 2015] [debug] POST "/customer/profile"
+[Sat Apr 18 18:52:56 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 18:52:56 2015] [debug] Routing to controller "Moblo::Controller::Customer" and action "render_profile"
+[Sat Apr 18 18:52:56 2015] [debug] Rendering template "customer/profile.html.ep"
+[Sat Apr 18 18:52:56 2015] [debug] Rendering template "layouts/default.html.ep"
+[Sat Apr 18 18:52:56 2015] [debug] 200 OK (0.004803s, 208.203/s)
+[Sat Apr 18 18:53:24 2015] [debug] GET "/customer"
+[Sat Apr 18 18:53:24 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 18:53:24 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 18:53:24 2015] [debug] Rendering template "customer/customer_overview.html.ep"
+[Sat Apr 18 18:53:24 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sat Apr 18 18:53:24 2015] [debug] 200 OK (0.011376s, 87.904/s)
+[Sat Apr 18 18:53:27 2015] [debug] POST "/customer/profile"
+[Sat Apr 18 18:53:27 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 18:53:27 2015] [debug] Routing to controller "Moblo::Controller::Customer" and action "render_profile"
+[Sat Apr 18 18:53:27 2015] [debug] Rendering template "customer/profile.html.ep"
+[Sat Apr 18 18:53:27 2015] [debug] Rendering template "layouts/default.html.ep"
+[Sat Apr 18 18:53:27 2015] [debug] 200 OK (0.004424s, 226.040/s)
+[Sat Apr 18 18:54:50 2015] [debug] GET "/customer"
+[Sat Apr 18 18:54:50 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 18:54:50 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 18:54:50 2015] [debug] Rendering template "customer/customer_overview.html.ep"
+[Sat Apr 18 18:54:50 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sat Apr 18 18:54:50 2015] [debug] 200 OK (0.008508s, 117.536/s)
+[Sat Apr 18 18:54:52 2015] [debug] POST "/customer/profile"
+[Sat Apr 18 18:54:52 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 18:54:52 2015] [debug] Routing to controller "Moblo::Controller::Customer" and action "render_profile"
+[Sat Apr 18 18:54:52 2015] [debug] Rendering template "customer/profile.html.ep"
+[Sat Apr 18 18:54:52 2015] [debug] Rendering template "layouts/default.html.ep"
+[Sat Apr 18 18:54:52 2015] [debug] 200 OK (0.005065s, 197.433/s)
+[Sat Apr 18 18:55:31 2015] [debug] GET "/customer"
+[Sat Apr 18 18:55:31 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 18:55:31 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 18:55:31 2015] [debug] Rendering template "customer/customer_overview.html.ep"
+[Sat Apr 18 18:55:31 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sat Apr 18 18:55:31 2015] [debug] 200 OK (0.012832s, 77.930/s)
+[Sat Apr 18 18:55:33 2015] [debug] POST "/customer/profile"
+[Sat Apr 18 18:55:33 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 18:55:33 2015] [debug] Routing to controller "Moblo::Controller::Customer" and action "render_profile"
+[Sat Apr 18 18:55:33 2015] [debug] Rendering template "customer/profile.html.ep"
+[Sat Apr 18 18:55:33 2015] [debug] Rendering template "layouts/default.html.ep"
+[Sat Apr 18 18:55:33 2015] [debug] 200 OK (0.004505s, 221.976/s)
+[Sat Apr 18 18:56:43 2015] [debug] GET "/customer"
+[Sat Apr 18 18:56:43 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 18:56:43 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 18:56:43 2015] [debug] Rendering template "customer/customer_overview.html.ep"
+[Sat Apr 18 18:56:43 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sat Apr 18 18:56:43 2015] [debug] 200 OK (0.007240s, 138.122/s)
+[Sat Apr 18 18:56:44 2015] [debug] POST "/customer/profile"
+[Sat Apr 18 18:56:44 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 18:56:44 2015] [debug] Routing to controller "Moblo::Controller::Customer" and action "render_profile"
+[Sat Apr 18 18:56:44 2015] [debug] Rendering template "customer/profile.html.ep"
+[Sat Apr 18 18:56:44 2015] [debug] Rendering template "layouts/default.html.ep"
+[Sat Apr 18 18:56:44 2015] [debug] 200 OK (0.004643s, 215.378/s)
+[Sat Apr 18 18:57:32 2015] [debug] GET "/customer"
+[Sat Apr 18 18:57:32 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 18:57:32 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 18:57:32 2015] [debug] Rendering template "customer/customer_overview.html.ep"
+[Sat Apr 18 18:57:32 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sat Apr 18 18:57:32 2015] [debug] 200 OK (0.012181s, 82.095/s)
+[Sat Apr 18 18:57:34 2015] [debug] POST "/customer/profile"
+[Sat Apr 18 18:57:34 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 18:57:34 2015] [debug] Routing to controller "Moblo::Controller::Customer" and action "render_profile"
+[Sat Apr 18 18:57:34 2015] [debug] Rendering template "customer/profile.html.ep"
+[Sat Apr 18 18:57:34 2015] [debug] Rendering template "layouts/default.html.ep"
+[Sat Apr 18 18:57:34 2015] [debug] 200 OK (0.004457s, 224.366/s)
+[Sat Apr 18 18:58:51 2015] [debug] GET "/customer"
+[Sat Apr 18 18:58:51 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 18:58:51 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 18:58:51 2015] [debug] Rendering template "customer/customer_overview.html.ep"
+[Sat Apr 18 18:58:51 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sat Apr 18 18:58:51 2015] [debug] 200 OK (0.008331s, 120.034/s)
+[Sat Apr 18 18:58:53 2015] [debug] POST "/customer/profile"
+[Sat Apr 18 18:58:53 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 18:58:53 2015] [debug] Routing to controller "Moblo::Controller::Customer" and action "render_profile"
+[Sat Apr 18 18:58:53 2015] [debug] Rendering template "customer/profile.html.ep"
+[Sat Apr 18 18:58:53 2015] [debug] Rendering template "layouts/default.html.ep"
+[Sat Apr 18 18:58:53 2015] [debug] 200 OK (0.004403s, 227.118/s)
+[Sat Apr 18 18:59:35 2015] [debug] GET "/customer"
+[Sat Apr 18 18:59:35 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 18:59:35 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 18:59:35 2015] [debug] Rendering template "customer/customer_overview.html.ep"
+[Sat Apr 18 18:59:35 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sat Apr 18 18:59:35 2015] [debug] 200 OK (0.008715s, 114.745/s)
+[Sat Apr 18 18:59:37 2015] [debug] POST "/customer/profile"
+[Sat Apr 18 18:59:37 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 18:59:37 2015] [debug] Routing to controller "Moblo::Controller::Customer" and action "render_profile"
+[Sat Apr 18 18:59:37 2015] [debug] Rendering template "customer/profile.html.ep"
+[Sat Apr 18 18:59:37 2015] [debug] Rendering template "layouts/default.html.ep"
+[Sat Apr 18 18:59:37 2015] [debug] 200 OK (0.004505s, 221.976/s)
+[Sat Apr 18 19:00:11 2015] [debug] GET "/customer"
+[Sat Apr 18 19:00:11 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 19:00:11 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 19:00:11 2015] [debug] Rendering template "customer/customer_overview.html.ep"
+[Sat Apr 18 19:00:11 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sat Apr 18 19:00:11 2015] [debug] 200 OK (0.008635s, 115.808/s)
+[Sat Apr 18 19:00:13 2015] [debug] POST "/customer/profile"
+[Sat Apr 18 19:00:13 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 19:00:13 2015] [debug] Routing to controller "Moblo::Controller::Customer" and action "render_profile"
+[Sat Apr 18 19:00:13 2015] [debug] Rendering template "customer/profile.html.ep"
+[Sat Apr 18 19:00:13 2015] [debug] Rendering template "layouts/default.html.ep"
+[Sat Apr 18 19:00:13 2015] [debug] 200 OK (0.004459s, 224.266/s)
+[Sat Apr 18 19:01:48 2015] [debug] GET "/customer"
+[Sat Apr 18 19:01:48 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 19:01:48 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 19:01:48 2015] [debug] Rendering template "customer/customer_overview.html.ep"
+[Sat Apr 18 19:01:48 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sat Apr 18 19:01:48 2015] [debug] 200 OK (0.012048s, 83.001/s)
+[Sat Apr 18 19:01:50 2015] [debug] POST "/customer/profile"
+[Sat Apr 18 19:01:50 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 19:01:50 2015] [debug] Routing to controller "Moblo::Controller::Customer" and action "render_profile"
+[Sat Apr 18 19:01:50 2015] [debug] Rendering template "customer/profile.html.ep"
+[Sat Apr 18 19:01:50 2015] [debug] Rendering template "layouts/default.html.ep"
+[Sat Apr 18 19:01:50 2015] [debug] 200 OK (0.005228s, 191.278/s)
+[Sat Apr 18 19:02:46 2015] [debug] GET "/customer"
+[Sat Apr 18 19:02:46 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 19:02:46 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 19:02:46 2015] [debug] Rendering template "customer/customer_overview.html.ep"
+[Sat Apr 18 19:02:46 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sat Apr 18 19:02:46 2015] [debug] 200 OK (0.008313s, 120.294/s)
+[Sat Apr 18 19:02:49 2015] [debug] POST "/customer/profile"
+[Sat Apr 18 19:02:49 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 19:02:49 2015] [debug] Routing to controller "Moblo::Controller::Customer" and action "render_profile"
+[Sat Apr 18 19:02:49 2015] [debug] Rendering template "customer/profile.html.ep"
+[Sat Apr 18 19:02:49 2015] [debug] Rendering template "layouts/default.html.ep"
+[Sat Apr 18 19:02:49 2015] [debug] 200 OK (0.004803s, 208.203/s)
+[Sat Apr 18 19:04:22 2015] [debug] GET "/customer"
+[Sat Apr 18 19:04:22 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 19:04:22 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 19:04:22 2015] [debug] Rendering template "customer/customer_overview.html.ep"
+[Sat Apr 18 19:04:22 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sat Apr 18 19:04:22 2015] [debug] 200 OK (0.014854s, 67.322/s)
+[Sat Apr 18 19:04:24 2015] [debug] POST "/customer/profile"
+[Sat Apr 18 19:04:24 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 19:04:24 2015] [debug] Routing to controller "Moblo::Controller::Customer" and action "render_profile"
+[Sat Apr 18 19:04:24 2015] [debug] Rendering template "customer/profile.html.ep"
+[Sat Apr 18 19:04:24 2015] [debug] Rendering template "layouts/default.html.ep"
+[Sat Apr 18 19:04:24 2015] [debug] 200 OK (0.004515s, 221.484/s)
+[Sat Apr 18 19:04:34 2015] [debug] GET "/customer"
+[Sat Apr 18 19:04:34 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 19:04:34 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 19:04:34 2015] [debug] Rendering template "customer/customer_overview.html.ep"
+[Sat Apr 18 19:04:34 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sat Apr 18 19:04:34 2015] [debug] 200 OK (0.008542s, 117.069/s)
+[Sat Apr 18 19:04:36 2015] [debug] POST "/customer/profile"
+[Sat Apr 18 19:04:36 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 19:04:36 2015] [debug] Routing to controller "Moblo::Controller::Customer" and action "render_profile"
+[Sat Apr 18 19:04:36 2015] [debug] Rendering template "customer/profile.html.ep"
+[Sat Apr 18 19:04:36 2015] [debug] Rendering template "layouts/default.html.ep"
+[Sat Apr 18 19:04:36 2015] [debug] 200 OK (0.004614s, 216.732/s)
+[Sat Apr 18 19:06:21 2015] [debug] GET "/customer"
+[Sat Apr 18 19:06:21 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 19:06:21 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 19:06:21 2015] [debug] Rendering template "customer/customer_overview.html.ep"
+[Sat Apr 18 19:06:21 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sat Apr 18 19:06:21 2015] [debug] 200 OK (0.008468s, 118.092/s)
+[Sat Apr 18 19:06:23 2015] [debug] POST "/customer/profile"
+[Sat Apr 18 19:06:23 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 19:06:23 2015] [debug] Routing to controller "Moblo::Controller::Customer" and action "render_profile"
+[Sat Apr 18 19:06:23 2015] [debug] Rendering template "customer/profile.html.ep"
+[Sat Apr 18 19:06:23 2015] [debug] Rendering template "layouts/default.html.ep"
+[Sat Apr 18 19:06:23 2015] [debug] 200 OK (0.004701s, 212.721/s)
+[Sat Apr 18 19:07:02 2015] [debug] GET "/customer"
+[Sat Apr 18 19:07:02 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 19:07:02 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 19:07:02 2015] [debug] Rendering template "customer/customer_overview.html.ep"
+[Sat Apr 18 19:07:02 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sat Apr 18 19:07:02 2015] [debug] 200 OK (0.008400s, 119.048/s)
+[Sat Apr 18 19:07:04 2015] [debug] POST "/customer/profile"
+[Sat Apr 18 19:07:04 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 19:07:04 2015] [debug] Routing to controller "Moblo::Controller::Customer" and action "render_profile"
+[Sat Apr 18 19:07:04 2015] [debug] Rendering template "customer/profile.html.ep"
+[Sat Apr 18 19:07:04 2015] [debug] Rendering template "layouts/default.html.ep"
+[Sat Apr 18 19:07:04 2015] [debug] 200 OK (0.004682s, 213.584/s)
+[Sat Apr 18 19:07:44 2015] [debug] GET "/customer"
+[Sat Apr 18 19:07:44 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 19:07:44 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 19:07:44 2015] [debug] Rendering template "customer/customer_overview.html.ep"
+[Sat Apr 18 19:07:44 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sat Apr 18 19:07:44 2015] [debug] 200 OK (0.015223s, 65.690/s)
+[Sat Apr 18 19:07:45 2015] [debug] POST "/customer/profile"
+[Sat Apr 18 19:07:45 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 19:07:45 2015] [debug] Routing to controller "Moblo::Controller::Customer" and action "render_profile"
+[Sat Apr 18 19:07:45 2015] [debug] Rendering template "customer/profile.html.ep"
+[Sat Apr 18 19:07:45 2015] [debug] Rendering template "layouts/default.html.ep"
+[Sat Apr 18 19:07:45 2015] [debug] 200 OK (0.007755s, 128.949/s)
+[Sat Apr 18 19:07:59 2015] [debug] GET "/customer"
+[Sat Apr 18 19:07:59 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 19:07:59 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 19:07:59 2015] [debug] Rendering template "customer/customer_overview.html.ep"
+[Sat Apr 18 19:07:59 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sat Apr 18 19:07:59 2015] [debug] 200 OK (0.007747s, 129.082/s)
+[Sat Apr 18 19:08:02 2015] [debug] POST "/customer/profile"
+[Sat Apr 18 19:08:02 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 19:08:02 2015] [debug] Routing to controller "Moblo::Controller::Customer" and action "render_profile"
+[Sat Apr 18 19:08:02 2015] [debug] Rendering template "customer/profile.html.ep"
+[Sat Apr 18 19:08:02 2015] [debug] Rendering template "layouts/default.html.ep"
+[Sat Apr 18 19:08:02 2015] [debug] 200 OK (0.008270s, 120.919/s)
+[Sat Apr 18 19:08:20 2015] [debug] GET "/customer"
+[Sat Apr 18 19:08:20 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 19:08:20 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 19:08:20 2015] [debug] Rendering template "customer/customer_overview.html.ep"
+[Sat Apr 18 19:08:20 2015] [debug] Rendering template "layouts/base.html.ep"
+[Sat Apr 18 19:08:20 2015] [debug] 200 OK (0.011512s, 86.866/s)
+[Sat Apr 18 19:08:22 2015] [debug] POST "/customer/profile"
+[Sat Apr 18 19:08:22 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Sat Apr 18 19:08:22 2015] [debug] Routing to controller "Moblo::Controller::Customer" and action "render_profile"
+[Sat Apr 18 19:08:22 2015] [debug] Rendering template "customer/profile.html.ep"
+[Sat Apr 18 19:08:22 2015] [debug] Rendering template "layouts/default.html.ep"
+[Sat Apr 18 19:08:22 2015] [debug] 200 OK (0.007836s, 127.616/s)

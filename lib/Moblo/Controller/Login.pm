@@ -33,9 +33,16 @@ sub on_user_login {
 		$self->session(logged_in => 1);
 		$self->session(username => $username);
 		$self->session(user_id => $user->id);
-
+		$self->session(company => $user->company);
+		$self->session(user_level => $user->user_level);
 		#redirect to admin screen
-		$self->redirect_to('/admin');
+		if($user->user_level eq 'admin'){
+			$self->redirect_to('/admin');
+		}
+		#redirect to customer screen
+		else{
+			$self->redirect_to('/customer');
+		}
 	}
 
 	else{
@@ -47,7 +54,7 @@ sub on_user_login {
 
 }
 
-sub is_logged_in {
+sub is_logged_in_admin {
 
 	my $self = shift;
 
@@ -57,6 +64,10 @@ sub is_logged_in {
 		text =>'<h1> Your no longer logged in </h1>',
 		status => 403
 	);
+}
+sub is_logged_in_customer {
+	my $self = shift;
+	return 1 if $self->session('logged_in') && $self->session('user_level') eq 'customer';
 }
 
 sub create_new_account{
@@ -75,51 +86,33 @@ sub create_new_account{
 
 
 
-	#these will become redundant will check in javascript and 
-	#pass using ajax
-	if ($username eq ""){
-		$self->flash(error => "Username");
-		$self->redirect_to('/create_account');
-	}
-	elsif($password eq ""){
-		$self->flash(error => "Missing Field password");
-		$self->redirect_to('/create_account');
-	}
-	elsif($firstname eq ""){
-		$self->flash(error => "Missing field first name");
-		$self->redirect_to('/create_account');
-	}
-	elsif($lastname eq ""){
-		$self->flash(error => "Missing field last name");
+	
+	#get the result set
+	my $users =$self->db->resultset('User');
+	my $count = $users->search({ username => $username })->count;
+	
+	#if usern"ame is not unique
+	if($count == 1){
+		$self->flash(error => "User Name is already taken");
 		$self->redirect_to('/create_account');
 	}
 	else{
-		#get the result set
-		my $users =$self->db->resultset('User');
-		my $count = $users->search({ username => $username })->count;
-		
-		#if usern"ame is not unique
-		if($count == 1){
-			$self->flash(error => "User Name is already taken");
-			$self->redirect_to('/create_account');
-		}
-		else{
-			#create new record in the database
-			my $created = $users->create({
-				username => $username,
-				pw_hash => $self->bcrypt($password),
-				firstname => $firstname,
-				lastname => $lastname,
-				email => $email,
-				zipcode => scalar $zipcode,
-				city => $city,
-				user_level => 'customer',
-				company => $company
-			});
-			$self->flash(create_user_success => "Success");
-			$self->redirect_to('/login');
-		}
+		#create new record in the database
+		my $created = $users->create({
+			username => $username,
+			pw_hash => $self->bcrypt($password),
+			firstname => $firstname,
+			lastname => $lastname,
+			email => $email,
+			zipcode => int($zipcode),
+			city => $city,
+			user_level => 'customer',
+			company => $company
+		});
+		$self->flash(create_user_success => "Success");
+		$self->redirect_to('/login');
 	}
+	
 }
 #creates a new company
 sub create_new_company {
@@ -180,7 +173,7 @@ sub create_admin {
 		    lastname => $users_lastname,
 		    email => $users_email,
 		    city => $users_city,
-		    zipcode => scalar $users_zipcode,
+		    zipcode => int($users_zipcode),
 		    user_level => 'admin',
 	    });
 	

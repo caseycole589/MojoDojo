@@ -2,7 +2,7 @@
 <p>Welcome to Document Generator</p>
 <h3>Post Index</h3>
 
-% my $post = db->resultset('Post');
+% my $post = db->resultset('User');
 % if ($post->count == 0){
 	<p>None :</p>
 %}
@@ -10,11 +10,11 @@
 % while (my $post = $post->next){
 	<div class="post">
 		<h4>
-			<%= $post->title %>
+			<%= $post->username %>
 			</br>
-			<small>(published: <%= $post->date_published %>)</small>
+			<!-- <small>(password: <%= $post->pw_hash%>)</small> -->
 		</h4> 
-		<p><%= $post->content %></p>
+
 	</div>
 %}
 

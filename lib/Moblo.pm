@@ -48,7 +48,7 @@ sub startup {
 
   #route to template for creating a new user
   $r->get('/create_account')->to(template => 'login/create_form');
-  $r->post('/create_account')->name('create_account_form')->to('Login#create_company_account');
+  $r->post('/create_account')->name('create_new_account')->to('Login#create_new_account');
 
   $r->get('/create_company_form')->to(template => 'login/create_company_form');
   $r->post('/create_company_form/create_company')->to('Login#create_new_company');
@@ -69,7 +69,13 @@ sub startup {
 
   #this behaves like router object we can use it to define restricted routes
   my $authorized = $r->under('/admin')->to('Login#is_logged_in');
-  $authorized->get('/')->name('restricted_area')->to(template => 'admin/overview');
+  $authorized->get('/')->name('restricted_area')->to(template => 'admin/admin_overview');
+  
+  my $customer = $r->under('/customer')->to('Login#is_logged_in_customer');
+  $customer->get('/')->to(template => 'customer/customer_overview');
+  # $customer->post('/')->to('Customer');
+  $customer->post('/profile')->to('Customer#render_profile');
+
   my $schema = Moblo::Schema->connect('dbi:SQLite:share/moblo-schema.db', '', '', {sqlite_unicode => 1,  on_connect_do => 'PRAGMA foreign_keys = ON',});
   
   $self->helper(db => sub{return $schema;});

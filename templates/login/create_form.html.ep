@@ -54,20 +54,20 @@
 	<h3 style="color:red">Error <%= $var %><h3>
 %}
 
-%= form_for 'create_account_form' => (method => 'POST'),class => "form-horizontal" => begin
+%= form_for 'create_new_account' => (method => 'POST'),class => "form-horizontal" => begin
     
     <div class="form-group">
         
         %= label_for username => 'Username', class => "control-label col-xs-2"
         <div class="col-xs-10">
-            <input id='username' class="form-control" placeholder="Username" required autocomplete autofocus>
+            <input id='username' name='username'class="form-control" placeholder="Username" type="text" required autocomplete autofocus>
         </div>
     %=tag 'br' 
 	%=tag 'br'
     
        	%= label_for password => 'Password', class => "control-label col-xs-2"
     	 <div class="col-xs-10">
-	    	<input type="password" placeholder="Password" id='password' class="form-control" required>
+	    	<input name='password' type="password" placeholder="Password" id='pw_hash' class="form-control" required>
 	    </div>
   
 	
@@ -76,13 +76,13 @@
 
 		%= label_for firstname => 'First Name', class => "control-label col-xs-2"
 	   	<div class="col-xs-10">
-		 	<input type="text"  id='firstname' placeholder='First Name' class=form-control required>
+		 	<input type="text" name="firstname"  id='firstname' placeholder='First Name' class=form-control required>
 		</div>
 	%=tag 'br'
 	%=tag 'br'
 		%= label_for lastname => 'Last Name', class => 'control-label col-xs-2'
 		<div class="col-xs-10">
-			<input type="text" placeholder="Last Name " id='lastname_field' class="form-control" required>
+			<input type="text" name="lastname" placeholder="Last Name " id='lastname_field' class="form-control" required>
 		</div>
 
 	%=tag 'br'
@@ -90,30 +90,31 @@
 
 	%= label_for company => 'Company', class => "control-label col-xs-2"
 	<div class="col-xs-10">
-		<input type="text" id='company' placeholder="Company" class="form-control" required autocomplete>
+		<input type="text" name="company" id='company' placeholder="Company" class="form-control" required autocomplete>
 	</div>
 	%=tag 'br'
 	%=tag 'br'
 
 	%= label_for email => 'Email' , class => "control-label col-xs-2"
 		<div class="col-xs-10">
-	<input type="email" id='email'class="form-control" placeholder="Email" autocomplete required autocomplete>
+	<input type="email" name='email' id='email'class="form-control" placeholder="Email" autocomplete required autocomplete>
 	</div>
 	%=tag 'br'
 	%=tag 'br'
 
 	%= label_for city => 'City' , class => "control-label col-xs-2"
 		<div class="col-xs-10">
-		<input type="text" id='city' placeholder="City" class="form-control">
+		<input type="text" name="city" id='city' placeholder="City" class="form-control">
 	</div>
 	%=tag 'br'
 	%=tag 'br'
 
 	%= label_for zipcode => 'Zip Code' , class => "control-label col-xs-2"
 	<div class="col-xs-10">
-		<input type="number" id='zipcode' placeholder="Zip Code" class="form-control" required autocomplete>
+		<input type="text" name="zip" id='zipcode' placeholder="Zip Code" class="form-control" required autocomplete>
     </div>
     <br/><br/><br/>
 	%= submit_button 'Log me in', class => 'btn btn-lg btn-block btn-primary', id => 'submit_button'
 % end
+	
 </div>
