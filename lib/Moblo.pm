@@ -75,6 +75,8 @@ sub startup {
   $customer->get('/')->to(template => 'customer/customer_overview');
   # $customer->post('/')->to('Customer');
   $customer->post('/profile')->to('Customer#render_profile');
+  $customer->post('/profile_update')->to('Customer#profile_update');
+
 
   my $schema = Moblo::Schema->connect('dbi:SQLite:share/moblo-schema.db', '', '', {sqlite_unicode => 1,  on_connect_do => 'PRAGMA foreign_keys = ON',});
   

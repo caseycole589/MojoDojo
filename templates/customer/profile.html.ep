@@ -83,10 +83,25 @@
             alert("Theres nothing to change");
         }
         else{
-            
+            post_update(need_update);
         }
     }
 
+    function post_update(object){
+		$.ajax({
+            type: "POST",
+            url: "/customer/profile_update",
+       		data:JSON.stringify(object),
+            dataType: "json",
+            async:true,
+            success: function (msg, status)
+            {
+            	alert("msg");
+               alert("changes made successfully");
+            }            
+        });
+   
+    }
 
-    
+
 </script>
