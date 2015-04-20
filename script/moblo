@@ -12,7 +12,8 @@ use lib 'lib';
 # DBIx::Class::Migration
 # Mojolicious::Plugin::Bcrypt
 # Start command line interface for application
-#DBIx::Class::something 
+#DBIx::Class::InflateColumn::Boolean
+# DBIx::Class::InflateColumn::Currency
 
 #when database upgrade change our $version in /lib/moblo/Schema.pm
 #dbic-migration -S 'Moblo::Schema' -Ilib --database SQLite prepare

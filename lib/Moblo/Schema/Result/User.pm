@@ -68,15 +68,6 @@ __PACKAGE__->set_primary_key('id');
 
 
 __PACKAGE__->has_many(
-	#Name of the accessor for this relation
-	posts =>
-	#Foreign result class
-	'Moblo::Schema::Result::Post',
-	#Foreign key in the table 'posts'
-	'author_id'
-);
-
-__PACKAGE__->has_many(
 	comments =>
 	'Moblo::Schema::Result::Comment',
 	'user_id'
@@ -87,5 +78,11 @@ __PACKAGE__->belongs_to(
 	"Moblo::Schema::Result::Company",
 	{name => 'company'}
 );
+__PACKAGE__->has_many(
+	bills =>
+	'Moblo::Schema::Result::Bill',
+	'customer_name'
+);
+
 
 1;
