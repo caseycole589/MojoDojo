@@ -105,6 +105,6 @@
   %end
 
   <div class="login-help">
-    <a href="#">Register</a> • <a href="#">Forgot Password</a>
+    <a href="/create_account">Register</a> • <a href="/create_company_form">Create Company</a>
   </div>
 </div>

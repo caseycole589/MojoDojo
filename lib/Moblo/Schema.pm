@@ -7,7 +7,7 @@ use warnings;
 use base 'DBIx::Class::Schema';
 
 #schema database version
-our $VERSION = 5;
+our $VERSION = 6;
 
 # This will load any classes within
 # Moblo::Schema::Result and Moblo::Schema::ResultSet (if any)

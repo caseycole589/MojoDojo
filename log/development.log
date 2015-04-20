@@ -1,0 +1,597 @@
+[Mon Apr 20 11:28:33 2015] [debug] GET "/login"
+[Mon Apr 20 11:28:33 2015] [debug] Rendering template "login/login_form.html.ep"
+[Mon Apr 20 11:28:34 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Apr 20 11:28:34 2015] [debug] 200 OK (0.117756s, 8.492/s)
+[Mon Apr 20 11:28:45 2015] [debug] POST "/login"
+[Mon Apr 20 11:28:45 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Mon Apr 20 11:28:46 2015] [error] DBIx::Class::Storage::DBI::_prepare_sth(): DBI Exception: DBD::SQLite::db prepare_cached failed: no such table: users [for Statement "SELECT me.id, me.pw_hash, me.username, me.firstname, me.lastname, me.city, me.zipcode, me.email, me.company, me.user_level FROM users me WHERE ( username = ? )"] at lib/Moblo/Controller/Login.pm line 11
+
+[Mon Apr 20 11:28:46 2015] [debug] Template "exception.development.html.ep" not found
+[Mon Apr 20 11:28:46 2015] [debug] Template "exception.html.ep" not found
+[Mon Apr 20 11:28:46 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Mon Apr 20 11:28:46 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Mon Apr 20 11:28:46 2015] [debug] 500 Internal Server Error (0.267684s, 3.736/s)
+[Mon Apr 20 11:32:20 2015] [debug] GET "/customer"
+[Mon Apr 20 11:32:20 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Mon Apr 20 11:32:20 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Apr 20 11:32:20 2015] [debug] 403 Forbidden (0.003043s, 328.623/s)
+[Mon Apr 20 11:32:20 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Mon Apr 20 11:32:20 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Mon Apr 20 17:26:12 2015] [debug] GET "/"
+[Mon Apr 20 17:26:12 2015] [debug] Rendering template "main/index.html.ep"
+[Mon Apr 20 17:26:12 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Apr 20 17:26:12 2015] [debug] 200 OK (0.044876s, 22.284/s)
+[Mon Apr 20 17:26:16 2015] [debug] GET "/create_company_form"
+[Mon Apr 20 17:26:16 2015] [debug] Rendering template "login/create_company_form.html.ep"
+[Mon Apr 20 17:26:16 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Mon Apr 20 17:26:16 2015] [debug] 200 OK (0.020711s, 48.284/s)
+[Mon Apr 20 17:26:29 2015] [debug] POST "/create_company_form/create_company"
+[Mon Apr 20 17:26:29 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_company"
+[Mon Apr 20 17:26:29 2015] [debug] 200 OK (0.142705s, 7.007/s)
+[Mon Apr 20 17:26:55 2015] [debug] POST "/create_company_form/create_admin"
+[Mon Apr 20 17:26:55 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_admin"
+[Mon Apr 20 17:26:55 2015] [debug] 200 OK (0.155976s, 6.411/s)
+[Mon Apr 20 17:26:57 2015] [debug] GET "/login.html"
+[Mon Apr 20 17:26:57 2015] [debug] Rendering template "login/login_form.html.ep"
+[Mon Apr 20 17:26:57 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Apr 20 17:26:57 2015] [debug] 200 OK (0.004392s, 227.687/s)
+[Mon Apr 20 17:26:59 2015] [debug] POST "/login"
+[Mon Apr 20 17:26:59 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Mon Apr 20 17:26:59 2015] [debug] 302 Found (0.023622s, 42.333/s)
+[Mon Apr 20 17:26:59 2015] [debug] GET "/admin"
+[Mon Apr 20 17:26:59 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Mon Apr 20 17:26:59 2015] [debug] Action not found in controller
+[Mon Apr 20 17:26:59 2015] [debug] Nothing has been rendered, expecting delayed response
+[Mon Apr 20 17:27:14 2015] [debug] Inactivity timeout
+[Mon Apr 20 17:27:14 2015] [debug] GET "/admin"
+[Mon Apr 20 17:27:14 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Mon Apr 20 17:27:14 2015] [debug] Action not found in controller
+[Mon Apr 20 17:27:14 2015] [debug] Nothing has been rendered, expecting delayed response
+[Mon Apr 20 17:27:29 2015] [debug] Inactivity timeout
+[Mon Apr 20 17:29:42 2015] [debug] GET "/login.html"
+[Mon Apr 20 17:29:42 2015] [debug] Rendering template "login/login_form.html.ep"
+[Mon Apr 20 17:29:42 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Apr 20 17:29:42 2015] [debug] 200 OK (0.031366s, 31.882/s)
+[Mon Apr 20 17:29:46 2015] [debug] POST "/login"
+[Mon Apr 20 17:29:46 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Mon Apr 20 17:29:47 2015] [debug] 302 Found (0.051054s, 19.587/s)
+[Mon Apr 20 17:29:47 2015] [debug] GET "/admin"
+[Mon Apr 20 17:29:47 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Mon Apr 20 17:29:47 2015] [debug] Action not found in controller
+[Mon Apr 20 17:29:47 2015] [debug] Nothing has been rendered, expecting delayed response
+[Mon Apr 20 17:30:02 2015] [debug] Inactivity timeout
+[Mon Apr 20 17:30:02 2015] [debug] GET "/admin"
+[Mon Apr 20 17:30:02 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in"
+[Mon Apr 20 17:30:02 2015] [debug] Action not found in controller
+[Mon Apr 20 17:30:02 2015] [debug] Nothing has been rendered, expecting delayed response
+[Mon Apr 20 17:30:13 2015] [debug] GET "/create_account"
+[Mon Apr 20 17:30:13 2015] [debug] Rendering template "login/create_form.html.ep"
+[Mon Apr 20 17:30:13 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Apr 20 17:30:13 2015] [debug] 200 OK (0.019205s, 52.070/s)
+[Mon Apr 20 17:30:53 2015] [debug] GET "/create_account"
+[Mon Apr 20 17:30:53 2015] [debug] Rendering template "login/create_form.html.ep"
+[Mon Apr 20 17:30:53 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Apr 20 17:30:53 2015] [debug] 200 OK (0.032241s, 31.016/s)
+[Mon Apr 20 17:31:02 2015] [debug] GET "/create_account"
+[Mon Apr 20 17:31:02 2015] [debug] Rendering template "login/create_form.html.ep"
+[Mon Apr 20 17:31:02 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Apr 20 17:31:02 2015] [debug] 200 OK (0.038648s, 25.875/s)
+[Mon Apr 20 17:32:13 2015] [debug] GET "/create_account"
+[Mon Apr 20 17:32:13 2015] [debug] Rendering template "login/create_form.html.ep"
+[Mon Apr 20 17:32:13 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Apr 20 17:32:13 2015] [debug] 200 OK (0.060917s, 16.416/s)
+[Mon Apr 20 17:32:31 2015] [debug] GET "/create_account"
+[Mon Apr 20 17:32:31 2015] [debug] Rendering template "login/create_form.html.ep"
+[Mon Apr 20 17:32:31 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Apr 20 17:32:31 2015] [debug] 200 OK (0.037446s, 26.705/s)
+[Mon Apr 20 17:32:41 2015] [debug] GET "/create_account"
+[Mon Apr 20 17:32:41 2015] [debug] Rendering template "login/create_form.html.ep"
+[Mon Apr 20 17:32:41 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Apr 20 17:32:41 2015] [debug] 200 OK (0.031037s, 32.220/s)
+[Mon Apr 20 17:33:51 2015] [debug] GET "/create_account"
+[Mon Apr 20 17:33:51 2015] [debug] Rendering template "login/create_form.html.ep"
+[Mon Apr 20 17:33:51 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Apr 20 17:33:51 2015] [debug] 200 OK (0.043867s, 22.796/s)
+[Mon Apr 20 17:34:01 2015] [debug] GET "/create_account"
+[Mon Apr 20 17:34:01 2015] [debug] Rendering template "login/create_form.html.ep"
+[Mon Apr 20 17:34:02 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Apr 20 17:34:02 2015] [debug] 200 OK (0.045739s, 21.863/s)
+[Mon Apr 20 17:34:17 2015] [debug] GET "/create_account"
+[Mon Apr 20 17:34:17 2015] [debug] Rendering template "login/create_form.html.ep"
+[Mon Apr 20 17:34:17 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Apr 20 17:34:17 2015] [debug] 200 OK (0.030207s, 33.105/s)
+[Mon Apr 20 17:34:44 2015] [debug] POST "/create_account"
+[Mon Apr 20 17:34:44 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_account"
+[Mon Apr 20 17:34:44 2015] [error] DBIx::Class::Storage::DBI::_dbh_execute(): DBI Exception: DBD::SQLite::st execute failed: NOT NULL constraint failed: users.company [for Statement "INSERT INTO users ( city, company, email, firstname, lastname, pw_hash, user_level, username, zipcode) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )"] at lib/Moblo/Controller/Login.pm line 111
+
+[Mon Apr 20 17:34:44 2015] [debug] Template "exception.development.html.ep" not found
+[Mon Apr 20 17:34:44 2015] [debug] Template "exception.html.ep" not found
+[Mon Apr 20 17:34:44 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Mon Apr 20 17:34:44 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Mon Apr 20 17:34:44 2015] [debug] 500 Internal Server Error (0.062603s, 15.974/s)
+[Mon Apr 20 17:38:55 2015] [debug] POST "/create_account"
+[Mon Apr 20 17:38:55 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_account"
+[Mon Apr 20 17:38:55 2015] [error] DBIx::Class::Storage::DBI::_dbh_execute(): DBI Exception: DBD::SQLite::st execute failed: NOT NULL constraint failed: users.company [for Statement "INSERT INTO users ( city, company, email, firstname, lastname, pw_hash, user_level, username, zipcode) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )"] at lib/Moblo/Controller/Login.pm line 111
+
+[Mon Apr 20 17:38:55 2015] [debug] Template "exception.development.html.ep" not found
+[Mon Apr 20 17:38:55 2015] [debug] Template "exception.html.ep" not found
+[Mon Apr 20 17:38:55 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Mon Apr 20 17:38:55 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Mon Apr 20 17:38:55 2015] [debug] 500 Internal Server Error (0.088621s, 11.284/s)
+[Mon Apr 20 17:40:20 2015] [debug] GET "/create_account"
+[Mon Apr 20 17:40:20 2015] [debug] Rendering template "login/create_form.html.ep"
+[Mon Apr 20 17:40:20 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Apr 20 17:40:20 2015] [debug] 200 OK (0.049395s, 20.245/s)
+[Mon Apr 20 17:40:38 2015] [debug] POST "/create_account"
+[Mon Apr 20 17:40:38 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_account"
+[Mon Apr 20 17:40:38 2015] [error] DBIx::Class::Storage::DBI::_dbh_execute(): DBI Exception: DBD::SQLite::st execute failed: NOT NULL constraint failed: users.company [for Statement "INSERT INTO users ( city, company, email, firstname, lastname, pw_hash, user_level, username, zipcode) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )"] at lib/Moblo/Controller/Login.pm line 111
+
+[Mon Apr 20 17:40:38 2015] [debug] Template "exception.development.html.ep" not found
+[Mon Apr 20 17:40:38 2015] [debug] Template "exception.html.ep" not found
+[Mon Apr 20 17:40:38 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Mon Apr 20 17:40:38 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Mon Apr 20 17:40:38 2015] [debug] 500 Internal Server Error (0.051646s, 19.363/s)
+[Mon Apr 20 17:43:58 2015] [debug] GET "/create_account"
+[Mon Apr 20 17:43:58 2015] [debug] Rendering template "login/create_form.html.ep"
+[Mon Apr 20 17:43:58 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Apr 20 17:43:58 2015] [debug] 200 OK (0.038876s, 25.723/s)
+[Mon Apr 20 17:50:27 2015] [debug] GET "/create_account"
+[Mon Apr 20 17:50:27 2015] [debug] Rendering template "login/create_form.html.ep"
+[Mon Apr 20 17:50:27 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Apr 20 17:50:27 2015] [debug] 200 OK (0.055698s, 17.954/s)
+[Mon Apr 20 17:51:01 2015] [debug] GET "/create_account"
+[Mon Apr 20 17:51:01 2015] [debug] Rendering template "login/create_form.html.ep"
+[Mon Apr 20 17:51:01 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Apr 20 17:51:01 2015] [debug] 200 OK (0.034973s, 28.593/s)
+[Mon Apr 20 17:51:43 2015] [debug] GET "/create_account"
+[Mon Apr 20 17:51:43 2015] [debug] Rendering template "login/create_form.html.ep"
+[Mon Apr 20 17:51:43 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Apr 20 17:51:43 2015] [debug] 200 OK (0.032949s, 30.350/s)
+[Mon Apr 20 17:52:34 2015] [debug] GET "/create_account"
+[Mon Apr 20 17:52:34 2015] [debug] Rendering template "login/create_form.html.ep"
+[Mon Apr 20 17:52:34 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Apr 20 17:52:34 2015] [debug] 200 OK (0.042225s, 23.683/s)
+[Mon Apr 20 17:52:39 2015] [debug] POST "/create_account"
+[Mon Apr 20 17:52:39 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_account"
+[Mon Apr 20 17:52:39 2015] [error] DBIx::Class::Storage::DBI::_dbh_execute(): DBI Exception: DBD::SQLite::st execute failed: FOREIGN KEY constraint failed [for Statement "INSERT INTO users ( city, company, email, firstname, lastname, pw_hash, user_level, username, zipcode) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )"] at lib/Moblo/Controller/Login.pm line 111
+
+[Mon Apr 20 17:52:39 2015] [debug] Template "exception.development.html.ep" not found
+[Mon Apr 20 17:52:39 2015] [debug] Template "exception.html.ep" not found
+[Mon Apr 20 17:52:39 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Mon Apr 20 17:52:39 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Mon Apr 20 17:52:39 2015] [debug] 500 Internal Server Error (0.051705s, 19.340/s)
+[Mon Apr 20 17:53:34 2015] [debug] POST "/create_account"
+[Mon Apr 20 17:53:34 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_account"
+[Mon Apr 20 17:53:34 2015] [error] DBIx::Class::Storage::DBI::_dbh_execute(): DBI Exception: DBD::SQLite::st execute failed: FOREIGN KEY constraint failed [for Statement "INSERT INTO users ( city, company, email, firstname, lastname, pw_hash, user_level, username, zipcode) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )"] at lib/Moblo/Controller/Login.pm line 111
+
+[Mon Apr 20 17:53:34 2015] [debug] Template "exception.development.html.ep" not found
+[Mon Apr 20 17:53:34 2015] [debug] Template "exception.html.ep" not found
+[Mon Apr 20 17:53:34 2015] [debug] Rendering cached inline template "fd403ab55a4c875e35b42428816134c7"
+[Mon Apr 20 17:53:34 2015] [debug] Rendering cached inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Mon Apr 20 17:53:34 2015] [debug] 500 Internal Server Error (0.031521s, 31.725/s)
+[Mon Apr 20 17:53:39 2015] [debug] POST "/create_account"
+[Mon Apr 20 17:53:39 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_account"
+[Mon Apr 20 17:53:39 2015] [error] DBIx::Class::Storage::DBI::_dbh_execute(): DBI Exception: DBD::SQLite::st execute failed: FOREIGN KEY constraint failed [for Statement "INSERT INTO users ( city, company, email, firstname, lastname, pw_hash, user_level, username, zipcode) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )"] at lib/Moblo/Controller/Login.pm line 111
+
+[Mon Apr 20 17:53:39 2015] [debug] Template "exception.development.html.ep" not found
+[Mon Apr 20 17:53:39 2015] [debug] Template "exception.html.ep" not found
+[Mon Apr 20 17:53:39 2015] [debug] Rendering cached inline template "fd403ab55a4c875e35b42428816134c7"
+[Mon Apr 20 17:53:39 2015] [debug] Rendering cached inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Mon Apr 20 17:53:39 2015] [debug] 500 Internal Server Error (0.039944s, 25.035/s)
+[Mon Apr 20 17:55:11 2015] [debug] POST "/create_account"
+[Mon Apr 20 17:55:11 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_account"
+[Mon Apr 20 17:55:11 2015] [error] DBIx::Class::Storage::DBI::_dbh_execute(): DBI Exception: DBD::SQLite::st execute failed: FOREIGN KEY constraint failed [for Statement "INSERT INTO users ( city, company, email, firstname, lastname, pw_hash, user_level, username, zipcode) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )"] at lib/Moblo/Controller/Login.pm line 111
+
+[Mon Apr 20 17:55:11 2015] [debug] Template "exception.development.html.ep" not found
+[Mon Apr 20 17:55:11 2015] [debug] Template "exception.html.ep" not found
+[Mon Apr 20 17:55:11 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Mon Apr 20 17:55:11 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Mon Apr 20 17:55:11 2015] [debug] 500 Internal Server Error (0.092257s, 10.839/s)
+[Mon Apr 20 17:56:09 2015] [debug] GET "/create_account"
+[Mon Apr 20 17:56:09 2015] [debug] Rendering template "login/create_form.html.ep"
+[Mon Apr 20 17:56:09 2015] [error] panic: sv_setpvn called with negative strlen -2 at /usr/local/share/perl5/Mojo/Exception.pm line 38.
+33: 
+34: sub trace {
+35:   my ($self, $start) = @_;
+36:   $start //= 1;
+37:   my @frames;
+38:   while (my @trace = caller($start++)) { push @frames, \@trace }
+39:   return $self->frames(\@frames);
+40: }
+41: 
+42: sub _append {
+43:   my ($stack, $line) = @_;
+
+[Mon Apr 20 17:56:09 2015] [debug] Template "exception.development.html.ep" not found
+[Mon Apr 20 17:56:09 2015] [debug] Template "exception.html.ep" not found
+[Mon Apr 20 17:56:09 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Mon Apr 20 17:56:09 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Mon Apr 20 17:56:09 2015] [debug] 500 Internal Server Error (0.021555s, 46.393/s)
+[Mon Apr 20 17:56:20 2015] [debug] GET "/create_account"
+[Mon Apr 20 17:56:20 2015] [debug] Rendering template "login/create_form.html.ep"
+[Mon Apr 20 17:56:20 2015] [error] panic: sv_setpvn called with negative strlen -2 at /usr/local/share/perl5/Mojo/Exception.pm line 38.
+33: 
+34: sub trace {
+35:   my ($self, $start) = @_;
+36:   $start //= 1;
+37:   my @frames;
+38:   while (my @trace = caller($start++)) { push @frames, \@trace }
+39:   return $self->frames(\@frames);
+40: }
+41: 
+42: sub _append {
+43:   my ($stack, $line) = @_;
+
+[Mon Apr 20 17:56:20 2015] [debug] Template "exception.development.html.ep" not found
+[Mon Apr 20 17:56:20 2015] [debug] Template "exception.html.ep" not found
+[Mon Apr 20 17:56:20 2015] [debug] Rendering cached inline template "fd403ab55a4c875e35b42428816134c7"
+[Mon Apr 20 17:56:20 2015] [debug] Rendering cached inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Mon Apr 20 17:56:20 2015] [debug] 500 Internal Server Error (0.011000s, 90.909/s)
+[Mon Apr 20 17:56:57 2015] [debug] GET "/create_account"
+[Mon Apr 20 17:56:57 2015] [debug] Rendering template "login/create_form.html.ep"
+[Mon Apr 20 17:56:57 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Apr 20 17:56:57 2015] [debug] 200 OK (0.050858s, 19.663/s)
+[Mon Apr 20 17:57:14 2015] [debug] GET "/create_account"
+[Mon Apr 20 17:57:14 2015] [debug] Rendering template "login/create_form.html.ep"
+[Mon Apr 20 17:57:14 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Apr 20 17:57:14 2015] [debug] 200 OK (0.068428s, 14.614/s)
+[Mon Apr 20 17:57:16 2015] [debug] GET "/create_account"
+[Mon Apr 20 17:57:16 2015] [debug] Rendering cached template "login/create_form.html.ep"
+[Mon Apr 20 17:57:16 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Mon Apr 20 17:57:16 2015] [debug] 200 OK (0.007213s, 138.639/s)
+[Mon Apr 20 17:57:17 2015] [debug] GET "/create_account"
+[Mon Apr 20 17:57:17 2015] [debug] Rendering cached template "login/create_form.html.ep"
+[Mon Apr 20 17:57:17 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Mon Apr 20 17:57:17 2015] [debug] 200 OK (0.010115s, 98.863/s)
+[Mon Apr 20 17:57:18 2015] [debug] GET "/create_account"
+[Mon Apr 20 17:57:18 2015] [debug] Rendering cached template "login/create_form.html.ep"
+[Mon Apr 20 17:57:18 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Mon Apr 20 17:57:18 2015] [debug] 200 OK (0.003854s, 259.471/s)
+[Mon Apr 20 17:57:32 2015] [debug] GET "/create_account"
+[Mon Apr 20 17:57:32 2015] [debug] Rendering template "login/create_form.html.ep"
+[Mon Apr 20 17:57:32 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Apr 20 17:57:32 2015] [debug] 200 OK (0.054309s, 18.413/s)
+[Mon Apr 20 17:58:58 2015] [debug] GET "/create_account"
+[Mon Apr 20 17:58:58 2015] [debug] Rendering template "login/create_form.html.ep"
+[Mon Apr 20 17:58:58 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Apr 20 17:58:58 2015] [debug] 200 OK (0.062270s, 16.059/s)
+[Mon Apr 20 17:59:41 2015] [debug] POST "/create_account"
+[Mon Apr 20 17:59:41 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_account"
+[Mon Apr 20 17:59:41 2015] [error] DBIx::Class::Storage::DBI::_dbh_execute(): DBI Exception: DBD::SQLite::st execute failed: NOT NULL constraint failed: users.company [for Statement "INSERT INTO users ( city, company, email, firstname, lastname, pw_hash, user_level, username, zipcode) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )"] at lib/Moblo/Controller/Login.pm line 111
+
+[Mon Apr 20 17:59:41 2015] [debug] Template "exception.development.html.ep" not found
+[Mon Apr 20 17:59:41 2015] [debug] Template "exception.html.ep" not found
+[Mon Apr 20 17:59:41 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Mon Apr 20 17:59:41 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Mon Apr 20 17:59:41 2015] [debug] 500 Internal Server Error (0.063729s, 15.691/s)
+[Mon Apr 20 18:00:21 2015] [debug] GET "/create_account"
+[Mon Apr 20 18:00:21 2015] [debug] Rendering template "login/create_form.html.ep"
+[Mon Apr 20 18:00:22 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Apr 20 18:00:22 2015] [debug] 200 OK (0.055166s, 18.127/s)
+[Mon Apr 20 18:00:34 2015] [debug] GET "/create_account"
+[Mon Apr 20 18:00:34 2015] [debug] Rendering cached template "login/create_form.html.ep"
+[Mon Apr 20 18:00:34 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Mon Apr 20 18:00:34 2015] [debug] 200 OK (0.007596s, 131.648/s)
+[Mon Apr 20 18:00:38 2015] [debug] GET "/create_account"
+[Mon Apr 20 18:00:38 2015] [debug] Rendering cached template "login/create_form.html.ep"
+[Mon Apr 20 18:00:38 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Mon Apr 20 18:00:38 2015] [debug] 200 OK (0.003619s, 276.319/s)
+[Mon Apr 20 18:01:39 2015] [debug] GET "/create_account"
+[Mon Apr 20 18:01:39 2015] [debug] Rendering template "login/create_form.html.ep"
+[Mon Apr 20 18:01:39 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Apr 20 18:01:39 2015] [debug] 200 OK (0.031238s, 32.012/s)
+[Mon Apr 20 18:01:47 2015] [debug] GET "/create_account"
+[Mon Apr 20 18:01:47 2015] [debug] Rendering cached template "login/create_form.html.ep"
+[Mon Apr 20 18:01:47 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Mon Apr 20 18:01:47 2015] [debug] 200 OK (0.002933s, 340.948/s)
+[Mon Apr 20 18:02:00 2015] [debug] POST "/create_account"
+[Mon Apr 20 18:02:00 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_account"
+[Mon Apr 20 18:02:00 2015] [error] DBIx::Class::Storage::DBI::_dbh_execute(): DBI Exception: DBD::SQLite::st execute failed: FOREIGN KEY constraint failed [for Statement "INSERT INTO users ( city, company, email, firstname, lastname, pw_hash, user_level, username, zipcode) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )"] at lib/Moblo/Controller/Login.pm line 111
+
+[Mon Apr 20 18:02:00 2015] [debug] Template "exception.development.html.ep" not found
+[Mon Apr 20 18:02:00 2015] [debug] Template "exception.html.ep" not found
+[Mon Apr 20 18:02:00 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Mon Apr 20 18:02:00 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Mon Apr 20 18:02:00 2015] [debug] 500 Internal Server Error (0.053613s, 18.652/s)
+[Mon Apr 20 18:05:26 2015] [debug] POST "/create_account"
+[Mon Apr 20 18:05:26 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_account"
+[Mon Apr 20 18:05:26 2015] [error] DBIx::Class::Storage::DBI::_dbh_execute(): DBI Exception: DBD::SQLite::st execute failed: FOREIGN KEY constraint failed [for Statement "INSERT INTO users ( city, company, email, firstname, lastname, pw_hash, user_level, username, zipcode) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )"] at lib/Moblo/Controller/Login.pm line 111
+
+[Mon Apr 20 18:05:26 2015] [debug] Template "exception.development.html.ep" not found
+[Mon Apr 20 18:05:26 2015] [debug] Template "exception.html.ep" not found
+[Mon Apr 20 18:05:26 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Mon Apr 20 18:05:26 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Mon Apr 20 18:05:26 2015] [debug] 500 Internal Server Error (0.088938s, 11.244/s)
+[Mon Apr 20 18:05:51 2015] [debug] GET "/create_account"
+[Mon Apr 20 18:05:51 2015] [debug] Rendering template "login/create_form.html.ep"
+[Mon Apr 20 18:05:51 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Apr 20 18:05:51 2015] [debug] 200 OK (0.039125s, 25.559/s)
+[Mon Apr 20 18:05:55 2015] [debug] POST "/create_account"
+[Mon Apr 20 18:05:55 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_account"
+[Mon Apr 20 18:05:55 2015] [error] DBIx::Class::Storage::DBI::_dbh_execute(): DBI Exception: DBD::SQLite::st execute failed: FOREIGN KEY constraint failed [for Statement "INSERT INTO users ( city, company, email, firstname, lastname, pw_hash, user_level, username, zipcode) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )"] at lib/Moblo/Controller/Login.pm line 111
+
+[Mon Apr 20 18:05:55 2015] [debug] Template "exception.development.html.ep" not found
+[Mon Apr 20 18:05:55 2015] [debug] Template "exception.html.ep" not found
+[Mon Apr 20 18:05:55 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Mon Apr 20 18:05:55 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Mon Apr 20 18:05:55 2015] [debug] 500 Internal Server Error (0.068655s, 14.566/s)
+[Mon Apr 20 18:06:28 2015] [debug] GET "/create_account"
+[Mon Apr 20 18:06:28 2015] [debug] Rendering template "login/create_form.html.ep"
+[Mon Apr 20 18:06:28 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Apr 20 18:06:28 2015] [debug] 200 OK (0.048742s, 20.516/s)
+[Mon Apr 20 18:07:29 2015] [debug] GET "/create_account"
+[Mon Apr 20 18:07:29 2015] [debug] Rendering template "login/create_form.html.ep"
+[Mon Apr 20 18:07:29 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Apr 20 18:07:29 2015] [debug] 200 OK (0.048597s, 20.577/s)
+[Mon Apr 20 18:07:57 2015] [debug] GET "/create_account"
+[Mon Apr 20 18:07:57 2015] [debug] Rendering template "login/create_form.html.ep"
+[Mon Apr 20 18:07:57 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Apr 20 18:07:57 2015] [debug] 200 OK (0.042882s, 23.320/s)
+[Mon Apr 20 18:08:03 2015] [debug] GET "/create_account"
+[Mon Apr 20 18:08:03 2015] [debug] Rendering cached template "login/create_form.html.ep"
+[Mon Apr 20 18:08:03 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Mon Apr 20 18:08:03 2015] [debug] 200 OK (0.004499s, 222.272/s)
+[Mon Apr 20 18:08:26 2015] [debug] GET "/create_account"
+[Mon Apr 20 18:08:26 2015] [debug] Rendering template "login/create_form.html.ep"
+[Mon Apr 20 18:08:26 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Apr 20 18:08:26 2015] [debug] 200 OK (0.042965s, 23.275/s)
+[Mon Apr 20 18:10:04 2015] [debug] GET "/create_account"
+[Mon Apr 20 18:10:04 2015] [debug] Rendering template "login/create_form.html.ep"
+[Mon Apr 20 18:10:04 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Apr 20 18:10:04 2015] [debug] 200 OK (0.046531s, 21.491/s)
+[Mon Apr 20 18:10:18 2015] [debug] GET "/create_account"
+[Mon Apr 20 18:10:18 2015] [debug] Rendering cached template "login/create_form.html.ep"
+[Mon Apr 20 18:10:18 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Mon Apr 20 18:10:18 2015] [debug] 200 OK (0.003422s, 292.227/s)
+[Mon Apr 20 18:10:31 2015] [debug] GET "/create_account"
+[Mon Apr 20 18:10:31 2015] [debug] Rendering template "login/create_form.html.ep"
+[Mon Apr 20 18:10:31 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Apr 20 18:10:31 2015] [debug] 200 OK (0.041058s, 24.356/s)
+[Mon Apr 20 18:10:32 2015] [debug] GET "/create_account"
+[Mon Apr 20 18:10:32 2015] [debug] Rendering cached template "login/create_form.html.ep"
+[Mon Apr 20 18:10:32 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Mon Apr 20 18:10:32 2015] [debug] 200 OK (0.004102s, 243.784/s)
+[Mon Apr 20 18:11:18 2015] [debug] GET "/create_account"
+[Mon Apr 20 18:11:18 2015] [debug] Rendering template "login/create_form.html.ep"
+[Mon Apr 20 18:11:18 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Apr 20 18:11:18 2015] [debug] 200 OK (0.055165s, 18.127/s)
+[Mon Apr 20 18:11:18 2015] [debug] GET "/create_account"
+[Mon Apr 20 18:11:18 2015] [debug] Rendering cached template "login/create_form.html.ep"
+[Mon Apr 20 18:11:18 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Mon Apr 20 18:11:18 2015] [debug] 200 OK (0.005698s, 175.500/s)
+[Mon Apr 20 18:11:57 2015] [debug] GET "/create_account"
+[Mon Apr 20 18:11:57 2015] [debug] Rendering template "login/create_form.html.ep"
+[Mon Apr 20 18:11:57 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Apr 20 18:11:57 2015] [debug] 200 OK (0.039617s, 25.242/s)
+[Mon Apr 20 18:12:44 2015] [debug] POST "/create_account"
+[Mon Apr 20 18:12:44 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_account"
+[Mon Apr 20 18:12:45 2015] [error] DBIx::Class::Storage::DBI::_dbh_execute(): DBI Exception: DBD::SQLite::st execute failed: FOREIGN KEY constraint failed [for Statement "INSERT INTO users ( city, company, email, firstname, lastname, pw_hash, user_level, username, zipcode) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )"] at lib/Moblo/Controller/Login.pm line 111
+
+[Mon Apr 20 18:12:45 2015] [debug] Template "exception.development.html.ep" not found
+[Mon Apr 20 18:12:45 2015] [debug] Template "exception.html.ep" not found
+[Mon Apr 20 18:12:45 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Mon Apr 20 18:12:45 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Mon Apr 20 18:12:45 2015] [debug] 500 Internal Server Error (0.056622s, 17.661/s)
+[Mon Apr 20 18:12:45 2015] [debug] GET "/create_account"
+[Mon Apr 20 18:12:45 2015] [debug] Rendering cached template "login/create_form.html.ep"
+[Mon Apr 20 18:12:45 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Mon Apr 20 18:12:45 2015] [debug] 200 OK (0.004605s, 217.155/s)
+[Mon Apr 20 18:13:39 2015] [debug] GET "/create_account"
+[Mon Apr 20 18:13:39 2015] [debug] Rendering template "login/create_form.html.ep"
+[Mon Apr 20 18:13:39 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Apr 20 18:13:39 2015] [debug] 200 OK (0.049625s, 20.151/s)
+[Mon Apr 20 18:13:56 2015] [debug] POST "/create_account"
+[Mon Apr 20 18:13:56 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_account"
+[Mon Apr 20 18:13:56 2015] [error] DBIx::Class::Storage::DBI::_dbh_execute(): DBI Exception: DBD::SQLite::st execute failed: FOREIGN KEY constraint failed [for Statement "INSERT INTO users ( city, company, email, firstname, lastname, pw_hash, user_level, username, zipcode) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )"] at lib/Moblo/Controller/Login.pm line 111
+
+[Mon Apr 20 18:13:56 2015] [debug] Template "exception.development.html.ep" not found
+[Mon Apr 20 18:13:56 2015] [debug] Template "exception.html.ep" not found
+[Mon Apr 20 18:13:56 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Mon Apr 20 18:13:56 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Mon Apr 20 18:13:56 2015] [debug] 500 Internal Server Error (0.051067s, 19.582/s)
+[Mon Apr 20 18:13:56 2015] [debug] GET "/create_account"
+[Mon Apr 20 18:13:56 2015] [debug] Rendering cached template "login/create_form.html.ep"
+[Mon Apr 20 18:13:56 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Mon Apr 20 18:13:56 2015] [debug] 200 OK (0.003635s, 275.103/s)
+[Mon Apr 20 18:16:08 2015] [debug] POST "/create_account"
+[Mon Apr 20 18:16:08 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_account"
+[Mon Apr 20 18:16:08 2015] [error] DBIx::Class::Storage::DBI::_dbh_execute(): DBI Exception: DBD::SQLite::st execute failed: FOREIGN KEY constraint failed [for Statement "INSERT INTO users ( city, company, email, firstname, lastname, pw_hash, user_level, username, zipcode) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )"] at lib/Moblo/Controller/Login.pm line 111
+
+[Mon Apr 20 18:16:08 2015] [debug] Template "exception.development.html.ep" not found
+[Mon Apr 20 18:16:08 2015] [debug] Template "exception.html.ep" not found
+[Mon Apr 20 18:16:08 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Mon Apr 20 18:16:08 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Mon Apr 20 18:16:09 2015] [debug] 500 Internal Server Error (0.112301s, 8.905/s)
+[Mon Apr 20 18:16:09 2015] [debug] GET "/create_account"
+[Mon Apr 20 18:16:09 2015] [debug] Rendering template "login/create_form.html.ep"
+[Mon Apr 20 18:16:09 2015] [error] syntax error at template login/create_form.html.ep line 99, near "} $_O "
+Global symbol "$_O" requires explicit package name at template login/create_form.html.ep line 99.
+Unmatched right curly bracket at template login/create_form.html.ep line 99, at end of line
+94:     <br/><br/><br/>
+95: 	%= submit_button 'Log me in', class => 'btn btn-lg btn-block btn-primary', id => 'submit_button'
+96: % end
+97: 	</div>
+98: </div>
+99: </div>
+
+[Mon Apr 20 18:16:09 2015] [debug] Template "exception.development.html.ep" not found
+[Mon Apr 20 18:16:09 2015] [debug] Template "exception.html.ep" not found
+[Mon Apr 20 18:16:09 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Mon Apr 20 18:16:09 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Mon Apr 20 18:16:09 2015] [debug] 500 Internal Server Error (0.020889s, 47.872/s)
+[Mon Apr 20 18:16:14 2015] [debug] GET "/create_account"
+[Mon Apr 20 18:16:14 2015] [debug] Rendering template "login/create_form.html.ep"
+[Mon Apr 20 18:16:14 2015] [error] syntax error at template login/create_form.html.ep line 99, near "} $_O "
+Global symbol "$_O" requires explicit package name at template login/create_form.html.ep line 99.
+Unmatched right curly bracket at template login/create_form.html.ep line 99, at end of line
+94:     <br/><br/><br/>
+95: 	%= submit_button 'Log me in', class => 'btn btn-lg btn-block btn-primary', id => 'submit_button'
+96: % end
+97: 	</div>
+98: </div>
+99: </div>
+
+[Mon Apr 20 18:16:14 2015] [debug] Template "exception.development.html.ep" not found
+[Mon Apr 20 18:16:14 2015] [debug] Template "exception.html.ep" not found
+[Mon Apr 20 18:16:14 2015] [debug] Rendering cached inline template "fd403ab55a4c875e35b42428816134c7"
+[Mon Apr 20 18:16:14 2015] [debug] Rendering cached inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Mon Apr 20 18:16:14 2015] [debug] 500 Internal Server Error (0.010073s, 99.275/s)
+[Mon Apr 20 18:16:15 2015] [debug] GET "/create_account"
+[Mon Apr 20 18:16:15 2015] [debug] Rendering template "login/create_form.html.ep"
+[Mon Apr 20 18:16:15 2015] [error] syntax error at template login/create_form.html.ep line 99, near "} $_O "
+Global symbol "$_O" requires explicit package name at template login/create_form.html.ep line 99.
+Unmatched right curly bracket at template login/create_form.html.ep line 99, at end of line
+94:     <br/><br/><br/>
+95: 	%= submit_button 'Log me in', class => 'btn btn-lg btn-block btn-primary', id => 'submit_button'
+96: % end
+97: 	</div>
+98: </div>
+99: </div>
+
+[Mon Apr 20 18:16:15 2015] [debug] Template "exception.development.html.ep" not found
+[Mon Apr 20 18:16:15 2015] [debug] Template "exception.html.ep" not found
+[Mon Apr 20 18:16:15 2015] [debug] Rendering cached inline template "fd403ab55a4c875e35b42428816134c7"
+[Mon Apr 20 18:16:15 2015] [debug] Rendering cached inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Mon Apr 20 18:16:15 2015] [debug] 500 Internal Server Error (0.010778s, 92.782/s)
+[Mon Apr 20 18:16:56 2015] [debug] GET "/create_account"
+[Mon Apr 20 18:16:56 2015] [debug] Rendering template "login/create_form.html.ep"
+[Mon Apr 20 18:16:56 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Apr 20 18:16:56 2015] [debug] 200 OK (0.053546s, 18.676/s)
+[Mon Apr 20 18:17:04 2015] [debug] POST "/create_new_account"
+[Mon Apr 20 18:17:04 2015] [debug] Template "not_found.development.html.ep" not found
+[Mon Apr 20 18:17:04 2015] [debug] Template "not_found.html.ep" not found
+[Mon Apr 20 18:17:04 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Mon Apr 20 18:17:04 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Mon Apr 20 18:17:04 2015] [debug] 404 Not Found (0.028600s, 34.965/s)
+[Mon Apr 20 18:17:05 2015] [debug] GET "/create_new_account"
+[Mon Apr 20 18:17:05 2015] [debug] Template "not_found.development.html.ep" not found
+[Mon Apr 20 18:17:05 2015] [debug] Template "not_found.html.ep" not found
+[Mon Apr 20 18:17:05 2015] [debug] Rendering cached inline template "fd403ab55a4c875e35b42428816134c7"
+[Mon Apr 20 18:17:05 2015] [debug] Rendering cached inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Mon Apr 20 18:17:05 2015] [debug] 404 Not Found (0.008168s, 122.429/s)
+[Mon Apr 20 18:17:41 2015] [debug] POST "/create_new_account"
+[Mon Apr 20 18:17:41 2015] [debug] Template "not_found.development.html.ep" not found
+[Mon Apr 20 18:17:41 2015] [debug] Template "not_found.html.ep" not found
+[Mon Apr 20 18:17:41 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Mon Apr 20 18:17:41 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Mon Apr 20 18:17:41 2015] [debug] 404 Not Found (0.027625s, 36.199/s)
+[Mon Apr 20 18:17:41 2015] [debug] GET "/create_new_account"
+[Mon Apr 20 18:17:41 2015] [debug] Template "not_found.development.html.ep" not found
+[Mon Apr 20 18:17:41 2015] [debug] Template "not_found.html.ep" not found
+[Mon Apr 20 18:17:41 2015] [debug] Rendering cached inline template "fd403ab55a4c875e35b42428816134c7"
+[Mon Apr 20 18:17:41 2015] [debug] Rendering cached inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Mon Apr 20 18:17:41 2015] [debug] 404 Not Found (0.007607s, 131.458/s)
+[Mon Apr 20 18:17:50 2015] [debug] POST "/create_new_account"
+[Mon Apr 20 18:17:50 2015] [debug] Template "not_found.development.html.ep" not found
+[Mon Apr 20 18:17:50 2015] [debug] Template "not_found.html.ep" not found
+[Mon Apr 20 18:17:50 2015] [debug] Rendering cached inline template "fd403ab55a4c875e35b42428816134c7"
+[Mon Apr 20 18:17:50 2015] [debug] Rendering cached inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Mon Apr 20 18:17:50 2015] [debug] 404 Not Found (0.009135s, 109.469/s)
+[Mon Apr 20 18:17:50 2015] [debug] GET "/create_new_account"
+[Mon Apr 20 18:17:50 2015] [debug] Template "not_found.development.html.ep" not found
+[Mon Apr 20 18:17:50 2015] [debug] Template "not_found.html.ep" not found
+[Mon Apr 20 18:17:50 2015] [debug] Rendering cached inline template "fd403ab55a4c875e35b42428816134c7"
+[Mon Apr 20 18:17:50 2015] [debug] Rendering cached inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Mon Apr 20 18:17:50 2015] [debug] 404 Not Found (0.008979s, 111.371/s)
+[Mon Apr 20 18:18:13 2015] [debug] GET "/create_account"
+[Mon Apr 20 18:18:13 2015] [debug] Rendering template "login/create_form.html.ep"
+[Mon Apr 20 18:18:13 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Apr 20 18:18:13 2015] [debug] 200 OK (0.033526s, 29.828/s)
+[Mon Apr 20 18:18:55 2015] [debug] GET "/create_account"
+[Mon Apr 20 18:18:55 2015] [debug] Rendering template "login/create_form.html.ep"
+[Mon Apr 20 18:18:55 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Apr 20 18:18:55 2015] [debug] 200 OK (0.036403s, 27.470/s)
+[Mon Apr 20 18:19:10 2015] [debug] GET "/create_account"
+[Mon Apr 20 18:19:10 2015] [debug] Rendering template "login/create_form.html.ep"
+[Mon Apr 20 18:19:10 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Apr 20 18:19:10 2015] [debug] 200 OK (0.031965s, 31.284/s)
+[Mon Apr 20 18:19:27 2015] [debug] POST "/create_account"
+[Mon Apr 20 18:19:27 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_account"
+[Mon Apr 20 18:19:27 2015] [error] DBIx::Class::Storage::DBI::_dbh_execute(): DBI Exception: DBD::SQLite::st execute failed: NOT NULL constraint failed: users.company [for Statement "INSERT INTO users ( city, company, email, firstname, lastname, pw_hash, user_level, username, zipcode) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )"] at lib/Moblo/Controller/Login.pm line 111
+
+[Mon Apr 20 18:19:27 2015] [debug] Template "exception.development.html.ep" not found
+[Mon Apr 20 18:19:27 2015] [debug] Template "exception.html.ep" not found
+[Mon Apr 20 18:19:27 2015] [debug] Rendering inline template "fd403ab55a4c875e35b42428816134c7"
+[Mon Apr 20 18:19:27 2015] [debug] Rendering inline template "dd85456cf9f44e1e43bebae130a7f9df"
+[Mon Apr 20 18:19:27 2015] [debug] 500 Internal Server Error (0.045498s, 21.979/s)
+[Mon Apr 20 18:19:28 2015] [debug] GET "/create_account"
+[Mon Apr 20 18:19:28 2015] [debug] Rendering cached template "login/create_form.html.ep"
+[Mon Apr 20 18:19:28 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Mon Apr 20 18:19:28 2015] [debug] 200 OK (0.005050s, 198.020/s)
+[Mon Apr 20 18:20:00 2015] [debug] GET "/create_account"
+[Mon Apr 20 18:20:00 2015] [debug] Rendering template "login/create_form.html.ep"
+[Mon Apr 20 18:20:00 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Apr 20 18:20:00 2015] [debug] 200 OK (0.041816s, 23.914/s)
+[Mon Apr 20 18:20:10 2015] [debug] POST "/create_account"
+[Mon Apr 20 18:20:10 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_account"
+[Mon Apr 20 18:20:10 2015] [debug] 302 Found (0.004246s, 235.516/s)
+[Mon Apr 20 18:20:11 2015] [debug] GET "/create_account"
+[Mon Apr 20 18:20:11 2015] [debug] Rendering cached template "login/create_form.html.ep"
+[Mon Apr 20 18:20:11 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Mon Apr 20 18:20:11 2015] [debug] 200 OK (0.013000s, 76.923/s)
+[Mon Apr 20 18:20:41 2015] [debug] POST "/create_account"
+[Mon Apr 20 18:20:41 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_account"
+[Mon Apr 20 18:20:41 2015] [debug] 302 Found (0.193446s, 5.169/s)
+[Mon Apr 20 18:20:41 2015] [debug] GET "/login"
+[Mon Apr 20 18:20:41 2015] [debug] Rendering template "login/login_form.html.ep"
+[Mon Apr 20 18:20:41 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Mon Apr 20 18:20:41 2015] [debug] 200 OK (0.026707s, 37.443/s)
+[Mon Apr 20 18:21:14 2015] [debug] GET "/create_account"
+[Mon Apr 20 18:21:14 2015] [debug] Rendering template "login/create_form.html.ep"
+[Mon Apr 20 18:21:14 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Apr 20 18:21:14 2015] [debug] 200 OK (0.045063s, 22.191/s)
+[Mon Apr 20 18:21:43 2015] [debug] GET "/create_account"
+[Mon Apr 20 18:21:43 2015] [debug] Rendering template "login/create_form.html.ep"
+[Mon Apr 20 18:21:43 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Apr 20 18:21:43 2015] [debug] 200 OK (0.035203s, 28.407/s)
+[Mon Apr 20 18:21:45 2015] [debug] GET "/create_account"
+[Mon Apr 20 18:21:45 2015] [debug] Rendering cached template "login/create_form.html.ep"
+[Mon Apr 20 18:21:45 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Mon Apr 20 18:21:45 2015] [debug] 200 OK (0.003305s, 302.572/s)
+[Mon Apr 20 18:22:04 2015] [debug] GET "/create_account"
+[Mon Apr 20 18:22:04 2015] [debug] Rendering template "login/create_form.html.ep"
+[Mon Apr 20 18:22:04 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Apr 20 18:22:04 2015] [debug] 200 OK (0.052619s, 19.005/s)
+[Mon Apr 20 18:22:20 2015] [debug] GET "/create_account"
+[Mon Apr 20 18:22:20 2015] [debug] Rendering template "login/create_form.html.ep"
+[Mon Apr 20 18:22:20 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Apr 20 18:22:20 2015] [debug] 200 OK (0.032764s, 30.521/s)
+[Mon Apr 20 18:22:24 2015] [debug] GET "/create_account"
+[Mon Apr 20 18:22:24 2015] [debug] Rendering cached template "login/create_form.html.ep"
+[Mon Apr 20 18:22:24 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Mon Apr 20 18:22:24 2015] [debug] 200 OK (0.003310s, 302.115/s)
+[Mon Apr 20 18:22:43 2015] [debug] POST "/create_account"
+[Mon Apr 20 18:22:43 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_account"
+[Mon Apr 20 18:22:43 2015] [debug] 302 Found (0.200126s, 4.997/s)
+[Mon Apr 20 18:22:43 2015] [debug] GET "/login"
+[Mon Apr 20 18:22:43 2015] [debug] Rendering template "login/login_form.html.ep"
+[Mon Apr 20 18:22:43 2015] [debug] Rendering cached template "layouts/base.html.ep"
+[Mon Apr 20 18:22:43 2015] [debug] 200 OK (0.022494s, 44.456/s)
+[Mon Apr 20 18:22:50 2015] [debug] POST "/login"
+[Mon Apr 20 18:22:50 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Mon Apr 20 18:22:50 2015] [debug] 302 Found (0.023105s, 43.281/s)
+[Mon Apr 20 18:22:50 2015] [debug] GET "/customer"
+[Mon Apr 20 18:22:50 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Mon Apr 20 18:22:50 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Mon Apr 20 18:22:50 2015] [debug] Rendering template "customer/customer_overview.html.ep"
+[Mon Apr 20 18:22:50 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Apr 20 18:22:50 2015] [debug] 200 OK (0.011372s, 87.935/s)
+[Mon Apr 20 18:22:53 2015] [debug] POST "/customer/profile"
+[Mon Apr 20 18:22:53 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Mon Apr 20 18:22:53 2015] [debug] Routing to controller "Moblo::Controller::Customer" and action "render_profile"
+[Mon Apr 20 18:22:53 2015] [debug] Rendering template "customer/profile.html.ep"
+[Mon Apr 20 18:22:53 2015] [debug] Rendering template "layouts/default.html.ep"
+[Mon Apr 20 18:22:53 2015] [debug] 200 OK (0.042101s, 23.752/s)
+[Mon Apr 20 18:23:44 2015] [debug] POST "/login"
+[Mon Apr 20 18:23:45 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Mon Apr 20 18:23:45 2015] [debug] 302 Found (0.062974s, 15.880/s)
+[Mon Apr 20 18:23:45 2015] [debug] GET "/customer"
+[Mon Apr 20 18:23:45 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Mon Apr 20 18:23:45 2015] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Mon Apr 20 18:23:45 2015] [debug] Rendering template "customer/customer_overview.html.ep"
+[Mon Apr 20 18:23:45 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Apr 20 18:23:45 2015] [debug] 200 OK (0.010262s, 97.447/s)
+[Mon Apr 20 18:23:48 2015] [debug] GET "/create_account"
+[Mon Apr 20 18:23:48 2015] [debug] Rendering template "login/create_form.html.ep"
+[Mon Apr 20 18:23:48 2015] [debug] Rendering template "layouts/base.html.ep"
+[Mon Apr 20 18:23:48 2015] [debug] 200 OK (0.014315s, 69.857/s)

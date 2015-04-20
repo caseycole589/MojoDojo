@@ -1,13 +1,11 @@
-<script type="type=text/javascript">
+<script type="text/javascript">
 	$(document).ready(function(){
 
-		$('.selectpicker').selectpicker({
-      		style: 'btn-info',
-      		size: 4
-  		});
+	
 	});
 </script>
-<div class="container">
+<div class="effect8 box">
+<div class="container ">
     <h1> Create a new account</h1>
     <%# if there is something in hash missing field %>
 
@@ -55,8 +53,9 @@
 
 	%= label_for company => 'Company', class => "control-label col-xs-2"
 	 <div class=" col-xs-10">
-       <select class="form-control selectpicker">
+       <select class="form-control selectpicker" name="company">
        	  	% my $company = db->resultset('Company')->search({},{group_by =>[qw/name/],});
+       	  	<option></option>
        	  	% while (my $company = $company->next){
 				<option>
 					<%= $company->name %>
