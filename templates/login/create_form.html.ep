@@ -63,9 +63,7 @@
 			%}
        </select>
       </div>
-	<!-- <div class="col-xs-10">
-		<input type="text" name="company" id='company' placeholder="Company" class="form-control" required autocomplete>
-	</div> -->
+
 	%=tag 'br'
 	%=tag 'br'
 
