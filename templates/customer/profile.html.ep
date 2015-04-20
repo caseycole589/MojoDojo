@@ -17,16 +17,9 @@
 		%=tag 'br'
 		%=tag 'br'
 
-		%= label_for company => 'Company:', class => "control-label col-xs-2"
-		<div class="col-xs-10">
-			<input type="text" name="company" id='company' placeholder="Company" class="form-control" required autocomplete>
-		</div>
-		%=tag 'br'
-		%=tag 'br'
-
 		%= label_for email => 'Email:' , class => "control-label col-xs-2"
 			<div class="col-xs-10">
-		<input type="email" name='email' id='email'class="form-control" placeholder="Email" autocomplete required autocomplete>
+		<input type="email" name='email' id='email'class="form-control"  placeholder="Email" autocomplete required autocomplete>
 		</div>
 		%=tag 'br'
 		%=tag 'br'
@@ -51,7 +44,7 @@
         var need_update = {
             "firstname":document.getElementById('firstname').value,
             "lastname":document.getElementById('lastname').value,
-            "company":document.getElementById('company').value,
+          
             "city":document.getElementById('city').value,
             "email":document.getElementById('email').value,
             "zipcode":document.getElementById('zipcode').value
@@ -64,9 +57,7 @@
         if($("#lastname").val() !== ""){
             should_alert = true;
         }   
-        if($("#company").val() !== ""){
-            should_alert = true;
-        }
+
         if($("#city").val() !== ""){
             should_alert = true;
         }

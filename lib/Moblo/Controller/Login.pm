@@ -35,6 +35,11 @@ sub on_user_login {
 		$self->session(user_id => $user->id);
 		$self->session(company => $user->company);
 		$self->session(user_level => $user->user_level);
+		$self->session(zipcode => $user->zipcode);
+		$self->session(city => $user->city);
+		$self->session(email => $user->email);
+		$self->session(firstname => $user->firstname);
+		$self->session(lastname => $user->lastname);
 		#redirect to admin screen
 		if($user->user_level eq 'admin'){
 			$self->redirect_to('/admin');
@@ -58,7 +63,7 @@ sub is_logged_in_admin {
 
 	my $self = shift;
 
-	return 1 if $self->session('logged_in');
+	return 1 if $self->session('logged_in') && $self->session('user_level') eq 'admin';
 	
 	$self->render(
 		text =>'<h1> Your no longer logged in </h1>',
@@ -68,6 +73,11 @@ sub is_logged_in_admin {
 sub is_logged_in_customer {
 	my $self = shift;
 	return 1 if $self->session('logged_in') && $self->session('user_level') eq 'customer';
+
+	$self->render(
+		text =>'<h1> Your no longer logged in </h1>',
+		status => 403
+	);
 }
 
 sub create_new_account{
@@ -183,5 +193,14 @@ sub create_admin {
 
     
 }
+
+# sub company_selection {
+# 	my $self = shift;
+# 	#get all company names
+# 	my @all_companys = $self->db->resultset('Company')->search(undef,{
+# 		columns =>['name'],
+# 	});
+# 	$self->render(json => {comapany => @all_companys});
+# }
 
 1;

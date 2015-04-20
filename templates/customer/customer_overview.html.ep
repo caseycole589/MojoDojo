@@ -13,8 +13,8 @@
     <!-- Collection of nav links, forms, and other content for toggling -->
     <div id="navbarCollapse" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-            <li class="active" id="home_nav"><a href="#">Home</a></li>
-            <li id="profile_nav"><a href="#" onclick="show_profile();">Profile</a></li>
+            <li class="active"onclick="show_home();"id="home_nav"><a href="#">Home</a></li>
+            <li id="profile_nav" onclick="show_profile();"><a href="#" >Profile</a></li>
             <li class="dropdown">
                 <a data-toggle="dropdown" class="dropdown-toggle" href="#">Messages <b class="caret"></b></a>
                 <ul role="menu" class="dropdown-menu">
@@ -49,67 +49,74 @@
     </div>
 </nav>
 
-
- <a id="welcome" class="navbar-brand" href="#">Wecome Back <%=  session('username');%></a>
- <h3 hidden id="profile_heading">Update your profile <small>hope you didn't change to much</small></h3>
-<br/><br/><br/>
-
-<div class="container" id="random_content">
-    <div class="row">
-
-        <div class="col-md-4"><p>Box 1</p></div>
-
-        <div class="col-md-4"><p>Box 2</p></div>
-
-        <div class="col-md-4"><p>Box 3</p></div>
-
-        <div class="clearfix visible-md-block"></div>
-
-        <div class="col-md-4"><p>Box 4</p></div>
-
-        <div class="col-md-4"><p>Box 5</p></div>
-
-        <div class="col-md-4"><p>Box 6</p></div>
-
-        <div class="clearfix visible-md-block"></div>
-
-        <div class="col-md-4"><p>Box 7</p></div>
-
-        <div class="col-md-4"><p>Box 8</p></div>
-
-        <div class="col-md-4"><p>Box 9</p></div>
-
-        <div class="clearfix visible-md-block"></div>
-
-        <div class="col-md-4"><p>Box 10</p></div>
-
-        <div class="col-md-4"><p>Box 11</p></div>
-
-        <div class="col-md-4"><p>Box 12</p></div>
-
+<div id="boxer" class="box effect8">
+    <a id="welcome" class="navbar-brand" href="#">Wecome Back <%=  session('username');%>
+    </a>
+    <div class="box effect8">
+        <h3 hidden id="profile_heading">Update your profile 
+            <small>hope you didn't change to much</small>
+        </h3>
     </div>
-    <div style="margin:20px;">
-        <ul class="breadcrumb">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Products</a></li>
-            <li class="active">Accessories</li>
-        </ul>
-    </div>
+    <br/>
+    <br/>
+    <br/>
 
-    <p class="visible-xs-block">This paragraph is visible only on extra small devices.</p>
+    <div class="container" id="random_content">
+        <div class="row">
 
-    <p class="visible-sm-block">This paragraph is visible only on small devices.</p>
+            <div class="col-md-4"><p>Box 1</p></div>
 
-    <p class="visible-md-block">This paragraph is visible only on medium devices.</p>
+            <div class="col-md-4"><p>Box 2</p></div>
 
-    <p class="visible-lg-block">This paragraph is visible only on large devices.</p>
+            <div class="col-md-4"><p>Box 3</p></div>
 
-<!-- set up access to users in database -->
-<%=  session('username'); %>
+            <div class="clearfix visible-md-block"></div>
+
+            <div class="col-md-4"><p>Box 4</p></div>
+
+            <div class="col-md-4"><p>Box 5</p></div>
+
+            <div class="col-md-4"><p>Box 6</p></div>
+
+            <div class="clearfix visible-md-block"></div>
+
+            <div class="col-md-4"><p>Box 7</p></div>
+
+            <div class="col-md-4"><p>Box 8</p></div>
+
+            <div class="col-md-4"><p>Box 9</p></div>
+
+            <div class="clearfix visible-md-block"></div>
+
+            <div class="col-md-4"><p>Box 10</p></div>
+
+            <div class="col-md-4"><p>Box 11</p></div>
+
+            <div class="col-md-4"><p>Box 12</p></div>
+
+        </div>
+        <div style="margin:20px;">
+            <ul class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li class="active">Accessories</li>
+            </ul>
+        </div>
+
+        <p class="visible-xs-block">This paragraph is visible only on extra small devices.</p>
+
+        <p class="visible-sm-block">This paragraph is visible only on small devices.</p>
+
+        <p class="visible-md-block">This paragraph is visible only on medium devices.</p>
+
+        <p class="visible-lg-block">This paragraph is visible only on large devices.</p>
+
+    <!-- set up access to users in database -->
+    <%=  session('username'); %>
+
 
 </div>
-<div id="diver"></div>
-
+    <div id="diver" class="box effect8"></div>
 
 <script type="text/javascript">
 	
@@ -126,6 +133,8 @@
                 $("#diver").html("");
                 $("#home_nav").removeClass('active');
                 $('#profile_nav').addClass('active');
+                $("#boxer").removeClass("box");
+                $("#boxer").removeClass("effect8");
                 document.getElementById('welcome').style.display = 'none';
                 document.getElementById('profile_heading').style.display = 'inline';
                 $("#random_content").remove();
@@ -135,5 +144,14 @@
         });
 	}
 
-    
+    function show_home (argument) {
+        $("#diver").html("");
+        $("#boxer").addClass("box");
+                $("#boxer").addClass("effect8");
+        document.getElementById('welcome').style.display = 'inline';
+        document.getElementById('profile_heading').style.display = 'none';
+
+        $("#profile_nav").removeClass('active');
+        $('#home_nav').addClass('active');
+    }
 </script>

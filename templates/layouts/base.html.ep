@@ -6,10 +6,70 @@
     <meta name="viewport" content="width=device-width, intitial-scale=1">
     <title><%= title %></title>
 
-    <script src="js/jquery.min.js" type="text/javascript"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css">
+    <script src="js/jquery.min.js" type="text/javascript"></script>
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap-select.min.js" type="text/javascript"></script>
+    <style type="text/css">
+    body {
+ 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      font-family:  sans-serif;
+      background-image: url('images/fabric.jpg')
+    }
+      .box h3{
+        text-align:center;
+        position:relative;
+        top:80px;
+      }
+      .box {
+        width:70%;
+        height:50%;
+        background:#FFF;
+        margin:40px auto;
+      }
+
+      /*==================================================
+       * Effect 8
+       * ===============================================*/
+      .effect8
+      {
+          position:relative;       
+          -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+             -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+                  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      }
+      .effect8:before, .effect8:after
+      {
+        content:"";
+          position:absolute; 
+          z-index:-1;
+          -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+          -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+          box-shadow:0 0 20px rgba(0,0,0,0.8);
+          top:10px;
+          bottom:10px;
+          left:0;
+          right:0;
+          -moz-border-radius:100px / 10px;
+          border-radius:100px / 10px;
+      } 
+      .effect8:after
+      {
+        right:10px; 
+          left:auto;
+          -webkit-transform:skew(8deg) rotate(3deg); 
+             -moz-transform:skew(8deg) rotate(3deg);     
+              -ms-transform:skew(8deg) rotate(3deg);     
+               -o-transform:skew(8deg) rotate(3deg); 
+                  transform:skew(8deg) rotate(3deg);
+      }
+    </style>
 </head>
 <body>
 
