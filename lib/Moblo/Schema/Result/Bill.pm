@@ -33,13 +33,13 @@ __PACKAGE__->add_columns(
         default_value => \"(datetime('now'))",
     },
 
-  #   amount => {
-		# data_type => 'decimal',
-	 #    size => [9,2],
-  #       is_nullable => 0,
-  #       default_valuev=> '0.00',
+    amount => {
+		data_type => 'decimal',
+	    size => [9,2],
+        is_nullable => 0,
+        default_valuev=> '0.00',
   #       is_currency => 1,
-  #   },
+    },
 
     is_payed => {
     	data_type => 'int',

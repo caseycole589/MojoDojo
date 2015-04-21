@@ -92,13 +92,36 @@
     <p class="visible-lg-block">This paragraph is visible only on large devices.</p>
 
 
-<!-- set up access to users in database -->
+
 % my $users = db->resultset('User');
 <%=  session('username'); %>
 
-%= link_to "Create new post" => 'create_post'
 
-%= link_to  Logout => '/logout'
+<div class="form-group">
+    <button onclick="get_customers();">click to view customers</button>
+</div>
 
-@@ add posts here later
+<div id='customers_div'>
+    
+</div>
+<script type="text/javascript">
+    function get_customers(){
+        $.ajax({
+            type: "POST",
+            url: "/admin/render_customers",
+            dataType: "html",
+            async:true,
+            success: function (msg, status)
+            {
+                $("#customers_div").html("");
+                $("#customers_div").append(msg);
+            }            
+        });
+    }
+
+
+</script>
+
+
+<!-- @@ add posts here later -->
 </div>

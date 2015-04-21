@@ -70,7 +70,8 @@ sub startup {
   #this behaves like router object we can use it to define restricted routes
   my $authorized = $r->under('/admin')->to('Login#is_logged_in_admin');
   $authorized->get('/')->name('restricted_area')->to(template => 'admin/admin_overview');
-  
+  $authorized->post('/render_customers')->to('Admin#render_customers');
+
   my $customer = $r->under('/customer')->to('Login#is_logged_in_customer');
   $customer->get('/')->to(template => 'customer/customer_overview');
   # $customer->post('/')->to('Customer');

@@ -130,7 +130,7 @@
             async:true,
             success: function (msg, status)
             {
-                $("#diver").html("");
+                
                 $("#home_nav").removeClass('active');
                 $('#profile_nav').addClass('active');
                 $("#boxer").removeClass("box");
