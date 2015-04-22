@@ -36,8 +36,8 @@
     </div>
 </nav>
 
-
- <a class="navbar-brand" href="#">Wecome Back <%=  session('username');%></a>
+<!-- Not correct class -->
+<a class="navbar-brand" href="#">Wecome Back <%=  session('username');%></a>
 <br/><br/><br/>
 
 

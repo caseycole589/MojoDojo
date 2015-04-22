@@ -49,18 +49,18 @@
     </div>
 </nav>
 
-<div id="boxer" class="box effect8">
-    <a id="welcome" class="navbar-brand" href="#">Wecome Back <%=  session('username');%>
-    </a>
-    <div class="box effect8">
+<!-- #boxer => Controls the width and whatnot of everything else -->
+<!-- style="width: 57%; margin-left: auto; margin-right:auto; background-color:white;" -->
+
+<div id="boxer" class="paper paper-curve-horiz" style="min-height: 475px !important; width: 50%; margin-left:auto; margin-right:auto;">
+    <a id="welcome" href="#">Wecome Back <%=  session('username');%></a>
+    
+    <div class="page-header text-center">
         <h3 hidden id="profile_heading">Update your profile 
-            <small>hope you didn't change to much</small>
+            <small>Hope you haven't change too much</small>
         </h3>
     </div>
-    <br/>
-    <br/>
-    <br/>
-
+    
     <div class="container" id="random_content">
         <div class="row">
 
@@ -94,29 +94,27 @@
 
             <div class="col-md-4"><p>Box 12</p></div>
 
-        </div>
+        </div> <!-- End 'row' -->
+
         <div style="margin:20px;">
             <ul class="breadcrumb">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Products</a></li>
                 <li class="active">Accessories</li>
             </ul>
-        </div>
+        </div> <!-- End breadcrumbs -->
 
         <p class="visible-xs-block">This paragraph is visible only on extra small devices.</p>
-
         <p class="visible-sm-block">This paragraph is visible only on small devices.</p>
-
         <p class="visible-md-block">This paragraph is visible only on medium devices.</p>
-
         <p class="visible-lg-block">This paragraph is visible only on large devices.</p>
 
     <!-- set up access to users in database -->
     <%=  session('username'); %>
-
-
 </div>
-    <div id="diver" class="box effect8"></div>
+
+<!-- #diver => Controls the width and whatnot of the form -->
+<div id="diver" style="margin-left: 150px; margin-right: -150px;"></div>
 
 <script type="text/javascript">
 	

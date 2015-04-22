@@ -1,42 +1,46 @@
 %layout 'default';
 
-<div class="container form-group">
-	
-		%= label_for firstname => 'First Name:', class => "control-label col-xs-2"
-	   	<div class="col-xs-10">
-		 	<input type="text" name="firstname"  id='firstname' placeholder='First Name' class='form-control' >
-		</div>
+<div class="form form-horizontal">
+	<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+        <div class="form-group"> 
+    	    %= label_for firstname => 'First Name:', class => "control-label col-xs-4"
+       	    <div class="col-xs-7">
+    	 	    <input type="text" name="firstname"  id='firstname' placeholder='First Name' class='form-control' >
+    	    </div>
+        </div>
 
-		%=tag 'br'
-		%=tag 'br'
-			%= label_for lastname => 'Last Name:', class => 'control-label col-xs-2'
-			<div class="col-xs-10">
-				<input type="text" name="lastname" placeholder="Last Name " id='lastname' class="form-control" >
-			</div>
+        <div class="form-group"> 
+    		%= label_for lastname => 'Last Name:', class => 'control-label col-xs-4'
+    		<div class="col-xs-7">
+    			<input type="text" name="lastname" placeholder="Last Name " id='lastname' class="form-control" >
+    		</div>
+        </div>
 
-		%=tag 'br'
-		%=tag 'br'
+        <div class="form-group"> 
+    	    %= label_for email => 'Email:' , class => "control-label col-xs-4"
+    		<div class="col-xs-7">
+    	        <input type="email" name='email' id='email'class="form-control"  placeholder="Email" autocomplete required autocomplete>
+    	    </div>
+        </div>
 
-		%= label_for email => 'Email:' , class => "control-label col-xs-2"
-			<div class="col-xs-10">
-		<input type="email" name='email' id='email'class="form-control"  placeholder="Email" autocomplete required autocomplete>
-		</div>
-		%=tag 'br'
-		%=tag 'br'
+        <div class="form-group"> 
+    	    %= label_for city => 'City:' , class => "control-label col-xs-4"
+    		<div class="col-xs-7">
+    		    <input type="text" name="city" id='city' placeholder="City" class="form-control">
+    	    </div>
+        </div>
 
-		%= label_for city => 'City:' , class => "control-label col-xs-2"
-			<div class="col-xs-10">
-			<input type="text" name="city" id='city' placeholder="City" class="form-control">
-		</div>
-		%=tag 'br'
-		%=tag 'br'
-
-		%= label_for zipcode => 'Zip Code:' , class => "control-label col-xs-2"
-		<div class="col-xs-10">
-			<input type="text" name="zip" id='zipcode' placeholder="Zip Code" class="form-control" required autocomplete>
-		</div>
-		<br/>
-		<button id="changebutton" class="btn btn-lg btn-success" onclick="change_info()">Update </button>
+        <div class="form-group"> 
+    	    %= label_for zipcode => 'Zip Code:' , class => "control-label col-xs-4"
+    	    <div class="col-xs-7">
+    		    <input type="text" name="zip" id='zipcode' placeholder="Zip Code" class="form-control" required autocomplete>
+    	    </div>
+        </div>
+    	<hr />
+        <div class="form-group" style="margin-right: 45px;">
+    	    <button id="changebutton" class="btn btn-lg btn-success pull-right" onclick="change_info()">Update </button>
+        </div>
+    </div>
 </div>
 <script type="text/javascript">
 	function change_info (argument) {
