@@ -12,8 +12,8 @@
     <!-- Collection of nav links, forms, and other content for toggling -->
     <div id="navbarCollapse" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Profile</a></li>
+            <li id="home_toolbar" class="active"><a href="#">Home</a></li>
+            <li id="customer_toolbar" onclick="get_customers();"><a href="#">Customers</a></li>
             <li class="dropdown">
                 <a data-toggle="dropdown" class="dropdown-toggle" href="#">Messages <b class="caret"></b></a>
                 <ul role="menu" class="dropdown-menu">
@@ -37,11 +37,12 @@
 </nav>
 
 <!-- Not correct class -->
-<a class="navbar-brand" href="#">Wecome Back <%=  session('username');%></a>
+<div class="container" style="background-color:white;"><a class="navbar-brand" href="#">Wecome Back <%=  session('username');%></a>
+</div>
 <br/><br/><br/>
 
 
-<div class="container">
+<!-- <div class="container">
 	<div class="row">
 
         <div class="col-md-4"><p>Box 1</p></div>
@@ -91,20 +92,21 @@
 
     <p class="visible-lg-block">This paragraph is visible only on large devices.</p>
 
-
+ -->
 
 % my $users = db->resultset('User');
-<%=  session('username'); %>
-
-
+<!--  -->
+<!-- 
 <div class="form-group">
     <button onclick="get_customers();">click to view customers</button>
 </div>
-
-<div id='customers_div'>
+ -->
+<div id='customers_div' class="container" style="background-color:white;">
     
 </div>
+<br/><br/>
 <script type="text/javascript">
+    $("#customers_div").html("");
     function get_customers(){
         $.ajax({
             type: "POST",
@@ -113,15 +115,28 @@
             async:true,
             success: function (msg, status)
             {
-                $("#customers_div").html("");
+                $("#customers_div").append(msg);
+            }            
+        });
+        $("#home_toolbar").removeClass('active');
+        $("#customer_toolbar").addClass('active');
+    }
+
+    function get_message_display(){
+        $("#customers_div").html("");
+         $.ajax({
+            type: "POST",
+            url: "/admin/render_message",
+            dataType: "html",
+            async:true,
+            success: function (msg, status)
+            {
                 $("#customers_div").append(msg);
             }            
         });
     }
-
-
 </script>
 
 
 <!-- @@ add posts here later -->
-</div>
+<!-- </div> -->

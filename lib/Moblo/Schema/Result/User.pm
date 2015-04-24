@@ -40,7 +40,7 @@ __PACKAGE__->add_columns(
 	},
 
 	zipcode => {
-		data_type => 'integer',
+		data_type => 'text',
 	},
 
 	email => {

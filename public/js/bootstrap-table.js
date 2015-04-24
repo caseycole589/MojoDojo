@@ -132,7 +132,7 @@
         undefinedText: '-',
         sortName: undefined,
         sortOrder: 'asc',
-        striped: true,
+        striped: false,
         columns: [],
         data: [],
         method: 'get',
@@ -162,7 +162,7 @@
         selectItemName: 'btSelectItem',
         showHeader: true,
         showFooter: false,
-        showColumns: false,
+        showColumns: true,
         showPaginationSwitch: false,
         showRefresh: false,
         showToggle: true,
@@ -170,16 +170,16 @@
         smartDisplay: true,
         minimumCountColumns: 1,
         idField: undefined,
-        uniqueId: undefined,
+        uniqueId: true,
         cardView: false,
         trimOnSearch: true,
-        clickToSelect: false,
+        clickToSelect: true,
         singleSelect: false,
         toolbar: undefined,
         toolbarAlign: 'left',
         checkboxHeader: true,
         sortable: true,
-        maintainSelected: false,
+        maintainSelected: true,
         searchTimeOut: 500,
         keyEvents: false,
         searchText: '',
@@ -214,6 +214,13 @@
             return false;
         },
         onCheck: function (row) {
+            if(document.URL.indexOf("/admin") !== -1){
+                document.getElementById('message_button').style.display = 'inline';
+                document.getElementById('bill_button').style.display = 'inline'; 
+            };
+            if(document.URL.indexOf("/customer") !== -1){
+                document.getElementById('')
+            }
             return false;
         },
         onUncheck: function (row) {

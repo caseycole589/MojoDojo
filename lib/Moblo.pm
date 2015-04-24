@@ -71,6 +71,10 @@ sub startup {
   my $authorized = $r->under('/admin')->to('Login#is_logged_in_admin');
   $authorized->get('/')->name('restricted_area')->to(template => 'admin/admin_overview');
   $authorized->post('/render_customers')->to('Admin#render_customers');
+  $authorized->post('/render_message')->to('Admin#render_message');
+  
+
+
 
   my $customer = $r->under('/customer')->to('Login#is_logged_in_customer');
   $customer->get('/')->to(template => 'customer/customer_overview');
@@ -83,12 +87,12 @@ sub startup {
   
   $self->helper(db => sub{return $schema;});
 
-  $authorized->get('/create')->name('create_post')->to(template => 'admin/create_post');
-  $authorized->post('/create')->name('publish_post')->to('Post#create');
-  #on get display a template asking to confirm deletion.
-  $authorized->get('/delete/:id',[id=>qr/\d+/])->name('delete_post')->to(template => 'admin/delete_post_confirm');
-  #on POST, delete the post 
-  $authorized->post('/delete/:id',[id => qr/\d+/])->name('delete_post_confirmed')->to('Post#delete'); 
+  # $authorized->get('/create')->name('create_post')->to(template => 'admin/create_post');
+  # $authorized->post('/create')->name('publish_post')->to('Post#create');
+  # #on get display a template asking to confirm deletion.
+  # $authorized->get('/delete/:id',[id=>qr/\d+/])->name('delete_post')->to(template => 'admin/delete_post_confirm');
+  # #on POST, delete the post 
+  # $authorized->post('/delete/:id',[id => qr/\d+/])->name('delete_post_confirmed')->to('Post#delete'); 
 }
 
 1;

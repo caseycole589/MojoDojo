@@ -13,6 +13,11 @@ sub get_customers {
 }
 sub render_customers {
 	my $self = shift;
-	$self->render(template => "admin/create_bill");
+	$self->render(template => "admin/customers");
+}
+
+sub render_message{
+	my $self = shift;
+	$self->render(template => "admin/message");
 }
 1;

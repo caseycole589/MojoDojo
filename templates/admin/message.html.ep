@@ -1,0 +1,70 @@
+%layout 'default';
+
+<div class="container" style="background-color:white;">
+	<h4>Please Select a Message Template to Send</h4>
+	<br/>
+	<div class="panel-group">
+	<input type="radio" name="template_chooser">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				Inform customers about our benifits.
+			</div>
+			<div class="panel-body">
+			 	Dear _____ we would like take a minute of your time to tell you an about these security/energy saving tips
+			 	<ul>
+			 		<li>
+			 			tip ______
+			 		</li>
+			 		<li>
+			 			tip ______
+			 		</li>
+			 		<li>
+			 			tip ______
+			 		</li>
+			 		<li>
+			 			etc....
+			 		</li>
+			 	</ul> 
+			</div>
+		</div>
+	</div>
+	<div class="panel-group">
+	<input type="radio" name="template_chooser">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				Inform customers about hurricane/disaster preparedness related to bill
+			</div>
+			<div class="panel-body">
+			 	<p>Dear ____ 
+			 		After reviewing you last payment we sould like to take a moment to tell you about how 
+			 		you could save a lot of money by being prepared for hurricanes and other related disasters 
+			 		......
+			 		......
+			 		......
+			 	</p>
+			</div>
+		</div>
+	</div>
+	<div class="panel-group">
+	<input type="radio" name="template_chooser">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				World Class
+			</div>
+			<div class="panel-body">
+			 	fuck
+			</div>
+		</div>
+	</div>
+	<div class="panel-group">
+	<input type="radio" name="template_chooser">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				World Class
+			</div>
+			<div class="panel-body">
+			 	fuck
+			</div>
+		</div>
+	</div>
+</div>

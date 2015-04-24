@@ -1,0 +1,60 @@
+%layout 'default';
+
+
+    %my $customers = $self->db->resultset('User');
+    %my $awn = $customers->search({company => $self->session('company')});
+   
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#customer_table").bootstrapTable(); 
+    });
+</script>
+
+<h2> Customers</h2>
+
+<table id="customer_table"  data-toggle="table">
+    <thead>
+        <tr>
+            <th data-sortable="false" data-field="id" data-checkbox="true">
+            </th>
+            <th data-field="firstname">First Name</th>
+            <th data-field="lastname">Last Name</th>
+            <th data-field="city">City</th>
+            <th data-field="zipcode">Zip Code</th>
+            <th data-filed="email">Email</th>
+        </tr>
+    </thead>
+    <tbody>
+
+    %while (my $awn = $awn->next) { 
+    %next if $awn->user_level eq 'admin';
+        <tr>
+            <td>
+                <input class="bs-checkbox" type="checkbox" value="<%= $awn->id %>">
+            </td>
+            <td>
+                <%= $awn->firstname %>
+            </td>
+            <td>
+                <%= $awn->lastname %>
+            </td>
+            <td>
+                <%= $awn->city %>
+            </td>
+            <td>
+                <%= $awn->zipcode %>
+            </td> 
+            <td>
+                <%= $awn->email %>
+            </td>
+        </tr>
+    %}
+    </tbody>
+</table>
+<br/>
+<div class="btn-toolbar">
+
+    <button onclick="get_message_display();" style="display:none;margin-left:10px" id="message_button" class="btn btn-primary btn-lg">Send a Message</button>
+    <button style="display:none;" id="bill_button" class="btn btn-lg btn-primary">Send a bill</button>
+    <br/><br/>
+</div>
