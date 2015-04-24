@@ -13,10 +13,16 @@
     <!-- Collection of nav links, forms, and other content for toggling -->
     <div id="navbarCollapse" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-            <li class="active"onclick="show_home();"id="home_nav"><a href="#">Home</a></li>
+            <li class="active"onclick="show_home();"id="home_nav">
+                <a href="#">
+                    <span class="glyphicon glyphicon-home"></span>&nbsp;Home
+                </a>
+            </li>
             <li id="profile_nav" onclick="show_profile();"><a href="#" >Profile</a></li>
             <li class="dropdown">
-                <a data-toggle="dropdown" class="dropdown-toggle" href="#">Messages <b class="caret"></b></a>
+               <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                    <span class="glyphicon glyphicon-envelope"></span>&nbsp;Messages<b class="caret"></b>
+                </a>
                 <ul role="menu" class="dropdown-menu">
                     <li><a href="#">Inbox</a></li>
                     <li><a href="#">Drafts</a></li>
@@ -51,9 +57,9 @@
 
 <!-- #boxer => Controls the width and whatnot of everything else -->
 <!-- style="width: 57%; margin-left: auto; margin-right:auto; background-color:white;" -->
-
-<div id="boxer" class="paper paper-curve-horiz" style="min-height: 475px !important; width: 50%; margin-left:auto; margin-right:auto;">
-    <a id="welcome" href="#">Wecome Back <%=  session('username');%></a>
+<br/><br/>
+<div id="boxer" class="paper paper-curve-horiz" style="min-height: 475px !important; width: 75%; margin-left:auto; margin-right:auto;">
+    <h4><b><a id="welcome" href="#">Wecome Back <%=  session('username');%></a></b></h4>
     
     <div class="page-header text-center">
         <h3 hidden id="profile_heading">Update your profile 
@@ -61,60 +67,10 @@
         </h3>
     </div>
     
-    <div class="container" id="random_content">
-        <div class="row">
-
-            <div class="col-md-4"><p>Box 1</p></div>
-
-            <div class="col-md-4"><p>Box 2</p></div>
-
-            <div class="col-md-4"><p>Box 3</p></div>
-
-            <div class="clearfix visible-md-block"></div>
-
-            <div class="col-md-4"><p>Box 4</p></div>
-
-            <div class="col-md-4"><p>Box 5</p></div>
-
-            <div class="col-md-4"><p>Box 6</p></div>
-
-            <div class="clearfix visible-md-block"></div>
-
-            <div class="col-md-4"><p>Box 7</p></div>
-
-            <div class="col-md-4"><p>Box 8</p></div>
-
-            <div class="col-md-4"><p>Box 9</p></div>
-
-            <div class="clearfix visible-md-block"></div>
-
-            <div class="col-md-4"><p>Box 10</p></div>
-
-            <div class="col-md-4"><p>Box 11</p></div>
-
-            <div class="col-md-4"><p>Box 12</p></div>
-
-        </div> <!-- End 'row' -->
-
-        <div style="margin:20px;">
-            <ul class="breadcrumb">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li class="active">Accessories</li>
-            </ul>
-        </div> <!-- End breadcrumbs -->
-
-        <p class="visible-xs-block">This paragraph is visible only on extra small devices.</p>
-        <p class="visible-sm-block">This paragraph is visible only on small devices.</p>
-        <p class="visible-md-block">This paragraph is visible only on medium devices.</p>
-        <p class="visible-lg-block">This paragraph is visible only on large devices.</p>
-
-    <!-- set up access to users in database -->
-    <%=  session('username'); %>
-</div>
 
 <!-- #diver => Controls the width and whatnot of the form -->
 <div id="diver" style="margin-left: 150px; margin-right: -150px;"></div>
+</div>
 
 <script type="text/javascript">
 	

@@ -8,6 +8,22 @@
     $(document).ready(function () {
         $("#customer_table").bootstrapTable(); 
     });
+
+
+    function send_message(){
+        $.ajax({
+            type: "POST",
+            url: "/customer/profile_update",
+            data:JSON.stringify(object),
+            dataType: "json",
+            async:true,
+            success: function (msg, status)
+            {
+                alert("msg");
+               alert("changes made successfully");
+            }            
+        });
+    }
 </script>
 
 <h2> Customers</h2>
@@ -54,7 +70,7 @@
 <br/>
 <div class="btn-toolbar">
 
-    <button onclick="get_message_display();" style="display:none;margin-left:10px" id="message_button" class="btn btn-primary btn-lg">Send a Message</button>
-    <button style="display:none;" id="bill_button" class="btn btn-lg btn-primary">Send a bill</button>
+    <button type="button" onclick="get_message_display();" style="display:none;margin-left:10px" id="message_button" class="btn btn-success btn-block btn-lg">Send a Message</button>
+    <button type="button" style="display:none;" id="bill_button" class="btn btn-block btn-lg btn-primary">Bill  Selected Customers</button>
     <br/><br/>
 </div>
