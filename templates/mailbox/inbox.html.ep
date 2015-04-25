@@ -1,0 +1,54 @@
+%layout 'default';
+
+<script type="text/javascript">
+
+</script>
+
+<!-- div class="container" style="background-color:white;width:80%"> -->
+	<div style="margin-top:15px;" class="panel panel-primary">
+		<div class="panel-heading">
+			Inbox
+		</div>
+		<div class="panel-body">
+			<ul>
+				<li>
+					This is your <b>personal</b> inbox click on a message to get inportant
+					information about your bills
+				</li>
+			</ul>
+		</div>  <!--end panel body -->
+		<table id="mail_table" class="table" data-toggle="table" data-click-to-select="true" data-show-toggle="false" data-show-export="false"> 
+    		<thead>
+		        <tr>
+		            <th data-field="state" data-checkbox="true"></th>
+		            <th data-field="id">Id</th>
+		            <th data-field="date">Date</th>
+		            <th data-field="subject">Subject</th>
+		            <th data-field="company">Company</th>
+		              <th data-field="email">Email</th>
+		        </tr>
+		    </thead>
+		    <tbody>
+			    %my $letters = $self->db->resultset('Message');
+			    %my $awn = $letters->search({company_name => $self->session('company'),user_id => $self->session('user_id'),lastname => "unread"});
+		    	%while(my $awn = $awn->next){
+
+		    	<tr>
+		            <td><%=$awn->id%></td>
+		            <td><%=$awn->date_sent%></td>
+		            <td><%=$awn->firstname%></td>
+		            <td><%=$awn->company_name%></td>
+		            <td><%=$awn->email%></td>
+        		</tr>
+		    %}
+    		</tbody>
+		</table>
+		<center>
+			<button id='readButton' class="btn btn-success btn-lg" style="margin-top:10px;width:40%;margin-right:10px" onclick="read_click();"> Read
+			</button>
+			<button id='deleteButton' class="btn btn-danger btn-lg" style="margin-top:10px;width:40%;margin-right:10px" onclick="delete_click();">delete
+			</button>
+			<button id="back_button" class="btn btn-default btn-lg btn-block" style="width:80%;margin-top:5px;margin-bottom:10px;" onclick="back_button_click();">back</button>
+		</center>
+	</div><!-- end panel -->
+<!-- </div> -->

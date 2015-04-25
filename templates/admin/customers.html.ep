@@ -1,43 +1,66 @@
 %layout 'default';
+<script type="text/javascript">
+    
+    var select_customers;
+
+    $(document).ready(function () {
+        $("#customer_table").bootstrapTable(); 
+    });
+
+    
+    function send_message(){
+        'use strict';
+        var radios = document.getElementsByName('template_chooser');
+        var chosen_template = "";
+       
+        for (var i = 0; i < radios.length; i++) {
+            if(radios[i].checked){
+                chosen_template = radios[i].value;
+            };
+        };
+
+        if(chosen_template === ''){
+            alert('please select a template');
+            return false;
+        };
+
+        var dataPara = {
+            "chosen_template":chosen_template,
+            "selected_customers":selected_customers,
+            "length":selected_customers.length
+        };
+        $.ajax({
+            type: "POST",
+            url: "/admin/send_message",
+            data:JSON.stringify(dataPara),
+            dataType: "json",
+            async:true,
+            success: function (msg, status)
+            {
+                alert("Message sent successfully");
+            }            
+        });
+    
+    }
+</script>
 
 
     %my $customers = $self->db->resultset('User');
     %my $awn = $customers->search({company => $self->session('company')});
    
-<script type="text/javascript">
-    $(document).ready(function () {
-        $("#customer_table").bootstrapTable(); 
-    });
-
-
-    function send_message(){
-        $.ajax({
-            type: "POST",
-            url: "/customer/profile_update",
-            data:JSON.stringify(object),
-            dataType: "json",
-            async:true,
-            success: function (msg, status)
-            {
-                alert("msg");
-               alert("changes made successfully");
-            }            
-        });
-    }
-</script>
 
 <h2> Customers</h2>
 
-<table id="customer_table"  data-toggle="table">
+<table id="customer_table"  data-toggle="table" data-click-to-select="true"> 
     <thead>
         <tr>
-            <th data-sortable="false" data-field="id" data-checkbox="true">
-            </th>
+            <th data-field="state" data-checkbox="true"></th>
+            <th data-field="user_id">ID</th>
             <th data-field="firstname">First Name</th>
             <th data-field="lastname">Last Name</th>
             <th data-field="city">City</th>
             <th data-field="zipcode">Zip Code</th>
-            <th data-filed="email">Email</th>
+            <th data-field="email">Email</th>
         </tr>
     </thead>
     <tbody>
@@ -45,24 +68,13 @@
     %while (my $awn = $awn->next) { 
     %next if $awn->user_level eq 'admin';
         <tr>
-            <td>
-                <input class="bs-checkbox" type="checkbox" value="<%= $awn->id %>">
-            </td>
-            <td>
-                <%= $awn->firstname %>
-            </td>
-            <td>
-                <%= $awn->lastname %>
-            </td>
-            <td>
-                <%= $awn->city %>
-            </td>
-            <td>
-                <%= $awn->zipcode %>
-            </td> 
-            <td>
-                <%= $awn->email %>
-            </td>
+            <td></td>
+            <td><%=$awn->id%></td>
+            <td><%=$awn->firstname%></td>
+            <td><%=$awn->lastname%></td>
+            <td><%=$awn->city%></td>
+            <td><%=$awn->zipcode%></td>
+            <td><%=$awn->email%></td>
         </tr>
     %}
     </tbody>
@@ -70,7 +82,7 @@
 <br/>
 <div class="btn-toolbar">
 
-    <button type="button" onclick="get_message_display();" style="display:none;margin-left:10px" id="message_button" class="btn btn-success btn-block btn-lg">Send a Message</button>
+    <button type="button" onclick="get_message_display();" style="display:none;" id="message_button" class="btn btn-success btn-block btn-lg">Send a Message</button>
     <button type="button" style="display:none;" id="bill_button" class="btn btn-block btn-lg btn-primary">Bill  Selected Customers</button>
     <br/><br/>
 </div>

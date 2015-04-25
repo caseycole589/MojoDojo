@@ -1,4 +1,4 @@
-% my $users_rs = db->resultset('User');
+
 <nav role="navigation" class="navbar navbar-inverse">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -10,6 +10,8 @@
         </button>
         <a href="#" class="navbar-brand"><%= session('company') %></a>
     </div>
+    % my $messages_rs = db->resultset('Message');
+    %my $count = $messages_rs->search({company_name => $self->session('company'),user_id => $self->session('user_id'),lastname => "unread"});
     <!-- Collection of nav links, forms, and other content for toggling -->
     <div id="navbarCollapse" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
@@ -19,12 +21,12 @@
                 </a>
             </li>
             <li id="profile_nav" onclick="show_profile();"><a href="#" >Profile</a></li>
-            <li class="dropdown">
+            <li id="messages_nav" class="dropdown">
                <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                     <span class="glyphicon glyphicon-envelope"></span>&nbsp;Messages<b class="caret"></b>
                 </a>
                 <ul role="menu" class="dropdown-menu">
-                    <li><a href="#">Inbox</a></li>
+                    <li onclick="inbox_clicked();"><a href="#">Inbox&nbsp;<b><font size="2" color="red"><%=$count%></a></font></b></li>
                     <li><a href="#">Drafts</a></li>
                     <li><a href="#">Sent Items</a></li>
                     <li class="divider"></li>
@@ -61,6 +63,14 @@
 <div id="boxer" class="paper paper-curve-horiz" style="min-height: 475px !important; width: 75%; margin-left:auto; margin-right:auto;">
     <h4><b><a id="welcome" href="#">Wecome Back <%=  session('username');%></a></b></h4>
     
+    <div id="mailMessage">
+    %if( $count > 0){
+       <h3>You currently have <%=$count%> message waiting in your inbox</h3>
+    %}
+    </div>
+
+
+
     <div class="page-header text-center">
         <h3 hidden id="profile_heading">Update your profile 
             <small>Hope you haven't change too much</small>
@@ -72,11 +82,24 @@
 <div id="diver" style="margin-left: 150px; margin-right: -150px;"></div>
 </div>
 
+<div id='mailer_div' class="container" style="background-color:#00CCFF;">
+    
+</div>
+
 <script type="text/javascript">
 	
     //display profile view
     function show_profile(){
-	  	$.ajax({
+        document.getElementById('mailMessage').style.display='none';
+        document.getElementById("boxer").style.display="block";
+       
+        var divers = document.getElementById('diver');
+        while(divers.firstChild)divers.removeChild(divers.firstChild);
+        var mailers = document.getElementById('mailer_div');
+        while(mailers.firstChild)mailers.removeChild(mailers.firstChild);
+        
+        $("#random_content").remove();
+        $.ajax({
             type: "POST",
             url: "/customer/profile",
        
@@ -84,28 +107,123 @@
             async:true,
             success: function (msg, status)
             {
-                
-                $("#home_nav").removeClass('active');
-                $('#profile_nav').addClass('active');
-                $("#boxer").removeClass("box");
-                $("#boxer").removeClass("effect8");
-                document.getElementById('welcome').style.display = 'none';
-                document.getElementById('profile_heading').style.display = 'inline';
-                $("#random_content").remove();
-            	$("#diver").append(msg);
-                
+            	document.getElementById('diver').insertAdjacentHTML('afterbegin', msg);
             }            
         });
+        $("#messages_nav").removeClass("active");
+        $("#home_nav").removeClass('active');
+        $('#profile_nav').addClass('active');
+        $("#boxer").removeClass("box");
+        $("#boxer").removeClass("effect8");
+        document.getElementById('welcome').style.display = 'none';
+        document.getElementById('profile_heading').style.display = 'inline';
 	}
 
     function show_home (argument) {
-        $("#diver").html("");
+        'use strict';
+        document.getElementById("boxer").style.display="block";
+        var mailers = document.getElementById("mailer_div");
+        while(mailers.firstChild)mailers.removeChild(mailers.firstChild);
+        var divers = document.getElementById('diver');
+        while(divers.firstChild)divers.removeChild(divers.firstChild);
         $("#boxer").addClass("box");
-                $("#boxer").addClass("effect8");
+        $("#boxer").addClass("effect8");
         document.getElementById('welcome').style.display = 'inline';
         document.getElementById('profile_heading').style.display = 'none';
-
+        document.getElementById('mailMessage').style.display='none';
         $("#profile_nav").removeClass('active');
+        $("#messages_nav").removeClass('active');
         $('#home_nav').addClass('active');
+    }
+
+
+    function inbox_clicked(){
+        alert("one");
+        document.getElementById("boxer").style.display ='none';
+         var mailers = document.getElementById("mailer_div");
+        while(mailers.firstChild)mailers.removeChild(mailers.firstChild);
+        $.ajax({
+            type:'POST',
+            url:'/customer/render_inbox',
+            dataType:"html",
+            async:true,
+            success:function(msg, status) {
+         
+               document.getElementById('mailer_div').insertAdjacentHTML('afterbegin', msg);
+               $("#mail_table").bootstrapTable(); 
+               if(selected_emails != undefined){
+                    remove_selected_emails();
+               }
+                
+            }
+        });
+        $("#profile_nav").removeClass("active");
+        $("#home_nav").removeClass("active");
+        $("#messages_nav").addClass("active");
+    }
+
+
+    function read_click () {
+        var checkerd = document.getElementsByClassName('selected');
+        if (checkerd.length > 1) {
+            alert("you can only read one message at a time");
+            return false;
+        };
+        if(checkerd.length === 0){
+            alert("you must first click the message you want to view");
+            return false;
+        };
+        read_note();
+    }
+
+    function read_note(){
+        document.getElementById("mail_table").style.display='none';
+        document.getElementById("readButton").style.display='none';
+        document.getElementById("deleteButton").style.display='none';
+
+        
+    }
+
+    function delete_click(){
+        var checkerd = document.getElementsByClassName('selected');
+        if(checkerd.length === 0){
+            alert("you can only delete messages you have checked");
+            return false;
+        };
+        if(confirm("are you sure you want to delete the messsages")){
+            delete_email();
+        }
+        else{
+            
+            return false;
+        }
+    }
+    function back_button_click(){
+        if (document.getElementById("mail_table").style.display==='none') { 
+            inbox_clicked();
+        }
+        else{
+            show_home();
+        }
+    }        
+
+    function delete_email(){
+        selected_emails = $('#mail_table').bootstrapTable('getSelections');
+        alert("here")
+        $.ajax({
+            type:'POST',
+            url:'/customer/delete_email',
+            dataType:'json',
+            data:JSON.stringify(selected_emails),
+            async:true,
+            success:function(msg, status) {
+
+                alert(JSON.stringify(msg));
+            }
+        });
+
+    }
+    function remove_selected_emails(){
+        alert("fuck");
     }
 </script>

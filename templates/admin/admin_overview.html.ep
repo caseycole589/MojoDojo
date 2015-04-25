@@ -100,17 +100,17 @@
 
  -->
 
-% my $users = db->resultset('User');
-<!--  -->
-<!-- 
-<div class="form-group">
-    <button onclick="get_customers();">click to view customers</button>
-</div>
- -->
+% my $messages = db->resultset('Message');
+%while (my $messages = $messages->next) { 
+<%= $messages->email %>
+%}
+
 <div id='customers_div' class="container" style="background-color:white;">
     
 </div>
 <br/><br/>
+
+
 <script type="text/javascript">
     $("#customers_div").html("");
     function get_customers(){
@@ -129,8 +129,10 @@
     }
 
     function get_message_display(){
+        
+        selected_customers = $('#customer_table').bootstrapTable('getSelections')
         $("#customers_div").html("");
-         $.ajax({
+        $.ajax({
             type: "POST",
             url: "/admin/render_message",
             dataType: "html",

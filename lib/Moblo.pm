@@ -72,7 +72,7 @@ sub startup {
   $authorized->get('/')->name('restricted_area')->to(template => 'admin/admin_overview');
   $authorized->post('/render_customers')->to('Admin#render_customers');
   $authorized->post('/render_message')->to('Admin#render_message');
-  
+  $authorized->post('/send_message')->to('Admin#send_message');
 
 
 
@@ -81,7 +81,8 @@ sub startup {
   # $customer->post('/')->to('Customer');
   $customer->post('/profile')->to('Customer#render_profile');
   $customer->post('/profile_update')->to('Customer#profile_update');
-
+  $customer->post('/render_inbox')->to('Mail#render_inbox');
+  $customer->post('/delete_email')->to('Mail#delete_email');
 
   my $schema = Moblo::Schema->connect('dbi:SQLite:share/moblo-schema.db', '', '', {sqlite_unicode => 1,  on_connect_do => 'PRAGMA foreign_keys = ON',});
   

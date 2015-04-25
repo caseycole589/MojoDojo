@@ -52,9 +52,8 @@ soon affect your billing...</pre>
 		</div>
 	</div>
 	<br/>
-	<button type="button" class="btn btn-lg btn-block btn-info">
+	<button type="button" onclick="send_message();" class="btn btn-lg btn-block btn-info">
 		Send
-		<span class="glyphicon glyphicon-envelope"></span>
+		<span class="glyphicon glyphicon-send"></span>
 	</button>
 	<br/><br/>
-</div>

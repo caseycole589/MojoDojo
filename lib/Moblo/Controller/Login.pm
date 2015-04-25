@@ -120,7 +120,7 @@ sub create_new_account{
 			company => $company
 		});
 		$self->flash(create_user_success => "Success");
-		$self->redirect_to('/login');
+		$self->redirect_to('/');
 	}
 	
 }

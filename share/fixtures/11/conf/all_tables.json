@@ -1,0 +1,37 @@
+{
+   "might_have" : {
+      "fetch" : 0
+   },
+   "has_many" : {
+      "fetch" : 0
+   },
+   "sets" : [
+      {
+         "quantity" : "all",
+         "class" : "Bill"
+      },
+      {
+         "class" : "Post",
+         "quantity" : "all"
+      },
+      {
+         "quantity" : "all",
+         "class" : "Message"
+      },
+      {
+         "class" : "Comment",
+         "quantity" : "all"
+      },
+      {
+         "class" : "Company",
+         "quantity" : "all"
+      },
+      {
+         "quantity" : "all",
+         "class" : "User"
+      }
+   ],
+   "belongs_to" : {
+      "fetch" : 0
+   }
+}

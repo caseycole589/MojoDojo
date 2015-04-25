@@ -36,9 +36,7 @@ __PACKAGE__->add_columns(
     amount => {
 		data_type => 'decimal',
 	    size => [9,2],
-        is_nullable => 0,
-        default_valuev=> '0.00',
-  #       is_currency => 1,
+        null => 'NULL',
     },
 
     is_payed => {
@@ -51,18 +49,18 @@ __PACKAGE__->add_columns(
 #Tell DBIC that 'id' is the primary key
 __PACKAGE__->set_primary_key('id');
 
-__PACKAGE__->belongs_to(
-	billed =>
-	'Moblo::Schema::Result::User',
-	#foriegnt key in this class
-	'customer_name'
-);
-__PACKAGE__->belongs_to(
-	biller =>
-	'Moblo::Schema::Result::Company',
-	#forien key in this class
-	'company_name'
-);
+# __PACKAGE__->belongs_to(
+# 	billed =>
+# 	'Moblo::Schema::Result::User',
+# 	#foriegnt key in this class
+# 	'customer_name'
+# );
+# __PACKAGE__->belongs_to(
+# 	biller =>
+# 	'Moblo::Schema::Result::Company',
+# 	#forien key in this class
+# 	'company_name'
+# );
 
 
 1;
