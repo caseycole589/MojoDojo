@@ -5,7 +5,7 @@
 </script>
 
 <!-- div class="container" style="background-color:white;width:80%"> -->
-	<div style="margin-top:15px;" class="panel panel-primary">
+	<div id="main_panel_div" style="margin-top:15px; height:75%" class="panel paper panel-primary">
 		<div class="panel-heading">
 			Inbox
 		</div>
@@ -25,7 +25,7 @@
 		            <th data-field="date">Date</th>
 		            <th data-field="subject">Subject</th>
 		            <th data-field="company">Company</th>
-		              <th data-field="email">Email</th>
+		            <th data-field="email">Email</th>
 		        </tr>
 		    </thead>
 		    <tbody>
@@ -34,6 +34,7 @@
 		    	%while(my $awn = $awn->next){
 
 		    	<tr>
+		    		<td></td>
 		            <td><%=$awn->id%></td>
 		            <td><%=$awn->date_sent%></td>
 		            <td><%=$awn->firstname%></td>
@@ -46,9 +47,13 @@
 		<center>
 			<button id='readButton' class="btn btn-success btn-lg" style="margin-top:10px;width:40%;margin-right:10px" onclick="read_click();"> Read
 			</button>
-			<button id='deleteButton' class="btn btn-danger btn-lg" style="margin-top:10px;width:40%;margin-right:10px" onclick="delete_click();">delete
+			<button id='deleteButton' class="btn btn-danger btn-lg" style="margin-top:10px;width:40%;margin-right:10px" onclick="delete_click();">Delete
 			</button>
 			<button id="back_button" class="btn btn-default btn-lg btn-block" style="width:80%;margin-top:5px;margin-bottom:10px;" onclick="back_button_click();">back</button>
 		</center>
 	</div><!-- end panel -->
+	%my $newawn = $letters->search({company_name => $self->session('company'),user_id => $self->session('user_id'),lastname => "unread"});
+	%while(my $newawn = $newawn->next){ 
+		<div id="<%=$newawn->id%>" hidden><pre><%=$newawn->template%></pre></div>
+	%}
 <!-- </div> -->

@@ -46,8 +46,7 @@ sub send_message {
 			\n......
 			\n......
 			\n......";
-		}
-		print $number_of_customs;
+	}
 	# #loop through adding customer messages to database
 	for my $n (0..$number_of_customs){
 		#firstname is changed to subject 

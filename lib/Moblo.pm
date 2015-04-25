@@ -84,6 +84,7 @@ sub startup {
   $customer->post('/render_inbox')->to('Mail#render_inbox');
   $customer->post('/delete_email')->to('Mail#delete_email');
 
+
   my $schema = Moblo::Schema->connect('dbi:SQLite:share/moblo-schema.db', '', '', {sqlite_unicode => 1,  on_connect_do => 'PRAGMA foreign_keys = ON',});
   
   $self->helper(db => sub{return $schema;});

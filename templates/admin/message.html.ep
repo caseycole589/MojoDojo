@@ -1,15 +1,15 @@
 %layout 'default';
 
-<div class="container" style="background-color:white;">
-	<h3>Please Select a Message Template to Send</h3>
+<div id="email_temp_div" class="container" style="background-color:white;">
+	<b><h3><a href="#">Please Select a Message Template to Send</a></h3>
 	<br/>
 	<div class="panel-group">
 	<input type="radio" name="template_chooser" value="tips">
-		<div class="panel panel-primary">
+		<div class="panel panel-primary"   style="border:0px">
 			<div class="panel-heading">
 				Inform customers about our benifits.
 			</div>
-			<div class="panel-body">
+			<div class="panel-body paper">
 <pre>Dear _____ we would like take a minute of your time to tell you an about these 
 security/energy saving tips
 <ul>
@@ -24,11 +24,11 @@ security/energy saving tips
 	</div>
 	<div class="panel-group">
 	<input type="radio" name="template_chooser" value="disaster">
-		<div class="panel panel-primary">
+		<div class="panel panel-primary" style="border:0px">
 			<div class="panel-heading">
 				Inform customers about hurricane/disaster preparedness related to bill
 			</div>
-			<div class="panel-body">
+			<div class="panel-body paper">
 			 	<pre>Dear ____ 
 	After reviewing you last payment we sould like to take a moment to tell you about how 
 	you could save a lot of money by being prepared for hurricanes and other related disasters 
@@ -41,19 +41,25 @@ security/energy saving tips
 	</div>
 	<div class="panel-group">
 	<input type="radio" name="template_chooser" value="legislative">
-		<div class="panel panel-primary">
+		<div class="panel panel-primary" style="border:0px" >
 			<div class="panel-heading">
 				Inform customer about legislation that might affect there bills
 			</div>
-			<div class="panel-body">
+			<div class="panel-body paper">
 			<pre>We thought you might like to know about our recent legislative activites that will 
 soon affect your billing...</pre>
 			</div>
 		</div>
 	</div>
 	<br/>
-	<button type="button" onclick="send_message();" class="btn btn-lg btn-block btn-info">
+	<button type="button" style="margin-left:10px;margin-right:10px;width:45%;" onclick="send_message();" class="btn btn-lg btn-info">
 		Send
-		<span class="glyphicon glyphicon-send"></span>
+		<span class="glyphicon glyphicon-send">
+			
+		</span>
+	</button>
+	<button onclick="get_customers();"type="button" class="btn btn-lg btn-default" style="margin-left:10px;width:45%;">
+		Back
 	</button>
 	<br/><br/>
+</b></div>

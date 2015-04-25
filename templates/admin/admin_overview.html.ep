@@ -43,7 +43,7 @@
 </nav>
 
 <!-- Not correct class -->
-<div class="container" style="background-color:white;"><a class="navbar-brand" href="#">Wecome Back <%=  session('username');%></a>
+<div class="container" style="width:30%;background-color:white;margin-left:10px; margin-right:70%"><a class="navbar-brand" href="#">Wecome Back <%=  session('username');%></a>
 </div>
 <br/><br/><br/>
 
@@ -100,20 +100,25 @@
 
  -->
 
-% my $messages = db->resultset('Message');
-%while (my $messages = $messages->next) { 
-<%= $messages->email %>
-%}
 
-<div id='customers_div' class="container" style="background-color:white;">
+<div id='customers_div' hidden class="container paper" style="background-color:white;">
     
 </div>
 <br/><br/>
 
 
 <script type="text/javascript">
-    $("#customers_div").html("");
     function get_customers(){
+     
+        var customers_div = document.getElementById('customers_div');
+        while(customers_div.firstChild)customers_div.removeChild(customers_div.firstChild);
+        
+        var email_temp_div = document.getElementById("email_temp_div");
+        if(email_temp_div !== null){
+            while(email_temp_div.firstChild)email_temp_div.removeChild(email_temp_div.firstChild);        
+        }
+
+        customers_div.style.display = "block";
         $.ajax({
             type: "POST",
             url: "/admin/render_customers",
@@ -131,7 +136,9 @@
     function get_message_display(){
         
         selected_customers = $('#customer_table').bootstrapTable('getSelections')
-        $("#customers_div").html("");
+        var customers_div = document.getElementById('customers_div');
+        while(customers_div.firstChild)customers_div.removeChild(customers_div.firstChild);
+        $(customers_div).removeClass('paper');
         $.ajax({
             type: "POST",
             url: "/admin/render_message",
@@ -139,13 +146,15 @@
             async:true,
             success: function (msg, status)
             {
+
                 $("#customers_div").append(msg);
             }            
         });
     }
 
     function home_clicked(){
-        $("#customers_div").html("");
+        var customers_div = document.getElementById('customers_div');
+        while(customers_div.firstChild)customers_div.removeChild(customers_div.firstChild);
         $("#home_toolbar").addClass('active');
         $("#customer_toolbar").removeClass('active');
     }

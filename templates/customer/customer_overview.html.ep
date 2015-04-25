@@ -26,7 +26,13 @@
                     <span class="glyphicon glyphicon-envelope"></span>&nbsp;Messages<b class="caret"></b>
                 </a>
                 <ul role="menu" class="dropdown-menu">
-                    <li onclick="inbox_clicked();"><a href="#">Inbox&nbsp;<b><font size="2" color="red"><%=$count%></a></font></b></li>
+                    <li onclick="inbox_clicked();">
+                        <a href="#">Inbox&nbsp;
+                            <b>
+                                <font size="2" color="red"><%=$count%></font>
+                            </b>
+                        </a>
+                    </li>
                     <li><a href="#">Drafts</a></li>
                     <li><a href="#">Sent Items</a></li>
                     <li class="divider"></li>
@@ -79,15 +85,16 @@
     
 
 <!-- #diver => Controls the width and whatnot of the form -->
-<div id="diver" style="margin-left: 150px; margin-right: -150px;"></div>
+    <div id="diver" style="margin-left: 150px; margin-right: -150px;"></div>
 </div>
 
-<div id='mailer_div' class="container" style="background-color:#00CCFF;">
+<div id='mailer_div' class="container " style="background-color:#00CCFF;">
     
 </div>
 
 <script type="text/javascript">
-	
+	'use strict';
+
     //display profile view
     function show_profile(){
         document.getElementById('mailMessage').style.display='none';
@@ -138,9 +145,9 @@
 
 
     function inbox_clicked(){
-        alert("one");
+    
         document.getElementById("boxer").style.display ='none';
-         var mailers = document.getElementById("mailer_div");
+        var mailers = document.getElementById("mailer_div");
         while(mailers.firstChild)mailers.removeChild(mailers.firstChild);
         $.ajax({
             type:'POST',
@@ -151,9 +158,6 @@
          
                document.getElementById('mailer_div').insertAdjacentHTML('afterbegin', msg);
                $("#mail_table").bootstrapTable(); 
-               if(selected_emails != undefined){
-                    remove_selected_emails();
-               }
                 
             }
         });
@@ -164,7 +168,8 @@
 
 
     function read_click () {
-        var checkerd = document.getElementsByClassName('selected');
+        'use strict';
+        var checkerd = $('#mail_table').bootstrapTable('getSelections');
         if (checkerd.length > 1) {
             alert("you can only read one message at a time");
             return false;
@@ -173,17 +178,25 @@
             alert("you must first click the message you want to view");
             return false;
         };
-        read_note();
+       
+        read_note(checkerd[0].id,checkerd[0].subject,checkerd[0].email);
     }
 
-    function read_note(){
-        document.getElementById("mail_table").style.display='none';
-        document.getElementById("readButton").style.display='none';
-        document.getElementById("deleteButton").style.display='none';
-
-        
+    function read_note(wanted,subject,email){
+        'use strict';
+        var text_to_insert = "Subject: " + subject + "<br/>Sender: " + email;
+        alert(text_to_insert)
+        var panelDiv = document.getElementById('main_panel_div');
+        while(panelDiv.firstChild)panelDiv.removeChild(panelDiv.firstChild);
+        var hid = document.getElementById(wanted);
+        hid.style.display = 'inline';
+        var button_html_to_add = "<center><button id='back_button' class='btn btn-default btn-lg btn-block' style='width:80%;margin-top:5px;margin-bottom:10px;' onclick='inbox_clicked();'>back</button></center>";
+        panelDiv.insertAdjacentHTML('afterbegin',text_to_insert);
+        hid.insertAdjacentHTML('afterend',button_html_to_add);
+        panelDiv.style.fontSize = "large";
+        panelDiv.style.font = "bold 21px";
     }
-
+ 
     function delete_click(){
         var checkerd = document.getElementsByClassName('selected');
         if(checkerd.length === 0){
@@ -208,22 +221,24 @@
     }        
 
     function delete_email(){
-        selected_emails = $('#mail_table').bootstrapTable('getSelections');
-        alert("here")
+        var selected_emails =  $('#mail_table').bootstrapTable('getSelections');
+        var lengther = selected_emails.length - 1;
+        var dataPara = {
+            "lengther": lengther,
+            "selected_emails": selected_emails,
+        };
         $.ajax({
             type:'POST',
             url:'/customer/delete_email',
             dataType:'json',
-            data:JSON.stringify(selected_emails),
+            data:JSON.stringify(dataPara),
             async:true,
             success:function(msg, status) {
-
-                alert(JSON.stringify(msg));
+                alert("success");
             }
         });
-
     }
     function remove_selected_emails(){
-        alert("fuck");
+    
     }
 </script>

@@ -2,7 +2,7 @@
 <script type="text/javascript">
     
     var select_customers;
-
+    
     $(document).ready(function () {
         $("#customer_table").bootstrapTable(); 
     });
@@ -38,6 +38,7 @@
             success: function (msg, status)
             {
                 alert("Message sent successfully");
+                get_customers();
             }            
         });
     
