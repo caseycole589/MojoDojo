@@ -16,9 +16,9 @@ sub startup {
 
   #the cookie name
   $self->app->sessions->cookie_name('moblo');
-
+                                    
   #Expiration reduced to 10000 seconds
-  $self->app->sessions->default_expiration('10000');
+  $self->app->sessions->default_expiration('1000000');
 
   #Plugins
 
@@ -81,6 +81,7 @@ sub startup {
   # $customer->post('/')->to('Customer');
   $customer->post('/profile')->to('Customer#render_profile');
   $customer->post('/profile_update')->to('Customer#profile_update');
+  $customer->post('/render_bill_history')->to('Bill#render_bill_history');
   $customer->post('/render_inbox')->to('Mail#render_inbox');
   $customer->post('/delete_email')->to('Mail#delete_email');
 
@@ -89,12 +90,6 @@ sub startup {
   
   $self->helper(db => sub{return $schema;});
 
-  # $authorized->get('/create')->name('create_post')->to(template => 'admin/create_post');
-  # $authorized->post('/create')->name('publish_post')->to('Post#create');
-  # #on get display a template asking to confirm deletion.
-  # $authorized->get('/delete/:id',[id=>qr/\d+/])->name('delete_post')->to(template => 'admin/delete_post_confirm');
-  # #on POST, delete the post 
-  # $authorized->post('/delete/:id',[id => qr/\d+/])->name('delete_post_confirmed')->to('Post#delete'); 
 }
 
 1;

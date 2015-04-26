@@ -1,0 +1,56 @@
+%layout 'default';
+
+<div id="main_panel_div" style="margin-top:15px; height:75%" class="panel paper panel-success" >
+		<div class="panel-heading"style="border-style:solid;border-width:medium;">
+			<span style="font-size:23px">
+				<b>Bills</b>
+			</span>
+		</div>
+		<div class="panel-body" id="tips_div" ondblclick="while(this.firstChild)this.removeChild(this.firstChild);">
+			<ul>
+				<li>
+					You can get a blast from the past here with your billing history right here from the comfort of your own home
+				</li>
+				<br/>
+				<li>
+					Don't forget you can also export you bills to the format of you choice by clicking the arrow image
+				</li>
+				<br/>
+				<li>
+					Double click any where on these tips to make them disapear
+				</li>
+			</ul>
+		</div>  <!--end panel body -->
+		<table id="bills_table" class="table" data-toggle="table" data-click-to-select="true" data-show-toggle="true" data-show-export="true"> 
+    		<thead>
+		        <tr>
+		            <th data-field="state" data-checkbox="true"></th>
+		            <th data-field="id">Id</th>
+		            <th data-field="date">Date</th>
+		            <th data-field="subject">Subject</th>
+		            <th data-field="company">Company</th>
+		            <th data-field="email">Email</th>
+		        </tr>
+		    </thead>
+		    <tbody>
+			    %my $letters = $self->db->resultset('Message');
+			    %my $awn = $letters->search({company_name => $self->session('company'),user_id => $self->session('user_id'),lastname => "unread"});
+		    	%while(my $awn = $awn->next){
+
+		    	<tr>
+		    		<td></td>
+		            <td><%=$awn->id%></td>
+		            <td><%=$awn->date_sent%></td>
+		            <td><%=$awn->firstname%></td>
+		            <td><%=$awn->company_name%></td>
+		            <td><%=$awn->email%></td>
+        		</tr>
+		    %}
+    		</tbody>
+		</table>
+		<center>
+			
+			<button id="back_button" class="btn btn-default btn-lg btn-block" style="width:90%;margin-top:5px;margin-bottom:10px;" onclick="back_button_click();">back</button>
+		</center>
+	</div><!-- end panel -->
+	

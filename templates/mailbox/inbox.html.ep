@@ -6,8 +6,10 @@
 
 <!-- div class="container" style="background-color:white;width:80%"> -->
 	<div id="main_panel_div" style="margin-top:15px; height:75%" class="panel paper panel-primary">
-		<div class="panel-heading">
-			Inbox
+		<div class="panel-heading" style="border-style:solid;border-width:medium;">
+			<span style="font-size:23px">
+				Inbox
+			</span>
 		</div>
 		<div class="panel-body">
 			<ul>

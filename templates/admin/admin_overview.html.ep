@@ -154,6 +154,8 @@
 
     function home_clicked(){
         var customers_div = document.getElementById('customers_div');
+        customers_div.style.display = 'none';
+
         while(customers_div.firstChild)customers_div.removeChild(customers_div.firstChild);
         $("#home_toolbar").addClass('active');
         $("#customer_toolbar").removeClass('active');

@@ -50,7 +50,13 @@
     %my $awn = $customers->search({company => $self->session('company')});
    
 
-<h2> Customers</h2>
+<div id="main_panel_div" style="margin-top:15px; height:75%" class="panel paper panel-default" >
+        <div class="panel-heading"style="border-style:solid;border-width:medium;">
+            <span style="font-size:23px">
+                <b>Customers</b>
+            </span>
+        </div>
+   
 
 <table id="customer_table"  data-toggle="table" data-click-to-select="true"> 
     <thead>
@@ -86,4 +92,5 @@
     <button type="button" onclick="get_message_display();" style="display:none;" id="message_button" class="btn btn-success btn-block btn-lg">Send a Message</button>
     <button type="button" style="display:none;" id="bill_button" class="btn btn-block btn-lg btn-primary">Bill  Selected Customers</button>
     <br/><br/>
+</div>
 </div>

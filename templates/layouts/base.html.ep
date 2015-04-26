@@ -41,8 +41,8 @@
 
         #boxer
         {
-            background: url('images/parchment.jpg') no-repeat center center fixed;
-            background-size: cover;
+            /*background: url('images/parchment.jpg') no-repeat center center fixed;
+            background-size: cover;*/
         }
 
     </style>

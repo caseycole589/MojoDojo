@@ -132,7 +132,7 @@
         undefinedText: '-',
         sortName: undefined,
         sortOrder: 'asc',
-        striped: false,
+        striped: true,
         columns: [],
         data: [],
         method: 'get',

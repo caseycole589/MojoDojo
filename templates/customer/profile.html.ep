@@ -1,6 +1,7 @@
 %layout 'default';
 
 <div class=" container form form-horizontal">
+
 	<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
         <div class="form-group"> 
     	    %= label_for firstname => 'First Name:', class => "control-label col-xs-4"
