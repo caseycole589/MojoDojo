@@ -1,9 +1,9 @@
 %layout 'default';
 
-<div id="main_panel_div" style="margin-top:15px; height:75%" class="panel paper panel-success" >
+	<div id="main_panel_div" style="margin-top:15px; height:75%" class="panel paper panel-success" >
 		<div class="panel-heading"style="border-style:solid;border-width:medium;">
 			<span style="font-size:23px">
-				<b>Bills</b>
+				<b>Bills</b>	
 			</span>
 		</div>
 		<div class="panel-body" id="tips_div" ondblclick="while(this.firstChild)this.removeChild(this.firstChild);">
@@ -21,29 +21,32 @@
 				</li>
 			</ul>
 		</div>  <!--end panel body -->
-		<table id="bills_table" class="table" data-toggle="table" data-click-to-select="true" data-show-toggle="true" data-show-export="true"> 
+
+		<table id="bills_table" class="table" data-toggle="table" data-click-to-select="true" data-show-toggle="true" data-query-params="queryParams"
+       data-pagination="true" data-show-export="true"> 
     		<thead>
 		        <tr>
 		            <th data-field="state" data-checkbox="true"></th>
 		            <th data-field="id">Id</th>
-		            <th data-field="date">Date</th>
-		            <th data-field="subject">Subject</th>
+		            <th data-field="amount">Amount</th>
+		            <th data-field="date_published">Date</th>
 		            <th data-field="company">Company</th>
-		            <th data-field="email">Email</th>
+		            <th data-field="payed">Payed</th>
 		        </tr>
 		    </thead>
 		    <tbody>
-			    %my $letters = $self->db->resultset('Message');
-			    %my $awn = $letters->search({company_name => $self->session('company'),user_id => $self->session('user_id'),lastname => "unread"});
+			    %my $bills = $self->db->resultset('Bill');
+			    %my $awn = $bills->search({company_name => $self->session('company'),customer_name => $self->session('user_id')});
 		    	%while(my $awn = $awn->next){
-
+		    	%my $payed = "false";
+		    	%$payed = "True" if $awn->is_payed == 1;
 		    	<tr>
 		    		<td></td>
 		            <td><%=$awn->id%></td>
-		            <td><%=$awn->date_sent%></td>
-		            <td><%=$awn->firstname%></td>
+		            <td>&#x24;<%=$awn->amount%></td>
+		            <td><%=$awn->date_published%></td>
 		            <td><%=$awn->company_name%></td>
-		            <td><%=$awn->email%></td>
+		            <td><%=$payed%></td>
         		</tr>
 		    %}
     		</tbody>

@@ -26,6 +26,8 @@
             global_file_name_for_export = prompt("Please enter what you would like to save the file as");
         }
     </script>
+    <script src="js/libs/Chart.js" type="text/javascript"></script>
+    
     <style type="text/css">
         
         body 

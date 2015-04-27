@@ -19,7 +19,7 @@ __PACKAGE__->add_columns(
 		data_type => 'integer',
 		is_auto_increment => 1,
 	},
-
+	#equivelant to user id
 	customer_name => {
 		data_type => 'text',
 	},

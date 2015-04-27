@@ -73,7 +73,8 @@ sub startup {
   $authorized->post('/render_customers')->to('Admin#render_customers');
   $authorized->post('/render_message')->to('Admin#render_message');
   $authorized->post('/send_message')->to('Admin#send_message');
-
+  $authorized->post('/insert_a_years_worth_of_bills')->to('Bill#insert_a_years_worth_of_bills');
+  $authorized->post('/Bill_Once')->to('Bill#Bill_Once');
 
 
   my $customer = $r->under('/customer')->to('Login#is_logged_in_customer');
@@ -84,7 +85,10 @@ sub startup {
   $customer->post('/render_bill_history')->to('Bill#render_bill_history');
   $customer->post('/render_inbox')->to('Mail#render_inbox');
   $customer->post('/delete_email')->to('Mail#delete_email');
-
+  $customer->post('/render_pay_bills')->to('Bill#render_pay_bills');
+  $customer->post('/pay_bill')->to('Bill#pay_bill');
+  $customer->post('/render_future_bills')->to('Bill#render_future_bills');
+  $customer->post('/get_map_data')->to('Bill#get_map_data');
 
   my $schema = Moblo::Schema->connect('dbi:SQLite:share/moblo-schema.db', '', '', {sqlite_unicode => 1,  on_connect_do => 'PRAGMA foreign_keys = ON',});
   

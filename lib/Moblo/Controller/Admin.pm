@@ -23,10 +23,14 @@ sub render_message{
 	$self->render(template => "admin/message");
 }
 
+# sub send_bills{
+	
+# }
+
 sub send_message {
 	my $self = shift;		
 	my $json = $self->req->json;
-
+	say DateTime->now->iso8601;
 	# print $json->{selected_customers}->[1]->{firstname};
 	my $customs = $json->{selected_customers};
 	my $number_of_customs = $json->{length} - 1;
@@ -52,6 +56,7 @@ sub send_message {
 	for my $n (0..$number_of_customs){
 		#firstname is changed to subject 
 		#lastname changed read or not
+		say 
 		$self->db->resultset('Message')->create({
         	user_id => int($customs->[$n]->{user_id}),
 

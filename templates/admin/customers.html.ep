@@ -7,6 +7,7 @@
         $("#customer_table").bootstrapTable(); 
     });
 
+
     
     function send_message(){
         'use strict';
@@ -90,7 +91,8 @@
 <div class="btn-toolbar">
 
     <button type="button" onclick="get_message_display();" style="display:none;" id="message_button" class="btn btn-success btn-block btn-lg">Send a Message</button>
-    <button type="button" style="display:none;" id="bill_button" class="btn btn-block btn-lg btn-primary">Bill  Selected Customers</button>
+    <button type="button" onclick="insert_a_years_worth_of_bills();" style="display:none;" id="bill_button" class="btn btn-block btn-lg btn-primary">Bill  Selected Customers</button>
     <br/><br/>
 </div>
 </div>
+  
