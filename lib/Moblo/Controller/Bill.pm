@@ -15,6 +15,12 @@ sub render_pay_bills{
 
 	$self->render(template => "customer/pay_bill");
 }
+
+sub render_tips_and_tricks{
+	my $self = shift;
+
+	$self->render(template => "customer/tips_and_tricks");
+}
 sub render_future_bills{
 	my $self = shift;
 

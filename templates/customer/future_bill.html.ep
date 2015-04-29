@@ -12,12 +12,17 @@
 
 	
 		<canvas id="myChart" width="400" height="400"></canvas>
-		
+		<canvas id="myChart2" width="400" height="400"></canvas>
+		<canvas id="myChart3" width="400" height="400"></canvas>
+
     <!-- 		</tbody>
 		</table> -->
 		<center>
-			<button id="back_button" class="btn btn-default btn-lg btn-block" style="width:90%;margin-top:5px;margin-bottom:10px;" onclick="map_it();">Lets see my future</button>
-			<button id="back_button" class="btn btn-default btn-lg btn-block" style="width:90%;margin-top:5px;margin-bottom:10px;" onclick="show_home();">back</button>
+			<button id="past_button" class="btn btn-lg btn-warning" style="width:30%;margin-top:5px;margin-bottom:10px;" onclick="map_it();">The Past</button>
+			<button id="middle_button" class="btn btn-lg btn-info" style="width:30%;margin-top:5px;margin-bottom:10px;" onclick="map_both();">I want both</button>
+			<button id="future_button" class="btn btn-lg btn-warning" style="width:30%;margin-top:5px;margin-bottom:10px;" onclick="map_the_future();">The Future</button>
+
+			<button id="back_button" class="btn btn-default btn-lg btn-block" style="width:90%;margin-top:5px;margin-bottom:10px;" onclick="show_home();">Back</button>
 		</center>
 	</div><!-- end panel -->
 	

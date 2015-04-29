@@ -19,17 +19,38 @@
                 chosen_template = radios[i].value;
             };
         };
-
         if(chosen_template === ''){
             alert('please select a template');
             return false;
         };
+        var message = document.getElementById('there_message').value;
+        var title = document.getElementById('there_title').value;
+        if(chosen_template === 'custom'){
+            if(title === ''){
+                alert('please enter a title');
+                return false;
+            }
+            if(message === ''){
+                alert("please enter a message");
+                return false;
+            }
+            var dataPara = {
+                "chosen_template":chosen_template,
+                "selected_customers":selected_customers,
+                "length":selected_customers.length,
+                'message':message,
+                'title':title
+            };
 
-        var dataPara = {
-            "chosen_template":chosen_template,
-            "selected_customers":selected_customers,
-            "length":selected_customers.length
-        };
+        }
+        else{
+            var dataPara = {
+                "chosen_template":chosen_template,
+                "selected_customers":selected_customers,
+                "length":selected_customers.length
+             };
+        }
+      
         $.ajax({
             type: "POST",
             url: "/admin/send_message",
@@ -91,7 +112,8 @@
 <div class="btn-toolbar">
 
     <button type="button" onclick="get_message_display();" style="display:none;" id="message_button" class="btn btn-success btn-block btn-lg">Send a Message</button>
-    <button type="button" onclick="insert_a_years_worth_of_bills();" style="display:none;" id="bill_button" class="btn btn-block btn-lg btn-primary">Bill  Selected Customers</button>
+    <!-- "insert_a_years_worth_of_bills(); -->
+    <button type="button" onclick="Bill_Once();" style="display:none;" id="bill_button" class="btn btn-block btn-lg btn-primary">Bill  Selected Customers</button>
     <br/><br/>
 </div>
 </div>

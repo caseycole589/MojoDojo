@@ -9,15 +9,7 @@
 	<div class="panel-body" id="tips_div" ondblclick="while(this.firstChild)this.removeChild(this.firstChild);">
 		<ul>
 			<li>
-				You can get a blast from the past here with your billing history right here from the comfort of your own home
-			</li>
-			<br/>
-			<li>
-				Don't forget you can also export you bills to the format of you choice by clicking the arrow image
-			</li>
-			<br/>
-			<li>
-				Double click any where on these tips to make them disapear
+				You can Pay your bills safe and securely
 			</li>
 		</ul>
 	</div>  <!--end panel body -->

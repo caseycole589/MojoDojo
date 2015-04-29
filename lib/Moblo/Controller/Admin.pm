@@ -44,6 +44,9 @@ sub send_message {
 		$words = "We thought you might like to know about our recent \nlegislative activites that will 
 			soon affect your billing...";
 	}
+	elsif($json->{chosen_template} eq 'custom'){
+		$words = $json->{message};
+	}
 	else{
 		$words = "Dear ____ \n
 			After reviewing you last payment we sould like to take a moment to tell you about how 
@@ -56,23 +59,42 @@ sub send_message {
 	for my $n (0..$number_of_customs){
 		#firstname is changed to subject 
 		#lastname changed read or not
-		say 
-		$self->db->resultset('Message')->create({
-        	user_id => int($customs->[$n]->{user_id}),
+		if($json->{chosen_template} eq 'custom'){
+			$self->db->resultset('Message')->create({
+	        	user_id => int($customs->[$n]->{user_id}),
 
-        	firstname => $json->{chosen_template},
+	        	firstname => $json->{title},
 
-        	lastname => "unread",
+	        	lastname => "unread",
 
-        	email => $self->session('email'),
+	        	email => $self->session('email'),
 
-        	company_name => $self->session('company'),
+	        	company_name => $self->session('company'),
 
-            template => $words,
+	            template => $words,
 
-            date_sent => DateTime->now->iso8601,
+	            date_sent => DateTime->now->iso8601,
 
-        });
+	        });
+		}
+		else{
+			$self->db->resultset('Message')->create({
+	        	user_id => int($customs->[$n]->{user_id}),
+
+	        	firstname => $json->{chosen_template},
+
+	        	lastname => "unread",
+
+	        	email => $self->session('email'),
+
+	        	company_name => $self->session('company'),
+
+	            template => $words,
+
+	            date_sent => DateTime->now->iso8601,
+
+	        });
+		}
 	}
 
 	# print $number_of_customs;

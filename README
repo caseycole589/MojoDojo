@@ -1,0 +1,20 @@
+
+
+install cpan using 
+curl -L https://cpanmin.us | perl - -M https://cpan.metacpan.org -n Mojolicious 
+then
+cpan  modulename
+cpan SQL::Translator
+cpan Mojoliouse
+ 
+cpan DBIx::Class::Migration
+cpan Mojolicious::Plugin::Bcrypt
+ 
+cpan DBIx::Class::InflateColumn::Boolean
+cpan DBIx::Class::InflateColumn::Currency
+cpan Math::Round
+
+finaly 
+plackup script/moblo
+
+navigate to 127.0.0.1:5000 on your machine

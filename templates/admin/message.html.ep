@@ -52,6 +52,21 @@ soon affect your billing...</pre>
 		</div>
 	</div>
 	<br/>
+	<div class="panel-group">
+	<input type="radio" name="template_chooser" value="custom">
+		<div class="panel panel-primary" style="border:0px" >
+			<div class="panel-heading">
+				Tiite
+				<input id="there_title" type="text" class="form-control " placeholer="Title">
+			</div>
+			Message
+			<div class="panel-body paper">
+		
+			%= text_area 'content', cols => 40, rows => 20, id=>'there_message'
+			</div>
+		</div>
+	</div>
+	<br/>
 	<button type="button" style="margin-left:10px;margin-right:10px;width:45%;" onclick="send_message();" class="btn btn-lg btn-info">
 		Send
 		<span class="glyphicon glyphicon-send">

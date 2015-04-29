@@ -89,6 +89,7 @@ sub startup {
   $customer->post('/pay_bill')->to('Bill#pay_bill');
   $customer->post('/render_future_bills')->to('Bill#render_future_bills');
   $customer->post('/get_map_data')->to('Bill#get_map_data');
+  $customer->post('/render_tips_and_tricks')->to('Bill#render_tips_and_tricks');
 
   my $schema = Moblo::Schema->connect('dbi:SQLite:share/moblo-schema.db', '', '', {sqlite_unicode => 1,  on_connect_do => 'PRAGMA foreign_keys = ON',});
   
