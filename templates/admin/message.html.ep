@@ -1,5 +1,21 @@
 %layout 'default';
+<script type="text/javascript">
+	alert("went to message screen successfully");
+	if(localStorage.Test === 'True'){
 
+		setTimeout(function(){
+			document.getElementById('custom').selected = true;
+			document.getElementById('custom').click();
+			document.getElementById("there_title").value ="test";
+			document.getElementById('there_message').value = "test";
+			setTimeout(function(){
+				alert('value put in test form');
+				localStorage.setItem('test_part','send_bill')
+				document.getElementById("send_button").click();
+			},800);
+		},1500);
+	}
+</script>
 <div id="email_temp_div" class="container" style="background-color:white;">
 	<b><h3><a href="#">Please Select a Message Template to Send</a></h3>
 	<br/>
@@ -53,7 +69,7 @@ soon affect your billing...</pre>
 	</div>
 	<br/>
 	<div class="panel-group">
-	<input type="radio" name="template_chooser" value="custom">
+	<input type="radio" id="custom" name="template_chooser" value="custom">
 		<div class="panel panel-primary" style="border:0px" >
 			<div class="panel-heading">
 				Tiite
@@ -67,7 +83,7 @@ soon affect your billing...</pre>
 		</div>
 	</div>
 	<br/>
-	<button type="button" style="margin-left:10px;margin-right:10px;width:45%;" onclick="send_message();" class="btn btn-lg btn-info">
+	<button  id="send_button" type="button" style="margin-left:10px;margin-right:10px;width:45%;" onclick="send_message();" class="btn btn-lg btn-info">
 		Send
 		<span class="glyphicon glyphicon-send">
 			

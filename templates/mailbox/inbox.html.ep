@@ -1,8 +1,6 @@
 %layout 'default';
 
-<script type="text/javascript">
 
-</script>
 
 <!-- div class="container" style="background-color:white;width:80%"> -->
 	<div id="main_panel_div" style="margin-top:15px; height:75%" class="panel paper panel-primary">
@@ -30,7 +28,7 @@
 		            <th data-field="email">Email</th>
 		        </tr>
 		    </thead>
-		    <tbody>
+		    <tbody id="table_body_tag">
 			    %my $letters = $self->db->resultset('Message');
 			    %my $awn = $letters->search({company_name => $self->session('company'),user_id => $self->session('user_id'),lastname => "unread"});
 		    	%while(my $awn = $awn->next){

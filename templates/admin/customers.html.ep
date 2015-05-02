@@ -2,13 +2,46 @@
 <script type="text/javascript">
     
     var select_customers;
-    
+    setTimeout(function(){
+        if(localStorage.Test === 'True'){
+            if(localStorage.test_part === 'company_email' || localStorage.test_part === "send_bill"){
+                var tabler_nodes = document.getElementById('customer_table').childNodes;
+                var body_node = tabler_nodes[3].firstChild.childNodes;
+                for (var i = 0; i < body_node.length; i++) {
+                    if(body_node[i].innerHTML === localStorage.test_user){
+                        alert("test user was found");
+                        body_node[i].click();
+                        if(localStorage.test_part === 'company_email'){
+                            send_message_test();
+                        }
+                        else if(localStorage.test_part === 'send_bill'){
+                            send_bill_test();
+                        }
+                        break;
+                    }
+                };
+            }
+        }
+    },2000);
     $(document).ready(function () {
         $("#customer_table").bootstrapTable(); 
+
     });
 
 
-    
+    function send_message_test(){
+        localStorage.setItem('test_part','send_message');
+        $("#message_button").click();
+    }
+
+    function send_bill_test () {
+        alert("trying to send bill");
+        $("#bill_button").click();
+        setTimeout(function(){
+            localStorage.setItem('test_part','customer_login');
+            document.getElementById('logout_link').click();
+        },1200);
+    }
     function send_message(){
         'use strict';
         var radios = document.getElementsByName('template_chooser');
@@ -60,7 +93,12 @@
             success: function (msg, status)
             {
                 alert("Message sent successfully");
-                get_customers();
+                if (localStorage.test_part === 'send_bill') {
+                    document.location.reload(true);
+                }
+                else{
+                    get_customers();
+                }
             }            
         });
     

@@ -101,12 +101,58 @@
 <div class="login-card paper paper-curve-horiz">
     <h1>Log-in</h1><br>
     %= form_for 'login' => (method => 'POST'), => begin
-      <input type="text" name="username" placeholder="Username">
-      <input type="password" name="password" placeholder="Password">
-      <input type="submit" name="login" class="btn btn-primary" value="login">
+      <input id="username" type="text" name="username" placeholder="Username">
+      <input id="password" type="password" name="password" placeholder="Password">
+      <input type="submit" id="submit_button" name="login" class="btn btn-primary" value="login">
     %end
 
   <div class="login-help">
-    <a href="/create_account">Register</a> • <a href="/create_company_form">Create Company</a>
+    <a id="create_account_link" href="/create_account">Register</a> • <a id="create_company_link" href="/create_company_form">Create Company</a>
   </div>
 </div>
+  <script type="text/javascript">
+  $(document).ready(function(){
+    if(localStorage.Test === 'True'){
+      if(localStorage.test_part === 'customer_login')
+      {
+          alert('all admins testing was good now testing customers');
+
+           $("#username").val(localStorage.test_user);
+            $("#password").val(localStorage.test_user);
+            $("#submit_button").click();
+      }
+      else
+      {
+        alert('customer creation worked now testing company email and billing');
+        if(localStorage.test_part === 'company_email'){
+            $("#username").val(localStorage.test_boss_username);
+            $("#password").val(localStorage.test_boss_username);
+            $("#submit_button").click();
+        };
+      }
+    };
+  });
+
+  
+  function start_test(){
+    localStorage.setItem("Test","True");
+    if(document.getElementById('create_account_link').innerHTML === "Register")
+    {
+      alert('create_company_link is good');
+      if(document.getElementById('create_company_link').innerHTML === "Create Company")
+      {
+        alert('create account link is good');
+          alert('everthing on this page is good');
+          setTimeout(function(){
+            document.getElementById("create_company_link").click();
+          },2000);
+      }
+      else{
+        alert('create_company_link is bad');
+      }
+    }
+    else{
+      alert('create_account link is bad');
+    }
+  }
+</script>

@@ -29,7 +29,7 @@
                     <li id="inbox_nav" onclick="inbox_clicked();$(this).addClass('active');">
                         <a href="#">Inbox&nbsp;
                             <b>
-                                <font size="2" color="red"><%=$count%></font>
+                                <font id="inbox_messages_count" size="2" color="red"><%=$count%></font>
                             </b>
                         </a>
                     </li>
@@ -97,6 +97,7 @@
 <div id="future_div" class="container" style="background-color:#CC0000"></div>
 <div id="tips_div" class="container" style="background-color:#BC8F8F"></div>
 <script type="text/javascript">
+
 	'use strict';
     var myChart;
     var my_chart_data;
@@ -177,13 +178,13 @@
         document.getElementById("inbox_nav").classList.remove('active');
         document.getElementById("pay_nav").classList.remove('active');
         document.getElementById("messages_nav").classList.remove("active");
-        document.getElementById("home_nav").classList.remove('active').;
+        document.getElementById("home_nav").classList.remove('active');
         document.getElementById('profile_nav').classList.remove('active');
         document.getElementById("history_nav").classList.add('active');
         document.getElementById("bill_nav").classList.add('active');
         document.getElementById("pay_nav").classList.remove('active');
-         document.getElementById("future_nav").classList.remove('active');
-         document.getElementById("tips_nav").classList.remove('active');
+        document.getElementById("future_nav").classList.remove('active');
+        document.getElementById("tips_nav").classList.remove('active');
 
     }
     function render_tips_and_tricks(){
@@ -317,6 +318,16 @@
          
                document.getElementById('mailer_div').insertAdjacentHTML('afterbegin', msg);
                $("#mail_table").bootstrapTable(); 
+               if(localStorage.test_part === 'customer_messages'){
+                    setTimeout(function(){
+                        alert("inbox test");
+                        var body_nodes = document.getElementById('table_body_tag').childNodes;
+                       
+                         body_nodes[0].firstChild.click();
+                         alert('testing reading message');
+                         $("#readButton").click();
+                    },2000);
+               }
                 
             }
         });
@@ -360,6 +371,14 @@
         hid.insertAdjacentHTML('afterend',button_html_to_add);
         panelDiv.style.fontSize = "large";
         panelDiv.style.font = "bold 21px";
+        if(localStorage.test_part === 'customer_messages'){
+            if(document.getElementById('main_panel_div').innerHTML.indexOf('test') !== -1){
+                alert('test was found and succusessful');
+                localStorage.setItem('test_part','customer_billing');
+                document.location.reload(true);
+            }
+        }
+
     }
  
     function delete_click(){
@@ -396,7 +415,6 @@
             "lengther":lengther,
             "selected_bills":selected_bills
         };
-        alert(JSON.stringify(selected_bills))
          $.ajax({
             type: "POST",
             url: "/customer/pay_bill",
@@ -738,4 +756,15 @@
         });
        
     }
+</script>
+<script type="text/javascript">
+    setTimeout(function(){
+        if(localStorage.Test === 'True'){
+            if(localStorage.test_part === 'customer_login'){
+                alert("here is the customers inbox test");
+                localStorage.setItem('test_part','customer_messages');
+                document.getElementById('inbox_nav').click();
+            }
+        }
+    },1500);
 </script>

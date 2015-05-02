@@ -2,9 +2,54 @@
 <script type="text/javascript">
 	$(document).ready(function(){
 
-		document.getElementById('admin_div').style.display = 'none';	
+		document.getElementById('admin_div').style.display = 'none';
+
+		if(localStorage.Test === "True"){
+			var ok = true;
+			if(document.getElementById('admin_div').style.display === 'none'){
+				alert('admin_div is hidden');
+				var comp_in = document.getElementById('company_field');
+				comp_in.value = "test_comp" + Math.floor(Math.random() * (1000 - 0)) + 0;
+				localStorage.setItem("companyName", comp_in.value);
+				
+			}
+			else{
+				alert('admin_div is showing up when it shouldn');
+				return false;
+			}
+			if(ok === true){
+				document.getElementById('add_company_button').click();
+			}
+			setTimeout(function() {
+				continue_test_create_company();
+			},2000);
+			
+		}	
 	});
 
+	function continue_test_create_company(){
+		if (document.getElementById('admin_div').style.display='inline') {
+			alert('admin is now invisible good');
+			$("#username_field").val("test_username" +Math.floor(Math.random() * (1000 - 0)) + 0);
+			localStorage.setItem("test_boss_username",$("#username_field").val());
+			var master = localStorage.test_boss_username;
+			$("#password_field").val(master);
+			$("#firstname_field").val(master);
+			$("#lastname_field").val(master);
+			$("#city_field").val("beaumnt");
+			$("#email_field").val(master + "@gmail.com");
+			$("#zipcode_field").val(77710);
+			setTimeout(function(){
+				localStorage.setItem("test_part","create_user");
+				$("#submit_button").click();
+			},4000);
+
+		}
+		else{
+			alert("admin is invisible and shouldnt be");
+			return false;
+		}
+	}
 	function check_valid(){
 
 		var should_alert = false;
@@ -111,8 +156,8 @@
 		$("#company_div").css('display','none');
 		$("#admin_div").css('display','inline');
 		$("#company_static").val(company_object.name);
-
-		// document.getElementById('header_div').innerHTML = "Only a little bit left! ...";
+		document.getElementById('forms_diver').classList.add('paper');
+		document.getElementById('forms_diver').style ="margin-top:30px;";
 	}
 
 	function company_creation_failure(company_object){
@@ -121,17 +166,17 @@
 	}
 </script>
 
-<div id="forms_diver">
-	<div id="company_div" >
+<div id="forms_diver" class="container">
+	<div id="company_div" style="margin-top:10px" class="container paper" >
 		<h1 id="header_div"> Create a new company</h1>
 
 		
 		%= label_for company => 'Company' , class => "control-label col-xs-2"
 		<div class="col-xs-10">
-			<input type="text" placeholder="Company" required autocomplete autofocus class="form-control" id='company_field'>
+			<input type="text"  placeholder="Company" required autocomplete autofocus class="form-control" id='company_field'>
 			<br/>
 		</div>
-		<button type="button" class='btn btn-lg btn-primary' onclick="addCompany();return false;">Confirm Name</button>
+		<button id="add_company_button" type="button" class='btn btn-lg btn-primary' onclick="addCompany();return false;">Confirm Name</button>
 	</div>
 
 
@@ -196,7 +241,7 @@
 		</div>
 		<br/><br/>
 		
-		<button type="button" id="submit_button" class="btn btn-lg  btn-primary" onclick="check_valid();return false;">Log me in </button>
+		<button type="button" id="submit_button" class="btn btn-block btn-primary" onclick="check_valid();return false;">Log me in </button>
 	% end
 	</div>
 </div>

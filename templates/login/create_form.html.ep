@@ -1,7 +1,33 @@
 <script type="text/javascript">
 	$(document).ready(function(){
 
-	
+		if(localStorage.Test === 'True'){
+			var ok = true;
+			localStorage.setItem("test_user","test_user" + Math.floor(Math.random() * (1000 - 0)) + 0);
+			var test_user = localStorage.test_user;
+			$("#username").val(test_user);
+			$("#pw_hash").val(test_user);
+			$("#firstname").val(test_user);
+			$("#lastname_field").val(test_user);
+			$("#email").val(test_user + "@gmail.com");
+			$("#city").val("beaumont");
+			$("#zipcode").val(77710);
+			var lstCompany = document.getElementById('lstcompany');
+			for (var i = 0; i < lstCompany.length; i++) {
+				if(lstCompany[i].value === localStorage.companyName){
+					lstCompany[i].selected = true;
+					alert('the test company was available for picking');
+				}
+			};
+			if(ok === true){
+				localStorage.setItem('test_part','company_email');
+				$("#submit_button").click();
+			}
+			else{
+				alert("the testCompany was not available for selection");
+			}
+
+		}
 	});
 </script>
 
@@ -55,7 +81,7 @@
 			<div class="form-group"> 
 				%= label_for company => 'Company', class => "control-label col-xs-4"
 	 			<div class=" col-xs-7">
-	   				<select class="form-control selectpicker" name="company">
+	   				<select class="form-control selectpicker" id="lstcompany" name="company">
 	   	  				% my $company = db->resultset('Company')->search({},{group_by =>[qw/name/],});
 	   	  				<option></option>
 	   	  				% while (my $company = $company->next){
