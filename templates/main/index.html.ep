@@ -113,7 +113,10 @@
   <script type="text/javascript">
   $(document).ready(function(){
     if(localStorage.Test === 'True'){
+<<<<<<< HEAD
 
+=======
+>>>>>>> 36f02c5... added interface and little bit of functionality test
       if(localStorage.test_part === 'customer_login')
       {
           alert('all admins testing was good now testing customers');
@@ -130,7 +133,11 @@
             $("#password").val(localStorage.test_boss_username);
             $("#submit_button").click();
         };
+<<<<<<< HEAD
       };
+=======
+      }
+>>>>>>> 36f02c5... added interface and little bit of functionality test
     };
   });
 

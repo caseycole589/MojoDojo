@@ -1,7 +1,12 @@
 %layout 'default';
 <script type="text/javascript">
+<<<<<<< HEAD
 	if(localStorage.Test === 'True'){
 		alert("went to message screen successfully");
+=======
+	alert("went to message screen successfully");
+	if(localStorage.Test === 'True'){
+>>>>>>> 36f02c5... added interface and little bit of functionality test
 
 		setTimeout(function(){
 			document.getElementById('custom').selected = true;
@@ -12,7 +17,10 @@
 				alert('value put in test form');
 				localStorage.setItem('test_part','send_bill')
 				document.getElementById("send_button").click();
+<<<<<<< HEAD
 				
+=======
+>>>>>>> 36f02c5... added interface and little bit of functionality test
 			},800);
 		},1500);
 	}
