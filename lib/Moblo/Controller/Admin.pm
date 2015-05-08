@@ -30,7 +30,7 @@ sub render_message{
 sub send_message {
 	my $self = shift;		
 	my $json = $self->req->json;
-	say DateTime->now->iso8601;
+	
 	# print $json->{selected_customers}->[1]->{firstname};
 	my $customs = $json->{selected_customers};
 	my $number_of_customs = $json->{length} - 1;

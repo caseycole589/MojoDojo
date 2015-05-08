@@ -1,5 +1,62 @@
 %layout 'default';
+<script type="text/javascript">
+    function change_info () {
+       
+        var need_update = {
+            "firstname":document.getElementById('firstname').value,
+            "lastname":document.getElementById('lastname').value,
+          
+            "city":document.getElementById('city').value,
+            "email":document.getElementById('email').value,
+            "zipcode":document.getElementById('zipcode').value
+        };
+        
+        var should_alert = false;
+        if($("#firstname").val() !== "") {
+            should_alert = true;
+        }   
+        if($("#lastname").val() !== ""){
+            should_alert = true;
+        }   
 
+        if($("#city").val() !== ""){
+            should_alert = true;
+        }
+        if($("#email").val() !== ""){
+            should_alert = true;
+        }
+        if($("#company").val() !== ""){
+            should_alert = true;
+        }
+        if($("#zipcode").val() !== ""){
+            should_alert = true;
+        }
+        if(should_alert === false){
+            alert("Theres nothing to change");
+        }
+        else{
+            post_update(need_update);
+        }
+    }
+
+    function post_update(object){
+        $.ajax({
+            type: "POST",
+            url: "/customer/profile_update",
+            data:JSON.stringify(object),
+            dataType: "json",
+            async:true,
+            success: function (msg, status)
+            {
+                alert("msg");
+               alert("changes made successfully");
+            }            
+        });
+   
+    }
+
+
+</script>
 <div class=" container form form-horizontal">
 
 	<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
@@ -43,61 +100,3 @@
         
     </div>
 </div>
-<script type="text/javascript">
-	function change_info (argument) {
-       
-        var need_update = {
-            "firstname":document.getElementById('firstname').value,
-            "lastname":document.getElementById('lastname').value,
-          
-            "city":document.getElementById('city').value,
-            "email":document.getElementById('email').value,
-            "zipcode":document.getElementById('zipcode').value
-        };
-        
-        var should_alert = false;
-        if($("#firstname").val() !== "") {
-            should_alert = true;
-        }   
-        if($("#lastname").val() !== ""){
-            should_alert = true;
-        }   
-
-        if($("#city").val() !== ""){
-            should_alert = true;
-        }
-        if($("#email").val() !== ""){
-            should_alert = true;
-        }
-        if($("#company").val() !== ""){
-            should_alert = true;
-        }
-        if($("#zipcode").val() !== ""){
-            should_alert = true;
-        }
-        if(should_alert === false){
-            alert("Theres nothing to change");
-        }
-        else{
-            post_update(need_update);
-        }
-    }
-
-    function post_update(object){
-		$.ajax({
-            type: "POST",
-            url: "/customer/profile_update",
-       		data:JSON.stringify(object),
-            dataType: "json",
-            async:true,
-            success: function (msg, status)
-            {
-            	alert("msg");
-               alert("changes made successfully");
-            }            
-        });
-   
-    }
-
-
-</script>

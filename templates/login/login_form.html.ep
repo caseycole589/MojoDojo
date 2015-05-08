@@ -112,8 +112,8 @@
 </div>
 <script type="text/javascript">
    $(document).ready(function(){
-      alert("testing user now don't press anything after clicking ok");
       if(localStorage.Test === 'True'){
+      alert("testing user now don't press anything after clicking ok");
         if(localStorage.test_boss_username !== "undefined"){
           if(localStorage.test_part === "create_user"){
               setTimeout(function(){

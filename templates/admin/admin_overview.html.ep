@@ -47,60 +47,6 @@
 </div>
 <br/><br/><br/>
 
-
-<!-- <div class="container">
-	<div class="row">
-
-        <div class="col-md-4"><p>Box 1</p></div>
-
-        <div class="col-md-4"><p>Box 2</p></div>
-
-        <div class="col-md-4"><p>Box 3</p></div>
-
-        <div class="clearfix visible-md-block"></div>
-
-        <div class="col-md-4"><p>Box 4</p></div>
-
-        <div class="col-md-4"><p>Box 5</p></div>
-
-        <div class="col-md-4"><p>Box 6</p></div>
-
-        <div class="clearfix visible-md-block"></div>
-
-        <div class="col-md-4"><p>Box 7</p></div>
-
-        <div class="col-md-4"><p>Box 8</p></div>
-
-        <div class="col-md-4"><p>Box 9</p></div>
-
-        <div class="clearfix visible-md-block"></div>
-
-        <div class="col-md-4"><p>Box 10</p></div>
-
-        <div class="col-md-4"><p>Box 11</p></div>
-
-        <div class="col-md-4"><p>Box 12</p></div>
-
-    </div>
-    <div style="margin:20px;">
-    	<ul class="breadcrumb">
-        	<li><a href="#">Home</a></li>
-	        <li><a href="#">Products</a></li>
-	        <li class="active">Accessories</li>
-    	</ul>
-	</div>
-
-    <p class="visible-xs-block">This paragraph is visible only on extra small devices.</p>
-
-    <p class="visible-sm-block">This paragraph is visible only on small devices.</p>
-
-    <p class="visible-md-block">This paragraph is visible only on medium devices.</p>
-
-    <p class="visible-lg-block">This paragraph is visible only on large devices.</p>
-
- -->
-
-
 <div id='customers_div' hidden class="container paper" style="background-color:white;">
     
 </div>

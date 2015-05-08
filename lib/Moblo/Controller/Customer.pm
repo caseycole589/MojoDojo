@@ -26,7 +26,6 @@ sub profile_update{
 	my $user = $users->find({
 	 	username => $self->session('username')
 	});
-	say $user->firstname;
 	if($firstname ne ""){
 		$user->firstname($firstname);
 	}

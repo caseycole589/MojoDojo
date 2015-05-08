@@ -5,7 +5,7 @@ curl -L https://cpanmin.us | perl - -M https://cpan.metacpan.org -n Mojolicious
 then
 cpan  modulename
 cpan SQL::Translator
-cpan Mojoliouse
+cpan Mojolious
  
 cpan DBIx::Class::Migration
 cpan Mojolicious::Plugin::Bcrypt
@@ -18,3 +18,5 @@ finaly
 plackup script/moblo
 
 navigate to 127.0.0.1:5000 on your machine
+
+to test just open up browser console and type start_test();
