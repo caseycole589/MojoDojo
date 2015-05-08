@@ -9,7 +9,7 @@ cpan Mojolious
  
 cpan DBIx::Class::Migration
 cpan Mojolicious::Plugin::Bcrypt
-cpan Plack 
+ 
 cpan DBIx::Class::InflateColumn::Boolean
 cpan DBIx::Class::InflateColumn::Currency
 cpan Math::Round
