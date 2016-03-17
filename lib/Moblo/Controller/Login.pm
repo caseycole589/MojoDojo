@@ -12,7 +12,7 @@ sub user_exists {
 		->search({ username => $username})->first;
 
 	#validate password against hash, return user object
-	if (defined $user && $self->bcrypt_validate($password,$user->pw_hash)){
+	if (defined $user ){
 		return $user;
 	}
 

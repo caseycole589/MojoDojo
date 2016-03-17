@@ -726,3 +726,286 @@
 [Fri May  1 21:08:51 2015] [debug] Rendering cached template "layouts/base.html.ep"
 [Fri May  1 21:08:51 2015] [debug] 200 OK (0.013572s, 73.681/s)
 >>>>>>> 36f02c5... added interface and little bit of functionality test
+[Wed Mar 16 21:26:43 2016] [debug] GET "/"
+[Wed Mar 16 21:26:43 2016] [debug] Rendering template "main/index.html.ep"
+[Wed Mar 16 21:26:43 2016] [debug] Rendering template "layouts/base.html.ep"
+[Wed Mar 16 21:26:43 2016] [debug] 200 OK (0.012891s, 77.574/s)
+[Wed Mar 16 21:26:48 2016] [debug] POST "/login"
+[Wed Mar 16 21:26:48 2016] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Wed Mar 16 21:26:48 2016] [error] Can't locate object method "bcrypt_validate" via package "Moblo::Controller::Login" at /usr/local/share/perl5/Mojolicious.pm line 119.
+
+[Wed Mar 16 21:26:48 2016] [debug] Template "exception.development.html.ep" not found
+[Wed Mar 16 21:26:48 2016] [debug] Template "exception.html.ep" not found
+[Wed Mar 16 21:26:48 2016] [debug] Rendering template "mojo/debug.html.ep"
+[Wed Mar 16 21:26:48 2016] [debug] Rendering template "mojo/menubar.html.ep"
+[Wed Mar 16 21:26:48 2016] [debug] 500 Internal Server Error (0.054421s, 18.375/s)
+[Wed Mar 16 21:27:07 2016] [debug] GET "/create_company_form"
+[Wed Mar 16 21:27:07 2016] [debug] Rendering template "login/create_company_form.html.ep"
+[Wed Mar 16 21:27:07 2016] [debug] Rendering cached template "layouts/base.html.ep"
+[Wed Mar 16 21:27:07 2016] [debug] 200 OK (0.01153s, 86.730/s)
+[Wed Mar 16 21:28:23 2016] [debug] POST "/login"
+[Wed Mar 16 21:28:23 2016] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Wed Mar 16 21:28:23 2016] [error] Can't locate object method "bcrypt_validate" via package "Moblo::Controller::Login" at /usr/local/share/perl5/Mojolicious.pm line 119.
+
+[Wed Mar 16 21:28:23 2016] [debug] Template "exception.development.html.ep" not found
+[Wed Mar 16 21:28:23 2016] [debug] Template "exception.html.ep" not found
+[Wed Mar 16 21:28:23 2016] [debug] Rendering cached template "mojo/debug.html.ep"
+[Wed Mar 16 21:28:23 2016] [debug] Rendering cached template "mojo/menubar.html.ep"
+[Wed Mar 16 21:28:23 2016] [debug] 500 Internal Server Error (0.009449s, 105.831/s)
+[Wed Mar 16 21:29:59 2016] [debug] POST "/login"
+[Wed Mar 16 21:29:59 2016] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Wed Mar 16 21:29:59 2016] [error] Can't locate object method "bcrypt_validate" via package "Moblo::Controller::Login" at /usr/local/share/perl5/Mojolicious.pm line 119.
+
+[Wed Mar 16 21:29:59 2016] [debug] Template "exception.development.html.ep" not found
+[Wed Mar 16 21:29:59 2016] [debug] Template "exception.html.ep" not found
+[Wed Mar 16 21:29:59 2016] [debug] Rendering cached template "mojo/debug.html.ep"
+[Wed Mar 16 21:29:59 2016] [debug] Rendering cached template "mojo/menubar.html.ep"
+[Wed Mar 16 21:29:59 2016] [debug] 500 Internal Server Error (0.006972s, 143.431/s)
+[Wed Mar 16 21:33:13 2016] [debug] GET "/create_account"
+[Wed Mar 16 21:33:13 2016] [debug] Rendering template "login/create_form.html.ep"
+[Wed Mar 16 21:33:13 2016] [debug] Rendering template "layouts/base.html.ep"
+[Wed Mar 16 21:33:13 2016] [debug] 200 OK (0.036279s, 27.564/s)
+[Wed Mar 16 21:33:39 2016] [debug] POST "/create_account"
+[Wed Mar 16 21:33:39 2016] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_account"
+[Wed Mar 16 21:33:39 2016] [debug] 302 Found (0.004031s, 248.077/s)
+[Wed Mar 16 21:33:39 2016] [debug] GET "/create_account"
+[Wed Mar 16 21:33:39 2016] [debug] Rendering cached template "login/create_form.html.ep"
+[Wed Mar 16 21:33:39 2016] [debug] Rendering cached template "layouts/base.html.ep"
+[Wed Mar 16 21:33:39 2016] [debug] 200 OK (0.004183s, 239.063/s)
+[Wed Mar 16 21:34:01 2016] [debug] GET "/create_account"
+[Wed Mar 16 21:34:01 2016] [debug] Rendering cached template "login/create_form.html.ep"
+[Wed Mar 16 21:34:01 2016] [debug] Rendering cached template "layouts/base.html.ep"
+[Wed Mar 16 21:34:01 2016] [debug] 200 OK (0.002711s, 368.868/s)
+[Wed Mar 16 21:34:27 2016] [debug] POST "/create_account"
+[Wed Mar 16 21:34:27 2016] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_account"
+[Wed Mar 16 21:34:27 2016] [error] Can't locate object method "asdf" via package "Moblo::Controller::Login" at /usr/local/share/perl5/Mojolicious.pm line 119.
+
+[Wed Mar 16 21:34:27 2016] [debug] Template "exception.development.html.ep" not found
+[Wed Mar 16 21:34:27 2016] [debug] Template "exception.html.ep" not found
+[Wed Mar 16 21:34:27 2016] [debug] Rendering template "mojo/debug.html.ep"
+[Wed Mar 16 21:34:27 2016] [debug] Rendering template "mojo/menubar.html.ep"
+[Wed Mar 16 21:34:27 2016] [debug] 500 Internal Server Error (0.023964s, 41.729/s)
+[Wed Mar 16 21:42:53 2016] [debug] GET "/"
+[Wed Mar 16 21:42:53 2016] [debug] Rendering template "main/index.html.ep"
+[Wed Mar 16 21:42:53 2016] [debug] Rendering template "layouts/base.html.ep"
+[Wed Mar 16 21:42:53 2016] [debug] 200 OK (0.006133s, 163.052/s)
+[Wed Mar 16 21:42:58 2016] [debug] POST "/login"
+[Wed Mar 16 21:42:58 2016] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Wed Mar 16 21:42:58 2016] [error] Can't locate object method "bcrypt_validate" via package "Moblo::Controller::Login" at /usr/local/share/perl5/Mojolicious.pm line 119.
+
+[Wed Mar 16 21:42:58 2016] [debug] Template "exception.development.html.ep" not found
+[Wed Mar 16 21:42:58 2016] [debug] Template "exception.html.ep" not found
+[Wed Mar 16 21:42:58 2016] [debug] Rendering template "mojo/debug.html.ep"
+[Wed Mar 16 21:42:58 2016] [debug] Rendering template "mojo/menubar.html.ep"
+[Wed Mar 16 21:42:59 2016] [debug] 500 Internal Server Error (0.077929s, 12.832/s)
+[Wed Mar 16 21:43:26 2016] [debug] POST "/login"
+[Wed Mar 16 21:43:26 2016] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Wed Mar 16 21:43:26 2016] [error] Can't locate object method "bcrypt_validate" via package "Moblo::Controller::Login" at /usr/local/share/perl5/Mojolicious.pm line 119.
+
+[Wed Mar 16 21:43:26 2016] [debug] Template "exception.development.html.ep" not found
+[Wed Mar 16 21:43:26 2016] [debug] Template "exception.html.ep" not found
+[Wed Mar 16 21:43:26 2016] [debug] Rendering cached template "mojo/debug.html.ep"
+[Wed Mar 16 21:43:26 2016] [debug] Rendering cached template "mojo/menubar.html.ep"
+[Wed Mar 16 21:43:26 2016] [debug] 500 Internal Server Error (0.020574s, 48.605/s)
+[Wed Mar 16 21:43:40 2016] [debug] POST "/login"
+[Wed Mar 16 21:43:40 2016] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Wed Mar 16 21:43:40 2016] [debug] 302 Found (0.031119s, 32.135/s)
+[Wed Mar 16 21:43:40 2016] [debug] GET "/admin"
+[Wed Mar 16 21:43:40 2016] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_admin"
+[Wed Mar 16 21:43:40 2016] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_admin"
+[Wed Mar 16 21:43:40 2016] [debug] Rendering template "admin/admin_overview.html.ep"
+[Wed Mar 16 21:43:40 2016] [debug] Rendering template "layouts/base.html.ep"
+[Wed Mar 16 21:43:40 2016] [debug] 200 OK (0.007559s, 132.293/s)
+[Wed Mar 16 21:43:51 2016] [debug] POST "/admin/render_customers"
+[Wed Mar 16 21:43:51 2016] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_admin"
+[Wed Mar 16 21:43:51 2016] [debug] Routing to controller "Moblo::Controller::Admin" and action "render_customers"
+[Wed Mar 16 21:43:51 2016] [debug] Rendering template "admin/customers.html.ep"
+[Wed Mar 16 21:43:51 2016] [debug] Rendering template "layouts/default.html.ep"
+[Wed Mar 16 21:43:51 2016] [debug] 200 OK (0.023074s, 43.339/s)
+[Wed Mar 16 21:44:10 2016] [debug] POST "/admin/render_customers"
+[Wed Mar 16 21:44:10 2016] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_admin"
+[Wed Mar 16 21:44:10 2016] [debug] Routing to controller "Moblo::Controller::Admin" and action "render_customers"
+[Wed Mar 16 21:44:10 2016] [debug] Rendering cached template "admin/customers.html.ep"
+[Wed Mar 16 21:44:10 2016] [debug] Rendering cached template "layouts/default.html.ep"
+[Wed Mar 16 21:44:10 2016] [debug] 200 OK (0.006923s, 144.446/s)
+[Wed Mar 16 21:44:14 2016] [debug] POST "/admin/render_message"
+[Wed Mar 16 21:44:14 2016] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_admin"
+[Wed Mar 16 21:44:14 2016] [debug] Routing to controller "Moblo::Controller::Admin" and action "render_message"
+[Wed Mar 16 21:44:14 2016] [debug] Rendering template "admin/message.html.ep"
+[Wed Mar 16 21:44:14 2016] [debug] Rendering cached template "layouts/default.html.ep"
+[Wed Mar 16 21:44:14 2016] [debug] 200 OK (0.009055s, 110.436/s)
+[Wed Mar 16 21:44:22 2016] [debug] POST "/admin/send_message"
+[Wed Mar 16 21:44:22 2016] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_admin"
+[Wed Mar 16 21:44:22 2016] [debug] Routing to controller "Moblo::Controller::Admin" and action "send_message"
+[Wed Mar 16 21:44:22 2016] [debug] 200 OK (0.172871s, 5.785/s)
+[Wed Mar 16 21:44:23 2016] [debug] POST "/admin/render_customers"
+[Wed Mar 16 21:44:23 2016] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_admin"
+[Wed Mar 16 21:44:23 2016] [debug] Routing to controller "Moblo::Controller::Admin" and action "render_customers"
+[Wed Mar 16 21:44:23 2016] [debug] Rendering cached template "admin/customers.html.ep"
+[Wed Mar 16 21:44:23 2016] [debug] Rendering cached template "layouts/default.html.ep"
+[Wed Mar 16 21:44:23 2016] [debug] 200 OK (0.006815s, 146.735/s)
+[Wed Mar 16 21:44:35 2016] [debug] GET "/logout"
+[Wed Mar 16 21:44:35 2016] [debug] Routing to a callback
+[Wed Mar 16 21:44:35 2016] [debug] 302 Found (0.000944s, 1059.322/s)
+[Wed Mar 16 21:44:35 2016] [debug] GET "/"
+[Wed Mar 16 21:44:35 2016] [debug] Rendering template "main/index.html.ep"
+[Wed Mar 16 21:44:35 2016] [debug] Rendering cached template "layouts/base.html.ep"
+[Wed Mar 16 21:44:35 2016] [debug] 200 OK (0.004074s, 245.459/s)
+[Wed Mar 16 21:44:40 2016] [debug] POST "/login"
+[Wed Mar 16 21:44:40 2016] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Wed Mar 16 21:44:40 2016] [debug] Rendering cached template "layouts/base.html.ep"
+[Wed Mar 16 21:44:40 2016] [debug] 403 Forbidden (0.004206s, 237.756/s)
+[Wed Mar 16 21:44:54 2016] [debug] GET "/create_account"
+[Wed Mar 16 21:44:54 2016] [debug] Rendering template "login/create_form.html.ep"
+[Wed Mar 16 21:44:54 2016] [debug] Rendering cached template "layouts/base.html.ep"
+[Wed Mar 16 21:44:54 2016] [debug] 200 OK (0.008883s, 112.575/s)
+[Wed Mar 16 21:45:16 2016] [debug] POST "/create_account"
+[Wed Mar 16 21:45:16 2016] [debug] Routing to controller "Moblo::Controller::Login" and action "create_new_account"
+[Wed Mar 16 21:45:16 2016] [debug] 302 Found (0.004321s, 231.428/s)
+[Wed Mar 16 21:45:16 2016] [debug] GET "/create_account"
+[Wed Mar 16 21:45:16 2016] [debug] Rendering cached template "login/create_form.html.ep"
+[Wed Mar 16 21:45:16 2016] [debug] Rendering cached template "layouts/base.html.ep"
+[Wed Mar 16 21:45:16 2016] [debug] 200 OK (0.003166s, 315.856/s)
+[Wed Mar 16 21:45:33 2016] [debug] POST "/login"
+[Wed Mar 16 21:45:33 2016] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Wed Mar 16 21:45:33 2016] [debug] 302 Found (0.004568s, 218.914/s)
+[Wed Mar 16 21:45:33 2016] [debug] GET "/customer"
+[Wed Mar 16 21:45:33 2016] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Wed Mar 16 21:45:33 2016] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Wed Mar 16 21:45:33 2016] [debug] Rendering template "customer/customer_overview.html.ep"
+[Wed Mar 16 21:45:33 2016] [debug] Rendering cached template "layouts/base.html.ep"
+[Wed Mar 16 21:45:33 2016] [debug] 200 OK (0.048177s, 20.757/s)
+[Wed Mar 16 21:45:39 2016] [debug] POST "/customer/render_inbox"
+[Wed Mar 16 21:45:39 2016] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Wed Mar 16 21:45:39 2016] [debug] Routing to controller "Moblo::Controller::Mail" and action "render_inbox"
+[Wed Mar 16 21:45:39 2016] [debug] Rendering template "/mailbox/inbox.html.ep"
+[Wed Mar 16 21:45:39 2016] [debug] Rendering cached template "layouts/default.html.ep"
+[Wed Mar 16 21:45:39 2016] [debug] 200 OK (0.00954s, 104.822/s)
+[Wed Mar 16 21:45:50 2016] [debug] POST "/customer/render_inbox"
+[Wed Mar 16 21:45:50 2016] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Wed Mar 16 21:45:50 2016] [debug] Routing to controller "Moblo::Controller::Mail" and action "render_inbox"
+[Wed Mar 16 21:45:50 2016] [debug] Rendering cached template "/mailbox/inbox.html.ep"
+[Wed Mar 16 21:45:50 2016] [debug] Rendering cached template "layouts/default.html.ep"
+[Wed Mar 16 21:45:50 2016] [debug] 200 OK (0.008091s, 123.594/s)
+[Wed Mar 16 21:46:00 2016] [debug] POST "/customer/render_inbox"
+[Wed Mar 16 21:46:00 2016] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Wed Mar 16 21:46:00 2016] [debug] Routing to controller "Moblo::Controller::Mail" and action "render_inbox"
+[Wed Mar 16 21:46:00 2016] [debug] Rendering cached template "/mailbox/inbox.html.ep"
+[Wed Mar 16 21:46:00 2016] [debug] Rendering cached template "layouts/default.html.ep"
+[Wed Mar 16 21:46:00 2016] [debug] 200 OK (0.007472s, 133.833/s)
+[Wed Mar 16 21:46:01 2016] [debug] POST "/customer/profile"
+[Wed Mar 16 21:46:01 2016] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Wed Mar 16 21:46:01 2016] [debug] Routing to controller "Moblo::Controller::Customer" and action "render_profile"
+[Wed Mar 16 21:46:01 2016] [debug] Rendering template "customer/profile.html.ep"
+[Wed Mar 16 21:46:01 2016] [debug] Rendering cached template "layouts/default.html.ep"
+[Wed Mar 16 21:46:01 2016] [debug] 200 OK (0.00676s, 147.929/s)
+[Wed Mar 16 21:46:08 2016] [debug] POST "/customer/render_pay_bills"
+[Wed Mar 16 21:46:08 2016] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Wed Mar 16 21:46:08 2016] [debug] Routing to controller "Moblo::Controller::Bill" and action "render_pay_bills"
+[Wed Mar 16 21:46:08 2016] [debug] Rendering template "customer/pay_bill.html.ep"
+[Wed Mar 16 21:46:08 2016] [debug] Rendering cached template "layouts/default.html.ep"
+[Wed Mar 16 21:46:08 2016] [debug] 200 OK (0.013735s, 72.807/s)
+[Wed Mar 16 21:46:12 2016] [debug] POST "/customer/render_future_bills"
+[Wed Mar 16 21:46:12 2016] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Wed Mar 16 21:46:12 2016] [debug] Routing to controller "Moblo::Controller::Bill" and action "render_future_bills"
+[Wed Mar 16 21:46:12 2016] [debug] Rendering template "customer/future_bill.html.ep"
+[Wed Mar 16 21:46:12 2016] [debug] Rendering cached template "layouts/default.html.ep"
+[Wed Mar 16 21:46:12 2016] [debug] 200 OK (0.008647s, 115.647/s)
+[Wed Mar 16 21:46:12 2016] [debug] POST "/customer/get_map_data"
+[Wed Mar 16 21:46:12 2016] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Wed Mar 16 21:46:12 2016] [debug] Routing to controller "Moblo::Controller::Bill" and action "get_map_data"
+[Wed Mar 16 21:46:12 2016] [debug] 200 OK (0.009789s, 102.155/s)
+[Wed Mar 16 21:46:22 2016] [debug] POST "/customer/render_tips_and_tricks"
+[Wed Mar 16 21:46:22 2016] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Wed Mar 16 21:46:22 2016] [debug] Routing to controller "Moblo::Controller::Bill" and action "render_tips_and_tricks"
+[Wed Mar 16 21:46:22 2016] [debug] Rendering template "customer/tips_and_tricks.html.ep"
+[Wed Mar 16 21:46:22 2016] [debug] Rendering cached template "layouts/default.html.ep"
+[Wed Mar 16 21:46:22 2016] [debug] 200 OK (0.003006s, 332.668/s)
+[Wed Mar 16 21:46:30 2016] [debug] POST "/customer/profile"
+[Wed Mar 16 21:46:30 2016] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Wed Mar 16 21:46:30 2016] [debug] Routing to controller "Moblo::Controller::Customer" and action "render_profile"
+[Wed Mar 16 21:46:30 2016] [debug] Rendering cached template "customer/profile.html.ep"
+[Wed Mar 16 21:46:30 2016] [debug] Rendering cached template "layouts/default.html.ep"
+[Wed Mar 16 21:46:30 2016] [debug] 200 OK (0.0044s, 227.273/s)
+[Wed Mar 16 21:46:38 2016] [debug] POST "/customer/render_tips_and_tricks"
+[Wed Mar 16 21:46:38 2016] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Wed Mar 16 21:46:38 2016] [debug] Routing to controller "Moblo::Controller::Bill" and action "render_tips_and_tricks"
+[Wed Mar 16 21:46:38 2016] [debug] Rendering cached template "customer/tips_and_tricks.html.ep"
+[Wed Mar 16 21:46:38 2016] [debug] Rendering cached template "layouts/default.html.ep"
+[Wed Mar 16 21:46:38 2016] [debug] 200 OK (0.002424s, 412.541/s)
+[Wed Mar 16 21:46:42 2016] [debug] POST "/customer/render_pay_bills"
+[Wed Mar 16 21:46:42 2016] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Wed Mar 16 21:46:42 2016] [debug] Routing to controller "Moblo::Controller::Bill" and action "render_pay_bills"
+[Wed Mar 16 21:46:42 2016] [debug] Rendering cached template "customer/pay_bill.html.ep"
+[Wed Mar 16 21:46:42 2016] [debug] Rendering cached template "layouts/default.html.ep"
+[Wed Mar 16 21:46:42 2016] [debug] 200 OK (0.005607s, 178.348/s)
+[Wed Mar 16 21:46:44 2016] [debug] POST "/customer/pay_bill"
+[Wed Mar 16 21:46:44 2016] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Wed Mar 16 21:46:44 2016] [debug] Routing to controller "Moblo::Controller::Bill" and action "pay_bill"
+[Wed Mar 16 21:46:44 2016] [debug] 200 OK (0.001563s, 639.795/s)
+[Wed Mar 16 21:46:46 2016] [debug] POST "/customer/render_pay_bills"
+[Wed Mar 16 21:46:46 2016] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Wed Mar 16 21:46:46 2016] [debug] Routing to controller "Moblo::Controller::Bill" and action "render_pay_bills"
+[Wed Mar 16 21:46:46 2016] [debug] Rendering cached template "customer/pay_bill.html.ep"
+[Wed Mar 16 21:46:46 2016] [debug] Rendering cached template "layouts/default.html.ep"
+[Wed Mar 16 21:46:46 2016] [debug] 200 OK (0.006818s, 146.671/s)
+[Wed Mar 16 21:46:53 2016] [debug] GET "/logout"
+[Wed Mar 16 21:46:53 2016] [debug] Routing to a callback
+[Wed Mar 16 21:46:53 2016] [debug] 302 Found (0.000835s, 1197.605/s)
+[Wed Mar 16 21:46:53 2016] [debug] GET "/"
+[Wed Mar 16 21:46:53 2016] [debug] Rendering cached template "main/index.html.ep"
+[Wed Mar 16 21:46:53 2016] [debug] Rendering cached template "layouts/base.html.ep"
+[Wed Mar 16 21:46:53 2016] [debug] 200 OK (0.000984s, 1016.260/s)
+[Wed Mar 16 21:46:59 2016] [debug] POST "/login"
+[Wed Mar 16 21:46:59 2016] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Wed Mar 16 21:46:59 2016] [debug] 302 Found (0.004957s, 201.735/s)
+[Wed Mar 16 21:46:59 2016] [debug] GET "/admin"
+[Wed Mar 16 21:46:59 2016] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_admin"
+[Wed Mar 16 21:46:59 2016] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_admin"
+[Wed Mar 16 21:46:59 2016] [debug] Rendering cached template "admin/admin_overview.html.ep"
+[Wed Mar 16 21:46:59 2016] [debug] Rendering cached template "layouts/base.html.ep"
+[Wed Mar 16 21:46:59 2016] [debug] 200 OK (0.002823s, 354.233/s)
+[Wed Mar 16 21:47:04 2016] [debug] POST "/admin/render_customers"
+[Wed Mar 16 21:47:04 2016] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_admin"
+[Wed Mar 16 21:47:04 2016] [debug] Routing to controller "Moblo::Controller::Admin" and action "render_customers"
+[Wed Mar 16 21:47:04 2016] [debug] Rendering cached template "admin/customers.html.ep"
+[Wed Mar 16 21:47:04 2016] [debug] Rendering cached template "layouts/default.html.ep"
+[Wed Mar 16 21:47:04 2016] [debug] 200 OK (0.003681s, 271.665/s)
+[Wed Mar 16 21:47:14 2016] [debug] POST "/admin/Bill_Once"
+[Wed Mar 16 21:47:14 2016] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_admin"
+[Wed Mar 16 21:47:14 2016] [debug] Routing to controller "Moblo::Controller::Bill" and action "Bill_Once"
+[Wed Mar 16 21:47:14 2016] [debug] 200 OK (0.176874s, 5.654/s)
+[Wed Mar 16 21:47:16 2016] [debug] POST "/admin/render_customers"
+[Wed Mar 16 21:47:16 2016] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_admin"
+[Wed Mar 16 21:47:16 2016] [debug] Routing to controller "Moblo::Controller::Admin" and action "render_customers"
+[Wed Mar 16 21:47:16 2016] [debug] Rendering cached template "admin/customers.html.ep"
+[Wed Mar 16 21:47:16 2016] [debug] Rendering cached template "layouts/default.html.ep"
+[Wed Mar 16 21:47:16 2016] [debug] 200 OK (0.005944s, 168.237/s)
+[Wed Mar 16 21:48:05 2016] [debug] GET "/logout"
+[Wed Mar 16 21:48:05 2016] [debug] Routing to a callback
+[Wed Mar 16 21:48:05 2016] [debug] 302 Found (0.001219s, 820.345/s)
+[Wed Mar 16 21:48:05 2016] [debug] GET "/"
+[Wed Mar 16 21:48:05 2016] [debug] Rendering cached template "main/index.html.ep"
+[Wed Mar 16 21:48:05 2016] [debug] Rendering cached template "layouts/base.html.ep"
+[Wed Mar 16 21:48:05 2016] [debug] 200 OK (0.001102s, 907.441/s)
+[Wed Mar 16 21:48:09 2016] [debug] POST "/login"
+[Wed Mar 16 21:48:09 2016] [debug] Routing to controller "Moblo::Controller::Login" and action "on_user_login"
+[Wed Mar 16 21:48:09 2016] [debug] 302 Found (0.003343s, 299.133/s)
+[Wed Mar 16 21:48:09 2016] [debug] GET "/customer"
+[Wed Mar 16 21:48:09 2016] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Wed Mar 16 21:48:09 2016] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Wed Mar 16 21:48:09 2016] [debug] Rendering cached template "customer/customer_overview.html.ep"
+[Wed Mar 16 21:48:09 2016] [debug] Rendering cached template "layouts/base.html.ep"
+[Wed Mar 16 21:48:09 2016] [debug] 200 OK (0.007556s, 132.345/s)
+[Wed Mar 16 21:48:12 2016] [debug] POST "/customer/render_inbox"
+[Wed Mar 16 21:48:12 2016] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Wed Mar 16 21:48:12 2016] [debug] Routing to controller "Moblo::Controller::Mail" and action "render_inbox"
+[Wed Mar 16 21:48:12 2016] [debug] Rendering cached template "/mailbox/inbox.html.ep"
+[Wed Mar 16 21:48:12 2016] [debug] Rendering cached template "layouts/default.html.ep"
+[Wed Mar 16 21:48:12 2016] [debug] 200 OK (0.005303s, 188.573/s)
+[Wed Mar 16 21:48:14 2016] [debug] POST "/customer/render_pay_bills"
+[Wed Mar 16 21:48:14 2016] [debug] Routing to controller "Moblo::Controller::Login" and action "is_logged_in_customer"
+[Wed Mar 16 21:48:14 2016] [debug] Routing to controller "Moblo::Controller::Bill" and action "render_pay_bills"
+[Wed Mar 16 21:48:14 2016] [debug] Rendering cached template "customer/pay_bill.html.ep"
+[Wed Mar 16 21:48:14 2016] [debug] Rendering cached template "layouts/default.html.ep"
+[Wed Mar 16 21:48:14 2016] [debug] 200 OK (0.023569s, 42.429/s)

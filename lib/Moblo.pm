@@ -23,7 +23,7 @@ sub startup {
   #Plugins
 
   #Bcrypt with cost factor 8
-  $self->plugin('bcrypt',{cost => 8});
+  # $self->plugin('bcrypt',{cost => 8});
 
   $self->defaults(layout => 'base');
 
